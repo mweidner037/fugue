@@ -11,7 +11,8 @@
   "workspaces": [
     "benchmarks/yjs",
     "benchmarks/ywasm",
-    "benchmarks/automerge-wasm"
+    "benchmarks/automerge-wasm",
+    "benchmarks/fugue"
   ],
   "scripts": {
     "start": "npm run start -ws",
