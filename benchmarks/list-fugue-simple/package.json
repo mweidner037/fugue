@@ -1,0 +1,19 @@
+{
+  "name": "list-fugue-simple",
+  "version": "1.0.0",
+  "description": "List-Fugue Simple benchmarks",
+  "main": "./run.js",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "start": "([ -f \"./dist/bundle.js\" ] || npm run dist) && node --expose-gc run.js && npm run table",
+    "table": "echo 'List-Fugue Simple results: \n\n' && node ../../bin/render-table.js ../results.json 6000 'List-Fugue Simple'",
+    "dist": "npm run clean && rollup -c && gzip --keep dist/*"
+  },
+  "author": "Anonymous (TODO)",
+  "license": "MIT",
+  "dependencies": {
+    "@collabs/collabs": "0.6.1",
+    "seedrandom": "^3.0.5"
+  }
+}

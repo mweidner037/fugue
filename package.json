@@ -12,11 +12,13 @@
     "benchmarks/yjs",
     "benchmarks/ywasm",
     "benchmarks/automerge-wasm",
-    "benchmarks/tree-fugue"
+    "benchmarks/tree-fugue",
+    "benchmarks/tree-fugue-simple",
+    "benchmarks/list-fugue-simple"
   ],
   "scripts": {
     "start": "npm run start -ws",
-    "table": "node bin/render-table.js benchmarks/results.json 6000 yjs ywasm automerge-wasm fugue",
+    "table": "node bin/render-table.js benchmarks/results.json 6000 yjs ywasm automerge-wasm tree-fugue tree-fugue-simple list-fugue-simple",
     "lint": "standard && tsc"
   },
   "standard": {
