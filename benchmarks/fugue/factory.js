@@ -74,6 +74,15 @@ export class FugueCRDT {
     return [messageOrSave, isSave];
   }
 
+  _checkInitialLoad() {
+    if (!this.loaded) {
+      // Collabs expects us to notify it if loading is skipped
+      // before sending/receiving the first message.
+      this.app.load(collabs.Optional.empty());
+      this.loaded = true;
+    }
+  }
+
   /**
    * @return {Uint8Array|string}
    */
@@ -90,12 +99,7 @@ export class FugueCRDT {
       this.app.load(collabs.Optional.of(messageOrSave));
       this.loaded = true;
     } else {
-      if ((this.loaded = false)) {
-        // Collabs expects us to notify it if loading is skipped
-        // before receiving the first message.
-        this.app.load(collabs.Optional.empty());
-        this.loaded = true;
-      }
+      this._checkInitialLoad();
       this.app.receive(messageOrSave);
     }
   }
@@ -160,9 +164,12 @@ export class FugueCRDT {
   transact(f) {
     const oldInTransact = this.inTransact;
     this.inTransact = true;
+
+    if (!oldInTransact) this._checkInitialLoad();
     f(this);
-    this.inTransact = oldInTransact;
     if (!oldInTransact) this.app.commitBatch();
+
+    this.inTransact = oldInTransact;
   }
 
   /**
