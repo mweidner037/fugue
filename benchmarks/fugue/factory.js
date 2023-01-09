@@ -1,5 +1,6 @@
 import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
 import * as collabs from "@collabs/collabs";
+import seedrandom from "seedrandom";
 
 export const name = "fugue";
 
@@ -7,11 +8,15 @@ export const name = "fugue";
  * @implements {CrdtFactory}
  */
 export class FugueFactory {
+  constructor() {
+    this.rng = seedrandom("42");
+  }
+
   /**
    * @param {function(Uint8Array):void} [updateHandler]
    */
   create(updateHandler) {
-    return new FugueCRDT(updateHandler);
+    return new FugueCRDT(this.rng, updateHandler);
   }
 
   getName() {
@@ -24,10 +29,13 @@ export class FugueFactory {
  */
 export class FugueCRDT {
   /**
+   * @param {seedrandom.prng} rng
    * @param {function(Uint8Array):void} [updateHandler]
    */
-  constructor(updateHandler) {
-    this.app = new collabs.CRDTApp();
+  constructor(rng, updateHandler) {
+    this.app = new collabs.CRDTApp({
+      debugReplicaID: collabs.pseudoRandomReplicaID(rng),
+    });
     if (updateHandler) {
       this.app.on("Send", (e) => {
         updateHandler(this._encodeUpdate(e.message, false));
