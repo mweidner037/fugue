@@ -18,617 +18,741 @@
     "[B1.1] Append N characters (time)": {
       "yjs": "179 ms",
       "ywasm": "169 ms",
-      "automerge-wasm": "164 ms"
+      "automerge-wasm": "164 ms",
+      "fugue": "150 ms"
     },
     "[B1.1] Append N characters (avgUpdateSize)": {
       "yjs": "27 bytes",
       "ywasm": "27 bytes",
-      "automerge-wasm": "121 bytes"
+      "automerge-wasm": "121 bytes",
+      "fugue": "39 bytes"
     },
     "[B1.1] Append N characters (encodeTime)": {
       "yjs": "1 ms",
       "ywasm": "0 ms",
-      "automerge-wasm": "10 ms"
+      "automerge-wasm": "10 ms",
+      "fugue": "1 ms"
     },
     "[B1.1] Append N characters (docSize)": {
       "yjs": "6031 bytes",
       "ywasm": "6031 bytes",
-      "automerge-wasm": "3995 bytes"
+      "automerge-wasm": "3995 bytes",
+      "fugue": "6160 bytes"
     },
     "[B1.1] Append N characters (memUsed)": {
       "yjs": "0 B",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "0 B"
     },
     "[B1.1] Append N characters (parseTime)": {
       "yjs": "44 ms",
       "ywasm": "40 ms",
-      "automerge-wasm": "98 ms"
+      "automerge-wasm": "98 ms",
+      "fugue": "78 ms"
     },
     "[B1.2] Insert string of length N (time)": {
       "yjs": "1 ms",
       "ywasm": "0 ms",
-      "automerge-wasm": "23 ms"
+      "automerge-wasm": "23 ms",
+      "fugue": "2 ms"
     },
     "[B1.2] Insert string of length N (avgUpdateSize)": {
       "yjs": "6031 bytes",
       "ywasm": "6031 bytes",
-      "automerge-wasm": "6201 bytes"
+      "automerge-wasm": "6201 bytes",
+      "fugue": "6049 bytes"
     },
     "[B1.2] Insert string of length N (encodeTime)": {
       "yjs": "1 ms",
       "ywasm": "0 ms",
-      "automerge-wasm": "2 ms"
+      "automerge-wasm": "2 ms",
+      "fugue": "0 ms"
     },
     "[B1.2] Insert string of length N (docSize)": {
       "yjs": "6031 bytes",
       "ywasm": "6031 bytes",
-      "automerge-wasm": "3977 bytes"
+      "automerge-wasm": "3977 bytes",
+      "fugue": "6158 bytes"
     },
     "[B1.2] Insert string of length N (memUsed)": {
       "yjs": "0 B",
       "ywasm": "224 B",
-      "automerge-wasm": "704 B"
+      "automerge-wasm": "704 B",
+      "fugue": "10.7 kB"
     },
     "[B1.2] Insert string of length N (parseTime)": {
       "yjs": "42 ms",
       "ywasm": "38 ms",
-      "automerge-wasm": "60 ms"
+      "automerge-wasm": "60 ms",
+      "fugue": "73 ms"
     },
     "[B1.3] Prepend N characters (time)": {
       "yjs": "151 ms",
       "ywasm": "26 ms",
-      "automerge-wasm": "88 ms"
+      "automerge-wasm": "88 ms",
+      "fugue": "563 ms"
     },
     "[B1.3] Prepend N characters (avgUpdateSize)": {
       "yjs": "27 bytes",
       "ywasm": "27 bytes",
-      "automerge-wasm": "116 bytes"
+      "automerge-wasm": "116 bytes",
+      "fugue": "46 bytes"
     },
     "[B1.3] Prepend N characters (encodeTime)": {
       "yjs": "4 ms",
       "ywasm": "0 ms",
-      "automerge-wasm": "10 ms"
+      "automerge-wasm": "10 ms",
+      "fugue": "10 ms"
     },
     "[B1.3] Prepend N characters (docSize)": {
       "yjs": "6041 bytes",
       "ywasm": "6041 bytes",
-      "automerge-wasm": "3991 bytes"
+      "automerge-wasm": "3991 bytes",
+      "fugue": "65781 bytes"
     },
     "[B1.3] Prepend N characters (memUsed)": {
       "yjs": "831.3 kB",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "1.6 MB"
     },
     "[B1.3] Prepend N characters (parseTime)": {
       "yjs": "75 ms",
       "ywasm": "39 ms",
-      "automerge-wasm": "110 ms"
+      "automerge-wasm": "110 ms",
+      "fugue": "87 ms"
     },
     "[B1.4] Insert N characters at random positions (time)": {
       "yjs": "169 ms",
       "ywasm": "143 ms",
-      "automerge-wasm": "539 ms"
+      "automerge-wasm": "539 ms",
+      "fugue": "110 ms"
     },
     "[B1.4] Insert N characters at random positions (avgUpdateSize)": {
       "yjs": "29 bytes",
       "ywasm": "29 bytes",
-      "automerge-wasm": "121 bytes"
+      "automerge-wasm": "121 bytes",
+      "fugue": "42 bytes"
     },
     "[B1.4] Insert N characters at random positions (encodeTime)": {
       "yjs": "8 ms",
       "ywasm": "0 ms",
-      "automerge-wasm": "12 ms"
+      "automerge-wasm": "12 ms",
+      "fugue": "6 ms"
     },
     "[B1.4] Insert N characters at random positions (docSize)": {
       "yjs": "29554 bytes",
       "ywasm": "29554 bytes",
-      "automerge-wasm": "24746 bytes"
+      "automerge-wasm": "24746 bytes",
+      "fugue": "35509 bytes"
     },
     "[B1.4] Insert N characters at random positions (memUsed)": {
       "yjs": "896.6 kB",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "676.6 kB"
     },
     "[B1.4] Insert N characters at random positions (parseTime)": {
       "yjs": "92 ms",
       "ywasm": "44 ms",
-      "automerge-wasm": "136 ms"
+      "automerge-wasm": "136 ms",
+      "fugue": "89 ms"
     },
     "[B1.5] Insert N words at random positions (time)": {
       "yjs": "180 ms",
       "ywasm": "472 ms",
-      "automerge-wasm": "1456 ms"
+      "automerge-wasm": "1456 ms",
+      "fugue": "116 ms"
     },
     "[B1.5] Insert N words at random positions (avgUpdateSize)": {
       "yjs": "36 bytes",
       "ywasm": "36 bytes",
-      "automerge-wasm": "131 bytes"
+      "automerge-wasm": "131 bytes",
+      "fugue": "50 bytes"
     },
     "[B1.5] Insert N words at random positions (encodeTime)": {
       "yjs": "14 ms",
       "ywasm": "1 ms",
-      "automerge-wasm": "30 ms"
+      "automerge-wasm": "30 ms",
+      "fugue": "13 ms"
     },
     "[B1.5] Insert N words at random positions (docSize)": {
       "yjs": "87924 bytes",
       "ywasm": "87924 bytes",
-      "automerge-wasm": "96206 bytes"
+      "automerge-wasm": "96206 bytes",
+      "fugue": "91208 bytes"
     },
     "[B1.5] Insert N words at random positions (memUsed)": {
       "yjs": "2.1 MB",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "1 MB"
     },
     "[B1.5] Insert N words at random positions (parseTime)": {
       "yjs": "82 ms",
       "ywasm": "47 ms",
-      "automerge-wasm": "288 ms"
+      "automerge-wasm": "288 ms",
+      "fugue": "110 ms"
     },
     "[B1.6] Insert string, then delete it (time)": {
       "yjs": "10 ms",
       "ywasm": "1 ms",
-      "automerge-wasm": "50 ms"
+      "automerge-wasm": "50 ms",
+      "fugue": "61 ms"
     },
     "[B1.6] Insert string, then delete it (avgUpdateSize)": {
       "yjs": "6053 bytes",
       "ywasm": "6053 bytes",
-      "automerge-wasm": "6338 bytes"
+      "automerge-wasm": "6338 bytes",
+      "fugue": "71836 bytes"
     },
     "[B1.6] Insert string, then delete it (encodeTime)": {
       "yjs": "0 ms",
       "ywasm": "0 ms",
-      "automerge-wasm": "4 ms"
+      "automerge-wasm": "4 ms",
+      "fugue": "3 ms"
     },
     "[B1.6] Insert string, then delete it (docSize)": {
       "yjs": "38 bytes",
       "ywasm": "38 bytes",
-      "automerge-wasm": "3996 bytes"
+      "automerge-wasm": "3996 bytes",
+      "fugue": "152 bytes"
     },
     "[B1.6] Insert string, then delete it (memUsed)": {
       "yjs": "203.3 kB",
       "ywasm": "696 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "33.4 kB"
     },
     "[B1.6] Insert string, then delete it (parseTime)": {
       "yjs": "40 ms",
       "ywasm": "42 ms",
-      "automerge-wasm": "86 ms"
+      "automerge-wasm": "86 ms",
+      "fugue": "84 ms"
     },
     "[B1.7] Insert/Delete strings at random positions (time)": {
       "yjs": "203 ms",
       "ywasm": "154 ms",
-      "automerge-wasm": "1228 ms"
+      "automerge-wasm": "1228 ms",
+      "fugue": "180 ms"
     },
     "[B1.7] Insert/Delete strings at random positions (avgUpdateSize)": {
       "yjs": "31 bytes",
       "ywasm": "31 bytes",
-      "automerge-wasm": "135 bytes"
+      "automerge-wasm": "135 bytes",
+      "fugue": "67 bytes"
     },
     "[B1.7] Insert/Delete strings at random positions (encodeTime)": {
       "yjs": "10 ms",
       "ywasm": "1 ms",
-      "automerge-wasm": "24 ms"
+      "automerge-wasm": "24 ms",
+      "fugue": "4 ms"
     },
     "[B1.7] Insert/Delete strings at random positions (docSize)": {
       "yjs": "28377 bytes",
       "ywasm": "28377 bytes",
-      "automerge-wasm": "59284 bytes"
+      "automerge-wasm": "59284 bytes",
+      "fugue": "29972 bytes"
     },
     "[B1.7] Insert/Delete strings at random positions (memUsed)": {
       "yjs": "929.3 kB",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "463.4 kB"
     },
     "[B1.7] Insert/Delete strings at random positions (parseTime)": {
       "yjs": "82 ms",
       "ywasm": "46 ms",
-      "automerge-wasm": "205 ms"
+      "automerge-wasm": "205 ms",
+      "fugue": "95 ms"
     },
     "[B1.8] Append N numbers (time)": {
       "yjs": "177 ms",
       "ywasm": "37 ms",
-      "automerge-wasm": "320 ms"
+      "automerge-wasm": "320 ms",
+      "fugue": "127 ms"
     },
     "[B1.8] Append N numbers (avgUpdateSize)": {
       "yjs": "32 bytes",
       "ywasm": "32 bytes",
-      "automerge-wasm": "125 bytes"
+      "automerge-wasm": "125 bytes",
+      "fugue": "45 bytes"
     },
     "[B1.8] Append N numbers (encodeTime)": {
       "yjs": "4 ms",
       "ywasm": "0 ms",
-      "automerge-wasm": "14 ms"
+      "automerge-wasm": "14 ms",
+      "fugue": "6 ms"
     },
     "[B1.8] Append N numbers (docSize)": {
       "yjs": "35634 bytes",
       "ywasm": "35634 bytes",
-      "automerge-wasm": "26988 bytes"
+      "automerge-wasm": "26988 bytes",
+      "fugue": "47766 bytes"
     },
     "[B1.8] Append N numbers (memUsed)": {
       "yjs": "0 B",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "117.9 kB"
     },
     "[B1.8] Append N numbers (parseTime)": {
       "yjs": "67 ms",
       "ywasm": "38 ms",
-      "automerge-wasm": "166 ms"
+      "automerge-wasm": "166 ms",
+      "fugue": "101 ms"
     },
     "[B1.9] Insert Array of N numbers (time)": {
       "yjs": "2 ms",
       "ywasm": "4 ms",
-      "automerge-wasm": "49 ms"
+      "automerge-wasm": "49 ms",
+      "fugue": "35 ms"
     },
     "[B1.9] Insert Array of N numbers (avgUpdateSize)": {
       "yjs": "35657 bytes",
       "ywasm": "35656 bytes",
-      "automerge-wasm": "31199 bytes"
+      "automerge-wasm": "31199 bytes",
+      "fugue": "47678 bytes"
     },
     "[B1.9] Insert Array of N numbers (encodeTime)": {
       "yjs": "1 ms",
       "ywasm": "0 ms",
-      "automerge-wasm": "3 ms"
+      "automerge-wasm": "3 ms",
+      "fugue": "9 ms"
     },
     "[B1.9] Insert Array of N numbers (docSize)": {
       "yjs": "35657 bytes",
       "ywasm": "35656 bytes",
-      "automerge-wasm": "26956 bytes"
+      "automerge-wasm": "26956 bytes",
+      "fugue": "47787 bytes"
     },
     "[B1.9] Insert Array of N numbers (memUsed)": {
       "yjs": "0 B",
       "ywasm": "192 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "95.1 kB"
     },
     "[B1.9] Insert Array of N numbers (parseTime)": {
       "yjs": "37 ms",
       "ywasm": "45 ms",
-      "automerge-wasm": "81 ms"
+      "automerge-wasm": "81 ms",
+      "fugue": "97 ms"
     },
     "[B1.10] Prepend N numbers (time)": {
       "yjs": "150 ms",
       "ywasm": "34 ms",
-      "automerge-wasm": "662 ms"
+      "automerge-wasm": "662 ms",
+      "fugue": "572 ms"
     },
     "[B1.10] Prepend N numbers (avgUpdateSize)": {
       "yjs": "32 bytes",
       "ywasm": "36 bytes",
-      "automerge-wasm": "120 bytes"
+      "automerge-wasm": "120 bytes",
+      "fugue": "52 bytes"
     },
     "[B1.10] Prepend N numbers (encodeTime)": {
       "yjs": "6 ms",
       "ywasm": "1 ms",
-      "automerge-wasm": "14 ms"
+      "automerge-wasm": "14 ms",
+      "fugue": "16 ms"
     },
     "[B1.10] Prepend N numbers (docSize)": {
       "yjs": "35665 bytes",
       "ywasm": "65658 bytes",
-      "automerge-wasm": "26990 bytes"
+      "automerge-wasm": "26990 bytes",
+      "fugue": "107405 bytes"
     },
     "[B1.10] Prepend N numbers (memUsed)": {
       "yjs": "1.9 MB",
       "ywasm": "98.3 kB",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "1.9 MB"
     },
     "[B1.10] Prepend N numbers (parseTime)": {
       "yjs": "76 ms",
       "ywasm": "38 ms",
-      "automerge-wasm": "144 ms"
+      "automerge-wasm": "144 ms",
+      "fugue": "115 ms"
     },
     "[B1.11] Insert N numbers at random positions (time)": {
       "yjs": "168 ms",
       "ywasm": "157 ms",
-      "automerge-wasm": "704 ms"
+      "automerge-wasm": "704 ms",
+      "fugue": "126 ms"
     },
     "[B1.11] Insert N numbers at random positions (avgUpdateSize)": {
       "yjs": "34 bytes",
       "ywasm": "34 bytes",
-      "automerge-wasm": "125 bytes"
+      "automerge-wasm": "125 bytes",
+      "fugue": "48 bytes"
     },
     "[B1.11] Insert N numbers at random positions (encodeTime)": {
       "yjs": "13 ms",
       "ywasm": "1 ms",
-      "automerge-wasm": "15 ms"
+      "automerge-wasm": "15 ms",
+      "fugue": "13 ms"
     },
     "[B1.11] Insert N numbers at random positions (docSize)": {
       "yjs": "59137 bytes",
       "ywasm": "59152 bytes",
-      "automerge-wasm": "47749 bytes"
+      "automerge-wasm": "47749 bytes",
+      "fugue": "77400 bytes"
     },
     "[B1.11] Insert N numbers at random positions (memUsed)": {
       "yjs": "2 MB",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "0 B"
     },
     "[B1.11] Insert N numbers at random positions (parseTime)": {
       "yjs": "65 ms",
       "ywasm": "45 ms",
-      "automerge-wasm": "139 ms"
+      "automerge-wasm": "139 ms",
+      "fugue": "117 ms"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (time)": {
       "yjs": "3 ms",
       "ywasm": "0 ms",
-      "automerge-wasm": "159 ms"
+      "automerge-wasm": "159 ms",
+      "fugue": "6 ms"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (updateSize)": {
       "yjs": "6094 bytes",
       "ywasm": "6094 bytes",
-      "automerge-wasm": "9499 bytes"
+      "automerge-wasm": "9499 bytes",
+      "fugue": "6136 bytes"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (encodeTime)": {
       "yjs": "1 ms",
       "ywasm": "0 ms",
-      "automerge-wasm": "5 ms"
+      "automerge-wasm": "5 ms",
+      "fugue": "1 ms"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (docSize)": {
       "yjs": "12151 bytes",
       "ywasm": "12151 bytes",
-      "automerge-wasm": "8014 bytes"
+      "automerge-wasm": "8014 bytes",
+      "fugue": "12304 bytes"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (memUsed)": {
       "yjs": "0 B",
       "ywasm": "304 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "0 B"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (parseTime)": {
       "yjs": "43 ms",
       "ywasm": "42 ms",
-      "automerge-wasm": "128 ms"
+      "automerge-wasm": "128 ms",
+      "fugue": "86 ms"
     },
     "[B2.2] Concurrently insert N characters at random positions (time)": {
       "yjs": "105 ms",
       "ywasm": "409 ms",
-      "automerge-wasm": "1863 ms"
+      "automerge-wasm": "1863 ms",
+      "fugue": "170 ms"
     },
     "[B2.2] Concurrently insert N characters at random positions (updateSize)": {
       "yjs": "33444 bytes",
       "ywasm": "177007 bytes",
-      "automerge-wasm": "1093293 bytes"
+      "automerge-wasm": "1093293 bytes",
+      "fugue": "104977 bytes"
     },
     "[B2.2] Concurrently insert N characters at random positions (encodeTime)": {
       "yjs": "3 ms",
       "ywasm": "1 ms",
-      "automerge-wasm": "23 ms"
+      "automerge-wasm": "23 ms",
+      "fugue": "16 ms"
     },
     "[B2.2] Concurrently insert N characters at random positions (docSize)": {
       "yjs": "66852 bytes",
       "ywasm": "66860 bytes",
-      "automerge-wasm": "50707 bytes"
+      "automerge-wasm": "50707 bytes",
+      "fugue": "72356 bytes"
     },
     "[B2.2] Concurrently insert N characters at random positions (memUsed)": {
       "yjs": "2.3 MB",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "1.5 MB"
     },
     "[B2.2] Concurrently insert N characters at random positions (parseTime)": {
       "yjs": "89 ms",
       "ywasm": "45 ms",
-      "automerge-wasm": "227 ms"
+      "automerge-wasm": "227 ms",
+      "fugue": "105 ms"
     },
     "[B2.3] Concurrently insert N words at random positions (time)": {
       "yjs": "160 ms",
       "ywasm": "1079 ms",
-      "automerge-wasm": "4012 ms"
+      "automerge-wasm": "4012 ms",
+      "fugue": "194 ms"
     },
     "[B2.3] Concurrently insert N words at random positions (updateSize)": {
       "yjs": "88994 bytes",
       "ywasm": "215213 bytes",
-      "automerge-wasm": "1185202 bytes"
+      "automerge-wasm": "1185202 bytes",
+      "fugue": "149822 bytes"
     },
     "[B2.3] Concurrently insert N words at random positions (encodeTime)": {
       "yjs": "7 ms",
       "ywasm": "4 ms",
-      "automerge-wasm": "65 ms"
+      "automerge-wasm": "65 ms",
+      "fugue": "31 ms"
     },
     "[B2.3] Concurrently insert N words at random positions (docSize)": {
       "yjs": "178137 bytes",
       "ywasm": "178130 bytes",
-      "automerge-wasm": "191500 bytes"
+      "automerge-wasm": "191500 bytes",
+      "fugue": "182599 bytes"
     },
     "[B2.3] Concurrently insert N words at random positions (memUsed)": {
       "yjs": "5.2 MB",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "3.2 MB"
     },
     "[B2.3] Concurrently insert N words at random positions (parseTime)": {
       "yjs": "117 ms",
       "ywasm": "72 ms",
-      "automerge-wasm": "541 ms"
+      "automerge-wasm": "541 ms",
+      "fugue": "142 ms"
     },
     "[B2.4] Concurrently insert & delete (time)": {
       "yjs": "319 ms",
       "ywasm": "2795 ms",
-      "automerge-wasm": "8107 ms"
+      "automerge-wasm": "8107 ms",
+      "fugue": "492 ms"
     },
     "[B2.4] Concurrently insert & delete (updateSize)": {
       "yjs": "139517 bytes",
       "ywasm": "398881 bytes",
-      "automerge-wasm": "2395876 bytes"
+      "automerge-wasm": "2395876 bytes",
+      "fugue": "398559 bytes"
     },
     "[B2.4] Concurrently insert & delete (encodeTime)": {
       "yjs": "37 ms",
       "ywasm": "6 ms",
-      "automerge-wasm": "119 ms"
+      "automerge-wasm": "119 ms",
+      "fugue": "55 ms"
     },
     "[B2.4] Concurrently insert & delete (docSize)": {
       "yjs": "279172 bytes",
       "ywasm": "279172 bytes",
-      "automerge-wasm": "307365 bytes"
+      "automerge-wasm": "307365 bytes",
+      "fugue": "252675 bytes"
     },
     "[B2.4] Concurrently insert & delete (memUsed)": {
       "yjs": "9 MB",
       "ywasm": "464 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "4.7 MB"
     },
     "[B2.4] Concurrently insert & delete (parseTime)": {
       "yjs": "198 ms",
       "ywasm": "79 ms",
-      "automerge-wasm": "777 ms"
+      "automerge-wasm": "777 ms",
+      "fugue": "150 ms"
     },
     "[B3.1] 20√N clients concurrently set number in Map (time)": {
       "yjs": "95 ms",
       "ywasm": "280 ms",
-      "automerge-wasm": "39 ms"
+      "automerge-wasm": "39 ms",
+      "fugue": "90 ms"
     },
     "[B3.1] 20√N clients concurrently set number in Map (updateSize)": {
       "yjs": "49157 bytes",
       "ywasm": "49167 bytes",
-      "automerge-wasm": "283296 bytes"
+      "automerge-wasm": "283296 bytes",
+      "fugue": "75396 bytes"
     },
     "[B3.1] 20√N clients concurrently set number in Map (encodeTime)": {
       "yjs": "8 ms",
       "ywasm": "1 ms",
-      "automerge-wasm": "15 ms"
+      "automerge-wasm": "15 ms",
+      "fugue": "29 ms"
     },
     "[B3.1] 20√N clients concurrently set number in Map (docSize)": {
       "yjs": "32193 bytes",
       "ywasm": "32192 bytes",
-      "automerge-wasm": "83099 bytes"
+      "automerge-wasm": "83099 bytes",
+      "fugue": "89379 bytes"
     },
     "[B3.1] 20√N clients concurrently set number in Map (memUsed)": {
       "yjs": "562.8 kB",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "595.1 kB"
     },
     "[B3.1] 20√N clients concurrently set number in Map (parseTime)": {
       "yjs": "75 ms",
       "ywasm": "73 ms",
-      "automerge-wasm": "100 ms"
+      "automerge-wasm": "100 ms",
+      "fugue": "128 ms"
     },
     "[B3.2] 20√N clients concurrently set Object in Map (time)": {
       "yjs": "94 ms",
       "ywasm": "293 ms",
-      "automerge-wasm": "46 ms"
+      "automerge-wasm": "46 ms",
+      "fugue": "101 ms"
     },
     "[B3.2] 20√N clients concurrently set Object in Map (updateSize)": {
       "yjs": "85080 bytes",
       "ywasm": "85071 bytes",
-      "automerge-wasm": "325370 bytes"
+      "automerge-wasm": "325370 bytes",
+      "fugue": "126710 bytes"
     },
     "[B3.2] 20√N clients concurrently set Object in Map (encodeTime)": {
       "yjs": "4 ms",
       "ywasm": "2 ms",
-      "automerge-wasm": "22 ms"
+      "automerge-wasm": "22 ms",
+      "fugue": "10 ms"
     },
     "[B3.2] 20√N clients concurrently set Object in Map (docSize)": {
       "yjs": "32220 bytes",
       "ywasm": "32215 bytes",
-      "automerge-wasm": "90427 bytes"
+      "automerge-wasm": "90427 bytes",
+      "fugue": "140693 bytes"
     },
     "[B3.2] 20√N clients concurrently set Object in Map (memUsed)": {
       "yjs": "27.4 kB",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "507.3 kB"
     },
     "[B3.2] 20√N clients concurrently set Object in Map (parseTime)": {
       "yjs": "102 ms",
       "ywasm": "73 ms",
-      "automerge-wasm": "109 ms"
+      "automerge-wasm": "109 ms",
+      "fugue": "153 ms"
     },
     "[B3.3] 20√N clients concurrently set String in Map (time)": {
       "yjs": "205 ms",
       "ywasm": "290 ms",
-      "automerge-wasm": "239 ms"
+      "automerge-wasm": "239 ms",
+      "fugue": "196 ms"
     },
     "[B3.3] 20√N clients concurrently set String in Map (updateSize)": {
       "yjs": "7826240 bytes",
       "ywasm": "7826228 bytes",
-      "automerge-wasm": "8063440 bytes"
+      "automerge-wasm": "8063440 bytes",
+      "fugue": "7858620 bytes"
     },
     "[B3.3] 20√N clients concurrently set String in Map (encodeTime)": {
       "yjs": "4 ms",
       "ywasm": "4 ms",
-      "automerge-wasm": "51 ms"
+      "automerge-wasm": "51 ms",
+      "fugue": "28 ms"
     },
     "[B3.3] 20√N clients concurrently set String in Map (docSize)": {
       "yjs": "36851 bytes",
       "ywasm": "36831 bytes",
-      "automerge-wasm": "95041 bytes"
+      "automerge-wasm": "95041 bytes",
+      "fugue": "7869530 bytes"
     },
     "[B3.3] 20√N clients concurrently set String in Map (memUsed)": {
       "yjs": "378.3 kB",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "8 MB"
     },
     "[B3.3] 20√N clients concurrently set String in Map (parseTime)": {
       "yjs": "84 ms",
       "ywasm": "100 ms",
-      "automerge-wasm": "145 ms"
+      "automerge-wasm": "145 ms",
+      "fugue": "260 ms"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (time)": {
       "yjs": "78 ms",
       "ywasm": "285 ms",
-      "automerge-wasm": "46 ms"
+      "automerge-wasm": "46 ms",
+      "fugue": "38 ms"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (updateSize)": {
       "yjs": "52749 bytes",
       "ywasm": "52752 bytes",
-      "automerge-wasm": "285330 bytes"
+      "automerge-wasm": "285330 bytes",
+      "fugue": "77430 bytes"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (encodeTime)": {
       "yjs": "3 ms",
       "ywasm": "1 ms",
-      "automerge-wasm": "16 ms"
+      "automerge-wasm": "16 ms",
+      "fugue": "16 ms"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (docSize)": {
       "yjs": "26594 bytes",
       "ywasm": "26597 bytes",
-      "automerge-wasm": "83588 bytes"
+      "automerge-wasm": "83588 bytes",
+      "fugue": "86662 bytes"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (memUsed)": {
       "yjs": "731.5 kB",
       "ywasm": "0 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "975.6 kB"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (parseTime)": {
       "yjs": "55 ms",
       "ywasm": "81 ms",
-      "automerge-wasm": "91 ms"
+      "automerge-wasm": "91 ms",
+      "fugue": "205 ms"
     },
     "[B4] Apply real-world editing dataset (time)": {
       "yjs": "2142 ms",
       "ywasm": "52650 ms",
-      "automerge-wasm": "2074 ms"
+      "automerge-wasm": "2074 ms",
+      "fugue": "1866 ms"
     },
     "[B4] Apply real-world editing dataset (encodeTime)": {
       "yjs": "22 ms",
       "ywasm": "3 ms",
-      "automerge-wasm": "205 ms"
+      "automerge-wasm": "205 ms",
+      "fugue": "11 ms"
     },
     "[B4] Apply real-world editing dataset (docSize)": {
       "yjs": "159929 bytes",
       "ywasm": "159929 bytes",
-      "automerge-wasm": "129098 bytes"
+      "automerge-wasm": "129098 bytes",
+      "fugue": "167888 bytes"
     },
     "[B4] Apply real-world editing dataset (parseTime)": {
       "yjs": "46 ms",
       "ywasm": "16 ms",
-      "automerge-wasm": "1108 ms"
+      "automerge-wasm": "1108 ms",
+      "fugue": "16 ms"
     },
     "[B4] Apply real-world editing dataset (memUsed)": {
       "yjs": "2.4 MB",
       "ywasm": "176 B",
-      "automerge-wasm": "0 B"
+      "automerge-wasm": "0 B",
+      "fugue": "1.5 MB"
     },
     "[B4x100] Apply real-world editing dataset 100 times (time)": {
       "yjs": "210514 ms",
-      "ywasm": "3299520 ms"
+      "ywasm": "3299520 ms",
+      "fugue": "244638 ms"
     },
     "[B4x100] Apply real-world editing dataset 100 times (encodeTime)": {
       "yjs": "998 ms",
-      "ywasm": "202 ms"
+      "ywasm": "202 ms",
+      "fugue": "1725 ms"
     },
     "[B4x100] Apply real-world editing dataset 100 times (docSize)": {
       "yjs": "15989245 bytes",
-      "ywasm": "15989245 bytes"
+      "ywasm": "15989245 bytes",
+      "fugue": "17844951 bytes"
     },
     "[B4x100] Apply real-world editing dataset 100 times (parseTime)": {
       "yjs": "1900 ms",
-      "ywasm": "1455 ms"
+      "ywasm": "1455 ms",
+      "fugue": "698 ms"
     },
     "[B4x100] Apply real-world editing dataset 100 times (memUsed)": {
       "yjs": "266.9 MB",
-      "ywasm": "120 B"
+      "ywasm": "120 B",
+      "fugue": "175.8 MB"
     }
   }
 }
