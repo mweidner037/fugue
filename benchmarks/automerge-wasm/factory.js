@@ -3,7 +3,6 @@ import * as Automerge from 'automerge-wasm'
 
 const INITIAL_DOC = Automerge.default.create()
 const ARRAY_ID = INITIAL_DOC.putObject('/', 'array', [])
-const MAP_ID = INITIAL_DOC.putObject('/', 'map', {})
 const TEXT_ID = INITIAL_DOC.putObject('/', 'text', '')
 const INITIAL_DOC_BINARY = INITIAL_DOC.save()
 
@@ -118,25 +117,5 @@ export class AutomergeCRDT {
    */
   transact (f) {
     f(this)
-  }
-
-  /**
-   * @param {string} key
-   * @param {any} val
-   */
-  setMap (key, val) {
-    if (typeof val === 'object') {
-      this.doc.putObject(MAP_ID, key, val)
-    } else {
-      this.doc.put(MAP_ID, key, val)
-    }
-    this.update()
-  }
-
-  /**
-   * @return {Map<string,any> | Object<string, any>}
-   */
-  getMap () {
-    return this.doc.materialize(MAP_ID)
   }
 }

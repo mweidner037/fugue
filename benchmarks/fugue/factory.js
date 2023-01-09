@@ -46,8 +46,6 @@ export class FugueCRDT {
       collabs.Pre(collabs.PrimitiveCList)()
     );
     this.ctext = this.app.registerCollab("text", collabs.Pre(collabs.CText)());
-    // Collabs's map is included just to let the benchmarks run. It's not actually Fugue.
-    this.cmap = this.app.registerCollab("map", collabs.Pre(collabs.LWWCMap)());
 
     this.loaded = false;
 
@@ -178,24 +176,5 @@ export class FugueCRDT {
     if (!oldInTransact) this.app.commitBatch();
 
     this.inTransact = oldInTransact;
-  }
-
-  /**
-   * @param {string} key
-   * @param {any} val
-   */
-  setMap(key, val) {
-    this.transact(() => this.cmap.set(key, val));
-  }
-
-  /**
-   * @return {Map<string,any> | Object<string, any>}
-   */
-  getMap() {
-    const ans = {};
-    for (const [key, value] of this.cmap) {
-      ans[key] = JSON.stringify(value);
-    }
-    return ans;
   }
 }

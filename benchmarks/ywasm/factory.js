@@ -35,7 +35,6 @@ export class YwasmCRDT {
       })
     }
     this.yarray = this.ydoc.getArray('array')
-    this.ymap = this.ydoc.getMap('map')
     this.ytext = this.ydoc.getText('text')
     this.txn = null
   }
@@ -121,20 +120,5 @@ export class YwasmCRDT {
         this.txn = null
       }
     }
-  }
-
-  /**
-   * @param {string} key
-   * @param {any} val
-   */
-  setMap (key, val) {
-    this.transact(() => this.ymap.set(this.txn, key, val))
-  }
-
-  /**
-   * @return {Map<string,any> | Object<string, any>}
-   */
-  getMap () {
-    return this.ymap.toJson()
   }
 }

@@ -65,52 +65,54 @@ export const runBenchmarkB3 = async (crdtFactory, filter) => {
     })
   }
 
-  await runBenchmark('[B3.1] 20√N clients concurrently set number in Map', filter, benchmarkName => {
-    benchmarkTemplate(
-      benchmarkName,
-      (doc, i) => doc.setMap('v', i),
-      docs => {
-        const map = docs[0].getMap()
-        docs.forEach(doc => {
-          t.compare(map, doc.getMap())
-        })
-      }
-    )
-  })
+  // Skipped for Fugue benchmarks, since we just care about lists.
+  
+  // await runBenchmark('[B3.1] 20√N clients concurrently set number in Map', filter, benchmarkName => {
+  //   benchmarkTemplate(
+  //     benchmarkName,
+  //     (doc, i) => doc.setMap('v', i),
+  //     docs => {
+  //       const map = docs[0].getMap()
+  //       docs.forEach(doc => {
+  //         t.compare(map, doc.getMap())
+  //       })
+  //     }
+  //   )
+  // })
 
-  await runBenchmark('[B3.2] 20√N clients concurrently set Object in Map', filter, benchmarkName => {
-    // each client sets a user data object { name: id, address: 'here' }
-    benchmarkTemplate(
-      benchmarkName,
-      (doc, i) => {
-        doc.setMap('v', {
-          name: i.toString(),
-          address: 'here'
-        })
-      },
-      docs => {
-        const map = docs[0].getMap()
-        docs.forEach(doc => {
-          t.compare(map, doc.getMap())
-        })
-      }
-    )
-  })
+  // await runBenchmark('[B3.2] 20√N clients concurrently set Object in Map', filter, benchmarkName => {
+  //   // each client sets a user data object { name: id, address: 'here' }
+  //   benchmarkTemplate(
+  //     benchmarkName,
+  //     (doc, i) => {
+  //       doc.setMap('v', {
+  //         name: i.toString(),
+  //         address: 'here'
+  //       })
+  //     },
+  //     docs => {
+  //       const map = docs[0].getMap()
+  //       docs.forEach(doc => {
+  //         t.compare(map, doc.getMap())
+  //       })
+  //     }
+  //   )
+  // })
 
-  await runBenchmark('[B3.3] 20√N clients concurrently set String in Map', filter, benchmarkName => {
-    benchmarkTemplate(
-      benchmarkName,
-      (doc, i) => {
-        doc.setMap('v', i.toString().repeat(sqrtN))
-      },
-      docs => {
-        const map = docs[0].getMap()
-        docs.forEach(doc => {
-          t.compare(map, doc.getMap())
-        })
-      }
-    )
-  })
+  // await runBenchmark('[B3.3] 20√N clients concurrently set String in Map', filter, benchmarkName => {
+  //   benchmarkTemplate(
+  //     benchmarkName,
+  //     (doc, i) => {
+  //       doc.setMap('v', i.toString().repeat(sqrtN))
+  //     },
+  //     docs => {
+  //       const map = docs[0].getMap()
+  //       docs.forEach(doc => {
+  //         t.compare(map, doc.getMap())
+  //       })
+  //     }
+  //   )
+  // })
 
   await runBenchmark('[B3.4] 20√N clients concurrently insert text in Array', filter, benchmarkName => {
     benchmarkTemplate(

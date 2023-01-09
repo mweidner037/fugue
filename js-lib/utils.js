@@ -145,12 +145,11 @@ export class CrdtFactory {
 /**
  * Implement this Abstract CRDT to test it using the crdt-benchmarks library.
  *
- * We expect that the used CRDT library supports manipulation of text, arrays,
- * and of an key-value store (map). There are different tests for teach of these
+ * We expect that the used list CRDT implementation supports manipulation of
+ * text and arrays. There are different tests for teach of these
  * features. The `insertArray` & `deleteArray` methods must operate on an
- * internal representation of an instanciated shared Array. Similarly, the
- * `setMap` and `deleteMap` methods must operate on an internal representation
- * of an instanciated shared Map. These operations must not be cached. They must
+ * internal representation of an instantiated shared Array.
+ * These operations must not be cached. They must
  * add an update message immediately to the updates array
  */
 export class AbstractCrdt {
@@ -232,21 +231,6 @@ export class AbstractCrdt {
    * @param {function (AbstractCrdt): void} f
    */
   transact (f) {
-    error.methodUnimplemented()
-  }
-
-  /**
-   * @param {string} key
-   * @param {any} val
-   */
-  setMap (key, val) {
-    error.methodUnimplemented()
-  }
-
-  /**
-   * @return {Map<string,any> | Object<string, any>}
-   */
-  getMap () {
     error.methodUnimplemented()
   }
 }
