@@ -2,12 +2,12 @@ import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-dis
 import * as collabs from "@collabs/collabs";
 import seedrandom from "seedrandom";
 
-export const name = "fugue";
+export const name = "Tree-Fugue";
 
 /**
  * @implements {CrdtFactory}
  */
-export class FugueFactory {
+export class TreeFugueFactory {
   constructor() {
     this.rng = seedrandom("42");
   }
@@ -16,7 +16,7 @@ export class FugueFactory {
    * @param {function(Uint8Array):void} [updateHandler]
    */
   create(updateHandler) {
-    return new FugueCRDT(this.rng, updateHandler);
+    return new TreeFugueCRDT(this.rng, updateHandler);
   }
 
   getName() {
@@ -27,7 +27,7 @@ export class FugueFactory {
 /**
  * @implements {AbstractCrdt}
  */
-export class FugueCRDT {
+export class TreeFugueCRDT {
   /**
    * @param {seedrandom.prng} rng
    * @param {function(Uint8Array):void} [updateHandler]

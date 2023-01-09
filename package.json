@@ -12,7 +12,7 @@
     "benchmarks/yjs",
     "benchmarks/ywasm",
     "benchmarks/automerge-wasm",
-    "benchmarks/fugue"
+    "benchmarks/tree-fugue"
   ],
   "scripts": {
     "start": "npm run start -ws",

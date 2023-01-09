@@ -1,16 +1,16 @@
 {
   "name": "fugue",
   "version": "1.0.0",
-  "description": "Fugue list CRDT benchmarks",
+  "description": "Tree-Fugue benchmarks",
   "main": "./run.js",
   "type": "module",
   "scripts": {
     "clean": "rm -rf dist",
     "start": "([ -f \"./dist/bundle.js\" ] || npm run dist) && node --expose-gc run.js && npm run table",
-    "table": "echo 'Fugue results: \n\n' && node ../../bin/render-table.js ../results.json 6000 fugue",
+    "table": "echo 'Tree-Fugue results: \n\n' && node ../../bin/render-table.js ../results.json 6000 Tree-Fugue",
     "dist": "npm run clean && rollup -c && gzip --keep dist/*"
   },
-  "author": "TODO",
+  "author": "Anonymous (TODO)",
   "license": "MIT",
   "dependencies": {
     "@collabs/collabs": "0.6.1",
