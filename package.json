@@ -1,0 +1,37 @@
+{
+    "name": "fugue",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Fugue list CRDT implementations and benchmarks",
+    "type": "module",
+    "workspaces": [
+      "crdt-benchmarks",
+      "crdt-benchmarks/benchmarks/yjs",
+      "crdt-benchmarks/benchmarks/ywasm",
+      "crdt-benchmarks/benchmarks/automerge-wasm",
+      "crdt-benchmarks/benchmarks/tree-fugue",
+      "crdt-benchmarks/benchmarks/tree-fugue-simple",
+      "crdt-benchmarks/benchmarks/list-fugue-simple"
+    ],
+    "scripts": {
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mweidner037/fugue.git"
+    },
+    "keywords": [
+      "CRDT",
+      "collaborative text editing",
+      "benchmark"
+    ],
+    "author": "Anonymous (TODO)",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/mweidner037/fugue/issues"
+    },
+    "homepage": "https://github.com/mweidner037/fugue#readme",
+    "engines": {
+      "node": "^18.0.0"
+    }
+  }
+  
