@@ -1,7 +1,7 @@
 import nodeResolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
-import builtins from 'rollup-plugin-node-builtins'
-import globals from 'rollup-plugin-node-globals'
+// import builtins from 'rollup-plugin-node-builtins'
+// import globals from 'rollup-plugin-node-globals'
 import { terser } from 'rollup-plugin-terser'
 
 const terserPlugin = terser({
@@ -47,20 +47,22 @@ export default [{
   ],
   external: ['isomorphic.js']
 },
-{
-  input: './bundle.js',
-  output: {
-    dir: './dist',
-    format: 'es'
-  },
-  plugins: [
-    nodeResolve({
-      mainFields: ['main', 'module', 'main'],
-      preferBuiltins: false
-    }),
-    commonjs(),
-    builtins(),
-    globals(),
-    terserPlugin
-  ]
-}]
+// Skip computing bundle size because it doesn't make for Fugue variants.
+// {
+//   input: './bundle.js',
+//   output: {
+//     dir: './dist',
+//     format: 'es'
+//   },
+//   plugins: [
+//     nodeResolve({
+//       mainFields: ['main', 'module', 'main'],
+//       preferBuiltins: false
+//     }),
+//     commonjs(),
+//     builtins(),
+//     globals(),
+//     terserPlugin
+//   ]
+// }
+]

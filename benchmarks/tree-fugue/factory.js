@@ -41,6 +41,7 @@ export class TreeFugueCRDT {
         updateHandler(this._encodeUpdate(e.message, false));
       });
     }
+    // TODO: copy implementation into Tree-Fugue folder in this repo?
     this.carray = this.app.registerCollab(
       "array",
       collabs.Pre(collabs.PrimitiveCList)()

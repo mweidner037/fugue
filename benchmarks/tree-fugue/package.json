@@ -1,5 +1,5 @@
 {
-  "name": "fugue",
+  "name": "tree-fugue",
   "version": "1.0.0",
   "description": "Tree-Fugue benchmarks",
   "main": "./run.js",
