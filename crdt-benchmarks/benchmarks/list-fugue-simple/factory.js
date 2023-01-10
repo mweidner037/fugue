@@ -1,4 +1,5 @@
 import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
+import { ListFugueSimple } from "list-fugue-simple";
 import * as collabs from "@collabs/collabs";
 import seedrandom from "seedrandom";
 
@@ -41,12 +42,15 @@ export class ListFugueSimpleCRDT {
         updateHandler(this._encodeUpdate(e.message, false));
       });
     }
-    // TODO: use List-Fugue Simple implementation
     this.carray = this.app.registerCollab(
       "array",
-      collabs.Pre(collabs.PrimitiveCList)()
+      collabs.Pre(ListFugueSimple)()
     );
-    this.ctext = this.app.registerCollab("text", collabs.Pre(collabs.CText)());
+    // Text is represented as an array of character strings.
+    this.ctext = this.app.registerCollab(
+      "text",
+      collabs.Pre(ListFugueSimple)()
+    );
 
     this.loaded = false;
 
@@ -145,7 +149,7 @@ export class ListFugueSimpleCRDT {
    * @param {string} text
    */
   insertText(index, text) {
-    this.transact(() => this.ctext.insert(index, text));
+    this.transact(() => this.ctext.insert(index, ...text));
   }
 
   /**
@@ -162,7 +166,7 @@ export class ListFugueSimpleCRDT {
    * @return {string}
    */
   getText() {
-    return this.ctext.toString();
+    return this.ctext.slice().join("");
   }
 
   /**

@@ -1,5 +1,5 @@
 import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
-import { TreeFugueList, TreeFugueText } from "tree-fugue";
+import { TreeFugueArray, TreeFugueText } from "tree-fugue";
 import * as collabs from "@collabs/collabs";
 import seedrandom from "seedrandom";
 
@@ -44,8 +44,10 @@ export class TreeFugueCRDT {
     }
     this.carray = this.app.registerCollab(
       "array",
-      collabs.Pre(TreeFugueList)()
+      collabs.Pre(TreeFugueArray)()
     );
+    // Text has a dedicated type. Its items store strings instead of
+    // arrays of character strings - slightly more efficient.
     this.ctext = this.app.registerCollab("text", collabs.Pre(TreeFugueText)());
 
     this.loaded = false;
