@@ -146,21 +146,30 @@ class Tree<T> {
       );
     }
 
+    // A recursive approach would be simpler, but overflows the stack at modest
+    // depths (~4000). So we do an iterative approach instead.
     let remaining = index;
-    for (const child of node.leftChildren) {
-      if (remaining < child.size) return this.getByIndex(child, remaining);
-      remaining -= child.size;
+    recurse: while (true) {
+      for (const child of node.leftChildren) {
+        if (remaining < child.size) {
+          node = child;
+          continue recurse;
+        }
+        remaining -= child.size;
+      }
+      if (!node.isDeleted) {
+        if (remaining === 0) return node;
+        remaining--;
+      }
+      for (const child of node.rightChildren) {
+        if (remaining < child.size) {
+          node = child;
+          continue recurse;
+        }
+        remaining -= child.size;
+      }
+      throw new Error("Index in range but not found");
     }
-    if (!node.isDeleted) {
-      if (remaining === 0) return node;
-      remaining--;
-    }
-    for (const child of node.rightChildren) {
-      if (remaining < child.size) return this.getByIndex(child, remaining);
-      remaining -= child.size;
-    }
-
-    throw new Error("Index in range but not found");
   }
 
   /**
@@ -218,12 +227,43 @@ class Tree<T> {
   }
 
   *traverse(node: Node<T>): IterableIterator<T> {
-    for (const child of node.leftChildren) {
-      yield* this.traverse(child);
-    }
-    if (!node.isDeleted) yield node.value!;
-    for (const child of node.rightChildren) {
-      yield* this.traverse(child);
+    // A recursive approach (like in the paper) would be simpler,
+    // but overflows the stack at modest
+    // depths (~4000). So we do an iterative approach instead.
+
+    // Stack records the next child to visit for that node.
+    // We don't need to store node because we can infer it from the
+    // current node's parent etc.
+    const stack: { side: "L" | "R"; childIndex: number }[] = [
+      { side: "L", childIndex: 0 },
+    ];
+    while (true) {
+      const top = stack[stack.length - 1];
+      const children =
+        top.side === "L" ? node.leftChildren : node.rightChildren;
+      if (top.childIndex === children.length) {
+        // We are done with the children on top.side.
+        if (top.side === "L") {
+          // Visit us, then move to right children.
+          if (!node.isDeleted) yield node.value!;
+          top.side = "R";
+          top.childIndex = 0;
+        } else {
+          // Go to the parent.
+          if (node.parent === null) return;
+          node = node.parent;
+          stack.pop();
+        }
+      } else {
+        const child = children[top.childIndex];
+        // Save for later that we need to visit the next child.
+        top.childIndex++;
+        if (child.size > 0) {
+          // Traverse child.
+          node = child;
+          stack.push({ side: "L", childIndex: 0 });
+        }
+      }
     }
   }
 
