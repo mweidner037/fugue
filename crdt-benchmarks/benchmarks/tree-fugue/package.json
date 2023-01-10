@@ -1,5 +1,5 @@
 {
-  "name": "tree-fugue",
+  "name": "tree-fugue-bench",
   "version": "1.0.0",
   "description": "Tree-Fugue benchmarks",
   "main": "./run.js",
@@ -14,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@collabs/collabs": "0.6.1",
-    "seedrandom": "^3.0.5"
+    "seedrandom": "^3.0.5",
+    "tree-fugue": "1.0.0"
   }
 }

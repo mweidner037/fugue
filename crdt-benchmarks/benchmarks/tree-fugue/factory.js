@@ -1,4 +1,5 @@
 import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
+import { TreeFugueList, TreeFugueText } from "tree-fugue";
 import * as collabs from "@collabs/collabs";
 import seedrandom from "seedrandom";
 
@@ -41,12 +42,11 @@ export class TreeFugueCRDT {
         updateHandler(this._encodeUpdate(e.message, false));
       });
     }
-    // TODO: copy implementation into Tree-Fugue folder in this repo?
     this.carray = this.app.registerCollab(
       "array",
-      collabs.Pre(collabs.PrimitiveCList)()
+      collabs.Pre(TreeFugueList)()
     );
-    this.ctext = this.app.registerCollab("text", collabs.Pre(collabs.CText)());
+    this.ctext = this.app.registerCollab("text", collabs.Pre(TreeFugueText)());
 
     this.loaded = false;
 

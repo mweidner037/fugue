@@ -1,5 +1,5 @@
 {
-  "name": "list-fugue-simple",
+  "name": "list-fugue-simple-bench",
   "version": "1.0.0",
   "description": "List-Fugue Simple benchmarks",
   "main": "./run.js",
