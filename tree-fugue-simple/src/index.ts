@@ -1,11 +1,9 @@
 import {
   AbstractCListCPrimitive,
-  bytesAsString,
   InitToken,
   Message,
   MessageMeta,
   Optional,
-  stringAsBytes,
 } from "@collabs/collabs";
 
 interface ID {
@@ -188,6 +186,7 @@ class Tree<T> {
           // The next node is the parent.
           return [anc.parent, false];
         }
+        anc = anc.parent;
       }
       // node is last; no next node.
       return [null, false];
@@ -240,12 +239,12 @@ class Tree<T> {
         size: node.size,
       }));
     }
-    return stringAsBytes(JSON.stringify(save));
+    return new Uint8Array(Buffer.from(JSON.stringify(save)));
   }
 
   load(saveData: Uint8Array) {
     const save: { [sender: string]: NodeSave<T>[] } = JSON.parse(
-      bytesAsString(saveData)
+      Buffer.from(saveData).toString()
     );
     // First create all nodes without pointers to other nodes (parent & children).
     for (const [sender, bySenderSave] of Object.entries(save)) {

@@ -1,7 +1,7 @@
-import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
-import { TreeFugueSimple } from "tree-fugue-simple";
 import * as collabs from "@collabs/collabs";
 import seedrandom from "seedrandom";
+import { TreeFugueSimple } from "tree-fugue-simple";
+import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
 
 export const name = "Tree-Fugue Simple";
 
@@ -139,7 +139,7 @@ export class TreeFugueSimpleCRDT {
    * @return {Array<any>}
    */
   getArray() {
-    return this.carray.slice();
+    return [...this.carray.values()];
   }
 
   /**
@@ -166,7 +166,7 @@ export class TreeFugueSimpleCRDT {
    * @return {string}
    */
   getText() {
-    return this.ctext.slice().join("");
+    return [...this.ctext.values()].join("");
   }
 
   /**
