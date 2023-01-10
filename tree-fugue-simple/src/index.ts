@@ -56,13 +56,13 @@ interface NodeSave<T> {
 }
 
 class Tree<T> {
-  root: Node<T>;
+  readonly root: Node<T>;
   /**
    * Used in getByID.
    *
    * Map from ID.sender, to an array that maps ID.counter, to node with that ID.
    */
-  private nodesByID = new Map<string, Node<T>[]>();
+  private readonly nodesByID = new Map<string, Node<T>[]>();
 
   constructor() {
     this.root = {
