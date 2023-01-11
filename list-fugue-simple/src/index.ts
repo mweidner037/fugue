@@ -190,13 +190,10 @@ export class ListFugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
     let left = leftOrigin;
     let scanning = false;
 
-    // o ranges from leftOrigin to rightOrigin, *exclusive*.
-    // Note that o will never be start or end, so its origins are non-null.
-    for (
-      let o = leftOrigin.right!;
-      o !== rightOrigin && o.right !== rightOrigin;
-      o = o.right!
-    ) {
+    // o ranges from leftOrigin to (non-adjusted) rightOrigin, *exclusive*.
+    // Note that o will never be start or end (within the loop),
+    // so its origins are non-null.
+    for (let o = leftOrigin.right!; o !== rightOrigin; o = o.right!) {
       if (this.lessThan(o.leftOrigin!, leftOrigin)) break;
       else if (o.leftOrigin === leftOrigin) {
         let oRightOriginAdj = o.rightOrigin!;
@@ -204,13 +201,13 @@ export class ListFugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
           oRightOriginAdj = this.end;
         }
 
-        if (this.lessThan(oRightOriginAdj, rightOrigin)) {
+        if (this.lessThan(oRightOriginAdj, rightOriginAdj)) {
           scanning = true;
-        } else if (oRightOriginAdj === rightOrigin) {
+        } else if (oRightOriginAdj === rightOriginAdj) {
           if (id.sender < o.id.sender) break;
           else scanning = false;
         } else {
-          // oRightOriginAdj > rightOrigin
+          // oRightOriginAdj > rightOriginAdj
           scanning = false;
         }
       }
@@ -255,13 +252,13 @@ export class ListFugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
       );
     }
 
-    // For now, do a slow linear search.
+    // For now, do a slow linear search, but from the end b/c that's more common.
     // An easy common-case optimization is to cache index "hints" like in Yjs.
     // A doable aysmptotic optimization is to build a balanced tree structure
     // on top of the non-deleted list elements and use that to convert between
     // indices & elements in O(log(n)) time.
-    let remaining = index;
-    for (let elt = this.start.right!; elt !== this.end; elt = elt.right!) {
+    let remaining = this.length - 1 - index;
+    for (let elt = this.end.left!; elt !== this.start; elt = elt.left!) {
       if (!elt.isDeleted) {
         if (remaining === 0) return elt;
         remaining--;
