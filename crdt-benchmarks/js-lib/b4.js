@@ -1,9 +1,8 @@
-import { setBenchmarkResult, benchmarkTime, logMemoryUsed, getMemUsed, tryGc, runBenchmark } from './utils.js'
-import * as math from 'lib0/math'
-import * as t from 'lib0/testing'
-import { CrdtFactory, AbstractCrdt } from './index.js' // eslint-disable-line
+import * as t from 'lib0/testing';
+import { AbstractCrdt, CrdtFactory } from './index.js'; // eslint-disable-line
+import { benchmarkTime, getMemUsed, logMemoryUsed, runBenchmark, setBenchmarkResult, tryGc } from './utils.js';
 // @ts-ignore
-import { edits, finalText } from './b4-editing-trace.js'
+import { edits, finalText } from './b4-editing-trace.js';
 
 /**
  * @param {CrdtFactory} crdtFactory
@@ -20,8 +19,9 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
   const benchmarkTemplate = (id, inputData, changeFunction, check) => {
     let encodedState = /** @type {any} */ (null)
     ;(() => {
+      let updateSize = 0;
       // We scope the creation of doc1 so we can gc it before we parse it again.
-      const doc1 = crdtFactory.create()
+      const doc1 = crdtFactory.create(update => {updateSize += update.length})
       benchmarkTime(crdtFactory.getName(), `${id} (time)`, () => {
         for (let i = 0; i < inputData.length; i++) {
           changeFunction(doc1, inputData[i], i)
@@ -29,6 +29,7 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
         }
       })
       check(doc1)
+      setBenchmarkResult(crdtFactory.getName(), `${id} (updateSize)`, `${updateSize} bytes`)
       benchmarkTime(crdtFactory.getName(), `${id} (encodeTime)`, () => {
         encodedState = doc1.getEncodedState()
       })
@@ -68,7 +69,8 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
     let encodedState = /** @type {any} */ (null)
 
     ;(() => {
-      const doc = crdtFactory.create()
+      let updateSize = 0;
+      const doc = crdtFactory.create(update => {updateSize += update.length})
 
       benchmarkTime(crdtFactory.getName(), `${benchmarkName} (time)`, () => {
         for (let iterations = 0; iterations < multiplicator; iterations++) {
@@ -86,6 +88,7 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
           }
         }
       })
+      setBenchmarkResult(crdtFactory.getName(), `${benchmarkName} (updateSize)`, `${updateSize} bytes`)
       /**
        * @type {any}
        */
