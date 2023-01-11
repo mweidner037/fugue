@@ -1,9 +1,9 @@
-import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
-import { TreeFugueArray, TreeFugueText } from "tree-fugue";
 import * as collabs from "@collabs/collabs";
 import seedrandom from "seedrandom";
+import { TreeFugueArray, TreeFugueText } from "tree-fugue";
+import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
 
-export const name = "Tree-Fugue";
+export const name = "tree-fugue";
 
 /**
  * @implements {CrdtFactory}

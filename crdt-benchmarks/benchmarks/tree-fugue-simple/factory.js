@@ -3,7 +3,7 @@ import seedrandom from "seedrandom";
 import { TreeFugueSimple } from "tree-fugue-simple";
 import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
 
-export const name = "Tree-Fugue Simple";
+export const name = "tree-fugue-simple";
 
 /**
  * @implements {CrdtFactory}

@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "start": "([ -f \"./dist/bundle.js\" ] || npm run dist) && node --expose-gc run.js && npm run table",
-    "table": "echo 'List-Fugue Simple results: \n\n' && node ../../bin/render-table.js ../results.json 6000 'List-Fugue Simple'",
+    "table": "echo 'List-Fugue Simple results: \n\n' && node ../../bin/render-table.js ../results.json 6000 list-fugue-simple",
     "dist": "npm run clean && rollup -c && gzip --keep dist/*"
   },
   "author": "Anonymous (TODO)",
