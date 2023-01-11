@@ -5,714 +5,816 @@
       "ywasm": "249 ms",
       "tree-fugue": "147 ms",
       "tree-fugue-simple": "867 ms",
-      "list-fugue-simple": "162 ms"
+      "list-fugue-simple": "162 ms",
+      "automerge-wasm": "234 ms"
     },
     "[B1.1] Append N characters (avgUpdateSize)": {
       "yjs": "27 bytes",
       "ywasm": "27 bytes",
       "tree-fugue": "39 bytes",
       "tree-fugue-simple": "164 bytes",
-      "list-fugue-simple": "197 bytes"
+      "list-fugue-simple": "197 bytes",
+      "automerge-wasm": "121 bytes"
     },
     "[B1.1] Append N characters (encodeTime)": {
       "yjs": "1 ms",
       "ywasm": "0 ms",
       "tree-fugue": "1 ms",
       "tree-fugue-simple": "97 ms",
-      "list-fugue-simple": "120 ms"
+      "list-fugue-simple": "120 ms",
+      "automerge-wasm": "9 ms"
     },
     "[B1.1] Append N characters (docSize)": {
       "yjs": "6031 bytes",
       "ywasm": "6031 bytes",
       "tree-fugue": "6145 bytes",
       "tree-fugue-simple": "42774 bytes",
-      "list-fugue-simple": "45163 bytes"
+      "list-fugue-simple": "45163 bytes",
+      "automerge-wasm": "3990 bytes"
     },
     "[B1.1] Append N characters (memUsed)": {
       "yjs": "0 B",
       "ywasm": "0 B",
       "tree-fugue": "0 B",
       "tree-fugue-simple": "2.1 MB",
-      "list-fugue-simple": "809.6 kB"
+      "list-fugue-simple": "809.6 kB",
+      "automerge-wasm": "0 B"
     },
     "[B1.1] Append N characters (parseTime)": {
       "yjs": "60 ms",
       "ywasm": "74 ms",
       "tree-fugue": "79 ms",
       "tree-fugue-simple": "116 ms",
-      "list-fugue-simple": "129 ms"
+      "list-fugue-simple": "129 ms",
+      "automerge-wasm": "133 ms"
     },
     "[B1.2] Insert string of length N (time)": {
       "yjs": "1 ms",
       "ywasm": "0 ms",
       "tree-fugue": "3 ms",
       "tree-fugue-simple": "694 ms",
-      "list-fugue-simple": "68 ms"
+      "list-fugue-simple": "68 ms",
+      "automerge-wasm": "20 ms"
     },
     "[B1.2] Insert string of length N (avgUpdateSize)": {
       "yjs": "6031 bytes",
       "ywasm": "6031 bytes",
       "tree-fugue": "6049 bytes",
       "tree-fugue-simple": "819682 bytes",
-      "list-fugue-simple": "1017682 bytes"
+      "list-fugue-simple": "1017682 bytes",
+      "automerge-wasm": "6196 bytes"
     },
     "[B1.2] Insert string of length N (encodeTime)": {
       "yjs": "1 ms",
       "ywasm": "0 ms",
       "tree-fugue": "0 ms",
       "tree-fugue-simple": "72 ms",
-      "list-fugue-simple": "90 ms"
+      "list-fugue-simple": "90 ms",
+      "automerge-wasm": "2 ms"
     },
     "[B1.2] Insert string of length N (docSize)": {
       "yjs": "6031 bytes",
       "ywasm": "6031 bytes",
       "tree-fugue": "6143 bytes",
       "tree-fugue-simple": "42785 bytes",
-      "list-fugue-simple": "45187 bytes"
+      "list-fugue-simple": "45187 bytes",
+      "automerge-wasm": "3972 bytes"
     },
     "[B1.2] Insert string of length N (memUsed)": {
       "yjs": "17.7 kB",
       "ywasm": "352 B",
       "tree-fugue": "9.5 kB",
       "tree-fugue-simple": "2.1 MB",
-      "list-fugue-simple": "737.3 kB"
+      "list-fugue-simple": "737.3 kB",
+      "automerge-wasm": "0 B"
     },
     "[B1.2] Insert string of length N (parseTime)": {
       "yjs": "61 ms",
       "ywasm": "63 ms",
       "tree-fugue": "77 ms",
       "tree-fugue-simple": "109 ms",
-      "list-fugue-simple": "111 ms"
+      "list-fugue-simple": "111 ms",
+      "automerge-wasm": "78 ms"
     },
     "[B1.3] Prepend N characters (time)": {
       "yjs": "143 ms",
       "ywasm": "27 ms",
       "tree-fugue": "598 ms",
       "tree-fugue-simple": "634 ms",
-      "list-fugue-simple": "116 ms"
+      "list-fugue-simple": "116 ms",
+      "automerge-wasm": "79 ms"
     },
     "[B1.3] Prepend N characters (avgUpdateSize)": {
       "yjs": "27 bytes",
       "ywasm": "27 bytes",
       "tree-fugue": "46 bytes",
       "tree-fugue-simple": "164 bytes",
-      "list-fugue-simple": "197 bytes"
+      "list-fugue-simple": "197 bytes",
+      "automerge-wasm": "116 bytes"
     },
     "[B1.3] Prepend N characters (encodeTime)": {
       "yjs": "4 ms",
       "ywasm": "0 ms",
       "tree-fugue": "11 ms",
       "tree-fugue-simple": "66 ms",
-      "list-fugue-simple": "85 ms"
+      "list-fugue-simple": "85 ms",
+      "automerge-wasm": "10 ms"
     },
     "[B1.3] Prepend N characters (docSize)": {
       "yjs": "6041 bytes",
       "ywasm": "6041 bytes",
       "tree-fugue": "65766 bytes",
       "tree-fugue-simple": "42730 bytes",
-      "list-fugue-simple": "44892 bytes"
+      "list-fugue-simple": "44892 bytes",
+      "automerge-wasm": "3986 bytes"
     },
     "[B1.3] Prepend N characters (memUsed)": {
       "yjs": "961.8 kB",
       "ywasm": "0 B",
       "tree-fugue": "1.6 MB",
       "tree-fugue-simple": "2 MB",
-      "list-fugue-simple": "640.2 kB"
+      "list-fugue-simple": "640.2 kB",
+      "automerge-wasm": "0 B"
     },
     "[B1.3] Prepend N characters (parseTime)": {
       "yjs": "73 ms",
       "ywasm": "63 ms",
       "tree-fugue": "97 ms",
       "tree-fugue-simple": "109 ms",
-      "list-fugue-simple": "111 ms"
+      "list-fugue-simple": "111 ms",
+      "automerge-wasm": "167 ms"
     },
     "[B1.4] Insert N characters at random positions (time)": {
       "yjs": "157 ms",
       "ywasm": "124 ms",
       "tree-fugue": "116 ms",
       "tree-fugue-simple": "108 ms",
-      "list-fugue-simple": "216 ms"
+      "list-fugue-simple": "216 ms",
+      "automerge-wasm": "436 ms"
     },
     "[B1.4] Insert N characters at random positions (avgUpdateSize)": {
       "yjs": "29 bytes",
       "ywasm": "29 bytes",
       "tree-fugue": "42 bytes",
       "tree-fugue-simple": "163 bytes",
-      "list-fugue-simple": "209 bytes"
+      "list-fugue-simple": "209 bytes",
+      "automerge-wasm": "121 bytes"
     },
     "[B1.4] Insert N characters at random positions (encodeTime)": {
       "yjs": "11 ms",
       "ywasm": "0 ms",
       "tree-fugue": "6 ms",
       "tree-fugue-simple": "76 ms",
-      "list-fugue-simple": "91 ms"
+      "list-fugue-simple": "91 ms",
+      "automerge-wasm": "11 ms"
     },
     "[B1.4] Insert N characters at random positions (docSize)": {
       "yjs": "29554 bytes",
       "ywasm": "29554 bytes",
       "tree-fugue": "35494 bytes",
       "tree-fugue-simple": "36804 bytes",
-      "list-fugue-simple": "62272 bytes"
+      "list-fugue-simple": "62272 bytes",
+      "automerge-wasm": "24743 bytes"
     },
     "[B1.4] Insert N characters at random positions (memUsed)": {
       "yjs": "742.1 kB",
       "ywasm": "0 B",
       "tree-fugue": "680.5 kB",
       "tree-fugue-simple": "2.2 MB",
-      "list-fugue-simple": "667.1 kB"
+      "list-fugue-simple": "667.1 kB",
+      "automerge-wasm": "0 B"
     },
     "[B1.4] Insert N characters at random positions (parseTime)": {
       "yjs": "93 ms",
       "ywasm": "64 ms",
       "tree-fugue": "100 ms",
       "tree-fugue-simple": "118 ms",
-      "list-fugue-simple": "113 ms"
+      "list-fugue-simple": "113 ms",
+      "automerge-wasm": "170 ms"
     },
     "[B1.5] Insert N words at random positions (time)": {
       "yjs": "181 ms",
       "ywasm": "415 ms",
       "tree-fugue": "147 ms",
       "tree-fugue-simple": "336 ms",
-      "list-fugue-simple": "2375 ms"
+      "list-fugue-simple": "2375 ms",
+      "automerge-wasm": "676 ms"
     },
     "[B1.5] Insert N words at random positions (avgUpdateSize)": {
       "yjs": "36 bytes",
       "ywasm": "36 bytes",
       "tree-fugue": "50 bytes",
       "tree-fugue-simple": "864 bytes",
-      "list-fugue-simple": "1143 bytes"
+      "list-fugue-simple": "1143 bytes",
+      "automerge-wasm": "131 bytes"
     },
     "[B1.5] Insert N words at random positions (encodeTime)": {
       "yjs": "14 ms",
       "ywasm": "1 ms",
       "tree-fugue": "15 ms",
       "tree-fugue-simple": "178 ms",
-      "list-fugue-simple": "290 ms"
+      "list-fugue-simple": "290 ms",
+      "automerge-wasm": "28 ms"
     },
     "[B1.5] Insert N words at random positions (docSize)": {
       "yjs": "87924 bytes",
       "ywasm": "87924 bytes",
       "tree-fugue": "91193 bytes",
       "tree-fugue-simple": "226996 bytes",
-      "list-fugue-simple": "325030 bytes"
+      "list-fugue-simple": "325030 bytes",
+      "automerge-wasm": "96199 bytes"
     },
     "[B1.5] Insert N words at random positions (memUsed)": {
       "yjs": "2.6 MB",
       "ywasm": "0 B",
       "tree-fugue": "1.2 MB",
       "tree-fugue-simple": "12.3 MB",
-      "list-fugue-simple": "4.9 MB"
+      "list-fugue-simple": "4.9 MB",
+      "automerge-wasm": "0 B"
     },
     "[B1.5] Insert N words at random positions (parseTime)": {
       "yjs": "113 ms",
       "ywasm": "68 ms",
       "tree-fugue": "123 ms",
       "tree-fugue-simple": "244 ms",
-      "list-fugue-simple": "279 ms"
+      "list-fugue-simple": "279 ms",
+      "automerge-wasm": "275 ms"
     },
     "[B1.6] Insert string, then delete it (time)": {
       "yjs": "2 ms",
       "ywasm": "1 ms",
       "tree-fugue": "66 ms",
       "tree-fugue-simple": "1025 ms",
-      "list-fugue-simple": "155 ms"
+      "list-fugue-simple": "155 ms",
+      "automerge-wasm": "35 ms"
     },
     "[B1.6] Insert string, then delete it (avgUpdateSize)": {
       "yjs": "6053 bytes",
       "ywasm": "6053 bytes",
       "tree-fugue": "71836 bytes",
       "tree-fugue-simple": "1208487 bytes",
-      "list-fugue-simple": "1406487 bytes"
+      "list-fugue-simple": "1406487 bytes",
+      "automerge-wasm": "6333 bytes"
     },
     "[B1.6] Insert string, then delete it (encodeTime)": {
       "yjs": "0 ms",
       "ywasm": "0 ms",
       "tree-fugue": "3 ms",
       "tree-fugue-simple": "48 ms",
-      "list-fugue-simple": "81 ms"
+      "list-fugue-simple": "81 ms",
+      "automerge-wasm": "4 ms"
     },
     "[B1.6] Insert string, then delete it (docSize)": {
       "yjs": "38 bytes",
       "ywasm": "38 bytes",
       "tree-fugue": "137 bytes",
       "tree-fugue-simple": "17792 bytes",
-      "list-fugue-simple": "36907 bytes"
+      "list-fugue-simple": "36907 bytes",
+      "automerge-wasm": "3991 bytes"
     },
     "[B1.6] Insert string, then delete it (memUsed)": {
       "yjs": "0 B",
       "ywasm": "664 B",
       "tree-fugue": "201.1 kB",
       "tree-fugue-simple": "2 MB",
-      "list-fugue-simple": "639.3 kB"
+      "list-fugue-simple": "639.3 kB",
+      "automerge-wasm": "440 B"
     },
     "[B1.6] Insert string, then delete it (parseTime)": {
       "yjs": "58 ms",
       "ywasm": "72 ms",
       "tree-fugue": "90 ms",
       "tree-fugue-simple": "123 ms",
-      "list-fugue-simple": "113 ms"
+      "list-fugue-simple": "113 ms",
+      "automerge-wasm": "145 ms"
     },
     "[B1.7] Insert/Delete strings at random positions (time)": {
       "yjs": "188 ms",
       "ywasm": "119 ms",
       "tree-fugue": "186 ms",
       "tree-fugue-simple": "331 ms",
-      "list-fugue-simple": "1102 ms"
+      "list-fugue-simple": "1102 ms",
+      "automerge-wasm": "575 ms"
     },
     "[B1.7] Insert/Delete strings at random positions (avgUpdateSize)": {
       "yjs": "31 bytes",
       "ywasm": "31 bytes",
       "tree-fugue": "67 bytes",
       "tree-fugue-simple": "603 bytes",
-      "list-fugue-simple": "740 bytes"
+      "list-fugue-simple": "740 bytes",
+      "automerge-wasm": "135 bytes"
     },
     "[B1.7] Insert/Delete strings at random positions (encodeTime)": {
       "yjs": "14 ms",
       "ywasm": "1 ms",
       "tree-fugue": "4 ms",
       "tree-fugue-simple": "107 ms",
-      "list-fugue-simple": "164 ms"
+      "list-fugue-simple": "164 ms",
+      "automerge-wasm": "23 ms"
     },
     "[B1.7] Insert/Delete strings at random positions (docSize)": {
       "yjs": "28377 bytes",
       "ywasm": "28377 bytes",
       "tree-fugue": "29957 bytes",
       "tree-fugue-simple": "74710 bytes",
-      "list-fugue-simple": "147932 bytes"
+      "list-fugue-simple": "147932 bytes",
+      "automerge-wasm": "59280 bytes"
     },
     "[B1.7] Insert/Delete strings at random positions (memUsed)": {
       "yjs": "727.9 kB",
       "ywasm": "0 B",
       "tree-fugue": "702.5 kB",
       "tree-fugue-simple": "6.1 MB",
-      "list-fugue-simple": "2.2 MB"
+      "list-fugue-simple": "2.2 MB",
+      "automerge-wasm": "0 B"
     },
     "[B1.7] Insert/Delete strings at random positions (parseTime)": {
       "yjs": "90 ms",
       "ywasm": "69 ms",
       "tree-fugue": "95 ms",
       "tree-fugue-simple": "149 ms",
-      "list-fugue-simple": "147 ms"
+      "list-fugue-simple": "147 ms",
+      "automerge-wasm": "237 ms"
     },
     "[B1.8] Append N numbers (time)": {
       "yjs": "174 ms",
       "ywasm": "36 ms",
       "tree-fugue": "133 ms",
       "tree-fugue-simple": "864 ms",
-      "list-fugue-simple": "111 ms"
+      "list-fugue-simple": "111 ms",
+      "automerge-wasm": "268 ms"
     },
     "[B1.8] Append N numbers (avgUpdateSize)": {
       "yjs": "32 bytes",
       "ywasm": "32 bytes",
       "tree-fugue": "45 bytes",
       "tree-fugue-simple": "171 bytes",
-      "list-fugue-simple": "204 bytes"
+      "list-fugue-simple": "204 bytes",
+      "automerge-wasm": "125 bytes"
     },
     "[B1.8] Append N numbers (encodeTime)": {
       "yjs": "4 ms",
       "ywasm": "0 ms",
       "tree-fugue": "6 ms",
       "tree-fugue-simple": "76 ms",
-      "list-fugue-simple": "99 ms"
+      "list-fugue-simple": "99 ms",
+      "automerge-wasm": "13 ms"
     },
     "[B1.8] Append N numbers (docSize)": {
       "yjs": "35634 bytes",
       "ywasm": "35634 bytes",
       "tree-fugue": "47751 bytes",
       "tree-fugue-simple": "74644 bytes",
-      "list-fugue-simple": "77518 bytes"
+      "list-fugue-simple": "77518 bytes",
+      "automerge-wasm": "26982 bytes"
     },
     "[B1.8] Append N numbers (memUsed)": {
       "yjs": "0 B",
       "ywasm": "0 B",
       "tree-fugue": "0 B",
       "tree-fugue-simple": "2.2 MB",
-      "list-fugue-simple": "651.1 kB"
+      "list-fugue-simple": "651.1 kB",
+      "automerge-wasm": "0 B"
     },
     "[B1.8] Append N numbers (parseTime)": {
       "yjs": "65 ms",
       "ywasm": "72 ms",
       "tree-fugue": "105 ms",
       "tree-fugue-simple": "125 ms",
-      "list-fugue-simple": "128 ms"
+      "list-fugue-simple": "128 ms",
+      "automerge-wasm": "168 ms"
     },
     "[B1.9] Insert Array of N numbers (time)": {
       "yjs": "6 ms",
       "ywasm": "4 ms",
       "tree-fugue": "37 ms",
       "tree-fugue-simple": "660 ms",
-      "list-fugue-simple": "50 ms"
+      "list-fugue-simple": "50 ms",
+      "automerge-wasm": "25 ms"
     },
     "[B1.9] Insert Array of N numbers (avgUpdateSize)": {
       "yjs": "35657 bytes",
       "ywasm": "35657 bytes",
       "tree-fugue": "47678 bytes",
       "tree-fugue-simple": "858656 bytes",
-      "list-fugue-simple": "1056656 bytes"
+      "list-fugue-simple": "1056656 bytes",
+      "automerge-wasm": "31194 bytes"
     },
     "[B1.9] Insert Array of N numbers (encodeTime)": {
       "yjs": "1 ms",
       "ywasm": "0 ms",
       "tree-fugue": "9 ms",
       "tree-fugue-simple": "87 ms",
-      "list-fugue-simple": "102 ms"
+      "list-fugue-simple": "102 ms",
+      "automerge-wasm": "4 ms"
     },
     "[B1.9] Insert Array of N numbers (docSize)": {
       "yjs": "35657 bytes",
       "ywasm": "35657 bytes",
       "tree-fugue": "47772 bytes",
       "tree-fugue-simple": "74742 bytes",
-      "list-fugue-simple": "77582 bytes"
+      "list-fugue-simple": "77582 bytes",
+      "automerge-wasm": "26951 bytes"
     },
     "[B1.9] Insert Array of N numbers (memUsed)": {
       "yjs": "0 B",
       "ywasm": "496 B",
       "tree-fugue": "0 B",
       "tree-fugue-simple": "2.1 MB",
-      "list-fugue-simple": "747.8 kB"
+      "list-fugue-simple": "747.8 kB",
+      "automerge-wasm": "640 B"
     },
     "[B1.9] Insert Array of N numbers (parseTime)": {
       "yjs": "60 ms",
       "ywasm": "71 ms",
       "tree-fugue": "99 ms",
       "tree-fugue-simple": "121 ms",
-      "list-fugue-simple": "135 ms"
+      "list-fugue-simple": "135 ms",
+      "automerge-wasm": "125 ms"
     },
     "[B1.10] Prepend N numbers (time)": {
       "yjs": "145 ms",
       "ywasm": "33 ms",
       "tree-fugue": "575 ms",
       "tree-fugue-simple": "501 ms",
-      "list-fugue-simple": "98 ms"
+      "list-fugue-simple": "98 ms",
+      "automerge-wasm": "405 ms"
     },
     "[B1.10] Prepend N numbers (avgUpdateSize)": {
       "yjs": "32 bytes",
       "ywasm": "36 bytes",
       "tree-fugue": "52 bytes",
       "tree-fugue-simple": "171 bytes",
-      "list-fugue-simple": "204 bytes"
+      "list-fugue-simple": "204 bytes",
+      "automerge-wasm": "120 bytes"
     },
     "[B1.10] Prepend N numbers (encodeTime)": {
       "yjs": "8 ms",
       "ywasm": "1 ms",
       "tree-fugue": "16 ms",
       "tree-fugue-simple": "80 ms",
-      "list-fugue-simple": "110 ms"
+      "list-fugue-simple": "110 ms",
+      "automerge-wasm": "12 ms"
     },
     "[B1.10] Prepend N numbers (docSize)": {
       "yjs": "35665 bytes",
       "ywasm": "65658 bytes",
       "tree-fugue": "107390 bytes",
       "tree-fugue-simple": "74613 bytes",
-      "list-fugue-simple": "76576 bytes"
+      "list-fugue-simple": "76576 bytes",
+      "automerge-wasm": "26985 bytes"
     },
     "[B1.10] Prepend N numbers (memUsed)": {
       "yjs": "1.7 MB",
       "ywasm": "83.9 kB",
       "tree-fugue": "1.9 MB",
       "tree-fugue-simple": "1.8 MB",
-      "list-fugue-simple": "645.8 kB"
+      "list-fugue-simple": "645.8 kB",
+      "automerge-wasm": "0 B"
     },
     "[B1.10] Prepend N numbers (parseTime)": {
       "yjs": "78 ms",
       "ywasm": "77 ms",
       "tree-fugue": "107 ms",
       "tree-fugue-simple": "118 ms",
-      "list-fugue-simple": "123 ms"
+      "list-fugue-simple": "123 ms",
+      "automerge-wasm": "163 ms"
     },
     "[B1.11] Insert N numbers at random positions (time)": {
       "yjs": "163 ms",
       "ywasm": "142 ms",
       "tree-fugue": "116 ms",
       "tree-fugue-simple": "98 ms",
-      "list-fugue-simple": "199 ms"
+      "list-fugue-simple": "199 ms",
+      "automerge-wasm": "448 ms"
     },
     "[B1.11] Insert N numbers at random positions (avgUpdateSize)": {
       "yjs": "34 bytes",
       "ywasm": "34 bytes",
       "tree-fugue": "48 bytes",
       "tree-fugue-simple": "171 bytes",
-      "list-fugue-simple": "216 bytes"
+      "list-fugue-simple": "216 bytes",
+      "automerge-wasm": "125 bytes"
     },
     "[B1.11] Insert N numbers at random positions (encodeTime)": {
       "yjs": "8 ms",
       "ywasm": "1 ms",
       "tree-fugue": "13 ms",
       "tree-fugue-simple": "80 ms",
-      "list-fugue-simple": "97 ms"
+      "list-fugue-simple": "97 ms",
+      "automerge-wasm": "12 ms"
     },
     "[B1.11] Insert N numbers at random positions (docSize)": {
       "yjs": "59137 bytes",
       "ywasm": "59152 bytes",
       "tree-fugue": "77385 bytes",
       "tree-fugue-simple": "68041 bytes",
-      "list-fugue-simple": "96438 bytes"
+      "list-fugue-simple": "96438 bytes",
+      "automerge-wasm": "47744 bytes"
     },
     "[B1.11] Insert N numbers at random positions (memUsed)": {
       "yjs": "1.7 MB",
       "ywasm": "0 B",
       "tree-fugue": "0 B",
       "tree-fugue-simple": "2 MB",
-      "list-fugue-simple": "657.4 kB"
+      "list-fugue-simple": "657.4 kB",
+      "automerge-wasm": "0 B"
     },
     "[B1.11] Insert N numbers at random positions (parseTime)": {
       "yjs": "84 ms",
       "ywasm": "75 ms",
       "tree-fugue": "108 ms",
       "tree-fugue-simple": "119 ms",
-      "list-fugue-simple": "126 ms"
+      "list-fugue-simple": "126 ms",
+      "automerge-wasm": "161 ms"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (time)": {
       "yjs": "3 ms",
       "ywasm": "0 ms",
       "tree-fugue": "4 ms",
       "tree-fugue-simple": "1577 ms",
-      "list-fugue-simple": "335 ms"
+      "list-fugue-simple": "335 ms",
+      "automerge-wasm": "86 ms"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (updateSize)": {
       "yjs": "6094 bytes",
       "ywasm": "6094 bytes",
       "tree-fugue": "6136 bytes",
       "tree-fugue-simple": "826516 bytes",
-      "list-fugue-simple": "1092156 bytes"
+      "list-fugue-simple": "1092156 bytes",
+      "automerge-wasm": "9494 bytes"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (encodeTime)": {
       "yjs": "0 ms",
       "ywasm": "0 ms",
       "tree-fugue": "1 ms",
       "tree-fugue-simple": "90 ms",
-      "list-fugue-simple": "124 ms"
+      "list-fugue-simple": "124 ms",
+      "automerge-wasm": "4 ms"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (docSize)": {
       "yjs": "12152 bytes",
       "ywasm": "12152 bytes",
       "tree-fugue": "12289 bytes",
       "tree-fugue-simple": "86415 bytes",
-      "list-fugue-simple": "91289 bytes"
+      "list-fugue-simple": "91289 bytes",
+      "automerge-wasm": "8009 bytes"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (memUsed)": {
       "yjs": "0 B",
       "ywasm": "240 B",
       "tree-fugue": "0 B",
       "tree-fugue-simple": "4.2 MB",
-      "list-fugue-simple": "1.4 MB"
+      "list-fugue-simple": "1.4 MB",
+      "automerge-wasm": "0 B"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (parseTime)": {
       "yjs": "64 ms",
       "ywasm": "75 ms",
       "tree-fugue": "79 ms",
       "tree-fugue-simple": "124 ms",
-      "list-fugue-simple": "134 ms"
+      "list-fugue-simple": "134 ms",
+      "automerge-wasm": "150 ms"
     },
     "[B2.2] Concurrently insert N characters at random positions (time)": {
       "yjs": "94 ms",
       "ywasm": "367 ms",
       "tree-fugue": "160 ms",
       "tree-fugue-simple": "191 ms",
-      "list-fugue-simple": "797 ms"
+      "list-fugue-simple": "797 ms",
+      "automerge-wasm": "1237 ms"
     },
     "[B2.2] Concurrently insert N characters at random positions (updateSize)": {
       "yjs": "33444 bytes",
       "ywasm": "177007 bytes",
       "tree-fugue": "104977 bytes",
       "tree-fugue-simple": "825600 bytes",
-      "list-fugue-simple": "1099004 bytes"
+      "list-fugue-simple": "1099004 bytes",
+      "automerge-wasm": "1093282 bytes"
     },
     "[B2.2] Concurrently insert N characters at random positions (encodeTime)": {
       "yjs": "2 ms",
       "ywasm": "1 ms",
       "tree-fugue": "14 ms",
       "tree-fugue-simple": "97 ms",
-      "list-fugue-simple": "144 ms"
+      "list-fugue-simple": "144 ms",
+      "automerge-wasm": "23 ms"
     },
     "[B2.2] Concurrently insert N characters at random positions (docSize)": {
       "yjs": "66860 bytes",
       "ywasm": "66860 bytes",
       "tree-fugue": "72341 bytes",
       "tree-fugue-simple": "74451 bytes",
-      "list-fugue-simple": "126376 bytes"
+      "list-fugue-simple": "126376 bytes",
+      "automerge-wasm": "50699 bytes"
     },
     "[B2.2] Concurrently insert N characters at random positions (memUsed)": {
       "yjs": "2.4 MB",
       "ywasm": "0 B",
       "tree-fugue": "1.5 MB",
       "tree-fugue-simple": "4.2 MB",
-      "list-fugue-simple": "1.5 MB"
+      "list-fugue-simple": "1.5 MB",
+      "automerge-wasm": "0 B"
     },
     "[B2.2] Concurrently insert N characters at random positions (parseTime)": {
       "yjs": "121 ms",
       "ywasm": "77 ms",
       "tree-fugue": "96 ms",
       "tree-fugue-simple": "136 ms",
-      "list-fugue-simple": "127 ms"
+      "list-fugue-simple": "127 ms",
+      "automerge-wasm": "234 ms"
     },
     "[B2.3] Concurrently insert N words at random positions (time)": {
       "yjs": "170 ms",
       "ywasm": "1044 ms",
       "tree-fugue": "177 ms",
       "tree-fugue-simple": "910 ms",
-      "list-fugue-simple": "16991 ms"
+      "list-fugue-simple": "16991 ms",
+      "automerge-wasm": "2133 ms"
     },
     "[B2.3] Concurrently insert N words at random positions (updateSize)": {
       "yjs": "88994 bytes",
       "ywasm": "215213 bytes",
       "tree-fugue": "149822 bytes",
       "tree-fugue-simple": "4980784 bytes",
-      "list-fugue-simple": "6638148 bytes"
+      "list-fugue-simple": "6638148 bytes",
+      "automerge-wasm": "1185195 bytes"
     },
     "[B2.3] Concurrently insert N words at random positions (encodeTime)": {
       "yjs": "4 ms",
       "ywasm": "3 ms",
       "tree-fugue": "28 ms",
       "tree-fugue-simple": "281 ms",
-      "list-fugue-simple": "513 ms"
+      "list-fugue-simple": "513 ms",
+      "automerge-wasm": "61 ms"
     },
     "[B2.3] Concurrently insert N words at random positions (docSize)": {
       "yjs": "178137 bytes",
       "ywasm": "178137 bytes",
       "tree-fugue": "182584 bytes",
       "tree-fugue-simple": "449181 bytes",
-      "list-fugue-simple": "647073 bytes"
+      "list-fugue-simple": "647073 bytes",
+      "automerge-wasm": "191494 bytes"
     },
     "[B2.3] Concurrently insert N words at random positions (memUsed)": {
       "yjs": "5.2 MB",
       "ywasm": "0 B",
       "tree-fugue": "3.2 MB",
       "tree-fugue-simple": "25.2 MB",
-      "list-fugue-simple": "9.2 MB"
+      "list-fugue-simple": "9.2 MB",
+      "automerge-wasm": "0 B"
     },
     "[B2.3] Concurrently insert N words at random positions (parseTime)": {
       "yjs": "143 ms",
       "ywasm": "140 ms",
       "tree-fugue": "124 ms",
       "tree-fugue-simple": "333 ms",
-      "list-fugue-simple": "431 ms"
+      "list-fugue-simple": "431 ms",
+      "automerge-wasm": "450 ms"
     },
     "[B2.4] Concurrently insert & delete (time)": {
       "yjs": "334 ms",
       "ywasm": "2978 ms",
       "tree-fugue": "444 ms",
       "tree-fugue-simple": "1497 ms",
-      "list-fugue-simple": "64376 ms"
+      "list-fugue-simple": "64376 ms",
+      "automerge-wasm": "4306 ms"
     },
     "[B2.4] Concurrently insert & delete (updateSize)": {
       "yjs": "139517 bytes",
       "ywasm": "398881 bytes",
       "tree-fugue": "398559 bytes",
       "tree-fugue-simple": "8495206 bytes",
-      "list-fugue-simple": "10999960 bytes"
+      "list-fugue-simple": "10999960 bytes",
+      "automerge-wasm": "2395867 bytes"
     },
     "[B2.4] Concurrently insert & delete (encodeTime)": {
       "yjs": "37 ms",
       "ywasm": "6 ms",
       "tree-fugue": "48 ms",
       "tree-fugue-simple": "470 ms",
-      "list-fugue-simple": "758 ms"
+      "list-fugue-simple": "758 ms",
+      "automerge-wasm": "121 ms"
     },
     "[B2.4] Concurrently insert & delete (docSize)": {
       "yjs": "279172 bytes",
       "ywasm": "279172 bytes",
       "tree-fugue": "252660 bytes",
       "tree-fugue-simple": "639895 bytes",
-      "list-fugue-simple": "940637 bytes"
+      "list-fugue-simple": "940637 bytes",
+      "automerge-wasm": "307360 bytes"
     },
     "[B2.4] Concurrently insert & delete (memUsed)": {
       "yjs": "9.2 MB",
       "ywasm": "0 B",
       "tree-fugue": "4.7 MB",
       "tree-fugue-simple": "37.8 MB",
-      "list-fugue-simple": "14 MB"
+      "list-fugue-simple": "14 MB",
+      "automerge-wasm": "0 B"
     },
     "[B2.4] Concurrently insert & delete (parseTime)": {
       "yjs": "211 ms",
       "ywasm": "151 ms",
       "tree-fugue": "137 ms",
       "tree-fugue-simple": "657 ms",
-      "list-fugue-simple": "491 ms"
+      "list-fugue-simple": "491 ms",
+      "automerge-wasm": "848 ms"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (time)": {
       "yjs": "86 ms",
       "ywasm": "291 ms",
       "tree-fugue": "32 ms",
       "tree-fugue-simple": "38 ms",
-      "list-fugue-simple": "41 ms"
+      "list-fugue-simple": "41 ms",
+      "automerge-wasm": "44 ms"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (updateSize)": {
       "yjs": "52748 bytes",
       "ywasm": "52738 bytes",
       "tree-fugue": "77430 bytes",
       "tree-fugue-simple": "229890 bytes",
-      "list-fugue-simple": "282250 bytes"
+      "list-fugue-simple": "282250 bytes",
+      "automerge-wasm": "277630 bytes"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (encodeTime)": {
       "yjs": "3 ms",
       "ywasm": "1 ms",
       "tree-fugue": "31 ms",
       "tree-fugue-simple": "73 ms",
-      "list-fugue-simple": "78 ms"
+      "list-fugue-simple": "78 ms",
+      "automerge-wasm": "14 ms"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (docSize)": {
       "yjs": "26593 bytes",
       "ywasm": "26583 bytes",
       "tree-fugue": "86647 bytes",
       "tree-fugue-simple": "62017 bytes",
-      "list-fugue-simple": "63368 bytes"
+      "list-fugue-simple": "63368 bytes",
+      "automerge-wasm": "83578 bytes"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (memUsed)": {
       "yjs": "850.2 kB",
       "ywasm": "0 B",
       "tree-fugue": "890.7 kB",
       "tree-fugue-simple": "63.3 kB",
-      "list-fugue-simple": "424.7 kB"
+      "list-fugue-simple": "424.7 kB",
+      "automerge-wasm": "0 B"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (parseTime)": {
       "yjs": "86 ms",
       "ywasm": "128 ms",
       "tree-fugue": "114 ms",
       "tree-fugue-simple": "154 ms",
-      "list-fugue-simple": "126 ms"
+      "list-fugue-simple": "126 ms",
+      "automerge-wasm": "165 ms"
     },
     "[B4] Apply real-world editing dataset (time)": {
       "yjs": "4804 ms",
       "ywasm": "50868 ms",
       "tree-fugue": "2059 ms",
       "tree-fugue-simple": "14270 ms",
-      "list-fugue-simple": "93321 ms"
+      "list-fugue-simple": "93321 ms",
+      "automerge-wasm": "86220 ms"
     },
     "[B4] Apply real-world editing dataset (updateSize)": {
       "yjs": "7565904 bytes",
       "ywasm": "7565904 bytes",
       "tree-fugue": "10224234 bytes",
       "tree-fugue-simple": "37715931 bytes",
-      "list-fugue-simple": "46343814 bytes"
+      "list-fugue-simple": "46343814 bytes",
+      "automerge-wasm": "58115146 bytes"
     },
     "[B4] Apply real-world editing dataset (encodeTime)": {
       "yjs": "23 ms",
       "ywasm": "2 ms",
       "tree-fugue": "13 ms",
       "tree-fugue-simple": "577 ms",
-      "list-fugue-simple": "1098 ms"
+      "list-fugue-simple": "1098 ms",
+      "automerge-wasm": "675 ms"
     },
     "[B4] Apply real-world editing dataset (docSize)": {
       "yjs": "159929 bytes",
       "ywasm": "159929 bytes",
       "tree-fugue": "167873 bytes",
       "tree-fugue-simple": "1020960 bytes",
-      "list-fugue-simple": "1436827 bytes"
+      "list-fugue-simple": "1436827 bytes",
+      "automerge-wasm": "142473 bytes"
     },
     "[B4] Apply real-world editing dataset (parseTime)": {
       "yjs": "63 ms",
       "ywasm": "8 ms",
       "tree-fugue": "16 ms",
       "tree-fugue-simple": "413 ms",
-      "list-fugue-simple": "626 ms"
+      "list-fugue-simple": "626 ms",
+      "automerge-wasm": "82025 ms"
     },
     "[B4] Apply real-world editing dataset (memUsed)": {
       "yjs": "2.5 MB",
       "ywasm": "712 B",
       "tree-fugue": "1.5 MB",
       "tree-fugue-simple": "64.1 MB",
-      "list-fugue-simple": "23.8 MB"
+      "list-fugue-simple": "23.8 MB",
+      "automerge-wasm": "0 B"
     },
     "[B4x100] Apply real-world editing dataset 100 times (time)": {
       "yjs": "619680 ms",
