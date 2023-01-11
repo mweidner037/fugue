@@ -2,7 +2,7 @@
   "6000": {
     "[B1.1] Append N characters (time)": {
       "yjs": "190 ms",
-      "ywasm": "249 ms",
+      "ywasm": "236 ms",
       "tree-fugue": "147 ms",
       "tree-fugue-simple": "867 ms",
       "list-fugue-simple": "162 ms",
@@ -42,7 +42,7 @@
     },
     "[B1.1] Append N characters (parseTime)": {
       "yjs": "60 ms",
-      "ywasm": "74 ms",
+      "ywasm": "68 ms",
       "tree-fugue": "79 ms",
       "tree-fugue-simple": "116 ms",
       "list-fugue-simple": "129 ms",
@@ -82,7 +82,7 @@
     },
     "[B1.2] Insert string of length N (memUsed)": {
       "yjs": "17.7 kB",
-      "ywasm": "352 B",
+      "ywasm": "304 B",
       "tree-fugue": "9.5 kB",
       "tree-fugue-simple": "2.1 MB",
       "list-fugue-simple": "737.3 kB",
@@ -90,7 +90,7 @@
     },
     "[B1.2] Insert string of length N (parseTime)": {
       "yjs": "61 ms",
-      "ywasm": "63 ms",
+      "ywasm": "61 ms",
       "tree-fugue": "77 ms",
       "tree-fugue-simple": "109 ms",
       "list-fugue-simple": "111 ms",
@@ -98,7 +98,7 @@
     },
     "[B1.3] Prepend N characters (time)": {
       "yjs": "143 ms",
-      "ywasm": "27 ms",
+      "ywasm": "25 ms",
       "tree-fugue": "598 ms",
       "tree-fugue-simple": "634 ms",
       "list-fugue-simple": "116 ms",
@@ -146,7 +146,7 @@
     },
     "[B1.4] Insert N characters at random positions (time)": {
       "yjs": "157 ms",
-      "ywasm": "124 ms",
+      "ywasm": "127 ms",
       "tree-fugue": "116 ms",
       "tree-fugue-simple": "108 ms",
       "list-fugue-simple": "216 ms",
@@ -186,7 +186,7 @@
     },
     "[B1.4] Insert N characters at random positions (parseTime)": {
       "yjs": "93 ms",
-      "ywasm": "64 ms",
+      "ywasm": "65 ms",
       "tree-fugue": "100 ms",
       "tree-fugue-simple": "118 ms",
       "list-fugue-simple": "113 ms",
@@ -194,7 +194,7 @@
     },
     "[B1.5] Insert N words at random positions (time)": {
       "yjs": "181 ms",
-      "ywasm": "415 ms",
+      "ywasm": "425 ms",
       "tree-fugue": "147 ms",
       "tree-fugue-simple": "336 ms",
       "list-fugue-simple": "2375 ms",
@@ -234,7 +234,7 @@
     },
     "[B1.5] Insert N words at random positions (parseTime)": {
       "yjs": "113 ms",
-      "ywasm": "68 ms",
+      "ywasm": "71 ms",
       "tree-fugue": "123 ms",
       "tree-fugue-simple": "244 ms",
       "list-fugue-simple": "279 ms",
@@ -282,7 +282,7 @@
     },
     "[B1.6] Insert string, then delete it (parseTime)": {
       "yjs": "58 ms",
-      "ywasm": "72 ms",
+      "ywasm": "66 ms",
       "tree-fugue": "90 ms",
       "tree-fugue-simple": "123 ms",
       "list-fugue-simple": "113 ms",
@@ -290,7 +290,7 @@
     },
     "[B1.7] Insert/Delete strings at random positions (time)": {
       "yjs": "188 ms",
-      "ywasm": "119 ms",
+      "ywasm": "130 ms",
       "tree-fugue": "186 ms",
       "tree-fugue-simple": "331 ms",
       "list-fugue-simple": "1102 ms",
@@ -330,7 +330,7 @@
     },
     "[B1.7] Insert/Delete strings at random positions (parseTime)": {
       "yjs": "90 ms",
-      "ywasm": "69 ms",
+      "ywasm": "70 ms",
       "tree-fugue": "95 ms",
       "tree-fugue-simple": "149 ms",
       "list-fugue-simple": "147 ms",
@@ -338,7 +338,7 @@
     },
     "[B1.8] Append N numbers (time)": {
       "yjs": "174 ms",
-      "ywasm": "36 ms",
+      "ywasm": "34 ms",
       "tree-fugue": "133 ms",
       "tree-fugue-simple": "864 ms",
       "list-fugue-simple": "111 ms",
@@ -370,7 +370,7 @@
     },
     "[B1.8] Append N numbers (memUsed)": {
       "yjs": "0 B",
-      "ywasm": "0 B",
+      "ywasm": "453.4 kB",
       "tree-fugue": "0 B",
       "tree-fugue-simple": "2.2 MB",
       "list-fugue-simple": "651.1 kB",
@@ -378,7 +378,7 @@
     },
     "[B1.8] Append N numbers (parseTime)": {
       "yjs": "65 ms",
-      "ywasm": "72 ms",
+      "ywasm": "70 ms",
       "tree-fugue": "105 ms",
       "tree-fugue-simple": "125 ms",
       "list-fugue-simple": "128 ms",
@@ -426,7 +426,7 @@
     },
     "[B1.9] Insert Array of N numbers (parseTime)": {
       "yjs": "60 ms",
-      "ywasm": "71 ms",
+      "ywasm": "69 ms",
       "tree-fugue": "99 ms",
       "tree-fugue-simple": "121 ms",
       "list-fugue-simple": "135 ms",
@@ -434,7 +434,7 @@
     },
     "[B1.10] Prepend N numbers (time)": {
       "yjs": "145 ms",
-      "ywasm": "33 ms",
+      "ywasm": "29 ms",
       "tree-fugue": "575 ms",
       "tree-fugue-simple": "501 ms",
       "list-fugue-simple": "98 ms",
@@ -442,7 +442,7 @@
     },
     "[B1.10] Prepend N numbers (avgUpdateSize)": {
       "yjs": "32 bytes",
-      "ywasm": "36 bytes",
+      "ywasm": "32 bytes",
       "tree-fugue": "52 bytes",
       "tree-fugue-simple": "171 bytes",
       "list-fugue-simple": "204 bytes",
@@ -450,7 +450,7 @@
     },
     "[B1.10] Prepend N numbers (encodeTime)": {
       "yjs": "8 ms",
-      "ywasm": "1 ms",
+      "ywasm": "0 ms",
       "tree-fugue": "16 ms",
       "tree-fugue-simple": "80 ms",
       "list-fugue-simple": "110 ms",
@@ -458,7 +458,7 @@
     },
     "[B1.10] Prepend N numbers (docSize)": {
       "yjs": "35665 bytes",
-      "ywasm": "65658 bytes",
+      "ywasm": "35665 bytes",
       "tree-fugue": "107390 bytes",
       "tree-fugue-simple": "74613 bytes",
       "list-fugue-simple": "76576 bytes",
@@ -466,7 +466,7 @@
     },
     "[B1.10] Prepend N numbers (memUsed)": {
       "yjs": "1.7 MB",
-      "ywasm": "83.9 kB",
+      "ywasm": "0 B",
       "tree-fugue": "1.9 MB",
       "tree-fugue-simple": "1.8 MB",
       "list-fugue-simple": "645.8 kB",
@@ -474,7 +474,7 @@
     },
     "[B1.10] Prepend N numbers (parseTime)": {
       "yjs": "78 ms",
-      "ywasm": "77 ms",
+      "ywasm": "71 ms",
       "tree-fugue": "107 ms",
       "tree-fugue-simple": "118 ms",
       "list-fugue-simple": "123 ms",
@@ -482,7 +482,7 @@
     },
     "[B1.11] Insert N numbers at random positions (time)": {
       "yjs": "163 ms",
-      "ywasm": "142 ms",
+      "ywasm": "145 ms",
       "tree-fugue": "116 ms",
       "tree-fugue-simple": "98 ms",
       "list-fugue-simple": "199 ms",
@@ -506,7 +506,7 @@
     },
     "[B1.11] Insert N numbers at random positions (docSize)": {
       "yjs": "59137 bytes",
-      "ywasm": "59152 bytes",
+      "ywasm": "59137 bytes",
       "tree-fugue": "77385 bytes",
       "tree-fugue-simple": "68041 bytes",
       "list-fugue-simple": "96438 bytes",
@@ -522,7 +522,7 @@
     },
     "[B1.11] Insert N numbers at random positions (parseTime)": {
       "yjs": "84 ms",
-      "ywasm": "75 ms",
+      "ywasm": "73 ms",
       "tree-fugue": "108 ms",
       "tree-fugue-simple": "119 ms",
       "list-fugue-simple": "126 ms",
@@ -554,7 +554,7 @@
     },
     "[B2.1] Concurrently insert string of length N at index 0 (docSize)": {
       "yjs": "12152 bytes",
-      "ywasm": "12152 bytes",
+      "ywasm": "12151 bytes",
       "tree-fugue": "12289 bytes",
       "tree-fugue-simple": "86415 bytes",
       "list-fugue-simple": "91289 bytes",
@@ -570,7 +570,7 @@
     },
     "[B2.1] Concurrently insert string of length N at index 0 (parseTime)": {
       "yjs": "64 ms",
-      "ywasm": "75 ms",
+      "ywasm": "73 ms",
       "tree-fugue": "79 ms",
       "tree-fugue-simple": "124 ms",
       "list-fugue-simple": "134 ms",
@@ -578,7 +578,7 @@
     },
     "[B2.2] Concurrently insert N characters at random positions (time)": {
       "yjs": "94 ms",
-      "ywasm": "367 ms",
+      "ywasm": "354 ms",
       "tree-fugue": "160 ms",
       "tree-fugue-simple": "191 ms",
       "list-fugue-simple": "797 ms",
@@ -626,7 +626,7 @@
     },
     "[B2.3] Concurrently insert N words at random positions (time)": {
       "yjs": "170 ms",
-      "ywasm": "1044 ms",
+      "ywasm": "968 ms",
       "tree-fugue": "177 ms",
       "tree-fugue-simple": "910 ms",
       "list-fugue-simple": "16991 ms",
@@ -666,7 +666,7 @@
     },
     "[B2.3] Concurrently insert N words at random positions (parseTime)": {
       "yjs": "143 ms",
-      "ywasm": "140 ms",
+      "ywasm": "122 ms",
       "tree-fugue": "124 ms",
       "tree-fugue-simple": "333 ms",
       "list-fugue-simple": "431 ms",
@@ -674,7 +674,7 @@
     },
     "[B2.4] Concurrently insert & delete (time)": {
       "yjs": "334 ms",
-      "ywasm": "2978 ms",
+      "ywasm": "2604 ms",
       "tree-fugue": "444 ms",
       "tree-fugue-simple": "1497 ms",
       "list-fugue-simple": "64376 ms",
@@ -682,7 +682,7 @@
     },
     "[B2.4] Concurrently insert & delete (updateSize)": {
       "yjs": "139517 bytes",
-      "ywasm": "398881 bytes",
+      "ywasm": "392795 bytes",
       "tree-fugue": "398559 bytes",
       "tree-fugue-simple": "8495206 bytes",
       "list-fugue-simple": "10999960 bytes",
@@ -690,7 +690,7 @@
     },
     "[B2.4] Concurrently insert & delete (encodeTime)": {
       "yjs": "37 ms",
-      "ywasm": "6 ms",
+      "ywasm": "5 ms",
       "tree-fugue": "48 ms",
       "tree-fugue-simple": "470 ms",
       "list-fugue-simple": "758 ms",
@@ -698,7 +698,7 @@
     },
     "[B2.4] Concurrently insert & delete (docSize)": {
       "yjs": "279172 bytes",
-      "ywasm": "279172 bytes",
+      "ywasm": "278927 bytes",
       "tree-fugue": "252660 bytes",
       "tree-fugue-simple": "639895 bytes",
       "list-fugue-simple": "940637 bytes",
@@ -714,7 +714,7 @@
     },
     "[B2.4] Concurrently insert & delete (parseTime)": {
       "yjs": "211 ms",
-      "ywasm": "151 ms",
+      "ywasm": "136 ms",
       "tree-fugue": "137 ms",
       "tree-fugue-simple": "657 ms",
       "list-fugue-simple": "491 ms",
@@ -722,7 +722,7 @@
     },
     "[B3.4] 20√N clients concurrently insert text in Array (time)": {
       "yjs": "86 ms",
-      "ywasm": "291 ms",
+      "ywasm": "253 ms",
       "tree-fugue": "32 ms",
       "tree-fugue-simple": "38 ms",
       "list-fugue-simple": "41 ms",
@@ -730,7 +730,7 @@
     },
     "[B3.4] 20√N clients concurrently insert text in Array (updateSize)": {
       "yjs": "52748 bytes",
-      "ywasm": "52738 bytes",
+      "ywasm": "52736 bytes",
       "tree-fugue": "77430 bytes",
       "tree-fugue-simple": "229890 bytes",
       "list-fugue-simple": "282250 bytes",
@@ -746,7 +746,7 @@
     },
     "[B3.4] 20√N clients concurrently insert text in Array (docSize)": {
       "yjs": "26593 bytes",
-      "ywasm": "26583 bytes",
+      "ywasm": "26581 bytes",
       "tree-fugue": "86647 bytes",
       "tree-fugue-simple": "62017 bytes",
       "list-fugue-simple": "63368 bytes",
@@ -762,7 +762,7 @@
     },
     "[B3.4] 20√N clients concurrently insert text in Array (parseTime)": {
       "yjs": "86 ms",
-      "ywasm": "128 ms",
+      "ywasm": "112 ms",
       "tree-fugue": "114 ms",
       "tree-fugue-simple": "154 ms",
       "list-fugue-simple": "126 ms",
@@ -770,7 +770,7 @@
     },
     "[B4] Apply real-world editing dataset (time)": {
       "yjs": "4804 ms",
-      "ywasm": "50868 ms",
+      "ywasm": "52988 ms",
       "tree-fugue": "2059 ms",
       "tree-fugue-simple": "14270 ms",
       "list-fugue-simple": "93321 ms",
@@ -786,7 +786,7 @@
     },
     "[B4] Apply real-world editing dataset (encodeTime)": {
       "yjs": "23 ms",
-      "ywasm": "2 ms",
+      "ywasm": "3 ms",
       "tree-fugue": "13 ms",
       "tree-fugue-simple": "577 ms",
       "list-fugue-simple": "1098 ms",
@@ -802,7 +802,7 @@
     },
     "[B4] Apply real-world editing dataset (parseTime)": {
       "yjs": "63 ms",
-      "ywasm": "8 ms",
+      "ywasm": "9 ms",
       "tree-fugue": "16 ms",
       "tree-fugue-simple": "413 ms",
       "list-fugue-simple": "626 ms",
@@ -810,7 +810,7 @@
     },
     "[B4] Apply real-world editing dataset (memUsed)": {
       "yjs": "2.5 MB",
-      "ywasm": "712 B",
+      "ywasm": "32 B",
       "tree-fugue": "1.5 MB",
       "tree-fugue-simple": "64.1 MB",
       "list-fugue-simple": "23.8 MB",

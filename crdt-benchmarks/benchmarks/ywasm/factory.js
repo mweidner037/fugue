@@ -1,5 +1,5 @@
 
-import * as Y from 'ywasm';
+import * as Y from 'ywasm'
 import { AbstractCrdt, CrdtFactory } from '../../js-lib/index.js'; // eslint-disable-line
 
 export const name = 'ywasm'
@@ -28,7 +28,7 @@ export class YwasmCRDT {
    * @param {function(Uint8Array):void} [updateHandler]
    */
   constructor (updateHandler) {
-    this.ydoc = new Y.YDoc(undefined)
+    this.ydoc = new Y.YDoc()
     if (updateHandler) {
       this.ydoc.onUpdateV2(update => {
         updateHandler(update)
@@ -60,7 +60,7 @@ export class YwasmCRDT {
    * @param {Array<any>} elems
    */
   insertArray (index, elems) {
-    this.transact(() => this.yarray.insert(index, elems, this.txn))
+    this.transact(() => this.yarray.insert(this.txn, index, elems))
   }
 
   /**
@@ -70,7 +70,7 @@ export class YwasmCRDT {
    * @param {number} len
    */
   deleteArray (index, len) {
-    this.transact(() => this.yarray.delete(index, len, this.txn))
+    this.transact(() => this.yarray.delete(this.txn, index, len))
   }
 
   /**
@@ -87,7 +87,7 @@ export class YwasmCRDT {
    * @param {string} text
    */
   insertText (index, text) {
-    this.transact(() => this.ytext.insert(index, text, null, this.txn))
+    this.transact(() => this.ytext.insert(this.txn, index, text, null))
   }
 
   /**
@@ -97,7 +97,7 @@ export class YwasmCRDT {
    * @param {number} len
    */
   deleteText (index, len) {
-    this.transact(() => this.ytext.delete(index, len, this.txn))
+    this.transact(() => this.ytext.delete(this.txn, index, len))
   }
 
   /**
@@ -111,7 +111,7 @@ export class YwasmCRDT {
    * @param {function (AbstractCrdt): void} f
    */
   transact (f) {
-    this.txn = this.txn || this.ydoc.readTransaction()
+    this.txn = this.txn || this.ydoc.beginTransaction()
     try {
       f(this)
     } finally {
