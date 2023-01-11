@@ -13,6 +13,6 @@
   "author": "Kevin Jahns",
   "license": "MIT",
   "dependencies": {
-    "yjs": "^13.5.12"
+    "yjs": "13.5.44"
   }
 }
