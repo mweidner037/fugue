@@ -5,6 +5,9 @@ import {
   MessageMeta,
   Optional,
 } from "@collabs/collabs";
+import pako from "pako";
+
+const GZIP = false;
 
 interface ID {
   sender: string;
@@ -298,14 +301,22 @@ export class ListFugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
         rightOrigin: elt.rightOrigin!.id,
       });
     }
-    return new Uint8Array(Buffer.from(JSON.stringify(save)));
+    let bytes = new Uint8Array(Buffer.from(JSON.stringify(save)));
+    if (GZIP) {
+      bytes = pako.gzip(bytes);
+    }
+    return bytes;
   }
 
   load(saveData: Optional<Uint8Array>): void {
     if (!saveData.isPresent) return;
-    const save: ElementSave<T>[] = JSON.parse(
-      Buffer.from(saveData.get()).toString()
-    );
+
+    let bytes = saveData.get();
+    if (GZIP) {
+      bytes = pako.ungzip(bytes);
+    }
+
+    const save: ElementSave<T>[] = JSON.parse(Buffer.from(bytes).toString());
 
     // First create all elements without origin pointers.
     let prev = this.start;

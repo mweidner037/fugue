@@ -5,6 +5,9 @@ import {
   MessageMeta,
   Optional,
 } from "@collabs/collabs";
+import pako from "pako";
+
+const GZIP = false;
 
 interface ID {
   sender: string;
@@ -417,13 +420,21 @@ export class TreeFugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
   save(): Uint8Array {
     // No need to save this.counter because we will have a different
     // replicaID next time.
-    return this.tree.save();
+    let bytes = this.tree.save();
+    if (GZIP) {
+      bytes = pako.gzip(bytes);
+    }
+    return bytes;
   }
 
   load(saveData: Optional<Uint8Array>): void {
-    if (saveData.isPresent) {
-      this.tree.load(saveData.get());
+    if (!saveData.isPresent) return;
+
+    let bytes = saveData.get();
+    if (GZIP) {
+      bytes = pako.ungzip(bytes);
     }
+    this.tree.load(bytes);
   }
 
   canGC(): boolean {

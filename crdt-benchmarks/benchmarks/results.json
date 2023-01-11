@@ -22,7 +22,7 @@
       "fugue": "150 ms",
       "List-Fugue Simple": "235 ms",
       "tree-fugue": "134 ms",
-      "tree-fugue-simple": "1010 ms",
+      "tree-fugue-simple": "710 ms",
       "list-fugue-simple": "134 ms"
     },
     "[B1.1] Append N characters (avgUpdateSize)": {
@@ -42,7 +42,7 @@
       "fugue": "1 ms",
       "List-Fugue Simple": "11 ms",
       "tree-fugue": "1 ms",
-      "tree-fugue-simple": "6 ms",
+      "tree-fugue-simple": "80 ms",
       "list-fugue-simple": "6 ms"
     },
     "[B1.1] Append N characters (docSize)": {
@@ -52,7 +52,7 @@
       "fugue": "6160 bytes",
       "List-Fugue Simple": "1005836 bytes",
       "tree-fugue": "6145 bytes",
-      "tree-fugue-simple": "615998 bytes",
+      "tree-fugue-simple": "42774 bytes",
       "list-fugue-simple": "1005836 bytes"
     },
     "[B1.1] Append N characters (memUsed)": {
@@ -62,7 +62,7 @@
       "fugue": "0 B",
       "List-Fugue Simple": "663.3 kB",
       "tree-fugue": "0 B",
-      "tree-fugue-simple": "2 MB",
+      "tree-fugue-simple": "1.9 MB",
       "list-fugue-simple": "663.6 kB"
     },
     "[B1.1] Append N characters (parseTime)": {
@@ -82,7 +82,7 @@
       "fugue": "2 ms",
       "List-Fugue Simple": "92 ms",
       "tree-fugue": "3 ms",
-      "tree-fugue-simple": "808 ms",
+      "tree-fugue-simple": "552 ms",
       "list-fugue-simple": "53 ms"
     },
     "[B1.2] Insert string of length N (avgUpdateSize)": {
@@ -102,7 +102,7 @@
       "fugue": "0 ms",
       "List-Fugue Simple": "14 ms",
       "tree-fugue": "0 ms",
-      "tree-fugue-simple": "6 ms",
+      "tree-fugue-simple": "60 ms",
       "list-fugue-simple": "8 ms"
     },
     "[B1.2] Insert string of length N (docSize)": {
@@ -112,7 +112,7 @@
       "fugue": "6158 bytes",
       "List-Fugue Simple": "1005834 bytes",
       "tree-fugue": "6143 bytes",
-      "tree-fugue-simple": "615996 bytes",
+      "tree-fugue-simple": "42785 bytes",
       "list-fugue-simple": "1005834 bytes"
     },
     "[B1.2] Insert string of length N (memUsed)": {
@@ -122,7 +122,7 @@
       "fugue": "10.7 kB",
       "List-Fugue Simple": "507.3 kB",
       "tree-fugue": "9.5 kB",
-      "tree-fugue-simple": "1.9 MB",
+      "tree-fugue-simple": "2.1 MB",
       "list-fugue-simple": "751.2 kB"
     },
     "[B1.2] Insert string of length N (parseTime)": {
@@ -132,7 +132,7 @@
       "fugue": "73 ms",
       "List-Fugue Simple": "124 ms",
       "tree-fugue": "66 ms",
-      "tree-fugue-simple": "101 ms",
+      "tree-fugue-simple": "90 ms",
       "list-fugue-simple": "75 ms"
     },
     "[B1.3] Prepend N characters (time)": {
@@ -142,7 +142,7 @@
       "fugue": "563 ms",
       "List-Fugue Simple": "158 ms",
       "tree-fugue": "457 ms",
-      "tree-fugue-simple": "623 ms",
+      "tree-fugue-simple": "488 ms",
       "list-fugue-simple": "91 ms"
     },
     "[B1.3] Prepend N characters (avgUpdateSize)": {
@@ -162,7 +162,7 @@
       "fugue": "10 ms",
       "List-Fugue Simple": "9 ms",
       "tree-fugue": "9 ms",
-      "tree-fugue-simple": "4 ms",
+      "tree-fugue-simple": "58 ms",
       "list-fugue-simple": "6 ms"
     },
     "[B1.3] Prepend N characters (docSize)": {
@@ -172,7 +172,7 @@
       "fugue": "65781 bytes",
       "List-Fugue Simple": "1005836 bytes",
       "tree-fugue": "65766 bytes",
-      "tree-fugue-simple": "615998 bytes",
+      "tree-fugue-simple": "42730 bytes",
       "list-fugue-simple": "1005836 bytes"
     },
     "[B1.3] Prepend N characters (memUsed)": {
@@ -182,7 +182,7 @@
       "fugue": "1.6 MB",
       "List-Fugue Simple": "669 kB",
       "tree-fugue": "1.6 MB",
-      "tree-fugue-simple": "2.3 MB",
+      "tree-fugue-simple": "2 MB",
       "list-fugue-simple": "670.2 kB"
     },
     "[B1.3] Prepend N characters (parseTime)": {
@@ -192,7 +192,7 @@
       "fugue": "87 ms",
       "List-Fugue Simple": "121 ms",
       "tree-fugue": "82 ms",
-      "tree-fugue-simple": "83 ms",
+      "tree-fugue-simple": "97 ms",
       "list-fugue-simple": "76 ms"
     },
     "[B1.4] Insert N characters at random positions (time)": {
@@ -202,7 +202,7 @@
       "fugue": "110 ms",
       "List-Fugue Simple": "271 ms",
       "tree-fugue": "94 ms",
-      "tree-fugue-simple": "101 ms",
+      "tree-fugue-simple": "88 ms",
       "list-fugue-simple": "154 ms"
     },
     "[B1.4] Insert N characters at random positions (avgUpdateSize)": {
@@ -222,7 +222,7 @@
       "fugue": "6 ms",
       "List-Fugue Simple": "10 ms",
       "tree-fugue": "5 ms",
-      "tree-fugue-simple": "4 ms",
+      "tree-fugue-simple": "61 ms",
       "list-fugue-simple": "6 ms"
     },
     "[B1.4] Insert N characters at random positions (docSize)": {
@@ -232,7 +232,7 @@
       "fugue": "35509 bytes",
       "List-Fugue Simple": "1078069 bytes",
       "tree-fugue": "35494 bytes",
-      "tree-fugue-simple": "599394 bytes",
+      "tree-fugue-simple": "36804 bytes",
       "list-fugue-simple": "1078069 bytes"
     },
     "[B1.4] Insert N characters at random positions (memUsed)": {
@@ -242,7 +242,7 @@
       "fugue": "676.6 kB",
       "List-Fugue Simple": "662.5 kB",
       "tree-fugue": "681.2 kB",
-      "tree-fugue-simple": "2 MB",
+      "tree-fugue-simple": "2.4 MB",
       "list-fugue-simple": "656.3 kB"
     },
     "[B1.4] Insert N characters at random positions (parseTime)": {
@@ -252,7 +252,7 @@
       "fugue": "89 ms",
       "List-Fugue Simple": "113 ms",
       "tree-fugue": "74 ms",
-      "tree-fugue-simple": "95 ms",
+      "tree-fugue-simple": "94 ms",
       "list-fugue-simple": "73 ms"
     },
     "[B1.5] Insert N words at random positions (time)": {
@@ -262,7 +262,7 @@
       "fugue": "116 ms",
       "List-Fugue Simple": "3296 ms",
       "tree-fugue": "94 ms",
-      "tree-fugue-simple": "334 ms",
+      "tree-fugue-simple": "260 ms",
       "list-fugue-simple": "1907 ms"
     },
     "[B1.5] Insert N words at random positions (avgUpdateSize)": {
@@ -282,7 +282,7 @@
       "fugue": "13 ms",
       "List-Fugue Simple": "54 ms",
       "tree-fugue": "10 ms",
-      "tree-fugue-simple": "27 ms",
+      "tree-fugue-simple": "149 ms",
       "list-fugue-simple": "38 ms"
     },
     "[B1.5] Insert N words at random positions (docSize)": {
@@ -292,7 +292,7 @@
       "fugue": "91208 bytes",
       "List-Fugue Simple": "6604366 bytes",
       "tree-fugue": "91193 bytes",
-      "tree-fugue-simple": "3656379 bytes",
+      "tree-fugue-simple": "226996 bytes",
       "list-fugue-simple": "6604366 bytes"
     },
     "[B1.5] Insert N words at random positions (memUsed)": {
@@ -312,7 +312,7 @@
       "fugue": "110 ms",
       "List-Fugue Simple": "192 ms",
       "tree-fugue": "87 ms",
-      "tree-fugue-simple": "209 ms",
+      "tree-fugue-simple": "196 ms",
       "list-fugue-simple": "143 ms"
     },
     "[B1.6] Insert string, then delete it (time)": {
@@ -322,7 +322,7 @@
       "fugue": "61 ms",
       "List-Fugue Simple": "216 ms",
       "tree-fugue": "50 ms",
-      "tree-fugue-simple": "1109 ms",
+      "tree-fugue-simple": "848 ms",
       "list-fugue-simple": "128 ms"
     },
     "[B1.6] Insert string, then delete it (avgUpdateSize)": {
@@ -342,7 +342,7 @@
       "fugue": "3 ms",
       "List-Fugue Simple": "8 ms",
       "tree-fugue": "2 ms",
-      "tree-fugue-simple": "5 ms",
+      "tree-fugue-simple": "41 ms",
       "list-fugue-simple": "6 ms"
     },
     "[B1.6] Insert string, then delete it (docSize)": {
@@ -352,7 +352,7 @@
       "fugue": "152 bytes",
       "List-Fugue Simple": "1005834 bytes",
       "tree-fugue": "137 bytes",
-      "tree-fugue-simple": "599100 bytes",
+      "tree-fugue-simple": "17792 bytes",
       "list-fugue-simple": "1005834 bytes"
     },
     "[B1.6] Insert string, then delete it (memUsed)": {
@@ -372,7 +372,7 @@
       "fugue": "84 ms",
       "List-Fugue Simple": "133 ms",
       "tree-fugue": "65 ms",
-      "tree-fugue-simple": "103 ms",
+      "tree-fugue-simple": "107 ms",
       "list-fugue-simple": "81 ms"
     },
     "[B1.7] Insert/Delete strings at random positions (time)": {
@@ -382,7 +382,7 @@
       "fugue": "180 ms",
       "List-Fugue Simple": "1429 ms",
       "tree-fugue": "139 ms",
-      "tree-fugue-simple": "301 ms",
+      "tree-fugue-simple": "274 ms",
       "list-fugue-simple": "903 ms"
     },
     "[B1.7] Insert/Delete strings at random positions (avgUpdateSize)": {
@@ -402,7 +402,7 @@
       "fugue": "4 ms",
       "List-Fugue Simple": "34 ms",
       "tree-fugue": "3 ms",
-      "tree-fugue-simple": "11 ms",
+      "tree-fugue-simple": "88 ms",
       "list-fugue-simple": "20 ms"
     },
     "[B1.7] Insert/Delete strings at random positions (docSize)": {
@@ -412,7 +412,7 @@
       "fugue": "29972 bytes",
       "List-Fugue Simple": "3228806 bytes",
       "tree-fugue": "29957 bytes",
-      "tree-fugue-simple": "1784311 bytes",
+      "tree-fugue-simple": "74710 bytes",
       "list-fugue-simple": "3228806 bytes"
     },
     "[B1.7] Insert/Delete strings at random positions (memUsed)": {
@@ -432,7 +432,7 @@
       "fugue": "95 ms",
       "List-Fugue Simple": "189 ms",
       "tree-fugue": "71 ms",
-      "tree-fugue-simple": "128 ms",
+      "tree-fugue-simple": "129 ms",
       "list-fugue-simple": "103 ms"
     },
     "[B1.8] Append N numbers (time)": {
@@ -442,7 +442,7 @@
       "fugue": "127 ms",
       "List-Fugue Simple": "183 ms",
       "tree-fugue": "98 ms",
-      "tree-fugue-simple": "860 ms",
+      "tree-fugue-simple": "691 ms",
       "list-fugue-simple": "91 ms"
     },
     "[B1.8] Append N numbers (avgUpdateSize)": {
@@ -462,7 +462,7 @@
       "fugue": "6 ms",
       "List-Fugue Simple": "27 ms",
       "tree-fugue": "5 ms",
-      "tree-fugue-simple": "5 ms",
+      "tree-fugue-simple": "63 ms",
       "list-fugue-simple": "13 ms"
     },
     "[B1.8] Append N numbers (docSize)": {
@@ -472,7 +472,7 @@
       "fugue": "47766 bytes",
       "List-Fugue Simple": "1044655 bytes",
       "tree-fugue": "47751 bytes",
-      "tree-fugue-simple": "654817 bytes",
+      "tree-fugue-simple": "74644 bytes",
       "list-fugue-simple": "1044655 bytes"
     },
     "[B1.8] Append N numbers (memUsed)": {
@@ -482,7 +482,7 @@
       "fugue": "117.9 kB",
       "List-Fugue Simple": "691.7 kB",
       "tree-fugue": "51.7 kB",
-      "tree-fugue-simple": "2.3 MB",
+      "tree-fugue-simple": "2 MB",
       "list-fugue-simple": "694.3 kB"
     },
     "[B1.8] Append N numbers (parseTime)": {
@@ -492,7 +492,7 @@
       "fugue": "101 ms",
       "List-Fugue Simple": "159 ms",
       "tree-fugue": "83 ms",
-      "tree-fugue-simple": "97 ms",
+      "tree-fugue-simple": "113 ms",
       "list-fugue-simple": "83 ms"
     },
     "[B1.9] Insert Array of N numbers (time)": {
@@ -502,7 +502,7 @@
       "fugue": "35 ms",
       "List-Fugue Simple": "73 ms",
       "tree-fugue": "27 ms",
-      "tree-fugue-simple": "622 ms",
+      "tree-fugue-simple": "536 ms",
       "list-fugue-simple": "40 ms"
     },
     "[B1.9] Insert Array of N numbers (avgUpdateSize)": {
@@ -522,7 +522,7 @@
       "fugue": "9 ms",
       "List-Fugue Simple": "12 ms",
       "tree-fugue": "8 ms",
-      "tree-fugue-simple": "5 ms",
+      "tree-fugue-simple": "76 ms",
       "list-fugue-simple": "6 ms"
     },
     "[B1.9] Insert Array of N numbers (docSize)": {
@@ -532,7 +532,7 @@
       "fugue": "47787 bytes",
       "List-Fugue Simple": "1044807 bytes",
       "tree-fugue": "47772 bytes",
-      "tree-fugue-simple": "654969 bytes",
+      "tree-fugue-simple": "74742 bytes",
       "list-fugue-simple": "1044807 bytes"
     },
     "[B1.9] Insert Array of N numbers (memUsed)": {
@@ -552,7 +552,7 @@
       "fugue": "97 ms",
       "List-Fugue Simple": "131 ms",
       "tree-fugue": "79 ms",
-      "tree-fugue-simple": "81 ms",
+      "tree-fugue-simple": "104 ms",
       "list-fugue-simple": "73 ms"
     },
     "[B1.10] Prepend N numbers (time)": {
@@ -562,7 +562,7 @@
       "fugue": "572 ms",
       "List-Fugue Simple": "137 ms",
       "tree-fugue": "420 ms",
-      "tree-fugue-simple": "437 ms",
+      "tree-fugue-simple": "398 ms",
       "list-fugue-simple": "74 ms"
     },
     "[B1.10] Prepend N numbers (avgUpdateSize)": {
@@ -582,7 +582,7 @@
       "fugue": "16 ms",
       "List-Fugue Simple": "10 ms",
       "tree-fugue": "13 ms",
-      "tree-fugue-simple": "4 ms",
+      "tree-fugue-simple": "65 ms",
       "list-fugue-simple": "6 ms"
     },
     "[B1.10] Prepend N numbers (docSize)": {
@@ -592,7 +592,7 @@
       "fugue": "107405 bytes",
       "List-Fugue Simple": "1044722 bytes",
       "tree-fugue": "107390 bytes",
-      "tree-fugue-simple": "654884 bytes",
+      "tree-fugue-simple": "74613 bytes",
       "list-fugue-simple": "1044722 bytes"
     },
     "[B1.10] Prepend N numbers (memUsed)": {
@@ -602,7 +602,7 @@
       "fugue": "1.9 MB",
       "List-Fugue Simple": "471.8 kB",
       "tree-fugue": "2.1 MB",
-      "tree-fugue-simple": "1.8 MB",
+      "tree-fugue-simple": "1.9 MB",
       "list-fugue-simple": "485 kB"
     },
     "[B1.10] Prepend N numbers (parseTime)": {
@@ -612,7 +612,7 @@
       "fugue": "115 ms",
       "List-Fugue Simple": "119 ms",
       "tree-fugue": "95 ms",
-      "tree-fugue-simple": "78 ms",
+      "tree-fugue-simple": "99 ms",
       "list-fugue-simple": "77 ms"
     },
     "[B1.11] Insert N numbers at random positions (time)": {
@@ -622,7 +622,7 @@
       "fugue": "126 ms",
       "List-Fugue Simple": "274 ms",
       "tree-fugue": "91 ms",
-      "tree-fugue-simple": "86 ms",
+      "tree-fugue-simple": "79 ms",
       "list-fugue-simple": "148 ms"
     },
     "[B1.11] Insert N numbers at random positions (avgUpdateSize)": {
@@ -642,7 +642,7 @@
       "fugue": "13 ms",
       "List-Fugue Simple": "14 ms",
       "tree-fugue": "4 ms",
-      "tree-fugue-simple": "4 ms",
+      "tree-fugue-simple": "71 ms",
       "list-fugue-simple": "6 ms"
     },
     "[B1.11] Insert N numbers at random positions (docSize)": {
@@ -652,7 +652,7 @@
       "fugue": "77400 bytes",
       "List-Fugue Simple": "1116861 bytes",
       "tree-fugue": "77385 bytes",
-      "tree-fugue-simple": "638196 bytes",
+      "tree-fugue-simple": "68041 bytes",
       "list-fugue-simple": "1116861 bytes"
     },
     "[B1.11] Insert N numbers at random positions (memUsed)": {
@@ -672,7 +672,7 @@
       "fugue": "117 ms",
       "List-Fugue Simple": "111 ms",
       "tree-fugue": "96 ms",
-      "tree-fugue-simple": "82 ms",
+      "tree-fugue-simple": "106 ms",
       "list-fugue-simple": "79 ms"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (time)": {
@@ -682,7 +682,7 @@
       "fugue": "6 ms",
       "List-Fugue Simple": "421 ms",
       "tree-fugue": "7 ms",
-      "tree-fugue-simple": "1338 ms",
+      "tree-fugue-simple": "1326 ms",
       "list-fugue-simple": "282 ms"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (updateSize)": {
@@ -702,7 +702,7 @@
       "fugue": "1 ms",
       "List-Fugue Simple": "18 ms",
       "tree-fugue": "1 ms",
-      "tree-fugue-simple": "8 ms",
+      "tree-fugue-simple": "77 ms",
       "list-fugue-simple": "12 ms"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (docSize)": {
@@ -712,7 +712,7 @@
       "fugue": "12304 bytes",
       "List-Fugue Simple": "2160409 bytes",
       "tree-fugue": "12289 bytes",
-      "tree-fugue-simple": "1241904 bytes",
+      "tree-fugue-simple": "86415 bytes",
       "list-fugue-simple": "2160409 bytes"
     },
     "[B2.1] Concurrently insert string of length N at index 0 (memUsed)": {
@@ -732,7 +732,7 @@
       "fugue": "86 ms",
       "List-Fugue Simple": "132 ms",
       "tree-fugue": "65 ms",
-      "tree-fugue-simple": "96 ms",
+      "tree-fugue-simple": "112 ms",
       "list-fugue-simple": "93 ms"
     },
     "[B2.2] Concurrently insert N characters at random positions (time)": {
@@ -742,7 +742,7 @@
       "fugue": "170 ms",
       "List-Fugue Simple": "948 ms",
       "tree-fugue": "135 ms",
-      "tree-fugue-simple": "182 ms",
+      "tree-fugue-simple": "159 ms",
       "list-fugue-simple": "637 ms"
     },
     "[B2.2] Concurrently insert N characters at random positions (updateSize)": {
@@ -762,7 +762,7 @@
       "fugue": "16 ms",
       "List-Fugue Simple": "16 ms",
       "tree-fugue": "12 ms",
-      "tree-fugue-simple": "9 ms",
+      "tree-fugue-simple": "80 ms",
       "list-fugue-simple": "12 ms"
     },
     "[B2.2] Concurrently insert N characters at random positions (docSize)": {
@@ -772,7 +772,7 @@
       "fugue": "72356 bytes",
       "List-Fugue Simple": "2174106 bytes",
       "tree-fugue": "72341 bytes",
-      "tree-fugue-simple": "1208756 bytes",
+      "tree-fugue-simple": "74451 bytes",
       "list-fugue-simple": "2174106 bytes"
     },
     "[B2.2] Concurrently insert N characters at random positions (memUsed)": {
@@ -792,7 +792,7 @@
       "fugue": "105 ms",
       "List-Fugue Simple": "125 ms",
       "tree-fugue": "85 ms",
-      "tree-fugue-simple": "105 ms",
+      "tree-fugue-simple": "108 ms",
       "list-fugue-simple": "88 ms"
     },
     "[B2.3] Concurrently insert N words at random positions (time)": {
@@ -802,7 +802,7 @@
       "fugue": "194 ms",
       "List-Fugue Simple": "22924 ms",
       "tree-fugue": "156 ms",
-      "tree-fugue-simple": "857 ms",
+      "tree-fugue-simple": "756 ms",
       "list-fugue-simple": "13477 ms"
     },
     "[B2.3] Concurrently insert N words at random positions (updateSize)": {
@@ -822,7 +822,7 @@
       "fugue": "31 ms",
       "List-Fugue Simple": "124 ms",
       "tree-fugue": "24 ms",
-      "tree-fugue-simple": "54 ms",
+      "tree-fugue-simple": "271 ms",
       "list-fugue-simple": "92 ms"
     },
     "[B2.3] Concurrently insert N words at random positions (docSize)": {
@@ -832,7 +832,7 @@
       "fugue": "182599 bytes",
       "List-Fugue Simple": "13094218 bytes",
       "tree-fugue": "182584 bytes",
-      "tree-fugue-simple": "7248094 bytes",
+      "tree-fugue-simple": "449181 bytes",
       "list-fugue-simple": "13094218 bytes"
     },
     "[B2.3] Concurrently insert N words at random positions (memUsed)": {
@@ -852,7 +852,7 @@
       "fugue": "142 ms",
       "List-Fugue Simple": "364 ms",
       "tree-fugue": "105 ms",
-      "tree-fugue-simple": "266 ms",
+      "tree-fugue-simple": "328 ms",
       "list-fugue-simple": "247 ms"
     },
     "[B2.4] Concurrently insert & delete (time)": {
@@ -862,7 +862,7 @@
       "fugue": "492 ms",
       "List-Fugue Simple": "89255 ms",
       "tree-fugue": "408 ms",
-      "tree-fugue-simple": "1578 ms",
+      "tree-fugue-simple": "1299 ms",
       "list-fugue-simple": "70914 ms"
     },
     "[B2.4] Concurrently insert & delete (updateSize)": {
@@ -882,7 +882,7 @@
       "fugue": "55 ms",
       "List-Fugue Simple": "192 ms",
       "tree-fugue": "49 ms",
-      "tree-fugue-simple": "87 ms",
+      "tree-fugue-simple": "403 ms",
       "list-fugue-simple": "206 ms"
     },
     "[B2.4] Concurrently insert & delete (docSize)": {
@@ -892,7 +892,7 @@
       "fugue": "252675 bytes",
       "List-Fugue Simple": "19713932 bytes",
       "tree-fugue": "252660 bytes",
-      "tree-fugue-simple": "10883165 bytes",
+      "tree-fugue-simple": "639895 bytes",
       "list-fugue-simple": "19713932 bytes"
     },
     "[B2.4] Concurrently insert & delete (memUsed)": {
@@ -902,7 +902,7 @@
       "fugue": "4.7 MB",
       "List-Fugue Simple": "14.1 MB",
       "tree-fugue": "4.7 MB",
-      "tree-fugue-simple": "37.9 MB",
+      "tree-fugue-simple": "37.8 MB",
       "list-fugue-simple": "14.1 MB"
     },
     "[B2.4] Concurrently insert & delete (parseTime)": {
@@ -912,7 +912,7 @@
       "fugue": "150 ms",
       "List-Fugue Simple": "490 ms",
       "tree-fugue": "125 ms",
-      "tree-fugue-simple": "538 ms",
+      "tree-fugue-simple": "501 ms",
       "list-fugue-simple": "424 ms"
     },
     "[B3.1] 20√N clients concurrently set number in Map (time)": {
@@ -1030,7 +1030,7 @@
       "fugue": "38 ms",
       "List-Fugue Simple": "49 ms",
       "tree-fugue": "27 ms",
-      "tree-fugue-simple": "51 ms",
+      "tree-fugue-simple": "30 ms",
       "list-fugue-simple": "41 ms"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (updateSize)": {
@@ -1050,7 +1050,7 @@
       "fugue": "16 ms",
       "List-Fugue Simple": "14 ms",
       "tree-fugue": "27 ms",
-      "tree-fugue-simple": "15 ms",
+      "tree-fugue-simple": "56 ms",
       "list-fugue-simple": "11 ms"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (docSize)": {
@@ -1060,7 +1060,7 @@
       "fugue": "86662 bytes",
       "List-Fugue Simple": "280751 bytes",
       "tree-fugue": "86647 bytes",
-      "tree-fugue-simple": "203895 bytes",
+      "tree-fugue-simple": "62017 bytes",
       "list-fugue-simple": "280751 bytes"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (memUsed)": {
@@ -1070,7 +1070,7 @@
       "fugue": "975.6 kB",
       "List-Fugue Simple": "403.6 kB",
       "tree-fugue": "887.9 kB",
-      "tree-fugue-simple": "453.9 kB",
+      "tree-fugue-simple": "244.2 kB",
       "list-fugue-simple": "497.9 kB"
     },
     "[B3.4] 20√N clients concurrently insert text in Array (parseTime)": {
@@ -1080,7 +1080,7 @@
       "fugue": "205 ms",
       "List-Fugue Simple": "142 ms",
       "tree-fugue": "99 ms",
-      "tree-fugue-simple": "159 ms",
+      "tree-fugue-simple": "120 ms",
       "list-fugue-simple": "116 ms"
     },
     "[B4] Apply real-world editing dataset (time)": {
@@ -1090,7 +1090,7 @@
       "fugue": "1866 ms",
       "List-Fugue Simple": "91465 ms",
       "tree-fugue": "1500 ms",
-      "tree-fugue-simple": "13245 ms",
+      "tree-fugue-simple": "12606 ms",
       "list-fugue-simple": "84528 ms"
     },
     "[B4] Apply real-world editing dataset (encodeTime)": {
@@ -1100,7 +1100,7 @@
       "fugue": "11 ms",
       "List-Fugue Simple": "262 ms",
       "tree-fugue": "12 ms",
-      "tree-fugue-simple": "131 ms",
+      "tree-fugue-simple": "601 ms",
       "list-fugue-simple": "252 ms"
     },
     "[B4] Apply real-world editing dataset (docSize)": {
@@ -1110,7 +1110,7 @@
       "fugue": "167888 bytes",
       "List-Fugue Simple": "33750684 bytes",
       "tree-fugue": "167873 bytes",
-      "tree-fugue-simple": "18726204 bytes",
+      "tree-fugue-simple": "1020960 bytes",
       "list-fugue-simple": "33750684 bytes"
     },
     "[B4] Apply real-world editing dataset (parseTime)": {
@@ -1120,7 +1120,7 @@
       "fugue": "16 ms",
       "List-Fugue Simple": "457 ms",
       "tree-fugue": "15 ms",
-      "tree-fugue-simple": "240 ms",
+      "tree-fugue-simple": "500 ms",
       "list-fugue-simple": "477 ms"
     },
     "[B4] Apply real-world editing dataset (memUsed)": {
@@ -1130,7 +1130,7 @@
       "fugue": "1.5 MB",
       "List-Fugue Simple": "24 MB",
       "tree-fugue": "1.5 MB",
-      "tree-fugue-simple": "64.2 MB",
+      "tree-fugue-simple": "64.1 MB",
       "list-fugue-simple": "24 MB"
     },
     "[B4x100] Apply real-world editing dataset 100 times (time)": {
