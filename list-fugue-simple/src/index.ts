@@ -3,7 +3,7 @@ import {
   InitToken,
   Message,
   MessageMeta,
-  Optional,
+  Optional
 } from "@collabs/collabs";
 import pako from "pako";
 
@@ -185,10 +185,7 @@ export class ListFugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
     leftOrigin: Element<T>,
     rightOrigin: Element<T>
   ): Element<T> {
-    let rightOriginAdj = rightOrigin;
-    if (rightOrigin.leftOrigin !== leftOrigin) {
-      rightOriginAdj = this.end;
-    }
+    const rightParent = this.rightParent(leftOrigin, rightOrigin);
 
     let left = leftOrigin;
     let scanning = false;
@@ -199,18 +196,16 @@ export class ListFugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
     for (let o = leftOrigin.right!; o !== rightOrigin; o = o.right!) {
       if (this.lessThan(o.leftOrigin!, leftOrigin)) break;
       else if (o.leftOrigin === leftOrigin) {
-        let oRightOriginAdj = o.rightOrigin!;
-        if (o.rightOrigin!.leftOrigin !== o.leftOrigin) {
-          oRightOriginAdj = this.end;
-        }
+        const oRightParent = this.rightParent(o.leftOrigin, o.rightOrigin!);
 
-        if (this.lessThan(oRightOriginAdj, rightOriginAdj)) {
+        if (this.lessThan(oRightParent, rightParent)) {
           scanning = true;
-        } else if (oRightOriginAdj === rightOriginAdj) {
-          if (id.sender < o.id.sender) break;
+        } else if (oRightParent === rightParent) {
+          // o and the new elt are double siblings.
+          if (o.id.sender > id.sender) break;
           else scanning = false;
         } else {
-          // oRightOriginAdj > rightOriginAdj
+          // oRightParent > rightParent
           scanning = false;
         }
       }
@@ -219,6 +214,11 @@ export class ListFugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
     }
 
     return left;
+  }
+
+  private rightParent(leftOrigin: Element<T>, rightOrigin: Element<T>): Element<T> {
+    if (rightOrigin === this.end || rightOrigin.leftOrigin !== leftOrigin) return this.end;
+    else return rightOrigin;
   }
 
   /**
