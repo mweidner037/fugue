@@ -15,7 +15,9 @@
   "scripts": {
     "start": "npm run start -ws",
     "table": "node bin/render-table.js benchmarks/results.json 6000 yjs ywasm automerge-wasm tree-fugue tree-fugue-simple list-fugue-simple",
-    "lint": "standard && tsc"
+    "B4x100": "npm run B4x100 -w benchmarks/yjs && npm run B4x100 -w benchmarks/tree-fugue",
+    "lint": "standard && tsc",
+    "clean": "npm run clean -ws"
   },
   "standard": {
     "ignore": [

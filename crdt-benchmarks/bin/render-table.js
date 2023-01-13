@@ -6,8 +6,8 @@
  */
 
 import fs from 'fs';
-import { MEASURED_TRIALS, WARMUP_TRIALS } from 'js-lib';
 import * as math from "mathjs";
+import { MEASURED_TRIALS, WARMUP_TRIALS } from '../js-lib/index.js';
 
 /**
  * 

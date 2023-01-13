@@ -1,4 +1,4 @@
-# Fugue code
+# Fugue code and benchmarks
 
 For the paper's Section 4.
 
@@ -7,21 +7,23 @@ For the paper's Section 4.
 To reproduce the paper benchmarks:
 
 1. Install Node.js (we used version 16.13.1, but newer should also work).
-2. Starting in this folder, run commands:
+2. In this folder:
 ```bash
 # Install dependencies.
 npm ci
-# Build Fugue implementations.
-npm run build
-# Run benchmarks (takes some time).
-# (Do `npm start` in an individual crdt-benchmarks/benchmarks/ subfolder to do just that implementation.)
-cd crdt-benchmarks/
+# Build fugue implementations, run most benchmarks, and rewrite results_table.md.
+# Takes some time.
 npm start
-# Make results table.
-npm run table > table.md
+# Run real text trace x100 benchmarks and rewrite results_table.md.
+# Takes a while.
+npm run B4x100
 ```
 
-Results are placed in `crdt-benchmarks/table.md`. That file initially contains the data used in the paper.
+Statistics are written to `results_table.md`, while raw data is written to `crdt-benchmarks/benchmarks/results.json`. Those files initially contain the measurements used in the paper.
+
+> `results.json` is additive: each benchmark run adds its data to the existing file, only overwriting previous data for the same benchmarks. `results_table.md` is generated from the full `results.json` each time. To delete both files and start fresh, do `npm run dataclean`.
+
+> To speed things up, you can reduce the `_TRIALS` counts in `crdt-benchmarks/js-lib/utils.js`.
 
 ## Implementations
 
@@ -29,7 +31,7 @@ Results are placed in `crdt-benchmarks/table.md`. That file initially contains t
 - `tree-fugue-simple/`: Tree-Fugue Simple
 - `list-fugue-simple/`: List-Fugue Simple
 
-## Benchmarks
+## Benchmarks info
 
 The `crdt-benchmarks` folder is modified from [https://github.com/dmonad/crdt-benchmarks/](https://github.com/dmonad/crdt-benchmarks/) by Kevin Jahns. We added our Fugue implementations to the suite (in `crdt-benchmarks/benchmarks`), removed measurements that are not relevant to the paper, and made minor tweaks (e.g. recording network usage during \[B4\]).
 
