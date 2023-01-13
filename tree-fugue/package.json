@@ -1,18 +1,23 @@
 {
   "name": "tree-fugue",
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "type": "module",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "dependencies": {
     "@collabs/collabs": "0.6.1",
     "tslib": "^2.4.1"
   },
   "devDependencies": {
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "protobufjs": "~6.9.0"
   },
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf dist"
+    "build": "npm run build:protobuf && npm run build:ts",
+    "build:protobuf": "npm run build:protobuf:prepare && npm run build:protobuf:js && npm run build:protobuf:ts",
+    "build:protobuf:prepare": "rm -rf generated && mkdir generated",
+    "build:protobuf:js": "pbjs -t static-module -w commonjs -o generated/proto_compiled.js `find src -name '*.proto'`",
+    "build:protobuf:ts": "pbts -o generated/proto_compiled.d.ts generated/proto_compiled.js",
+    "build:ts": "tsc && cp -r generated dist/generated",
+    "clean": "rm -rf dist generated"
   }
 }

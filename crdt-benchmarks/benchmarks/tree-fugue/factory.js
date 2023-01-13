@@ -1,7 +1,10 @@
 import * as collabs from "@collabs/collabs";
 import seedrandom from "seedrandom";
-import { TreeFugueArray, TreeFugueText } from "tree-fugue";
+import * as tree_fugue from "tree-fugue";
 import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
+
+// Workaround for rollup dislikes named CommonJS imports
+const { TreeFugueArray, TreeFugueText } = tree_fugue;
 
 export const name = "tree-fugue";
 

@@ -2,13 +2,14 @@
   "compilerOptions": {
     "strict": true,
     "target": "ES2020",
-    "module": "ES2020",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "sourceMap": true,
     "importHelpers": true,
     "declaration": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "rootDir": "."
   },
-  "include": ["src"]
+  "include": ["src", "generated"]
 }

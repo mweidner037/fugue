@@ -1,5 +1,3 @@
-import { CText, PrimitiveCList } from "@collabs/collabs";
+export * from "./tree_fugue_array";
+export * from "./tree_fugue_text";
 
-// TODO: copy impls
-export const TreeFugueText = CText;
-export const TreeFugueArray = PrimitiveCList;
