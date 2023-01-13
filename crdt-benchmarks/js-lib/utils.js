@@ -1,7 +1,5 @@
-import * as prng from 'lib0/prng'
-import * as metric from 'lib0/metric'
-import * as math from 'lib0/math'
 import * as error from 'lib0/error'
+import * as prng from 'lib0/prng'
 // @ts-ignore
 import { performance as perf } from 'isomorphic.js'
 
@@ -11,12 +9,29 @@ export const disablePeersCrdtsBenchmarks = true
 export const disableYjsBenchmarks = true
 export const disableOTBenchmarks = false
 
+export const WARMUP_TRIALS = 5;
+export const MEASURED_TRIALS = 10;
+
 export const benchmarkResults = {}
 
-export const setBenchmarkResult = (libname, benchmarkid, result) => {
-  console.info(libname, benchmarkid, result)
+/**
+ * 
+ * @param {*} libname 
+ * @param {*} benchmarkid 
+ * @param {*} result
+ * @param {number} [trial] trial number, negative for warmups
+ */
+export const setBenchmarkResult = (libname, benchmarkid, result, trial) => {
+  if (trial !== undefined) {
+    console.info(libname, benchmarkid, "Trial", trial, result)
+  }
+  else console.info(libname, benchmarkid, result)
+  // Don't record warmup trials.
+  if (trial !== undefined && trial < 0) return;
+
   const libResults = benchmarkResults[benchmarkid] || (benchmarkResults[benchmarkid] = {})
-  libResults[libname] = result
+  if (libResults[libname] === undefined) libResults[libname] = [];
+  libResults[libname].push(result);
 }
 
 export const writeBenchmarkResultsToFile = async (path, filter) => {
@@ -40,11 +55,18 @@ export const writeBenchmarkResultsToFile = async (path, filter) => {
   }
 }
 
-export const benchmarkTime = (libname, id, f) => {
+/**
+ * 
+ * @param {*} libname 
+ * @param {*} id 
+ * @param {*} f 
+ * @param {number} [trial] trial number, negative for warmups
+ */
+export const benchmarkTime = (libname, id, f, trial) => {
   const start = perf.now()
   f()
   const time = perf.now() - start
-  setBenchmarkResult(libname, id, `${time.toFixed(0)} ms`)
+  setBenchmarkResult(libname, id, `${time.toFixed(0)} ms`, trial)
 }
 
 /**
@@ -76,14 +98,20 @@ export const getMemUsed = () => {
   return 0
 }
 
-export const logMemoryUsed = (libname, id, startHeapUsed) => {
+/**
+ * 
+ * @param {*} libname 
+ * @param {*} id 
+ * @param {*} startHeapUsed 
+ * @param {number} [trial] trial number, negative for warmups
+ */
+export const logMemoryUsed = (libname, id, startHeapUsed, trial) => {
   if (typeof global !== 'undefined' && typeof process !== 'undefined') {
     if (global.gc) {
       global.gc()
     }
     const diff = process.memoryUsage().heapUsed - startHeapUsed
-    const p = metric.prefix(diff)
-    setBenchmarkResult(libname, `${id} (memUsed)`, `${math.round(math.max(p.n * 10, 0)) / 10} ${p.prefix}B`)
+    setBenchmarkResult(libname, `${id} (memUsed)`, `${diff} bytes`, trial)
   }
 }
 

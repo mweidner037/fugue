@@ -26,16 +26,17 @@
     "node": "^18.0.0"
   },
   "dependencies": {
-    "lib0": "^0.2.42"
+    "lib0": "^0.2.42",
+    "mathjs": "^11.5.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.5",
     "rollup": "^2.77.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "standard": "^16.0.3",
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "standard": "^16.0.3",
     "typescript": "^3.9.6"
   }
 }

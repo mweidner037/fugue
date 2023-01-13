@@ -1,4 +1,4 @@
-import { setBenchmarkResult, gen, N, benchmarkTime, runBenchmark, logMemoryUsed, getMemUsed } from './utils.js'
+import { setBenchmarkResult, gen, N, benchmarkTime, runBenchmark, logMemoryUsed, getMemUsed, WARMUP_TRIALS, MEASURED_TRIALS } from './utils.js'
 import * as prng from 'lib0/prng'
 import * as math from 'lib0/math'
 import { createMutex } from 'lib0/mutex'
@@ -19,37 +19,39 @@ export const runBenchmarkB2 = async (crdtFactory, filter) => {
    * @param {function(AbstractCrdt, AbstractCrdt):void} check
    */
   const benchmarkTemplate = (id, changeDoc1, changeDoc2, check) => {
-    let encodedState = null
-    {
-      let updatesSize = 0
-      const mux = createMutex()
-      const doc1 = crdtFactory.create(update => mux(() => { updatesSize += update.length; doc2.applyUpdate(update) }))
-      const doc2 = crdtFactory.create(update => mux(() => { updatesSize += update.length; doc1.applyUpdate(update) }))
-      doc1.insertText(0, initText)
-      benchmarkTime(crdtFactory.getName(), `${id} (time)`, () => {
-        doc1.transact(() => {
-          changeDoc1(doc1)
-        })
-        doc2.transact(() => {
-          changeDoc2(doc2)
-        })
-      })
-      check(doc1, doc2)
-      const avgUpdateSize = math.round(updatesSize / 2)
-      setBenchmarkResult(crdtFactory.getName(), `${id} (updateSize)`, `${avgUpdateSize} bytes`)
-      benchmarkTime(crdtFactory.getName(), `${id} (encodeTime)`, () => {
-        encodedState = doc1.getEncodedState()
-      })
-      // @ts-ignore
-      const documentSize = encodedState.length
-      setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`)
+    for (let trial = -WARMUP_TRIALS; trial < MEASURED_TRIALS; trial++) {
+      let encodedState = null
+      {
+        let updatesSize = 0
+        const mux = createMutex()
+        const doc1 = crdtFactory.create(update => mux(() => { updatesSize += update.length; doc2.applyUpdate(update) }))
+        const doc2 = crdtFactory.create(update => mux(() => { updatesSize += update.length; doc1.applyUpdate(update) }))
+        doc1.insertText(0, initText)
+        benchmarkTime(crdtFactory.getName(), `${id} (time)`, () => {
+          doc1.transact(() => {
+            changeDoc1(doc1)
+          })
+          doc2.transact(() => {
+            changeDoc2(doc2)
+          })
+        }, trial)
+        check(doc1, doc2)
+        const avgUpdateSize = math.round(updatesSize / 2)
+        setBenchmarkResult(crdtFactory.getName(), `${id} (updateSize)`, `${avgUpdateSize} bytes`, trial)
+        benchmarkTime(crdtFactory.getName(), `${id} (encodeTime)`, () => {
+          encodedState = doc1.getEncodedState()
+        }, trial)
+        // @ts-ignore
+        const documentSize = encodedState.length
+        setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`, trial)
+      }
+      benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
+        const startHeapUsed = getMemUsed()
+        const doc = crdtFactory.create()
+        doc.applyUpdate(encodedState)
+        logMemoryUsed(crdtFactory.getName(), id, startHeapUsed, trial)
+      }, trial)
     }
-    benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
-      const startHeapUsed = getMemUsed()
-      const doc = crdtFactory.create()
-      doc.applyUpdate(encodedState)
-      logMemoryUsed(crdtFactory.getName(), id, startHeapUsed)
-    })
   }
 
   await runBenchmark('[B2.1] Concurrently insert string of length N at index 0', filter, benchmarkName => {

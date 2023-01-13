@@ -1,8 +1,8 @@
-import { setBenchmarkResult, gen, N, benchmarkTime, logMemoryUsed, getMemUsed, runBenchmark } from './utils.js'
-import * as prng from 'lib0/prng'
-import * as math from 'lib0/math'
-import * as t from 'lib0/testing'
-import { CrdtFactory, AbstractCrdt } from './index.js' // eslint-disable-line
+import * as math from 'lib0/math';
+import * as prng from 'lib0/prng';
+import * as t from 'lib0/testing';
+import { AbstractCrdt, CrdtFactory } from './index.js'; // eslint-disable-line
+import { benchmarkTime, gen, getMemUsed, logMemoryUsed, MEASURED_TRIALS, N, runBenchmark, setBenchmarkResult, WARMUP_TRIALS } from './utils.js';
 
 /**
  * @param {CrdtFactory} crdtFactory
@@ -19,35 +19,37 @@ export const runBenchmarksB1 = async (crdtFactory, filter) => {
    * @param {function(AbstractCrdt, AbstractCrdt):void} check Check if the benchmark result is correct (all clients end up with the expected result)
    */
   const benchmarkTemplate = (id, inputData, changeFunction, check) => {
-    let encodedState = null
-    {
-      const doc1Updates = []
-      const doc1 = crdtFactory.create(update => { doc1Updates.push(update) })
-      const doc2 = crdtFactory.create()
-      benchmarkTime(crdtFactory.getName(), `${id} (time)`, () => {
-        for (let i = 0; i < inputData.length; i++) {
-          changeFunction(doc1, inputData[i], i)
-        }
-      })
-      doc1Updates.forEach(update => {
-        doc2.applyUpdate(update)
-      })
-      check(doc1, doc2)
-      const updateSize = doc1Updates.reduce((a, b) => a + b.length, 0)
-      setBenchmarkResult(crdtFactory.getName(), `${id} (avgUpdateSize)`, `${math.round(updateSize / inputData.length)} bytes`)
-      benchmarkTime(crdtFactory.getName(), `${id} (encodeTime)`, () => {
-        encodedState = doc1.getEncodedState()
-      })
-      // @ts-ignore
-      const documentSize = encodedState.length
-      setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`)
+    for (let trial = -WARMUP_TRIALS; trial < MEASURED_TRIALS; trial++) {
+      let encodedState = null
+      {
+        const doc1Updates = []
+        const doc1 = crdtFactory.create(update => { doc1Updates.push(update) })
+        const doc2 = crdtFactory.create()
+        benchmarkTime(crdtFactory.getName(), `${id} (time)`, () => {
+          for (let i = 0; i < inputData.length; i++) {
+            changeFunction(doc1, inputData[i], i)
+          }
+        }, trial)
+        doc1Updates.forEach(update => {
+          doc2.applyUpdate(update)
+        })
+        check(doc1, doc2)
+        const updateSize = doc1Updates.reduce((a, b) => a + b.length, 0)
+        setBenchmarkResult(crdtFactory.getName(), `${id} (avgUpdateSize)`, `${math.round(updateSize / inputData.length)} bytes`, trial)
+        benchmarkTime(crdtFactory.getName(), `${id} (encodeTime)`, () => {
+          encodedState = doc1.getEncodedState()
+        }, trial)
+        // @ts-ignore
+        const documentSize = encodedState.length
+        setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`, trial)
+      }
+      benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
+        const startHeapUsed = getMemUsed()
+        const doc = crdtFactory.create()
+        doc.applyUpdate(encodedState)
+        logMemoryUsed(crdtFactory.getName(), id, startHeapUsed, trial)
+      }, trial)
     }
-    benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
-      const startHeapUsed = getMemUsed()
-      const doc = crdtFactory.create()
-      doc.applyUpdate(encodedState)
-      logMemoryUsed(crdtFactory.getName(), id, startHeapUsed)
-    })
   }
 
   await runBenchmark('[B1.1] Append N characters', filter, benchmarkName => {

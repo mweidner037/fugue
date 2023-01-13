@@ -1,8 +1,8 @@
-import { setBenchmarkResult, benchmarkTime, N, logMemoryUsed, getMemUsed, runBenchmark } from './utils.js'
-import * as t from 'lib0/testing'
 import * as math from 'lib0/math'
 import { createMutex } from 'lib0/mutex'
-import { CrdtFactory, AbstractCrdt } from './index.js' // eslint-disable-line
+import * as t from 'lib0/testing'
+import { AbstractCrdt, CrdtFactory } from './index.js'; // eslint-disable-line
+import { benchmarkTime, getMemUsed, logMemoryUsed, MEASURED_TRIALS, N, runBenchmark, setBenchmarkResult, WARMUP_TRIALS } from './utils.js'
 
 const sqrtN = math.floor(math.sqrt(N)) * 20
 console.log('sqrtN =', sqrtN)
@@ -18,51 +18,53 @@ export const runBenchmarkB3 = async (crdtFactory, filter) => {
    * @param {function(Array<AbstractCrdt>):void} check
    */
   const benchmarkTemplate = (id, changeDoc, check) => {
-    let encodedState = null
-    {
-      const docs = []
-      const updates = []
-      const mux = createMutex()
-      for (let i = 0; i < sqrtN; i++) {
-        // push all created updates to the updates array
-        docs.push(crdtFactory.create(update => mux(() => updates.push(update))))
-      }
-      for (let i = 0; i < docs.length; i++) {
-        changeDoc(docs[i], i)
-      }
-      t.assert(updates.length >= sqrtN)
-      // sync client 0 for reference
-      mux(() => {
-        docs[0].transact(() => {
-          for (let i = 0; i < updates.length; i++) {
-            docs[0].applyUpdate(updates[i])
-          }
-        })
-      })
-      benchmarkTime(crdtFactory.getName(), `${id} (time)`, () => {
+    for (let trial = -WARMUP_TRIALS; trial < MEASURED_TRIALS; trial++) {
+      let encodedState = null
+      {
+        const docs = []
+        const updates = []
+        const mux = createMutex()
+        for (let i = 0; i < sqrtN; i++) {
+          // push all created updates to the updates array
+          docs.push(crdtFactory.create(update => mux(() => updates.push(update))))
+        }
+        for (let i = 0; i < docs.length; i++) {
+          changeDoc(docs[i], i)
+        }
+        t.assert(updates.length >= sqrtN)
+        // sync client 0 for reference
         mux(() => {
-          docs[1].transact(() => {
+          docs[0].transact(() => {
             for (let i = 0; i < updates.length; i++) {
-              docs[1].applyUpdate(updates[i])
+              docs[0].applyUpdate(updates[i])
             }
           })
         })
-      })
-      check(docs.slice(0, 2))
-      setBenchmarkResult(crdtFactory.getName(), `${id} (updateSize)`, `${updates.reduce((len, update) => len + update.length, 0)} bytes`)
-      benchmarkTime(crdtFactory.getName(), `${id} (encodeTime)`, () => {
-        encodedState = docs[0].getEncodedState()
-      })
-      // @ts-ignore
-      const documentSize = encodedState.length
-      setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`)
+        benchmarkTime(crdtFactory.getName(), `${id} (time)`, () => {
+          mux(() => {
+            docs[1].transact(() => {
+              for (let i = 0; i < updates.length; i++) {
+                docs[1].applyUpdate(updates[i])
+              }
+            })
+          })
+        }, trial)
+        check(docs.slice(0, 2))
+        setBenchmarkResult(crdtFactory.getName(), `${id} (updateSize)`, `${updates.reduce((len, update) => len + update.length, 0)} bytes`, trial)
+        benchmarkTime(crdtFactory.getName(), `${id} (encodeTime)`, () => {
+          encodedState = docs[0].getEncodedState()
+        }, trial)
+        // @ts-ignore
+        const documentSize = encodedState.length
+        setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`, trial)
+      }
+      benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
+        const startHeapUsed = getMemUsed()
+        const doc = crdtFactory.create()
+        doc.applyUpdate(encodedState)
+        logMemoryUsed(crdtFactory.getName(), id, startHeapUsed)
+      }, trial)
     }
-    benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
-      const startHeapUsed = getMemUsed()
-      const doc = crdtFactory.create()
-      doc.applyUpdate(encodedState)
-      logMemoryUsed(crdtFactory.getName(), id, startHeapUsed)
-    })
   }
 
   // Skipped for Fugue benchmarks, since we just care about lists.
