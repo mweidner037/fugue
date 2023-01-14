@@ -98,6 +98,7 @@ export class TreeFugueSimpleCRDT {
    * @return {Uint8Array|string}
    */
   getEncodedState() {
+    this._checkInitialLoad();
     return this._encodeUpdate(this.app.save(), true);
   }
 

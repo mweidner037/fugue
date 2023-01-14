@@ -2,6 +2,6 @@ import { runBenchmarks, writeBenchmarkResultsToFile } from '../../js-lib/index.j
 import { AutomergeFactory } from './factory.js';
 
 ;(async () => {
-  await runBenchmarks(new AutomergeFactory(), testName => !testName.startsWith('[B4x100'))
+  await runBenchmarks(new AutomergeFactory(), testName => !(testName.startsWith("[B4x100") || testName.startsWith("[B4.")))
   writeBenchmarkResultsToFile('../results.json', testName => true)
 })()

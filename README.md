@@ -13,10 +13,10 @@ To reproduce the paper benchmarks:
 # Install dependencies.
 npm ci
 # Build fugue implementations, run most benchmarks, and rewrite results_table.md.
-# Takes some time.
+# Takes ~2 hours.
 npm start
 # Run real text trace x100 benchmarks and rewrite results_table.md.
-# Takes a while.
+# Takes ~3 hours.
 npm run B4x100
 ```
 

@@ -4,6 +4,9 @@ import { benchmarkTime, getMemUsed, logMemoryUsed, MEASURED_TRIALS, runBenchmark
 // @ts-ignore
 import { edits, finalText } from './b4-editing-trace.js';
 
+/** How often (in operations) to measure over-time stats. */
+const OVER_TIME_INTERVAL = 1000;
+
 /**
  * @param {CrdtFactory} crdtFactory
  * @param {function(string):boolean} filter
@@ -59,6 +62,78 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
         t.compareStrings(doc1.getText(), finalText)
       },
     )
+  })
+
+  await runBenchmark('[B4.2] Measure docSize over time for real-world editing dataset', filter, async benchmarkName => {
+    const textSizes = new Array(Math.floor(edits.length / OVER_TIME_INTERVAL));
+    const docSizes = new Array(Math.floor(edits.length / OVER_TIME_INTERVAL));
+    for (let trial = -WARMUP_TRIALS; trial < MEASURED_TRIALS; trial++) {
+      const doc = crdtFactory.create();
+      for (let i = 0; i < edits.length; i++) {
+        if (i % OVER_TIME_INTERVAL === 0) {
+          const idx = Math.floor(i / OVER_TIME_INTERVAL)
+          docSizes[idx] = doc.getEncodedState().length;
+          if (trial === -WARMUP_TRIALS) textSizes[idx] = doc.getText().length;
+        }
+        const edit = edits[i]
+        if (edit[1] > 0) {
+          doc.deleteText(edit[0], edit[1])
+        }
+        if (edit[2]) {
+          doc.insertText(edit[0], edit[2])
+        }
+      }
+      // Output format: all values joined with ",".
+      // docSizeOverTime: docSize (i.e., save size), in bytes.
+      setBenchmarkResult(crdtFactory.getName(), `${benchmarkName} (docSizeOverTime)`, docSizes.join(","), trial)
+      // textSizeOverTime: literal text size, in characters (= bytes in utf8, since the text is ascii).
+      // This is independent of the algorithm and is just used for reference.
+      if (trial === -WARMUP_TRIALS) {
+        setBenchmarkResult(crdtFactory.getName(), `${benchmarkName} (textSizeOverTime)`, textSizes.join(","))
+      }
+
+      doc.free();
+    }
+  })
+
+  await runBenchmark('[B4.3] Measure memUsed over time for real-world editing dataset', filter, async benchmarkName => {
+    const memUseds = new Array(Math.floor(edits.length / OVER_TIME_INTERVAL));
+    for (let trial = -WARMUP_TRIALS; trial < MEASURED_TRIALS; trial++) {
+      // Extra effort to encourage GC before starting measurement, since otherwise later
+      // measurements go negative.
+      if (global.gc) {
+        global.gc()
+      }
+      await new Promise(resolve => setTimeout(resolve, 2000));
+
+      const startHeapUsed = getMemUsed()
+      let doc = crdtFactory.create();
+      for (let i = 0; i < edits.length; i++) {
+        if (i % OVER_TIME_INTERVAL === 0) {
+          if (global.gc) {
+            global.gc()
+          }
+          const diff = process.memoryUsage().heapUsed - startHeapUsed
+          const idx = Math.floor(i / OVER_TIME_INTERVAL)
+          memUseds[idx] = diff;
+        }
+        const edit = edits[i]
+        if (edit[1] > 0) {
+          doc.deleteText(edit[0], edit[1])
+        }
+        if (edit[2]) {
+          doc.insertText(edit[0], edit[2])
+        }
+      }
+      // Output format: all values joined with ",".
+      // memUsedOverTime: memUsed (i.e., heap used), in bytes.
+      setBenchmarkResult(crdtFactory.getName(), `${benchmarkName} (memUsedOverTime)`, memUseds.join(","), trial)
+
+      doc.free();
+      // This seems to be necessary to prevent counting doc in the next trial's
+      // getMemUsed(), which otherwise causes a bunch of negative diffs.
+      doc = null;
+    }
   })
 
   await runBenchmark('[B4x100] Apply real-world editing dataset 100 times', filter, async benchmarkName => {

@@ -39,7 +39,10 @@ mdTable += `N = ${N} | ${benchmarkNames.join(' | ')}|\n`
 mdTable += `| :- | ${benchmarkNames.map(() => ' -: ').join('|')} |\n`
 
 for (const id in benchmarkResults) {
-  // TODO: data is now arrays instead of value, render avg and stddev.
+  if (id.endsWith("OverTime)")) {
+    // Don't render "over time" benchmarks in table; we make the charts manually from results.json.
+    continue;
+  }
   mdTable += `|${id.padEnd(73, ' ')} | ${benchmarkNames.map(name => arrayToStats(benchmarkResults[id][name]).padStart(15, ' ')).join(' | ')} |\n`
 }
 console.log(mdTable)

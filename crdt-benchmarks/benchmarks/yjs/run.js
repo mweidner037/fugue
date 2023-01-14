@@ -1,5 +1,5 @@
-import { YjsFactory } from './factory.js'
-import { runBenchmarks, writeBenchmarkResultsToFile } from '../../js-lib/index.js'
+import { runBenchmarks, writeBenchmarkResultsToFile } from '../../js-lib/index.js';
+import { YjsFactory } from './factory.js';
 
 // Run B4x100 (real text trace x100) iff passed "B4100" command-line arg
 // (and if so, do only that).
