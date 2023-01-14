@@ -1,0 +1,11 @@
+{
+  "name": "yjs-interleave",
+  "description": "Yjs interleaving example from the paper",
+  "version": "1.0.0",
+  "dependencies": {
+    "yjs": "13.5.44"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

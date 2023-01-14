@@ -8,6 +8,7 @@ To reproduce the paper benchmarks:
 
 1. Install Node.js (we used version 16.13.1, but newer should also work).
 2. In this folder:
+
 ```bash
 # Install dependencies.
 npm ci
@@ -36,3 +37,7 @@ Statistics are written to `results_table.md`, while raw data is written to `crdt
 The `crdt-benchmarks` folder is modified from [https://github.com/dmonad/crdt-benchmarks/](https://github.com/dmonad/crdt-benchmarks/) by Kevin Jahns. We added our Fugue implementations to the suite (in `crdt-benchmarks/benchmarks`), removed measurements that are not relevant to the paper, and made minor tweaks (e.g. recording network usage during \[B4\]).
 
 Info on microbenchmarks (measured but not described in the paper) is found in `crdt-benchmarks/README.md`.
+
+## Misc
+
+`yjs-interleave/` verifies the paper's Yjs interleaving anomaly (Proposition C.4) with the actual Yjs library. See `yjs-interleave/index.js`.
