@@ -27,6 +27,7 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
         benchmarkTime(crdtFactory.getName(), `${id} (encodeTime)`, () => {
           encodedState = doc1.getEncodedState()
         }, trial)
+        doc1.free();
       })()
       const documentSize = encodedState.byteLength
       setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`, trial)
@@ -39,6 +40,7 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
           doc.applyUpdate(encodedState)
         }, trial)
         logMemoryUsed(crdtFactory.getName(), id, startHeapUsed, trial)
+        doc.free();
       })()
     }
   }
@@ -94,6 +96,8 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
         benchmarkTime(crdtFactory.getName(), `${benchmarkName} (encodeTime)`, () => {
           encodedState = doc.getEncodedState()
         }, trial)
+
+        doc.free();
       })()
 
       ;(() => {
@@ -111,6 +115,7 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
           doc.applyUpdate(encodedState)
         }, trial)
         logMemoryUsed(crdtFactory.getName(), benchmarkName, startHeapUsed, trial)
+        doc.free();
       })()
     }
   })

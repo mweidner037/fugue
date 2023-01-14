@@ -1,5 +1,5 @@
 
-import * as Y from 'ywasm'
+import * as Y from 'ywasm';
 import { AbstractCrdt, CrdtFactory } from '../../js-lib/index.js'; // eslint-disable-line
 
 export const name = 'ywasm'
@@ -121,4 +121,6 @@ export class YwasmCRDT {
       }
     }
   }
+
+  free() {}
 }

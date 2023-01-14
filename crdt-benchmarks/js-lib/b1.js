@@ -42,12 +42,15 @@ export const runBenchmarksB1 = async (crdtFactory, filter) => {
         // @ts-ignore
         const documentSize = encodedState.length
         setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`, trial)
+        doc1.free();
+        doc2.free();
       }
       benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
         const startHeapUsed = getMemUsed()
         const doc = crdtFactory.create()
         doc.applyUpdate(encodedState)
         logMemoryUsed(crdtFactory.getName(), id, startHeapUsed, trial)
+        doc.free();
       }, trial)
     }
   }

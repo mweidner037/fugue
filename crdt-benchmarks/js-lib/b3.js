@@ -1,8 +1,8 @@
-import * as math from 'lib0/math'
-import { createMutex } from 'lib0/mutex'
-import * as t from 'lib0/testing'
+import * as math from 'lib0/math';
+import { createMutex } from 'lib0/mutex';
+import * as t from 'lib0/testing';
 import { AbstractCrdt, CrdtFactory } from './index.js'; // eslint-disable-line
-import { benchmarkTime, getMemUsed, logMemoryUsed, MEASURED_TRIALS, N, runBenchmark, setBenchmarkResult, WARMUP_TRIALS } from './utils.js'
+import { benchmarkTime, getMemUsed, logMemoryUsed, MEASURED_TRIALS, N, runBenchmark, setBenchmarkResult, WARMUP_TRIALS } from './utils.js';
 
 const sqrtN = math.floor(math.sqrt(N)) * 20
 console.log('sqrtN =', sqrtN)
@@ -57,12 +57,14 @@ export const runBenchmarkB3 = async (crdtFactory, filter) => {
         // @ts-ignore
         const documentSize = encodedState.length
         setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`, trial)
+        docs.forEach(doc => doc.free());
       }
       benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
         const startHeapUsed = getMemUsed()
         const doc = crdtFactory.create()
         doc.applyUpdate(encodedState)
         logMemoryUsed(crdtFactory.getName(), id, startHeapUsed)
+        doc.free();
       }, trial)
     }
   }

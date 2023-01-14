@@ -182,4 +182,6 @@ export class TreeFugueSimpleCRDT {
 
     this.inTransact = oldInTransact;
   }
+
+  free() {}
 }

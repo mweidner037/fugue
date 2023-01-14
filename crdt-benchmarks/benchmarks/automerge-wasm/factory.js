@@ -1,5 +1,5 @@
-import { AbstractCrdt, CrdtFactory } from '../../js-lib/index.js' // eslint-disable-line
 import * as Automerge from 'automerge-wasm'
+import { AbstractCrdt, CrdtFactory } from '../../js-lib/index.js'; // eslint-disable-line
 
 const INITIAL_DOC = Automerge.default.create()
 const ARRAY_ID = INITIAL_DOC.putObject('/', 'array', [])
@@ -117,5 +117,9 @@ export class AutomergeCRDT {
    */
   transact (f) {
     f(this)
+  }
+
+  free() {
+    this.doc.free();
   }
 }

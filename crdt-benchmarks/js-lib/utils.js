@@ -261,4 +261,12 @@ export class AbstractCrdt {
   transact (f) {
     error.methodUnimplemented()
   }
+
+  /**
+   * Optionally, free the current doc's resources, if they aren't garbage
+   * collected normally.
+   * 
+   * Added for automerge-wasm's use.
+   */
+  free() {}
 }

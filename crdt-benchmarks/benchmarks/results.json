@@ -38,7 +38,16 @@
         "162 ms"
       ],
       "automerge-wasm": [
-        "343 ms"
+        "80 ms",
+        "79 ms",
+        "79 ms",
+        "76 ms",
+        "76 ms",
+        "81 ms",
+        "74 ms",
+        "72 ms",
+        "74 ms",
+        "73 ms"
       ],
       "tree-fugue-simple": [
         "644 ms",
@@ -103,6 +112,15 @@
         "27 bytes"
       ],
       "automerge-wasm": [
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
         "121 bytes"
       ],
       "tree-fugue-simple": [
@@ -168,7 +186,16 @@
         "0 ms"
       ],
       "automerge-wasm": [
-        "13 ms"
+        "10 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "8 ms",
+        "8 ms",
+        "9 ms",
+        "9 ms"
       ],
       "tree-fugue-simple": [
         "5 ms",
@@ -233,6 +260,15 @@
         "6031 bytes"
       ],
       "automerge-wasm": [
+        "3990 bytes",
+        "3990 bytes",
+        "3990 bytes",
+        "3990 bytes",
+        "3990 bytes",
+        "3990 bytes",
+        "3990 bytes",
+        "3990 bytes",
+        "3990 bytes",
         "3990 bytes"
       ],
       "tree-fugue-simple": [
@@ -298,7 +334,16 @@
         "-49928 bytes"
       ],
       "automerge-wasm": [
-        "-183384 bytes"
+        "-28944 bytes",
+        "-47968 bytes",
+        "-29560 bytes",
+        "-47776 bytes",
+        "-28752 bytes",
+        "-46448 bytes",
+        "-29560 bytes",
+        "-47968 bytes",
+        "-29560 bytes",
+        "-47968 bytes"
       ],
       "tree-fugue-simple": [
         "1994936 bytes",
@@ -363,7 +408,16 @@
         "85 ms"
       ],
       "automerge-wasm": [
-        "175 ms"
+        "111 ms",
+        "110 ms",
+        "108 ms",
+        "110 ms",
+        "121 ms",
+        "107 ms",
+        "103 ms",
+        "103 ms",
+        "104 ms",
+        "104 ms"
       ],
       "tree-fugue-simple": [
         "127 ms",
@@ -428,7 +482,16 @@
         "0 ms"
       ],
       "automerge-wasm": [
-        "26 ms"
+        "16 ms",
+        "16 ms",
+        "16 ms",
+        "18 ms",
+        "16 ms",
+        "16 ms",
+        "16 ms",
+        "16 ms",
+        "16 ms",
+        "16 ms"
       ],
       "tree-fugue-simple": [
         "611 ms",
@@ -493,6 +556,15 @@
         "6031 bytes"
       ],
       "automerge-wasm": [
+        "6196 bytes",
+        "6196 bytes",
+        "6196 bytes",
+        "6196 bytes",
+        "6196 bytes",
+        "6196 bytes",
+        "6196 bytes",
+        "6196 bytes",
+        "6196 bytes",
         "6196 bytes"
       ],
       "tree-fugue-simple": [
@@ -558,7 +630,16 @@
         "0 ms"
       ],
       "automerge-wasm": [
-        "3 ms"
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms"
       ],
       "tree-fugue-simple": [
         "6 ms",
@@ -623,6 +704,15 @@
         "6031 bytes"
       ],
       "automerge-wasm": [
+        "3972 bytes",
+        "3972 bytes",
+        "3972 bytes",
+        "3972 bytes",
+        "3972 bytes",
+        "3972 bytes",
+        "3972 bytes",
+        "3972 bytes",
+        "3972 bytes",
         "3972 bytes"
       ],
       "tree-fugue-simple": [
@@ -688,7 +778,16 @@
         "240 bytes"
       ],
       "automerge-wasm": [
-        "-19880 bytes"
+        "584 bytes",
+        "456 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "584 bytes",
+        "456 bytes",
+        "520 bytes",
+        "520 bytes"
       ],
       "tree-fugue-simple": [
         "1911040 bytes",
@@ -753,7 +852,16 @@
         "94 ms"
       ],
       "automerge-wasm": [
-        "103 ms"
+        "68 ms",
+        "68 ms",
+        "68 ms",
+        "68 ms",
+        "68 ms",
+        "68 ms",
+        "68 ms",
+        "68 ms",
+        "69 ms",
+        "69 ms"
       ],
       "tree-fugue-simple": [
         "121 ms",
@@ -818,7 +926,16 @@
         "31 ms"
       ],
       "automerge-wasm": [
-        "103 ms"
+        "55 ms",
+        "61 ms",
+        "56 ms",
+        "56 ms",
+        "56 ms",
+        "56 ms",
+        "56 ms",
+        "56 ms",
+        "55 ms",
+        "56 ms"
       ],
       "tree-fugue-simple": [
         "478 ms",
@@ -883,6 +1000,15 @@
         "27 bytes"
       ],
       "automerge-wasm": [
+        "116 bytes",
+        "116 bytes",
+        "116 bytes",
+        "116 bytes",
+        "116 bytes",
+        "116 bytes",
+        "116 bytes",
+        "116 bytes",
+        "116 bytes",
         "116 bytes"
       ],
       "tree-fugue-simple": [
@@ -948,7 +1074,16 @@
         "1 ms"
       ],
       "automerge-wasm": [
-        "13 ms"
+        "8 ms",
+        "8 ms",
+        "8 ms",
+        "8 ms",
+        "8 ms",
+        "8 ms",
+        "8 ms",
+        "8 ms",
+        "8 ms",
+        "8 ms"
       ],
       "tree-fugue-simple": [
         "4 ms",
@@ -1013,6 +1148,15 @@
         "6041 bytes"
       ],
       "automerge-wasm": [
+        "3986 bytes",
+        "3986 bytes",
+        "3986 bytes",
+        "3986 bytes",
+        "3986 bytes",
+        "3986 bytes",
+        "3986 bytes",
+        "3986 bytes",
+        "3986 bytes",
         "3986 bytes"
       ],
       "tree-fugue-simple": [
@@ -1078,7 +1222,16 @@
         "-23664 bytes"
       ],
       "automerge-wasm": [
-        "-41400 bytes"
+        "-47784 bytes",
+        "-19080 bytes",
+        "-47784 bytes",
+        "-19080 bytes",
+        "-47784 bytes",
+        "-19080 bytes",
+        "-47784 bytes",
+        "-19080 bytes",
+        "-47784 bytes",
+        "-19080 bytes"
       ],
       "tree-fugue-simple": [
         "2002632 bytes",
@@ -1143,7 +1296,16 @@
         "117 ms"
       ],
       "automerge-wasm": [
-        "207 ms"
+        "99 ms",
+        "99 ms",
+        "99 ms",
+        "99 ms",
+        "99 ms",
+        "104 ms",
+        "101 ms",
+        "100 ms",
+        "100 ms",
+        "100 ms"
       ],
       "tree-fugue-simple": [
         "124 ms",
@@ -1208,7 +1370,16 @@
         "180 ms"
       ],
       "automerge-wasm": [
-        "528 ms"
+        "64 ms",
+        "64 ms",
+        "64 ms",
+        "64 ms",
+        "64 ms",
+        "64 ms",
+        "63 ms",
+        "63 ms",
+        "68 ms",
+        "64 ms"
       ],
       "tree-fugue-simple": [
         "101 ms",
@@ -1273,6 +1444,15 @@
         "29 bytes"
       ],
       "automerge-wasm": [
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
+        "121 bytes",
         "121 bytes"
       ],
       "tree-fugue-simple": [
@@ -1338,7 +1518,16 @@
         "3 ms"
       ],
       "automerge-wasm": [
-        "14 ms"
+        "10 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "10 ms"
       ],
       "tree-fugue-simple": [
         "5 ms",
@@ -1403,6 +1592,15 @@
         "29554 bytes"
       ],
       "automerge-wasm": [
+        "24743 bytes",
+        "24743 bytes",
+        "24743 bytes",
+        "24743 bytes",
+        "24743 bytes",
+        "24743 bytes",
+        "24743 bytes",
+        "24743 bytes",
+        "24743 bytes",
         "24743 bytes"
       ],
       "tree-fugue-simple": [
@@ -1468,7 +1666,16 @@
         "-45168 bytes"
       ],
       "automerge-wasm": [
-        "-282920 bytes"
+        "-32816 bytes",
+        "-59096 bytes",
+        "-32656 bytes",
+        "-59096 bytes",
+        "-32656 bytes",
+        "-59096 bytes",
+        "-32656 bytes",
+        "-59096 bytes",
+        "-32656 bytes",
+        "-59096 bytes"
       ],
       "tree-fugue-simple": [
         "2012728 bytes",
@@ -1533,7 +1740,16 @@
         "246 ms"
       ],
       "automerge-wasm": [
-        "195 ms"
+        "106 ms",
+        "107 ms",
+        "107 ms",
+        "112 ms",
+        "108 ms",
+        "107 ms",
+        "108 ms",
+        "107 ms",
+        "109 ms",
+        "108 ms"
       ],
       "tree-fugue-simple": [
         "140 ms",
@@ -1620,6 +1836,18 @@
         "2457 ms",
         "2377 ms",
         "2575 ms"
+      ],
+      "automerge-wasm": [
+        "168 ms",
+        "169 ms",
+        "169 ms",
+        "161 ms",
+        "157 ms",
+        "164 ms",
+        "158 ms",
+        "165 ms",
+        "168 ms",
+        "168 ms"
       ]
     },
     "[B1.5] Insert N words at random positions (avgUpdateSize)": {
@@ -1660,6 +1888,15 @@
         "36 bytes"
       ],
       "automerge-wasm": [
+        "131 bytes",
+        "131 bytes",
+        "131 bytes",
+        "131 bytes",
+        "131 bytes",
+        "131 bytes",
+        "131 bytes",
+        "131 bytes",
+        "131 bytes",
         "131 bytes"
       ],
       "tree-fugue-simple": [
@@ -1725,7 +1962,16 @@
         "2 ms"
       ],
       "automerge-wasm": [
-        "30 ms"
+        "28 ms",
+        "28 ms",
+        "28 ms",
+        "26 ms",
+        "26 ms",
+        "27 ms",
+        "27 ms",
+        "28 ms",
+        "28 ms",
+        "28 ms"
       ],
       "tree-fugue-simple": [
         "25 ms",
@@ -1790,6 +2036,15 @@
         "87924 bytes"
       ],
       "automerge-wasm": [
+        "96199 bytes",
+        "96199 bytes",
+        "96199 bytes",
+        "96199 bytes",
+        "96199 bytes",
+        "96199 bytes",
+        "96199 bytes",
+        "96199 bytes",
+        "96199 bytes",
         "96199 bytes"
       ],
       "tree-fugue-simple": [
@@ -1855,7 +2110,16 @@
         "240 bytes"
       ],
       "automerge-wasm": [
-        "-46552 bytes"
+        "-59096 bytes",
+        "-32656 bytes",
+        "-59096 bytes",
+        "-30208 bytes",
+        "-60024 bytes",
+        "-31728 bytes",
+        "-57576 bytes",
+        "-32656 bytes",
+        "-59096 bytes",
+        "-30208 bytes"
       ],
       "tree-fugue-simple": [
         "12620912 bytes",
@@ -1920,7 +2184,16 @@
         "339 ms"
       ],
       "automerge-wasm": [
-        "275 ms"
+        "220 ms",
+        "221 ms",
+        "221 ms",
+        "209 ms",
+        "217 ms",
+        "209 ms",
+        "220 ms",
+        "222 ms",
+        "223 ms",
+        "223 ms"
       ],
       "tree-fugue-simple": [
         "434 ms",
@@ -1985,7 +2258,16 @@
         "0 ms"
       ],
       "automerge-wasm": [
-        "33 ms"
+        "24 ms",
+        "24 ms",
+        "24 ms",
+        "24 ms",
+        "24 ms",
+        "24 ms",
+        "24 ms",
+        "24 ms",
+        "24 ms",
+        "24 ms"
       ],
       "tree-fugue-simple": [
         "1007 ms",
@@ -2050,6 +2332,15 @@
         "6053 bytes"
       ],
       "automerge-wasm": [
+        "6333 bytes",
+        "6333 bytes",
+        "6333 bytes",
+        "6333 bytes",
+        "6333 bytes",
+        "6333 bytes",
+        "6333 bytes",
+        "6333 bytes",
+        "6333 bytes",
         "6333 bytes"
       ],
       "tree-fugue-simple": [
@@ -2115,7 +2406,16 @@
         "0 ms"
       ],
       "automerge-wasm": [
-        "4 ms"
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms"
       ],
       "tree-fugue-simple": [
         "4 ms",
@@ -2180,6 +2480,15 @@
         "38 bytes"
       ],
       "automerge-wasm": [
+        "3991 bytes",
+        "3991 bytes",
+        "3991 bytes",
+        "3991 bytes",
+        "3991 bytes",
+        "3991 bytes",
+        "3991 bytes",
+        "3991 bytes",
+        "3991 bytes",
         "3991 bytes"
       ],
       "tree-fugue-simple": [
@@ -2245,7 +2554,16 @@
         "240 bytes"
       ],
       "automerge-wasm": [
-        "416 bytes"
+        "10992 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes"
       ],
       "tree-fugue-simple": [
         "2044112 bytes",
@@ -2310,7 +2628,16 @@
         "172 ms"
       ],
       "automerge-wasm": [
-        "153 ms"
+        "88 ms",
+        "88 ms",
+        "88 ms",
+        "88 ms",
+        "88 ms",
+        "88 ms",
+        "88 ms",
+        "88 ms",
+        "88 ms",
+        "89 ms"
       ],
       "tree-fugue-simple": [
         "118 ms",
@@ -2375,7 +2702,16 @@
         "193 ms"
       ],
       "automerge-wasm": [
-        "641 ms"
+        "119 ms",
+        "118 ms",
+        "118 ms",
+        "118 ms",
+        "118 ms",
+        "118 ms",
+        "118 ms",
+        "119 ms",
+        "119 ms",
+        "118 ms"
       ],
       "tree-fugue-simple": [
         "317 ms",
@@ -2440,6 +2776,15 @@
         "31 bytes"
       ],
       "automerge-wasm": [
+        "135 bytes",
+        "135 bytes",
+        "135 bytes",
+        "135 bytes",
+        "135 bytes",
+        "135 bytes",
+        "135 bytes",
+        "135 bytes",
+        "135 bytes",
         "135 bytes"
       ],
       "tree-fugue-simple": [
@@ -2505,7 +2850,16 @@
         "4 ms"
       ],
       "automerge-wasm": [
-        "28 ms"
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms"
       ],
       "tree-fugue-simple": [
         "12 ms",
@@ -2570,6 +2924,15 @@
         "28377 bytes"
       ],
       "automerge-wasm": [
+        "59280 bytes",
+        "59280 bytes",
+        "59280 bytes",
+        "59280 bytes",
+        "59280 bytes",
+        "59280 bytes",
+        "59280 bytes",
+        "59280 bytes",
+        "59280 bytes",
         "59280 bytes"
       ],
       "tree-fugue-simple": [
@@ -2635,7 +2998,16 @@
         "-47072 bytes"
       ],
       "automerge-wasm": [
-        "-40744 bytes"
+        "-35344 bytes",
+        "-54432 bytes",
+        "-35344 bytes",
+        "-54432 bytes",
+        "-35344 bytes",
+        "-54432 bytes",
+        "-35344 bytes",
+        "-54432 bytes",
+        "-35344 bytes",
+        "-54432 bytes"
       ],
       "tree-fugue-simple": [
         "6109048 bytes",
@@ -2700,7 +3072,16 @@
         "354 ms"
       ],
       "automerge-wasm": [
-        "284 ms"
+        "191 ms",
+        "193 ms",
+        "192 ms",
+        "193 ms",
+        "193 ms",
+        "192 ms",
+        "191 ms",
+        "191 ms",
+        "192 ms",
+        "193 ms"
       ],
       "tree-fugue-simple": [
         "247 ms",
@@ -2765,7 +3146,16 @@
         "34 ms"
       ],
       "automerge-wasm": [
-        "313 ms"
+        "73 ms",
+        "74 ms",
+        "72 ms",
+        "73 ms",
+        "72 ms",
+        "73 ms",
+        "72 ms",
+        "73 ms",
+        "72 ms",
+        "72 ms"
       ],
       "tree-fugue-simple": [
         "664 ms",
@@ -2830,6 +3220,15 @@
         "32 bytes"
       ],
       "automerge-wasm": [
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
         "125 bytes"
       ],
       "tree-fugue-simple": [
@@ -2895,7 +3294,16 @@
         "3 ms"
       ],
       "automerge-wasm": [
-        "16 ms"
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms"
       ],
       "tree-fugue-simple": [
         "4 ms",
@@ -2960,6 +3368,15 @@
         "35634 bytes"
       ],
       "automerge-wasm": [
+        "26982 bytes",
+        "26982 bytes",
+        "26982 bytes",
+        "26982 bytes",
+        "26982 bytes",
+        "26982 bytes",
+        "26982 bytes",
+        "26982 bytes",
+        "26982 bytes",
         "26982 bytes"
       ],
       "tree-fugue-simple": [
@@ -3025,7 +3442,16 @@
         "-392 bytes"
       ],
       "automerge-wasm": [
-        "-7864 bytes"
+        "-59992 bytes",
+        "-31696 bytes",
+        "-57544 bytes",
+        "-32624 bytes",
+        "-59064 bytes",
+        "-30176 bytes",
+        "-59992 bytes",
+        "-31696 bytes",
+        "-57544 bytes",
+        "-32624 bytes"
       ],
       "tree-fugue-simple": [
         "2002792 bytes",
@@ -3090,7 +3516,16 @@
         "330 ms"
       ],
       "automerge-wasm": [
-        "206 ms"
+        "111 ms",
+        "115 ms",
+        "112 ms",
+        "111 ms",
+        "111 ms",
+        "111 ms",
+        "113 ms",
+        "112 ms",
+        "112 ms",
+        "112 ms"
       ],
       "tree-fugue-simple": [
         "131 ms",
@@ -3155,7 +3590,16 @@
         "10 ms"
       ],
       "automerge-wasm": [
-        "29 ms"
+        "17 ms",
+        "17 ms",
+        "16 ms",
+        "17 ms",
+        "17 ms",
+        "17 ms",
+        "17 ms",
+        "17 ms",
+        "17 ms",
+        "17 ms"
       ],
       "tree-fugue-simple": [
         "642 ms",
@@ -3220,6 +3664,15 @@
         "35657 bytes"
       ],
       "automerge-wasm": [
+        "31194 bytes",
+        "31194 bytes",
+        "31194 bytes",
+        "31194 bytes",
+        "31194 bytes",
+        "31194 bytes",
+        "31194 bytes",
+        "31194 bytes",
+        "31194 bytes",
         "31194 bytes"
       ],
       "tree-fugue-simple": [
@@ -3285,7 +3738,16 @@
         "2 ms"
       ],
       "automerge-wasm": [
-        "5 ms"
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms"
       ],
       "tree-fugue-simple": [
         "5 ms",
@@ -3350,6 +3812,15 @@
         "35657 bytes"
       ],
       "automerge-wasm": [
+        "26951 bytes",
+        "26951 bytes",
+        "26951 bytes",
+        "26951 bytes",
+        "26951 bytes",
+        "26951 bytes",
+        "26951 bytes",
+        "26951 bytes",
+        "26951 bytes",
         "26951 bytes"
       ],
       "tree-fugue-simple": [
@@ -3415,7 +3886,16 @@
         "304 bytes"
       ],
       "automerge-wasm": [
-        "640 bytes"
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes"
       ],
       "tree-fugue-simple": [
         "1909888 bytes",
@@ -3480,7 +3960,16 @@
         "324 ms"
       ],
       "automerge-wasm": [
-        "152 ms"
+        "74 ms",
+        "74 ms",
+        "74 ms",
+        "74 ms",
+        "74 ms",
+        "74 ms",
+        "74 ms",
+        "74 ms",
+        "74 ms",
+        "74 ms"
       ],
       "tree-fugue-simple": [
         "118 ms",
@@ -3545,7 +4034,16 @@
         "53 ms"
       ],
       "automerge-wasm": [
-        "483 ms"
+        "61 ms",
+        "62 ms",
+        "61 ms",
+        "61 ms",
+        "61 ms",
+        "61 ms",
+        "61 ms",
+        "61 ms",
+        "61 ms",
+        "61 ms"
       ],
       "tree-fugue-simple": [
         "477 ms",
@@ -3610,6 +4108,15 @@
         "32 bytes"
       ],
       "automerge-wasm": [
+        "120 bytes",
+        "120 bytes",
+        "120 bytes",
+        "120 bytes",
+        "120 bytes",
+        "120 bytes",
+        "120 bytes",
+        "120 bytes",
+        "120 bytes",
         "120 bytes"
       ],
       "tree-fugue-simple": [
@@ -3675,7 +4182,16 @@
         "3 ms"
       ],
       "automerge-wasm": [
-        "15 ms"
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "10 ms",
+        "10 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms"
       ],
       "tree-fugue-simple": [
         "4 ms",
@@ -3740,6 +4256,15 @@
         "35665 bytes"
       ],
       "automerge-wasm": [
+        "26985 bytes",
+        "26985 bytes",
+        "26985 bytes",
+        "26985 bytes",
+        "26985 bytes",
+        "26985 bytes",
+        "26985 bytes",
+        "26985 bytes",
+        "26985 bytes",
         "26985 bytes"
       ],
       "tree-fugue-simple": [
@@ -3805,7 +4330,16 @@
         "-67856 bytes"
       ],
       "automerge-wasm": [
-        "-30368 bytes"
+        "-32624 bytes",
+        "-59064 bytes",
+        "-30176 bytes",
+        "-59992 bytes",
+        "-30176 bytes",
+        "-59992 bytes",
+        "-30176 bytes",
+        "-59992 bytes",
+        "-30176 bytes",
+        "-59992 bytes"
       ],
       "tree-fugue-simple": [
         "2012728 bytes",
@@ -3870,7 +4404,16 @@
         "471 ms"
       ],
       "automerge-wasm": [
-        "190 ms"
+        "106 ms",
+        "106 ms",
+        "106 ms",
+        "107 ms",
+        "106 ms",
+        "106 ms",
+        "106 ms",
+        "106 ms",
+        "106 ms",
+        "106 ms"
       ],
       "tree-fugue-simple": [
         "127 ms",
@@ -3935,7 +4478,16 @@
         "231 ms"
       ],
       "automerge-wasm": [
-        "499 ms"
+        "68 ms",
+        "67 ms",
+        "67 ms",
+        "67 ms",
+        "67 ms",
+        "67 ms",
+        "68 ms",
+        "68 ms",
+        "68 ms",
+        "67 ms"
       ],
       "tree-fugue-simple": [
         "99 ms",
@@ -4000,6 +4552,15 @@
         "34 bytes"
       ],
       "automerge-wasm": [
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
+        "125 bytes",
         "125 bytes"
       ],
       "tree-fugue-simple": [
@@ -4065,7 +4626,16 @@
         "7 ms"
       ],
       "automerge-wasm": [
-        "13 ms"
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms"
       ],
       "tree-fugue-simple": [
         "5 ms",
@@ -4130,6 +4700,15 @@
         "59137 bytes"
       ],
       "automerge-wasm": [
+        "47744 bytes",
+        "47744 bytes",
+        "47744 bytes",
+        "47744 bytes",
+        "47744 bytes",
+        "47744 bytes",
+        "47744 bytes",
+        "47744 bytes",
+        "47744 bytes",
         "47744 bytes"
       ],
       "tree-fugue-simple": [
@@ -4195,7 +4774,16 @@
         "-33200 bytes"
       ],
       "automerge-wasm": [
-        "-54592 bytes"
+        "-60112 bytes",
+        "-30296 bytes",
+        "-60112 bytes",
+        "-30296 bytes",
+        "-60112 bytes",
+        "-30296 bytes",
+        "-60112 bytes",
+        "-30296 bytes",
+        "-60112 bytes",
+        "-30296 bytes"
       ],
       "tree-fugue-simple": [
         "2001728 bytes",
@@ -4260,7 +4848,16 @@
         "474 ms"
       ],
       "automerge-wasm": [
-        "171 ms"
+        "113 ms",
+        "112 ms",
+        "113 ms",
+        "113 ms",
+        "113 ms",
+        "112 ms",
+        "113 ms",
+        "113 ms",
+        "113 ms",
+        "113 ms"
       ],
       "tree-fugue-simple": [
         "140 ms",
@@ -4325,7 +4922,16 @@
         "0 ms"
       ],
       "automerge-wasm": [
-        "88 ms"
+        "62 ms",
+        "62 ms",
+        "62 ms",
+        "62 ms",
+        "62 ms",
+        "62 ms",
+        "62 ms",
+        "62 ms",
+        "62 ms",
+        "62 ms"
       ],
       "tree-fugue-simple": [
         "1502 ms",
@@ -4390,6 +4996,15 @@
         "6094 bytes"
       ],
       "automerge-wasm": [
+        "9494 bytes",
+        "9494 bytes",
+        "9494 bytes",
+        "9494 bytes",
+        "9494 bytes",
+        "9494 bytes",
+        "9494 bytes",
+        "9494 bytes",
+        "9494 bytes",
         "9494 bytes"
       ],
       "tree-fugue-simple": [
@@ -4455,7 +5070,16 @@
         "0 ms"
       ],
       "automerge-wasm": [
-        "4 ms"
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "4 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms"
       ],
       "tree-fugue-simple": [
         "9 ms",
@@ -4520,6 +5144,15 @@
         "12152 bytes"
       ],
       "automerge-wasm": [
+        "8009 bytes",
+        "8009 bytes",
+        "8009 bytes",
+        "8009 bytes",
+        "8009 bytes",
+        "8009 bytes",
+        "8009 bytes",
+        "8009 bytes",
+        "8009 bytes",
         "8009 bytes"
       ],
       "tree-fugue-simple": [
@@ -4585,7 +5218,16 @@
         "240 bytes"
       ],
       "automerge-wasm": [
-        "-904 bytes"
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "616 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes",
+        "520 bytes"
       ],
       "tree-fugue-simple": [
         "4192304 bytes",
@@ -4650,7 +5292,16 @@
         "275 ms"
       ],
       "automerge-wasm": [
-        "146 ms"
+        "91 ms",
+        "90 ms",
+        "91 ms",
+        "91 ms",
+        "95 ms",
+        "91 ms",
+        "91 ms",
+        "90 ms",
+        "91 ms",
+        "91 ms"
       ],
       "tree-fugue-simple": [
         "169 ms",
@@ -4715,7 +5366,16 @@
         "576 ms"
       ],
       "automerge-wasm": [
-        "1392 ms"
+        "301 ms",
+        "300 ms",
+        "299 ms",
+        "300 ms",
+        "300 ms",
+        "300 ms",
+        "300 ms",
+        "301 ms",
+        "300 ms",
+        "300 ms"
       ],
       "tree-fugue-simple": [
         "197 ms",
@@ -4780,6 +5440,15 @@
         "177007 bytes"
       ],
       "automerge-wasm": [
+        "1093282 bytes",
+        "1093282 bytes",
+        "1093282 bytes",
+        "1093282 bytes",
+        "1093282 bytes",
+        "1093282 bytes",
+        "1093282 bytes",
+        "1093282 bytes",
+        "1093282 bytes",
         "1093282 bytes"
       ],
       "tree-fugue-simple": [
@@ -4845,7 +5514,16 @@
         "3 ms"
       ],
       "automerge-wasm": [
-        "28 ms"
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms"
       ],
       "tree-fugue-simple": [
         "10 ms",
@@ -4910,6 +5588,15 @@
         "66852 bytes"
       ],
       "automerge-wasm": [
+        "50699 bytes",
+        "50699 bytes",
+        "50699 bytes",
+        "50700 bytes",
+        "50699 bytes",
+        "50699 bytes",
+        "50699 bytes",
+        "50699 bytes",
+        "50699 bytes",
         "50699 bytes"
       ],
       "tree-fugue-simple": [
@@ -4975,7 +5662,16 @@
         "-55896 bytes"
       ],
       "automerge-wasm": [
-        "-27504 bytes"
+        "-28800 bytes",
+        "-32248 bytes",
+        "-30360 bytes",
+        "-32248 bytes",
+        "-28800 bytes",
+        "-32248 bytes",
+        "-28800 bytes",
+        "-32248 bytes",
+        "-30360 bytes",
+        "-32248 bytes"
       ],
       "tree-fugue-simple": [
         "4197928 bytes",
@@ -5040,7 +5736,16 @@
         "528 ms"
       ],
       "automerge-wasm": [
-        "269 ms"
+        "178 ms",
+        "177 ms",
+        "178 ms",
+        "178 ms",
+        "177 ms",
+        "177 ms",
+        "177 ms",
+        "178 ms",
+        "177 ms",
+        "178 ms"
       ],
       "tree-fugue-simple": [
         "182 ms",
@@ -5105,7 +5810,16 @@
         "1478 ms"
       ],
       "automerge-wasm": [
-        "2520 ms"
+        "681 ms",
+        "684 ms",
+        "683 ms",
+        "680 ms",
+        "685 ms",
+        "680 ms",
+        "682 ms",
+        "679 ms",
+        "684 ms",
+        "684 ms"
       ],
       "tree-fugue-simple": [
         "911 ms",
@@ -5170,6 +5884,15 @@
         "215213 bytes"
       ],
       "automerge-wasm": [
+        "1185195 bytes",
+        "1185195 bytes",
+        "1185195 bytes",
+        "1185195 bytes",
+        "1185195 bytes",
+        "1185195 bytes",
+        "1185195 bytes",
+        "1185195 bytes",
+        "1185195 bytes",
         "1185195 bytes"
       ],
       "tree-fugue-simple": [
@@ -5235,7 +5958,16 @@
         "7 ms"
       ],
       "automerge-wasm": [
-        "73 ms"
+        "59 ms",
+        "62 ms",
+        "59 ms",
+        "59 ms",
+        "59 ms",
+        "59 ms",
+        "59 ms",
+        "60 ms",
+        "60 ms",
+        "60 ms"
       ],
       "tree-fugue-simple": [
         "52 ms",
@@ -5300,6 +6032,15 @@
         "178130 bytes"
       ],
       "automerge-wasm": [
+        "191495 bytes",
+        "191495 bytes",
+        "191496 bytes",
+        "191495 bytes",
+        "191496 bytes",
+        "191495 bytes",
+        "191494 bytes",
+        "191495 bytes",
+        "191495 bytes",
         "191496 bytes"
       ],
       "tree-fugue-simple": [
@@ -5365,7 +6106,16 @@
         "-43208 bytes"
       ],
       "automerge-wasm": [
-        "-187384 bytes"
+        "-30320 bytes",
+        "-30728 bytes",
+        "-30320 bytes",
+        "-30728 bytes",
+        "-31880 bytes",
+        "-28800 bytes",
+        "-32248 bytes",
+        "-28800 bytes",
+        "-32248 bytes",
+        "-28800 bytes"
       ],
       "tree-fugue-simple": [
         "25185200 bytes",
@@ -5430,7 +6180,16 @@
         "470 ms"
       ],
       "automerge-wasm": [
-        "519 ms"
+        "384 ms",
+        "385 ms",
+        "386 ms",
+        "386 ms",
+        "385 ms",
+        "390 ms",
+        "385 ms",
+        "385 ms",
+        "387 ms",
+        "384 ms"
       ],
       "tree-fugue-simple": [
         "754 ms",
@@ -5495,7 +6254,16 @@
         "3918 ms"
       ],
       "automerge-wasm": [
-        "4780 ms"
+        "1272 ms",
+        "1265 ms",
+        "1268 ms",
+        "1274 ms",
+        "1280 ms",
+        "1277 ms",
+        "1282 ms",
+        "1277 ms",
+        "1280 ms",
+        "1277 ms"
       ],
       "tree-fugue-simple": [
         "1571 ms",
@@ -5560,6 +6328,15 @@
         "398881 bytes"
       ],
       "automerge-wasm": [
+        "2395867 bytes",
+        "2395867 bytes",
+        "2395867 bytes",
+        "2395867 bytes",
+        "2395867 bytes",
+        "2395867 bytes",
+        "2395867 bytes",
+        "2395867 bytes",
+        "2395867 bytes",
         "2395867 bytes"
       ],
       "tree-fugue-simple": [
@@ -5625,7 +6402,16 @@
         "14 ms"
       ],
       "automerge-wasm": [
-        "132 ms"
+        "109 ms",
+        "109 ms",
+        "109 ms",
+        "109 ms",
+        "110 ms",
+        "110 ms",
+        "110 ms",
+        "110 ms",
+        "109 ms",
+        "111 ms"
       ],
       "tree-fugue-simple": [
         "89 ms",
@@ -5690,7 +6476,16 @@
         "279166 bytes"
       ],
       "automerge-wasm": [
-        "307359 bytes"
+        "307359 bytes",
+        "307359 bytes",
+        "307357 bytes",
+        "307360 bytes",
+        "307360 bytes",
+        "307360 bytes",
+        "307359 bytes",
+        "307358 bytes",
+        "307357 bytes",
+        "307360 bytes"
       ],
       "tree-fugue-simple": [
         "10883165 bytes",
@@ -5755,7 +6550,16 @@
         "-7080 bytes"
       ],
       "automerge-wasm": [
-        "-39352 bytes"
+        "-30320 bytes",
+        "-30672 bytes",
+        "-30320 bytes",
+        "-40960 bytes",
+        "-30320 bytes",
+        "-30672 bytes",
+        "-44784 bytes",
+        "-30672 bytes",
+        "-30320 bytes",
+        "-30672 bytes"
       ],
       "tree-fugue-simple": [
         "37907056 bytes",
@@ -5820,7 +6624,16 @@
         "573 ms"
       ],
       "automerge-wasm": [
-        "859 ms"
+        "695 ms",
+        "695 ms",
+        "696 ms",
+        "695 ms",
+        "700 ms",
+        "697 ms",
+        "700 ms",
+        "700 ms",
+        "701 ms",
+        "699 ms"
       ],
       "tree-fugue-simple": [
         "1586 ms",
@@ -5885,7 +6698,16 @@
         "368 ms"
       ],
       "automerge-wasm": [
-        "43 ms"
+        "34 ms",
+        "33 ms",
+        "35 ms",
+        "37 ms",
+        "45 ms",
+        "41 ms",
+        "42 ms",
+        "42 ms",
+        "40 ms",
+        "47 ms"
       ],
       "tree-fugue-simple": [
         "33 ms",
@@ -5950,6 +6772,15 @@
         "52738 bytes"
       ],
       "automerge-wasm": [
+        "277630 bytes",
+        "277630 bytes",
+        "277630 bytes",
+        "277630 bytes",
+        "277630 bytes",
+        "277630 bytes",
+        "277630 bytes",
+        "277630 bytes",
+        "277630 bytes",
         "277630 bytes"
       ],
       "tree-fugue-simple": [
@@ -6015,6 +6846,15 @@
         "1 ms"
       ],
       "automerge-wasm": [
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "12 ms",
+        "13 ms",
+        "13 ms",
+        "13 ms",
+        "13 ms",
+        "13 ms",
         "13 ms"
       ],
       "tree-fugue-simple": [
@@ -6080,7 +6920,16 @@
         "26583 bytes"
       ],
       "automerge-wasm": [
-        "83559 bytes"
+        "83547 bytes",
+        "83571 bytes",
+        "83553 bytes",
+        "83562 bytes",
+        "83564 bytes",
+        "83567 bytes",
+        "83567 bytes",
+        "83575 bytes",
+        "83563 bytes",
+        "83541 bytes"
       ],
       "tree-fugue-simple": [
         "203895 bytes",
@@ -6160,7 +7009,21 @@
         "-16856 bytes"
       ],
       "automerge-wasm": [
-        "-3200 bytes"
+        "-5872 bytes",
+        "-10544 bytes",
+        "-6272 bytes",
+        "-10608 bytes",
+        "-2232 bytes",
+        "-10968 bytes",
+        "-5720 bytes",
+        "-10544 bytes",
+        "-6208 bytes",
+        "-10448 bytes",
+        "-5784 bytes",
+        "-121296 bytes",
+        "-5720 bytes",
+        "-10480 bytes",
+        "-25848 bytes"
       ],
       "tree-fugue-simple": [
         "205352 bytes",
@@ -6235,7 +7098,16 @@
         "457 ms"
       ],
       "automerge-wasm": [
-        "160 ms"
+        "86 ms",
+        "92 ms",
+        "92 ms",
+        "98 ms",
+        "105 ms",
+        "110 ms",
+        "105 ms",
+        "104 ms",
+        "104 ms",
+        "106 ms"
       ],
       "tree-fugue-simple": [
         "228 ms",
@@ -6300,7 +7172,16 @@
         "54128 ms"
       ],
       "automerge-wasm": [
-        "78646 ms"
+        "4533 ms",
+        "4157 ms",
+        "4664 ms",
+        "4662 ms",
+        "4538 ms",
+        "4400 ms",
+        "4748 ms",
+        "4570 ms",
+        "4620 ms",
+        "4417 ms"
       ],
       "tree-fugue-simple": [
         "13016 ms",
@@ -6365,6 +7246,15 @@
         "7488441 bytes"
       ],
       "automerge-wasm": [
+        "58115146 bytes",
+        "58115146 bytes",
+        "58115146 bytes",
+        "58115146 bytes",
+        "58115146 bytes",
+        "58115146 bytes",
+        "58115146 bytes",
+        "58115146 bytes",
+        "58115146 bytes",
         "58115146 bytes"
       ],
       "tree-fugue-simple": [
@@ -6430,7 +7320,16 @@
         "6 ms"
       ],
       "automerge-wasm": [
-        "644 ms"
+        "565 ms",
+        "495 ms",
+        "564 ms",
+        "566 ms",
+        "542 ms",
+        "505 ms",
+        "574 ms",
+        "505 ms",
+        "565 ms",
+        "554 ms"
       ],
       "tree-fugue-simple": [
         "139 ms",
@@ -6495,6 +7394,15 @@
         "159928 bytes"
       ],
       "automerge-wasm": [
+        "142473 bytes",
+        "142473 bytes",
+        "142473 bytes",
+        "142473 bytes",
+        "142473 bytes",
+        "142473 bytes",
+        "142473 bytes",
+        "142473 bytes",
+        "142473 bytes",
         "142473 bytes"
       ],
       "tree-fugue-simple": [
@@ -6560,7 +7468,16 @@
         "22 ms"
       ],
       "automerge-wasm": [
-        "80798 ms"
+        "3317 ms",
+        "3182 ms",
+        "3408 ms",
+        "3305 ms",
+        "3224 ms",
+        "3225 ms",
+        "3319 ms",
+        "3199 ms",
+        "3331 ms",
+        "3186 ms"
       ],
       "tree-fugue-simple": [
         "276 ms",
@@ -6625,7 +7542,16 @@
         "-20000 bytes"
       ],
       "automerge-wasm": [
-        "-183952 bytes"
+        "-32504 bytes",
+        "-24624 bytes",
+        "-32816 bytes",
+        "-24512 bytes",
+        "-32720 bytes",
+        "-24624 bytes",
+        "-32816 bytes",
+        "-23104 bytes",
+        "-32816 bytes",
+        "-24624 bytes"
       ],
       "tree-fugue-simple": [
         "64180248 bytes",

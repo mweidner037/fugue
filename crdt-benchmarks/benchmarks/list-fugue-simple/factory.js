@@ -182,4 +182,6 @@ export class ListFugueSimpleCRDT {
 
     this.inTransact = oldInTransact;
   }
+
+  free() {}
 }

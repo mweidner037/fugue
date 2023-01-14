@@ -1,9 +1,9 @@
-import { setBenchmarkResult, gen, N, benchmarkTime, runBenchmark, logMemoryUsed, getMemUsed, WARMUP_TRIALS, MEASURED_TRIALS } from './utils.js'
-import * as prng from 'lib0/prng'
 import * as math from 'lib0/math'
 import { createMutex } from 'lib0/mutex'
+import * as prng from 'lib0/prng'
 import * as t from 'lib0/testing'
-import { CrdtFactory, AbstractCrdt } from './index.js' // eslint-disable-line
+import { AbstractCrdt, CrdtFactory } from './index.js'; // eslint-disable-line
+import { benchmarkTime, gen, getMemUsed, logMemoryUsed, MEASURED_TRIALS, N, runBenchmark, setBenchmarkResult, WARMUP_TRIALS } from './utils.js'
 
 const initText = prng.word(gen, 100, 100)
 
@@ -44,12 +44,15 @@ export const runBenchmarkB2 = async (crdtFactory, filter) => {
         // @ts-ignore
         const documentSize = encodedState.length
         setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`, trial)
+        doc1.free();
+        doc2.free();
       }
       benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
         const startHeapUsed = getMemUsed()
         const doc = crdtFactory.create()
         doc.applyUpdate(encodedState)
         logMemoryUsed(crdtFactory.getName(), id, startHeapUsed, trial)
+        doc.free();
       }, trial)
     }
   }

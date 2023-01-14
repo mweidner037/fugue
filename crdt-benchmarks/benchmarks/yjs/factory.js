@@ -1,6 +1,6 @@
 
-import { AbstractCrdt, CrdtFactory } from '../../js-lib/index.js' // eslint-disable-line
 import * as Y from 'yjs'
+import { AbstractCrdt, CrdtFactory } from '../../js-lib/index.js'; // eslint-disable-line
 
 export const name = 'yjs'
 
@@ -112,4 +112,6 @@ export class YjsCRDT {
   transact (f) {
     this.ydoc.transact(() => f(this))
   }
+
+  free() {}
 }
