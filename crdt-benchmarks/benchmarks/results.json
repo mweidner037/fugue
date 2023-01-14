@@ -2,2090 +2,6810 @@
   "6000": {
     "[B1.1] Append N characters (time)": {
       "tree-fugue": [
-        "142 ms"
+        "93 ms",
+        "93 ms",
+        "91 ms",
+        "93 ms",
+        "93 ms",
+        "93 ms",
+        "92 ms",
+        "92 ms",
+        "92 ms",
+        "91 ms"
       ],
       "yjs": [
-        "199 ms"
+        "159 ms",
+        "163 ms",
+        "159 ms",
+        "169 ms",
+        "165 ms",
+        "163 ms",
+        "163 ms",
+        "170 ms",
+        "164 ms",
+        "160 ms"
       ],
       "ywasm": [
-        "264 ms"
+        "161 ms",
+        "162 ms",
+        "162 ms",
+        "163 ms",
+        "164 ms",
+        "166 ms",
+        "167 ms",
+        "162 ms",
+        "164 ms",
+        "162 ms"
       ],
       "automerge-wasm": [
         "343 ms"
       ],
       "tree-fugue-simple": [
-        "870 ms"
+        "644 ms",
+        "660 ms",
+        "633 ms",
+        "646 ms",
+        "653 ms",
+        "650 ms",
+        "635 ms",
+        "659 ms",
+        "628 ms",
+        "634 ms"
       ],
       "list-fugue-simple": [
-        "154 ms"
+        "92 ms",
+        "95 ms",
+        "93 ms",
+        "96 ms",
+        "92 ms",
+        "95 ms",
+        "91 ms",
+        "95 ms",
+        "95 ms",
+        "94 ms"
       ]
     },
     "[B1.1] Append N characters (avgUpdateSize)": {
       "tree-fugue": [
+        "39 bytes",
+        "39 bytes",
+        "39 bytes",
+        "39 bytes",
+        "39 bytes",
+        "39 bytes",
+        "39 bytes",
+        "39 bytes",
+        "39 bytes",
         "39 bytes"
       ],
       "yjs": [
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "26 bytes",
+        "27 bytes",
         "27 bytes"
       ],
       "ywasm": [
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
         "27 bytes"
       ],
       "automerge-wasm": [
         "121 bytes"
       ],
       "tree-fugue-simple": [
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
         "164 bytes"
       ],
       "list-fugue-simple": [
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
         "197 bytes"
       ]
     },
     "[B1.1] Append N characters (encodeTime)": {
       "tree-fugue": [
-        "1 ms"
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms"
       ],
       "yjs": [
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
         "1 ms"
       ],
       "ywasm": [
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
         "0 ms"
       ],
       "automerge-wasm": [
         "13 ms"
       ],
       "tree-fugue-simple": [
-        "6 ms"
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms"
       ],
       "list-fugue-simple": [
-        "9 ms"
+        "8 ms",
+        "7 ms",
+        "8 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "8 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms"
       ]
     },
     "[B1.1] Append N characters (docSize)": {
       "tree-fugue": [
+        "6145 bytes",
+        "6145 bytes",
+        "6145 bytes",
+        "6145 bytes",
+        "6145 bytes",
+        "6145 bytes",
+        "6145 bytes",
+        "6145 bytes",
+        "6145 bytes",
         "6145 bytes"
       ],
       "yjs": [
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6030 bytes",
+        "6031 bytes",
         "6031 bytes"
       ],
       "ywasm": [
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
         "6031 bytes"
       ],
       "automerge-wasm": [
         "3990 bytes"
       ],
       "tree-fugue-simple": [
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
         "615998 bytes"
       ],
       "list-fugue-simple": [
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
         "1005836 bytes"
       ]
     },
     "[B1.1] Append N characters (memUsed)": {
       "tree-fugue": [
-        "-358208 bytes"
+        "-140744 bytes",
+        "-158480 bytes",
+        "-143888 bytes",
+        "-154368 bytes",
+        "-225304 bytes",
+        "-168456 bytes",
+        "-154880 bytes",
+        "-162240 bytes",
+        "-155384 bytes",
+        "-167496 bytes"
       ],
       "yjs": [
-        "-556800 bytes"
+        "-276744 bytes",
+        "-280792 bytes",
+        "-275224 bytes",
+        "-335680 bytes",
+        "-518584 bytes",
+        "-301304 bytes",
+        "-291344 bytes",
+        "-323472 bytes",
+        "-282760 bytes",
+        "-302800 bytes"
       ],
       "ywasm": [
-        "-29736 bytes"
+        "-22872 bytes",
+        "-49632 bytes",
+        "-18128 bytes",
+        "-60704 bytes",
+        "-70624 bytes",
+        "-43640 bytes",
+        "-22888 bytes",
+        "-49688 bytes",
+        "-24592 bytes",
+        "-49928 bytes"
       ],
       "automerge-wasm": [
         "-183384 bytes"
       ],
       "tree-fugue-simple": [
-        "2036360 bytes"
+        "1994936 bytes",
+        "2188240 bytes",
+        "1993616 bytes",
+        "2101640 bytes",
+        "1951520 bytes",
+        "1997336 bytes",
+        "2019696 bytes",
+        "2006752 bytes",
+        "2021728 bytes",
+        "2003648 bytes"
       ],
       "list-fugue-simple": [
-        "663072 bytes"
+        "676376 bytes",
+        "657736 bytes",
+        "675480 bytes",
+        "669952 bytes",
+        "682600 bytes",
+        "658152 bytes",
+        "672816 bytes",
+        "667768 bytes",
+        "671904 bytes",
+        "666584 bytes"
       ]
     },
     "[B1.1] Append N characters (parseTime)": {
       "tree-fugue": [
-        "74 ms"
+        "91 ms",
+        "92 ms",
+        "93 ms",
+        "95 ms",
+        "96 ms",
+        "99 ms",
+        "101 ms",
+        "101 ms",
+        "102 ms",
+        "102 ms"
       ],
       "yjs": [
-        "61 ms"
+        "61 ms",
+        "60 ms",
+        "61 ms",
+        "62 ms",
+        "61 ms",
+        "65 ms",
+        "62 ms",
+        "63 ms",
+        "60 ms",
+        "62 ms"
       ],
       "ywasm": [
-        "87 ms"
+        "73 ms",
+        "74 ms",
+        "76 ms",
+        "77 ms",
+        "78 ms",
+        "81 ms",
+        "81 ms",
+        "84 ms",
+        "84 ms",
+        "85 ms"
       ],
       "automerge-wasm": [
         "175 ms"
       ],
       "tree-fugue-simple": [
-        "91 ms"
+        "127 ms",
+        "138 ms",
+        "148 ms",
+        "160 ms",
+        "163 ms",
+        "172 ms",
+        "179 ms",
+        "190 ms",
+        "199 ms",
+        "207 ms"
       ],
       "list-fugue-simple": [
-        "87 ms"
+        "110 ms",
+        "113 ms",
+        "117 ms",
+        "122 ms",
+        "126 ms",
+        "130 ms",
+        "133 ms",
+        "139 ms",
+        "147 ms",
+        "144 ms"
       ]
     },
     "[B1.2] Insert string of length N (time)": {
       "tree-fugue": [
-        "3 ms"
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms"
       ],
       "yjs": [
+        "1 ms",
+        "1 ms",
+        "0 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "3 ms",
         "1 ms"
       ],
       "ywasm": [
-        "1 ms"
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms"
       ],
       "automerge-wasm": [
         "26 ms"
       ],
       "tree-fugue-simple": [
-        "683 ms"
+        "611 ms",
+        "611 ms",
+        "615 ms",
+        "619 ms",
+        "628 ms",
+        "619 ms",
+        "611 ms",
+        "630 ms",
+        "631 ms",
+        "625 ms"
       ],
       "list-fugue-simple": [
-        "63 ms"
+        "46 ms",
+        "46 ms",
+        "48 ms",
+        "49 ms",
+        "47 ms",
+        "48 ms",
+        "48 ms",
+        "47 ms",
+        "47 ms",
+        "48 ms"
       ]
     },
     "[B1.2] Insert string of length N (avgUpdateSize)": {
       "tree-fugue": [
+        "6049 bytes",
+        "6049 bytes",
+        "6049 bytes",
+        "6049 bytes",
+        "6049 bytes",
+        "6049 bytes",
+        "6049 bytes",
+        "6049 bytes",
+        "6049 bytes",
         "6049 bytes"
       ],
       "yjs": [
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
         "6031 bytes"
       ],
       "ywasm": [
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
         "6031 bytes"
       ],
       "automerge-wasm": [
         "6196 bytes"
       ],
       "tree-fugue-simple": [
+        "819682 bytes",
+        "819682 bytes",
+        "819682 bytes",
+        "819682 bytes",
+        "819682 bytes",
+        "819682 bytes",
+        "819682 bytes",
+        "819682 bytes",
+        "819682 bytes",
         "819682 bytes"
       ],
       "list-fugue-simple": [
+        "1017682 bytes",
+        "1017682 bytes",
+        "1017682 bytes",
+        "1017682 bytes",
+        "1017682 bytes",
+        "1017682 bytes",
+        "1017682 bytes",
+        "1017682 bytes",
+        "1017682 bytes",
         "1017682 bytes"
       ]
     },
     "[B1.2] Insert string of length N (encodeTime)": {
       "tree-fugue": [
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
         "0 ms"
       ],
       "yjs": [
+        "1 ms",
+        "1 ms",
+        "0 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "0 ms",
+        "3 ms",
+        "1 ms",
         "1 ms"
       ],
       "ywasm": [
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
         "0 ms"
       ],
       "automerge-wasm": [
         "3 ms"
       ],
       "tree-fugue-simple": [
-        "6 ms"
+        "6 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms"
       ],
       "list-fugue-simple": [
-        "12 ms"
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "8 ms",
+        "7 ms",
+        "8 ms",
+        "8 ms",
+        "7 ms",
+        "7 ms",
+        "8 ms"
       ]
     },
     "[B1.2] Insert string of length N (docSize)": {
       "tree-fugue": [
+        "6143 bytes",
+        "6143 bytes",
+        "6143 bytes",
+        "6143 bytes",
+        "6143 bytes",
+        "6143 bytes",
+        "6143 bytes",
+        "6143 bytes",
+        "6143 bytes",
         "6143 bytes"
       ],
       "yjs": [
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
         "6031 bytes"
       ],
       "ywasm": [
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
         "6031 bytes"
       ],
       "automerge-wasm": [
         "3972 bytes"
       ],
       "tree-fugue-simple": [
+        "615996 bytes",
+        "615996 bytes",
+        "615996 bytes",
+        "615996 bytes",
+        "615996 bytes",
+        "615996 bytes",
+        "615996 bytes",
+        "615996 bytes",
+        "615996 bytes",
         "615996 bytes"
       ],
       "list-fugue-simple": [
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
         "1005834 bytes"
       ]
     },
     "[B1.2] Insert string of length N (memUsed)": {
       "tree-fugue": [
-        "9920 bytes"
+        "9200 bytes",
+        "9200 bytes",
+        "9200 bytes",
+        "9568 bytes",
+        "9200 bytes",
+        "9200 bytes",
+        "9200 bytes",
+        "9568 bytes",
+        "9200 bytes",
+        "9200 bytes"
       ],
       "yjs": [
-        "-22472 bytes"
+        "14560 bytes",
+        "226256 bytes",
+        "4312 bytes",
+        "5984 bytes",
+        "-3760 bytes",
+        "29712 bytes",
+        "-220704 bytes",
+        "13192 bytes",
+        "7664 bytes",
+        "-2752 bytes"
       ],
       "ywasm": [
-        "304 bytes"
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes"
       ],
       "automerge-wasm": [
         "-19880 bytes"
       ],
       "tree-fugue-simple": [
-        "1830456 bytes"
+        "1911040 bytes",
+        "2296864 bytes",
+        "2083128 bytes",
+        "1905272 bytes",
+        "1859752 bytes",
+        "1980208 bytes",
+        "1892848 bytes",
+        "1802248 bytes",
+        "2043048 bytes",
+        "1834752 bytes"
       ],
       "list-fugue-simple": [
-        "755504 bytes"
+        "754272 bytes",
+        "600448 bytes",
+        "648008 bytes",
+        "596576 bytes",
+        "520168 bytes",
+        "503496 bytes",
+        "636984 bytes",
+        "737104 bytes",
+        "456696 bytes",
+        "638480 bytes"
       ]
     },
     "[B1.2] Insert string of length N (parseTime)": {
       "tree-fugue": [
-        "79 ms"
+        "76 ms",
+        "76 ms",
+        "76 ms",
+        "76 ms",
+        "77 ms",
+        "76 ms",
+        "77 ms",
+        "77 ms",
+        "76 ms",
+        "76 ms"
       ],
       "yjs": [
-        "61 ms"
+        "60 ms",
+        "61 ms",
+        "61 ms",
+        "60 ms",
+        "61 ms",
+        "61 ms",
+        "59 ms",
+        "58 ms",
+        "60 ms",
+        "60 ms"
       ],
       "ywasm": [
-        "82 ms"
+        "93 ms",
+        "93 ms",
+        "93 ms",
+        "96 ms",
+        "95 ms",
+        "93 ms",
+        "95 ms",
+        "95 ms",
+        "93 ms",
+        "94 ms"
       ],
       "automerge-wasm": [
         "103 ms"
       ],
       "tree-fugue-simple": [
-        "88 ms"
+        "121 ms",
+        "128 ms",
+        "130 ms",
+        "137 ms",
+        "144 ms",
+        "151 ms",
+        "159 ms",
+        "166 ms",
+        "173 ms",
+        "182 ms"
       ],
       "list-fugue-simple": [
-        "89 ms"
+        "101 ms",
+        "101 ms",
+        "104 ms",
+        "109 ms",
+        "110 ms",
+        "112 ms",
+        "115 ms",
+        "117 ms",
+        "121 ms",
+        "123 ms"
       ]
     },
     "[B1.3] Prepend N characters (time)": {
       "tree-fugue": [
-        "605 ms"
+        "498 ms",
+        "493 ms",
+        "497 ms",
+        "495 ms",
+        "487 ms",
+        "498 ms",
+        "505 ms",
+        "491 ms",
+        "499 ms",
+        "498 ms"
       ],
       "yjs": [
-        "148 ms"
+        "152 ms",
+        "141 ms",
+        "150 ms",
+        "152 ms",
+        "146 ms",
+        "149 ms",
+        "145 ms",
+        "149 ms",
+        "150 ms",
+        "142 ms"
       ],
       "ywasm": [
-        "35 ms"
+        "29 ms",
+        "30 ms",
+        "29 ms",
+        "31 ms",
+        "29 ms",
+        "30 ms",
+        "29 ms",
+        "30 ms",
+        "29 ms",
+        "31 ms"
       ],
       "automerge-wasm": [
         "103 ms"
       ],
       "tree-fugue-simple": [
-        "632 ms"
+        "478 ms",
+        "462 ms",
+        "471 ms",
+        "481 ms",
+        "480 ms",
+        "474 ms",
+        "487 ms",
+        "470 ms",
+        "466 ms",
+        "478 ms"
       ],
       "list-fugue-simple": [
-        "116 ms"
+        "95 ms",
+        "93 ms",
+        "96 ms",
+        "94 ms",
+        "95 ms",
+        "96 ms",
+        "96 ms",
+        "92 ms",
+        "94 ms",
+        "91 ms"
       ]
     },
     "[B1.3] Prepend N characters (avgUpdateSize)": {
       "tree-fugue": [
+        "46 bytes",
+        "46 bytes",
+        "46 bytes",
+        "46 bytes",
+        "46 bytes",
+        "46 bytes",
+        "46 bytes",
+        "46 bytes",
+        "46 bytes",
         "46 bytes"
       ],
       "yjs": [
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
         "27 bytes"
       ],
       "ywasm": [
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
         "27 bytes"
       ],
       "automerge-wasm": [
         "116 bytes"
       ],
       "tree-fugue-simple": [
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
+        "164 bytes",
         "164 bytes"
       ],
       "list-fugue-simple": [
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
+        "197 bytes",
         "197 bytes"
       ]
     },
     "[B1.3] Prepend N characters (encodeTime)": {
       "tree-fugue": [
-        "11 ms"
+        "11 ms",
+        "10 ms",
+        "11 ms",
+        "10 ms",
+        "11 ms",
+        "10 ms",
+        "11 ms",
+        "10 ms",
+        "11 ms",
+        "10 ms"
       ],
       "yjs": [
-        "5 ms"
+        "5 ms",
+        "4 ms",
+        "5 ms",
+        "4 ms",
+        "5 ms",
+        "4 ms",
+        "5 ms",
+        "4 ms",
+        "5 ms",
+        "4 ms"
       ],
       "ywasm": [
-        "0 ms"
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms"
       ],
       "automerge-wasm": [
         "13 ms"
       ],
       "tree-fugue-simple": [
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
         "4 ms"
       ],
       "list-fugue-simple": [
-        "7 ms"
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "7 ms",
+        "6 ms",
+        "7 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms"
       ]
     },
     "[B1.3] Prepend N characters (docSize)": {
       "tree-fugue": [
+        "65766 bytes",
+        "65766 bytes",
+        "65766 bytes",
+        "65766 bytes",
+        "65766 bytes",
+        "65766 bytes",
+        "65766 bytes",
+        "65766 bytes",
+        "65766 bytes",
         "65766 bytes"
       ],
       "yjs": [
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
         "6041 bytes"
       ],
       "ywasm": [
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
         "6041 bytes"
       ],
       "automerge-wasm": [
         "3986 bytes"
       ],
       "tree-fugue-simple": [
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
+        "615998 bytes",
         "615998 bytes"
       ],
       "list-fugue-simple": [
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
+        "1005836 bytes",
         "1005836 bytes"
       ]
     },
     "[B1.3] Prepend N characters (memUsed)": {
       "tree-fugue": [
-        "1573192 bytes"
+        "1286936 bytes",
+        "1520360 bytes",
+        "1276944 bytes",
+        "1513488 bytes",
+        "1412440 bytes",
+        "1513264 bytes",
+        "1364768 bytes",
+        "1512936 bytes",
+        "1466632 bytes",
+        "1511080 bytes"
       ],
       "yjs": [
-        "1037024 bytes"
+        "664496 bytes",
+        "913432 bytes",
+        "433608 bytes",
+        "1140520 bytes",
+        "821544 bytes",
+        "961496 bytes",
+        "603768 bytes",
+        "1111560 bytes",
+        "735160 bytes",
+        "447616 bytes"
       ],
       "ywasm": [
-        "-26440 bytes"
+        "-60016 bytes",
+        "-27752 bytes",
+        "-67096 bytes",
+        "-34752 bytes",
+        "-66776 bytes",
+        "-28288 bytes",
+        "-58928 bytes",
+        "-24600 bytes",
+        "-58872 bytes",
+        "-23664 bytes"
       ],
       "automerge-wasm": [
         "-41400 bytes"
       ],
       "tree-fugue-simple": [
-        "2284824 bytes"
+        "2002632 bytes",
+        "2011456 bytes",
+        "1996352 bytes",
+        "2011328 bytes",
+        "2008880 bytes",
+        "2010120 bytes",
+        "2001160 bytes",
+        "2016688 bytes",
+        "1998320 bytes",
+        "2006480 bytes"
       ],
       "list-fugue-simple": [
-        "670096 bytes"
+        "662832 bytes",
+        "667248 bytes",
+        "649688 bytes",
+        "674248 bytes",
+        "659264 bytes",
+        "663160 bytes",
+        "660848 bytes",
+        "671688 bytes",
+        "649576 bytes",
+        "668344 bytes"
       ]
     },
     "[B1.3] Prepend N characters (parseTime)": {
       "tree-fugue": [
-        "91 ms"
+        "127 ms",
+        "135 ms",
+        "141 ms",
+        "154 ms",
+        "156 ms",
+        "163 ms",
+        "171 ms",
+        "178 ms",
+        "191 ms",
+        "192 ms"
       ],
       "yjs": [
+        "82 ms",
+        "77 ms",
+        "77 ms",
+        "85 ms",
+        "80 ms",
+        "87 ms",
+        "77 ms",
+        "79 ms",
+        "83 ms",
         "78 ms"
       ],
       "ywasm": [
-        "84 ms"
+        "106 ms",
+        "106 ms",
+        "109 ms",
+        "110 ms",
+        "111 ms",
+        "112 ms",
+        "115 ms",
+        "115 ms",
+        "116 ms",
+        "117 ms"
       ],
       "automerge-wasm": [
         "207 ms"
       ],
       "tree-fugue-simple": [
-        "88 ms"
+        "124 ms",
+        "134 ms",
+        "143 ms",
+        "151 ms",
+        "160 ms",
+        "170 ms",
+        "176 ms",
+        "186 ms",
+        "198 ms",
+        "202 ms"
       ],
       "list-fugue-simple": [
-        "96 ms"
+        "110 ms",
+        "114 ms",
+        "119 ms",
+        "123 ms",
+        "128 ms",
+        "131 ms",
+        "135 ms",
+        "139 ms",
+        "144 ms",
+        "148 ms"
       ]
     },
     "[B1.4] Insert N characters at random positions (time)": {
       "tree-fugue": [
-        "114 ms"
+        "102 ms",
+        "102 ms",
+        "106 ms",
+        "101 ms",
+        "103 ms",
+        "100 ms",
+        "105 ms",
+        "103 ms",
+        "107 ms",
+        "104 ms"
       ],
       "yjs": [
-        "174 ms"
+        "168 ms",
+        "171 ms",
+        "169 ms",
+        "168 ms",
+        "170 ms",
+        "169 ms",
+        "164 ms",
+        "167 ms",
+        "169 ms",
+        "164 ms"
       ],
       "ywasm": [
-        "171 ms"
+        "150 ms",
+        "149 ms",
+        "153 ms",
+        "153 ms",
+        "166 ms",
+        "180 ms",
+        "169 ms",
+        "181 ms",
+        "182 ms",
+        "180 ms"
       ],
       "automerge-wasm": [
         "528 ms"
       ],
       "tree-fugue-simple": [
+        "101 ms",
+        "104 ms",
+        "105 ms",
+        "105 ms",
+        "101 ms",
+        "104 ms",
+        "103 ms",
+        "102 ms",
+        "102 ms",
         "105 ms"
       ],
       "list-fugue-simple": [
-        "216 ms"
+        "188 ms",
+        "183 ms",
+        "184 ms",
+        "188 ms",
+        "188 ms",
+        "183 ms",
+        "187 ms",
+        "185 ms",
+        "184 ms",
+        "185 ms"
       ]
     },
     "[B1.4] Insert N characters at random positions (avgUpdateSize)": {
       "tree-fugue": [
+        "42 bytes",
+        "42 bytes",
+        "42 bytes",
+        "42 bytes",
+        "42 bytes",
+        "42 bytes",
+        "42 bytes",
+        "42 bytes",
+        "42 bytes",
         "42 bytes"
       ],
       "yjs": [
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
         "29 bytes"
       ],
       "ywasm": [
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "28 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
         "29 bytes"
       ],
       "automerge-wasm": [
         "121 bytes"
       ],
       "tree-fugue-simple": [
+        "163 bytes",
+        "163 bytes",
+        "163 bytes",
+        "163 bytes",
+        "163 bytes",
+        "163 bytes",
+        "163 bytes",
+        "163 bytes",
+        "163 bytes",
         "163 bytes"
       ],
       "list-fugue-simple": [
+        "209 bytes",
+        "209 bytes",
+        "209 bytes",
+        "209 bytes",
+        "209 bytes",
+        "209 bytes",
+        "209 bytes",
+        "209 bytes",
+        "209 bytes",
         "209 bytes"
       ]
     },
     "[B1.4] Insert N characters at random positions (encodeTime)": {
       "tree-fugue": [
-        "6 ms"
+        "7 ms",
+        "9 ms",
+        "7 ms",
+        "8 ms",
+        "7 ms",
+        "8 ms",
+        "7 ms",
+        "8 ms",
+        "7 ms",
+        "8 ms"
       ],
       "yjs": [
-        "12 ms"
+        "13 ms",
+        "14 ms",
+        "12 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "12 ms",
+        "11 ms"
       ],
       "ywasm": [
-        "1 ms"
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "6 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms"
       ],
       "automerge-wasm": [
         "14 ms"
       ],
       "tree-fugue-simple": [
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
         "5 ms"
       ],
       "list-fugue-simple": [
-        "8 ms"
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "6 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "6 ms"
       ]
     },
     "[B1.4] Insert N characters at random positions (docSize)": {
       "tree-fugue": [
+        "35494 bytes",
+        "35494 bytes",
+        "35494 bytes",
+        "35494 bytes",
+        "35494 bytes",
+        "35494 bytes",
+        "35494 bytes",
+        "35494 bytes",
+        "35494 bytes",
         "35494 bytes"
       ],
       "yjs": [
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
         "29554 bytes"
       ],
       "ywasm": [
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29553 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
         "29554 bytes"
       ],
       "automerge-wasm": [
         "24743 bytes"
       ],
       "tree-fugue-simple": [
+        "599394 bytes",
+        "599394 bytes",
+        "599394 bytes",
+        "599394 bytes",
+        "599394 bytes",
+        "599394 bytes",
+        "599394 bytes",
+        "599394 bytes",
+        "599394 bytes",
         "599394 bytes"
       ],
       "list-fugue-simple": [
+        "1078069 bytes",
+        "1078069 bytes",
+        "1078069 bytes",
+        "1078069 bytes",
+        "1078069 bytes",
+        "1078069 bytes",
+        "1078069 bytes",
+        "1078069 bytes",
+        "1078069 bytes",
         "1078069 bytes"
       ]
     },
     "[B1.4] Insert N characters at random positions (memUsed)": {
       "tree-fugue": [
-        "668112 bytes"
+        "709720 bytes",
+        "529328 bytes",
+        "699848 bytes",
+        "542048 bytes",
+        "717840 bytes",
+        "822248 bytes",
+        "697784 bytes",
+        "523632 bytes",
+        "719640 bytes",
+        "459560 bytes"
       ],
       "yjs": [
-        "600656 bytes"
+        "761904 bytes",
+        "609968 bytes",
+        "857736 bytes",
+        "671096 bytes",
+        "733928 bytes",
+        "765056 bytes",
+        "710768 bytes",
+        "796280 bytes",
+        "917968 bytes",
+        "834464 bytes"
       ],
       "ywasm": [
-        "-49608 bytes"
+        "-30680 bytes",
+        "-13880 bytes",
+        "-27624 bytes",
+        "-50168 bytes",
+        "-16488 bytes",
+        "-50168 bytes",
+        "-24120 bytes",
+        "-50168 bytes",
+        "-16488 bytes",
+        "-45168 bytes"
       ],
       "automerge-wasm": [
         "-282920 bytes"
       ],
       "tree-fugue-simple": [
-        "1997720 bytes"
+        "2012728 bytes",
+        "1998400 bytes",
+        "2005144 bytes",
+        "1999248 bytes",
+        "2008720 bytes",
+        "1984224 bytes",
+        "2008104 bytes",
+        "1998488 bytes",
+        "2020152 bytes",
+        "1993464 bytes"
       ],
       "list-fugue-simple": [
-        "656232 bytes"
+        "668608 bytes",
+        "659752 bytes",
+        "666456 bytes",
+        "655688 bytes",
+        "674912 bytes",
+        "653272 bytes",
+        "662840 bytes",
+        "661096 bytes",
+        "678944 bytes",
+        "654744 bytes"
       ]
     },
     "[B1.4] Insert N characters at random positions (parseTime)": {
       "tree-fugue": [
-        "95 ms"
+        "121 ms",
+        "131 ms",
+        "131 ms",
+        "139 ms",
+        "143 ms",
+        "150 ms",
+        "153 ms",
+        "160 ms",
+        "164 ms",
+        "170 ms"
       ],
       "yjs": [
-        "107 ms"
+        "99 ms",
+        "85 ms",
+        "95 ms",
+        "97 ms",
+        "85 ms",
+        "99 ms",
+        "96 ms",
+        "95 ms",
+        "97 ms",
+        "95 ms"
       ],
       "ywasm": [
-        "86 ms"
+        "187 ms",
+        "187 ms",
+        "185 ms",
+        "255 ms",
+        "248 ms",
+        "234 ms",
+        "253 ms",
+        "242 ms",
+        "244 ms",
+        "246 ms"
       ],
       "automerge-wasm": [
         "195 ms"
       ],
       "tree-fugue-simple": [
-        "97 ms"
+        "140 ms",
+        "150 ms",
+        "160 ms",
+        "168 ms",
+        "180 ms",
+        "187 ms",
+        "197 ms",
+        "209 ms",
+        "217 ms",
+        "226 ms"
       ],
       "list-fugue-simple": [
-        "93 ms"
+        "108 ms",
+        "112 ms",
+        "117 ms",
+        "120 ms",
+        "125 ms",
+        "128 ms",
+        "133 ms",
+        "136 ms",
+        "146 ms",
+        "142 ms"
       ]
     },
     "[B1.5] Insert N words at random positions (time)": {
       "tree-fugue": [
-        "124 ms"
+        "111 ms",
+        "110 ms",
+        "111 ms",
+        "111 ms",
+        "110 ms",
+        "110 ms",
+        "112 ms",
+        "113 ms",
+        "110 ms",
+        "115 ms"
       ],
       "yjs": [
-        "238 ms"
+        "208 ms",
+        "187 ms",
+        "199 ms",
+        "196 ms",
+        "202 ms",
+        "187 ms",
+        "211 ms",
+        "201 ms",
+        "201 ms",
+        "187 ms"
       ],
       "ywasm": [
-        "526 ms"
-      ],
-      "automerge-wasm": [
-        "806 ms"
+        "546 ms",
+        "548 ms",
+        "556 ms",
+        "548 ms",
+        "565 ms",
+        "554 ms",
+        "569 ms",
+        "559 ms",
+        "573 ms",
+        "559 ms"
       ],
       "tree-fugue-simple": [
-        "333 ms"
+        "331 ms",
+        "324 ms",
+        "324 ms",
+        "329 ms",
+        "326 ms",
+        "327 ms",
+        "326 ms",
+        "333 ms",
+        "321 ms",
+        "326 ms"
       ],
       "list-fugue-simple": [
-        "2329 ms"
+        "2253 ms",
+        "2479 ms",
+        "2486 ms",
+        "2461 ms",
+        "2269 ms",
+        "2450 ms",
+        "2289 ms",
+        "2457 ms",
+        "2377 ms",
+        "2575 ms"
       ]
     },
     "[B1.5] Insert N words at random positions (avgUpdateSize)": {
       "tree-fugue": [
+        "50 bytes",
+        "50 bytes",
+        "50 bytes",
+        "50 bytes",
+        "50 bytes",
+        "50 bytes",
+        "50 bytes",
+        "50 bytes",
+        "50 bytes",
         "50 bytes"
       ],
       "yjs": [
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
         "36 bytes"
       ],
       "ywasm": [
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
         "36 bytes"
       ],
       "automerge-wasm": [
         "131 bytes"
       ],
       "tree-fugue-simple": [
+        "864 bytes",
+        "864 bytes",
+        "864 bytes",
+        "864 bytes",
+        "864 bytes",
+        "864 bytes",
+        "864 bytes",
+        "864 bytes",
+        "864 bytes",
         "864 bytes"
       ],
       "list-fugue-simple": [
+        "1143 bytes",
+        "1143 bytes",
+        "1143 bytes",
+        "1143 bytes",
+        "1143 bytes",
+        "1143 bytes",
+        "1143 bytes",
+        "1143 bytes",
+        "1143 bytes",
         "1143 bytes"
       ]
     },
     "[B1.5] Insert N words at random positions (encodeTime)": {
       "tree-fugue": [
-        "13 ms"
+        "14 ms",
+        "12 ms",
+        "14 ms",
+        "12 ms",
+        "14 ms",
+        "12 ms",
+        "14 ms",
+        "12 ms",
+        "14 ms",
+        "12 ms"
       ],
       "yjs": [
-        "17 ms"
+        "11 ms",
+        "11 ms",
+        "14 ms",
+        "18 ms",
+        "14 ms",
+        "17 ms",
+        "15 ms",
+        "14 ms",
+        "13 ms",
+        "11 ms"
       ],
       "ywasm": [
-        "1 ms"
+        "2 ms",
+        "2 ms",
+        "3 ms",
+        "2 ms",
+        "3 ms",
+        "2 ms",
+        "4 ms",
+        "2 ms",
+        "3 ms",
+        "2 ms"
       ],
       "automerge-wasm": [
         "30 ms"
       ],
       "tree-fugue-simple": [
-        "30 ms"
+        "25 ms",
+        "25 ms",
+        "27 ms",
+        "27 ms",
+        "27 ms",
+        "26 ms",
+        "27 ms",
+        "26 ms",
+        "27 ms",
+        "27 ms"
       ],
       "list-fugue-simple": [
-        "46 ms"
+        "37 ms",
+        "39 ms",
+        "40 ms",
+        "40 ms",
+        "39 ms",
+        "42 ms",
+        "42 ms",
+        "40 ms",
+        "40 ms",
+        "40 ms"
       ]
     },
     "[B1.5] Insert N words at random positions (docSize)": {
       "tree-fugue": [
+        "91193 bytes",
+        "91193 bytes",
+        "91193 bytes",
+        "91193 bytes",
+        "91193 bytes",
+        "91193 bytes",
+        "91193 bytes",
+        "91193 bytes",
+        "91193 bytes",
         "91193 bytes"
       ],
       "yjs": [
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
         "87924 bytes"
       ],
       "ywasm": [
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
         "87924 bytes"
       ],
       "automerge-wasm": [
         "96199 bytes"
       ],
       "tree-fugue-simple": [
+        "3656379 bytes",
+        "3656379 bytes",
+        "3656379 bytes",
+        "3656379 bytes",
+        "3656379 bytes",
+        "3656379 bytes",
+        "3656379 bytes",
+        "3656379 bytes",
+        "3656379 bytes",
         "3656379 bytes"
       ],
       "list-fugue-simple": [
+        "6604366 bytes",
+        "6604366 bytes",
+        "6604366 bytes",
+        "6604366 bytes",
+        "6604366 bytes",
+        "6604366 bytes",
+        "6604366 bytes",
+        "6604366 bytes",
+        "6604366 bytes",
         "6604366 bytes"
       ]
     },
     "[B1.5] Insert N words at random positions (memUsed)": {
       "tree-fugue": [
-        "1255864 bytes"
+        "1422768 bytes",
+        "1496440 bytes",
+        "1433512 bytes",
+        "1494296 bytes",
+        "1431064 bytes",
+        "1497608 bytes",
+        "1466688 bytes",
+        "1504336 bytes",
+        "1458176 bytes",
+        "1500256 bytes"
       ],
       "yjs": [
-        "2233424 bytes"
+        "1922088 bytes",
+        "1961040 bytes",
+        "2149808 bytes",
+        "2406776 bytes",
+        "2232704 bytes",
+        "2113752 bytes",
+        "2379888 bytes",
+        "2400768 bytes",
+        "2356408 bytes",
+        "1930792 bytes"
       ],
       "ywasm": [
-        "-14872 bytes"
+        "-43168 bytes",
+        "240 bytes",
+        "-49632 bytes",
+        "-456 bytes",
+        "-43464 bytes",
+        "240 bytes",
+        "-46504 bytes",
+        "240 bytes",
+        "-46504 bytes",
+        "240 bytes"
       ],
       "automerge-wasm": [
         "-46552 bytes"
       ],
       "tree-fugue-simple": [
-        "12660496 bytes"
+        "12620912 bytes",
+        "12627040 bytes",
+        "12635304 bytes",
+        "12628656 bytes",
+        "12625312 bytes",
+        "12628888 bytes",
+        "12631552 bytes",
+        "12623776 bytes",
+        "12627208 bytes",
+        "12630984 bytes"
       ],
       "list-fugue-simple": [
-        "4653768 bytes"
+        "4631896 bytes",
+        "4639192 bytes",
+        "4645424 bytes",
+        "4640104 bytes",
+        "4635976 bytes",
+        "4639464 bytes",
+        "4642152 bytes",
+        "4640496 bytes",
+        "4639368 bytes",
+        "4648032 bytes"
       ]
     },
     "[B1.5] Insert N words at random positions (parseTime)": {
       "tree-fugue": [
-        "113 ms"
+        "154 ms",
+        "162 ms",
+        "171 ms",
+        "181 ms",
+        "188 ms",
+        "195 ms",
+        "207 ms",
+        "212 ms",
+        "224 ms",
+        "233 ms"
       ],
       "yjs": [
-        "139 ms"
+        "107 ms",
+        "117 ms",
+        "117 ms",
+        "119 ms",
+        "106 ms",
+        "113 ms",
+        "123 ms",
+        "115 ms",
+        "114 ms",
+        "115 ms"
       ],
       "ywasm": [
-        "84 ms"
+        "305 ms",
+        "316 ms",
+        "311 ms",
+        "320 ms",
+        "312 ms",
+        "323 ms",
+        "322 ms",
+        "330 ms",
+        "328 ms",
+        "339 ms"
       ],
       "automerge-wasm": [
         "275 ms"
       ],
       "tree-fugue-simple": [
-        "199 ms"
+        "434 ms",
+        "485 ms",
+        "529 ms",
+        "581 ms",
+        "621 ms",
+        "675 ms",
+        "723 ms",
+        "761 ms",
+        "813 ms",
+        "853 ms"
       ],
       "list-fugue-simple": [
-        "155 ms"
+        "245 ms",
+        "260 ms",
+        "280 ms",
+        "298 ms",
+        "320 ms",
+        "333 ms",
+        "351 ms",
+        "372 ms",
+        "386 ms",
+        "412 ms"
       ]
     },
     "[B1.6] Insert string, then delete it (time)": {
       "tree-fugue": [
-        "64 ms"
+        "55 ms",
+        "46 ms",
+        "54 ms",
+        "46 ms",
+        "48 ms",
+        "45 ms",
+        "54 ms",
+        "45 ms",
+        "53 ms",
+        "46 ms"
       ],
       "yjs": [
-        "3 ms"
+        "1 ms",
+        "0 ms",
+        "1 ms",
+        "2 ms",
+        "0 ms",
+        "1 ms",
+        "8 ms",
+        "1 ms",
+        "2 ms",
+        "0 ms"
       ],
       "ywasm": [
-        "1 ms"
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms"
       ],
       "automerge-wasm": [
         "33 ms"
       ],
       "tree-fugue-simple": [
-        "1033 ms"
+        "1007 ms",
+        "987 ms",
+        "1008 ms",
+        "1003 ms",
+        "1009 ms",
+        "1012 ms",
+        "995 ms",
+        "996 ms",
+        "1017 ms",
+        "994 ms"
       ],
       "list-fugue-simple": [
-        "148 ms"
+        "144 ms",
+        "147 ms",
+        "144 ms",
+        "147 ms",
+        "145 ms",
+        "144 ms",
+        "147 ms",
+        "145 ms",
+        "145 ms",
+        "146 ms"
       ]
     },
     "[B1.6] Insert string, then delete it (avgUpdateSize)": {
       "tree-fugue": [
+        "71836 bytes",
+        "71836 bytes",
+        "71836 bytes",
+        "71836 bytes",
+        "71836 bytes",
+        "71836 bytes",
+        "71836 bytes",
+        "71836 bytes",
+        "71836 bytes",
         "71836 bytes"
       ],
       "yjs": [
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
         "6053 bytes"
       ],
       "ywasm": [
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
         "6053 bytes"
       ],
       "automerge-wasm": [
         "6333 bytes"
       ],
       "tree-fugue-simple": [
+        "1208487 bytes",
+        "1208487 bytes",
+        "1208487 bytes",
+        "1208487 bytes",
+        "1208487 bytes",
+        "1208487 bytes",
+        "1208487 bytes",
+        "1208487 bytes",
+        "1208487 bytes",
         "1208487 bytes"
       ],
       "list-fugue-simple": [
+        "1406487 bytes",
+        "1406487 bytes",
+        "1406487 bytes",
+        "1406487 bytes",
+        "1406487 bytes",
+        "1406487 bytes",
+        "1406487 bytes",
+        "1406487 bytes",
+        "1406487 bytes",
         "1406487 bytes"
       ]
     },
     "[B1.6] Insert string, then delete it (encodeTime)": {
       "tree-fugue": [
-        "3 ms"
+        "2 ms",
+        "0 ms",
+        "2 ms",
+        "0 ms",
+        "2 ms",
+        "0 ms",
+        "2 ms",
+        "0 ms",
+        "2 ms",
+        "0 ms"
       ],
       "yjs": [
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
         "0 ms"
       ],
       "ywasm": [
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
         "0 ms"
       ],
       "automerge-wasm": [
         "4 ms"
       ],
       "tree-fugue-simple": [
-        "5 ms"
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms"
       ],
       "list-fugue-simple": [
-        "7 ms"
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms"
       ]
     },
     "[B1.6] Insert string, then delete it (docSize)": {
       "tree-fugue": [
+        "137 bytes",
+        "137 bytes",
+        "137 bytes",
+        "137 bytes",
+        "137 bytes",
+        "137 bytes",
+        "137 bytes",
+        "137 bytes",
+        "137 bytes",
         "137 bytes"
       ],
       "yjs": [
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
         "38 bytes"
       ],
       "ywasm": [
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
         "38 bytes"
       ],
       "automerge-wasm": [
         "3991 bytes"
       ],
       "tree-fugue-simple": [
+        "599100 bytes",
+        "599100 bytes",
+        "599100 bytes",
+        "599100 bytes",
+        "599100 bytes",
+        "599100 bytes",
+        "599100 bytes",
+        "599100 bytes",
+        "599100 bytes",
         "599100 bytes"
       ],
       "list-fugue-simple": [
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
+        "1005834 bytes",
         "1005834 bytes"
       ]
     },
     "[B1.6] Insert string, then delete it (memUsed)": {
       "tree-fugue": [
-        "-55368 bytes"
+        "-55728 bytes",
+        "-112224 bytes",
+        "-54336 bytes",
+        "-111960 bytes",
+        "-64184 bytes",
+        "-104360 bytes",
+        "-64632 bytes",
+        "-111712 bytes",
+        "-55728 bytes",
+        "-112656 bytes"
       ],
       "yjs": [
-        "213880 bytes"
+        "191424 bytes",
+        "-369112 bytes",
+        "7968 bytes",
+        "385816 bytes",
+        "-2304 bytes",
+        "8000 bytes",
+        "-1080 bytes",
+        "7952 bytes",
+        "32112 bytes",
+        "-1080 bytes"
       ],
       "ywasm": [
-        "856 bytes"
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes"
       ],
       "automerge-wasm": [
         "416 bytes"
       ],
       "tree-fugue-simple": [
-        "2038376 bytes"
+        "2044112 bytes",
+        "2045968 bytes",
+        "2042664 bytes",
+        "2052344 bytes",
+        "2046384 bytes",
+        "2042904 bytes",
+        "2043720 bytes",
+        "2056712 bytes",
+        "2052360 bytes",
+        "2042648 bytes"
       ],
       "list-fugue-simple": [
-        "719744 bytes"
+        "706352 bytes",
+        "705936 bytes",
+        "715176 bytes",
+        "706328 bytes",
+        "706352 bytes",
+        "714760 bytes",
+        "706352 bytes",
+        "714760 bytes",
+        "715176 bytes",
+        "705936 bytes"
       ]
     },
     "[B1.6] Insert string, then delete it (parseTime)": {
       "tree-fugue": [
-        "84 ms"
-      ],
-      "yjs": [
+        "81 ms",
+        "81 ms",
+        "81 ms",
+        "81 ms",
+        "82 ms",
+        "80 ms",
+        "81 ms",
+        "84 ms",
+        "79 ms",
         "79 ms"
       ],
+      "yjs": [
+        "68 ms",
+        "70 ms",
+        "67 ms",
+        "68 ms",
+        "67 ms",
+        "66 ms",
+        "66 ms",
+        "68 ms",
+        "67 ms",
+        "67 ms"
+      ],
       "ywasm": [
-        "78 ms"
+        "173 ms",
+        "172 ms",
+        "173 ms",
+        "177 ms",
+        "174 ms",
+        "175 ms",
+        "176 ms",
+        "174 ms",
+        "177 ms",
+        "172 ms"
       ],
       "automerge-wasm": [
         "153 ms"
       ],
       "tree-fugue-simple": [
-        "97 ms"
+        "118 ms",
+        "125 ms",
+        "132 ms",
+        "139 ms",
+        "147 ms",
+        "156 ms",
+        "161 ms",
+        "171 ms",
+        "175 ms",
+        "182 ms"
       ],
       "list-fugue-simple": [
-        "96 ms"
+        "98 ms",
+        "98 ms",
+        "106 ms",
+        "105 ms",
+        "107 ms",
+        "109 ms",
+        "115 ms",
+        "115 ms",
+        "117 ms",
+        "123 ms"
       ]
     },
     "[B1.7] Insert/Delete strings at random positions (time)": {
       "tree-fugue": [
-        "182 ms"
+        "166 ms",
+        "171 ms",
+        "165 ms",
+        "172 ms",
+        "166 ms",
+        "172 ms",
+        "168 ms",
+        "168 ms",
+        "168 ms",
+        "167 ms"
       ],
       "yjs": [
-        "280 ms"
+        "293 ms",
+        "297 ms",
+        "287 ms",
+        "289 ms",
+        "294 ms",
+        "289 ms",
+        "287 ms",
+        "290 ms",
+        "286 ms",
+        "292 ms"
       ],
       "ywasm": [
-        "160 ms"
+        "200 ms",
+        "200 ms",
+        "188 ms",
+        "189 ms",
+        "190 ms",
+        "200 ms",
+        "202 ms",
+        "184 ms",
+        "191 ms",
+        "193 ms"
       ],
       "automerge-wasm": [
         "641 ms"
       ],
       "tree-fugue-simple": [
-        "325 ms"
+        "317 ms",
+        "328 ms",
+        "321 ms",
+        "324 ms",
+        "322 ms",
+        "324 ms",
+        "329 ms",
+        "328 ms",
+        "323 ms",
+        "327 ms"
       ],
       "list-fugue-simple": [
-        "1099 ms"
+        "1058 ms",
+        "1108 ms",
+        "1117 ms",
+        "1073 ms",
+        "1041 ms",
+        "1080 ms",
+        "1063 ms",
+        "1055 ms",
+        "1055 ms",
+        "1077 ms"
       ]
     },
     "[B1.7] Insert/Delete strings at random positions (avgUpdateSize)": {
       "tree-fugue": [
+        "67 bytes",
+        "67 bytes",
+        "67 bytes",
+        "67 bytes",
+        "67 bytes",
+        "67 bytes",
+        "67 bytes",
+        "67 bytes",
+        "67 bytes",
         "67 bytes"
       ],
       "yjs": [
-        "31 bytes"
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "30 bytes",
+        "30 bytes"
       ],
       "ywasm": [
-        "30 bytes"
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes"
       ],
       "automerge-wasm": [
         "135 bytes"
       ],
       "tree-fugue-simple": [
+        "603 bytes",
+        "603 bytes",
+        "603 bytes",
+        "603 bytes",
+        "603 bytes",
+        "603 bytes",
+        "603 bytes",
+        "603 bytes",
+        "603 bytes",
         "603 bytes"
       ],
       "list-fugue-simple": [
+        "740 bytes",
+        "740 bytes",
+        "740 bytes",
+        "740 bytes",
+        "740 bytes",
+        "740 bytes",
+        "740 bytes",
+        "740 bytes",
+        "740 bytes",
         "740 bytes"
       ]
     },
     "[B1.7] Insert/Delete strings at random positions (encodeTime)": {
       "tree-fugue": [
-        "4 ms"
+        "7 ms",
+        "5 ms",
+        "7 ms",
+        "5 ms",
+        "7 ms",
+        "5 ms",
+        "7 ms",
+        "5 ms",
+        "7 ms",
+        "5 ms"
       ],
       "yjs": [
-        "22 ms"
+        "24 ms",
+        "21 ms",
+        "22 ms",
+        "23 ms",
+        "21 ms",
+        "19 ms",
+        "20 ms",
+        "21 ms",
+        "20 ms",
+        "20 ms"
       ],
       "ywasm": [
-        "1 ms"
+        "5 ms",
+        "4 ms",
+        "3 ms",
+        "4 ms",
+        "3 ms",
+        "4 ms",
+        "3 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms"
       ],
       "automerge-wasm": [
         "28 ms"
       ],
       "tree-fugue-simple": [
+        "12 ms",
+        "12 ms",
+        "12 ms",
+        "12 ms",
+        "12 ms",
+        "12 ms",
+        "12 ms",
+        "12 ms",
+        "12 ms",
         "12 ms"
       ],
       "list-fugue-simple": [
-        "26 ms"
+        "18 ms",
+        "18 ms",
+        "18 ms",
+        "18 ms",
+        "18 ms",
+        "18 ms",
+        "18 ms",
+        "18 ms",
+        "18 ms",
+        "18 ms"
       ]
     },
     "[B1.7] Insert/Delete strings at random positions (docSize)": {
       "tree-fugue": [
+        "29957 bytes",
+        "29957 bytes",
+        "29957 bytes",
+        "29957 bytes",
+        "29957 bytes",
+        "29957 bytes",
+        "29957 bytes",
+        "29957 bytes",
+        "29957 bytes",
         "29957 bytes"
       ],
       "yjs": [
-        "28377 bytes"
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28375 bytes",
+        "28375 bytes"
       ],
       "ywasm": [
-        "28375 bytes"
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes"
       ],
       "automerge-wasm": [
         "59280 bytes"
       ],
       "tree-fugue-simple": [
+        "1784311 bytes",
+        "1784311 bytes",
+        "1784311 bytes",
+        "1784311 bytes",
+        "1784311 bytes",
+        "1784311 bytes",
+        "1784311 bytes",
+        "1784311 bytes",
+        "1784311 bytes",
         "1784311 bytes"
       ],
       "list-fugue-simple": [
+        "3228806 bytes",
+        "3228806 bytes",
+        "3228806 bytes",
+        "3228806 bytes",
+        "3228806 bytes",
+        "3228806 bytes",
+        "3228806 bytes",
+        "3228806 bytes",
+        "3228806 bytes",
         "3228806 bytes"
       ]
     },
     "[B1.7] Insert/Delete strings at random positions (memUsed)": {
       "tree-fugue": [
-        "468544 bytes"
+        "490432 bytes",
+        "698568 bytes",
+        "579728 bytes",
+        "465064 bytes",
+        "647448 bytes",
+        "454480 bytes",
+        "566608 bytes",
+        "466704 bytes",
+        "715528 bytes",
+        "514008 bytes"
       ],
       "yjs": [
-        "892184 bytes"
+        "1115216 bytes",
+        "991864 bytes",
+        "1076216 bytes",
+        "908792 bytes",
+        "976288 bytes",
+        "972072 bytes",
+        "1071608 bytes",
+        "911144 bytes",
+        "993152 bytes",
+        "749144 bytes"
       ],
       "ywasm": [
-        "-48176 bytes"
+        "-22776 bytes",
+        "-47624 bytes",
+        "-23944 bytes",
+        "-45416 bytes",
+        "-22184 bytes",
+        "-47704 bytes",
+        "-23624 bytes",
+        "-44864 bytes",
+        "-36064 bytes",
+        "-47072 bytes"
       ],
       "automerge-wasm": [
         "-40744 bytes"
       ],
       "tree-fugue-simple": [
-        "6138456 bytes"
+        "6109048 bytes",
+        "6142016 bytes",
+        "6158352 bytes",
+        "6106344 bytes",
+        "6159424 bytes",
+        "6117264 bytes",
+        "6136224 bytes",
+        "6149016 bytes",
+        "6123464 bytes",
+        "6177744 bytes"
       ],
       "list-fugue-simple": [
-        "2200248 bytes"
+        "2191912 bytes",
+        "2196128 bytes",
+        "2200152 bytes",
+        "2192064 bytes",
+        "2201544 bytes",
+        "2206720 bytes",
+        "2188856 bytes",
+        "2204184 bytes",
+        "2195832 bytes",
+        "2192392 bytes"
       ]
     },
     "[B1.7] Insert/Delete strings at random positions (parseTime)": {
       "tree-fugue": [
-        "93 ms"
+        "116 ms",
+        "120 ms",
+        "131 ms",
+        "132 ms",
+        "139 ms",
+        "141 ms",
+        "151 ms",
+        "152 ms",
+        "159 ms",
+        "162 ms"
       ],
       "yjs": [
-        "138 ms"
+        "133 ms",
+        "135 ms",
+        "133 ms",
+        "130 ms",
+        "139 ms",
+        "133 ms",
+        "129 ms",
+        "128 ms",
+        "130 ms",
+        "133 ms"
       ],
       "ywasm": [
-        "82 ms"
+        "315 ms",
+        "317 ms",
+        "335 ms",
+        "335 ms",
+        "340 ms",
+        "330 ms",
+        "334 ms",
+        "348 ms",
+        "352 ms",
+        "354 ms"
       ],
       "automerge-wasm": [
         "284 ms"
       ],
       "tree-fugue-simple": [
-        "124 ms"
+        "247 ms",
+        "276 ms",
+        "288 ms",
+        "310 ms",
+        "340 ms",
+        "360 ms",
+        "389 ms",
+        "417 ms",
+        "431 ms",
+        "457 ms"
       ],
       "list-fugue-simple": [
-        "112 ms"
+        "159 ms",
+        "167 ms",
+        "179 ms",
+        "187 ms",
+        "199 ms",
+        "209 ms",
+        "218 ms",
+        "230 ms",
+        "239 ms",
+        "252 ms"
       ]
     },
     "[B1.8] Append N numbers (time)": {
       "tree-fugue": [
-        "128 ms"
+        "103 ms",
+        "107 ms",
+        "107 ms",
+        "106 ms",
+        "105 ms",
+        "103 ms",
+        "100 ms",
+        "102 ms",
+        "102 ms",
+        "101 ms"
       ],
       "yjs": [
-        "271 ms"
+        "239 ms",
+        "234 ms",
+        "238 ms",
+        "235 ms",
+        "234 ms",
+        "236 ms",
+        "240 ms",
+        "231 ms",
+        "239 ms",
+        "236 ms"
       ],
       "ywasm": [
-        "43 ms"
+        "33 ms",
+        "33 ms",
+        "34 ms",
+        "37 ms",
+        "34 ms",
+        "34 ms",
+        "34 ms",
+        "36 ms",
+        "34 ms",
+        "34 ms"
       ],
       "automerge-wasm": [
         "313 ms"
       ],
       "tree-fugue-simple": [
-        "871 ms"
+        "664 ms",
+        "663 ms",
+        "662 ms",
+        "665 ms",
+        "674 ms",
+        "670 ms",
+        "678 ms",
+        "657 ms",
+        "678 ms",
+        "668 ms"
       ],
       "list-fugue-simple": [
-        "104 ms"
+        "94 ms",
+        "91 ms",
+        "92 ms",
+        "90 ms",
+        "90 ms",
+        "93 ms",
+        "93 ms",
+        "91 ms",
+        "90 ms",
+        "92 ms"
       ]
     },
     "[B1.8] Append N numbers (avgUpdateSize)": {
       "tree-fugue": [
+        "45 bytes",
+        "45 bytes",
+        "45 bytes",
+        "45 bytes",
+        "45 bytes",
+        "45 bytes",
+        "45 bytes",
+        "45 bytes",
+        "45 bytes",
         "45 bytes"
       ],
       "yjs": [
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
         "32 bytes"
       ],
       "ywasm": [
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
         "32 bytes"
       ],
       "automerge-wasm": [
         "125 bytes"
       ],
       "tree-fugue-simple": [
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
         "171 bytes"
       ],
       "list-fugue-simple": [
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
         "204 bytes"
       ]
     },
     "[B1.8] Append N numbers (encodeTime)": {
       "tree-fugue": [
-        "6 ms"
+        "3 ms",
+        "4 ms",
+        "3 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms"
       ],
       "yjs": [
-        "6 ms"
+        "6 ms",
+        "1 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "1 ms",
+        "6 ms",
+        "1 ms"
       ],
       "ywasm": [
-        "0 ms"
+        "3 ms",
+        "3 ms",
+        "2 ms",
+        "3 ms",
+        "2 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms"
       ],
       "automerge-wasm": [
         "16 ms"
       ],
       "tree-fugue-simple": [
-        "5 ms"
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "5 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms"
       ],
       "list-fugue-simple": [
-        "17 ms"
+        "7 ms",
+        "7 ms",
+        "6 ms",
+        "7 ms",
+        "6 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "6 ms",
+        "7 ms"
       ]
     },
     "[B1.8] Append N numbers (docSize)": {
       "tree-fugue": [
+        "47751 bytes",
+        "47751 bytes",
+        "47751 bytes",
+        "47751 bytes",
+        "47751 bytes",
+        "47751 bytes",
+        "47751 bytes",
+        "47751 bytes",
+        "47751 bytes",
         "47751 bytes"
       ],
       "yjs": [
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
         "35634 bytes"
       ],
       "ywasm": [
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
         "35634 bytes"
       ],
       "automerge-wasm": [
         "26982 bytes"
       ],
       "tree-fugue-simple": [
+        "654817 bytes",
+        "654817 bytes",
+        "654817 bytes",
+        "654817 bytes",
+        "654817 bytes",
+        "654817 bytes",
+        "654817 bytes",
+        "654817 bytes",
+        "654817 bytes",
         "654817 bytes"
       ],
       "list-fugue-simple": [
+        "1044655 bytes",
+        "1044655 bytes",
+        "1044655 bytes",
+        "1044655 bytes",
+        "1044655 bytes",
+        "1044655 bytes",
+        "1044655 bytes",
+        "1044655 bytes",
+        "1044655 bytes",
         "1044655 bytes"
       ]
     },
     "[B1.8] Append N numbers (memUsed)": {
       "tree-fugue": [
-        "86656 bytes"
+        "20376 bytes",
+        "-153864 bytes",
+        "-159096 bytes",
+        "-174400 bytes",
+        "24680 bytes",
+        "-157232 bytes",
+        "-175560 bytes",
+        "-156504 bytes",
+        "-166560 bytes",
+        "25224 bytes"
       ],
       "yjs": [
-        "-288328 bytes"
+        "-137616 bytes",
+        "-429352 bytes",
+        "-282488 bytes",
+        "-234904 bytes",
+        "-58856 bytes",
+        "-229328 bytes",
+        "-196856 bytes",
+        "-438744 bytes",
+        "-215336 bytes",
+        "-436760 bytes"
       ],
       "ywasm": [
-        "-45080 bytes"
+        "-60664 bytes",
+        "304 bytes",
+        "-60288 bytes",
+        "-34896 bytes",
+        "-60824 bytes",
+        "304 bytes",
+        "-62048 bytes",
+        "-33672 bytes",
+        "-63088 bytes",
+        "-392 bytes"
       ],
       "automerge-wasm": [
         "-7864 bytes"
       ],
       "tree-fugue-simple": [
-        "2173304 bytes"
+        "2002792 bytes",
+        "2021240 bytes",
+        "2007992 bytes",
+        "2020592 bytes",
+        "2008024 bytes",
+        "2021904 bytes",
+        "2002376 bytes",
+        "2018984 bytes",
+        "2010456 bytes",
+        "2017376 bytes"
       ],
       "list-fugue-simple": [
-        "671240 bytes"
+        "659824 bytes",
+        "667648 bytes",
+        "667992 bytes",
+        "667672 bytes",
+        "665888 bytes",
+        "667648 bytes",
+        "667216 bytes",
+        "668448 bytes",
+        "666288 bytes",
+        "665512 bytes"
       ]
     },
     "[B1.8] Append N numbers (parseTime)": {
       "tree-fugue": [
-        "102 ms"
+        "108 ms",
+        "112 ms",
+        "112 ms",
+        "117 ms",
+        "116 ms",
+        "117 ms",
+        "118 ms",
+        "120 ms",
+        "122 ms",
+        "124 ms"
       ],
       "yjs": [
-        "92 ms"
+        "83 ms",
+        "81 ms",
+        "83 ms",
+        "81 ms",
+        "84 ms",
+        "83 ms",
+        "82 ms",
+        "84 ms",
+        "81 ms",
+        "84 ms"
       ],
       "ywasm": [
-        "82 ms"
+        "304 ms",
+        "308 ms",
+        "310 ms",
+        "305 ms",
+        "316 ms",
+        "318 ms",
+        "321 ms",
+        "314 ms",
+        "329 ms",
+        "330 ms"
       ],
       "automerge-wasm": [
         "206 ms"
       ],
       "tree-fugue-simple": [
-        "101 ms"
+        "131 ms",
+        "136 ms",
+        "147 ms",
+        "157 ms",
+        "164 ms",
+        "173 ms",
+        "183 ms",
+        "190 ms",
+        "198 ms",
+        "207 ms"
       ],
       "list-fugue-simple": [
-        "101 ms"
+        "111 ms",
+        "120 ms",
+        "118 ms",
+        "122 ms",
+        "127 ms",
+        "131 ms",
+        "134 ms",
+        "139 ms",
+        "147 ms",
+        "148 ms"
       ]
     },
     "[B1.9] Insert Array of N numbers (time)": {
       "tree-fugue": [
-        "36 ms"
+        "33 ms",
+        "33 ms",
+        "32 ms",
+        "32 ms",
+        "28 ms",
+        "33 ms",
+        "33 ms",
+        "32 ms",
+        "32 ms",
+        "32 ms"
       ],
       "yjs": [
-        "3 ms"
+        "1 ms",
+        "7 ms",
+        "7 ms",
+        "8 ms",
+        "7 ms",
+        "1 ms",
+        "7 ms",
+        "1 ms",
+        "7 ms",
+        "8 ms"
       ],
       "ywasm": [
-        "5 ms"
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms"
       ],
       "automerge-wasm": [
         "29 ms"
       ],
       "tree-fugue-simple": [
-        "643 ms"
+        "642 ms",
+        "635 ms",
+        "629 ms",
+        "635 ms",
+        "636 ms",
+        "641 ms",
+        "643 ms",
+        "642 ms",
+        "644 ms",
+        "644 ms"
       ],
       "list-fugue-simple": [
-        "49 ms"
+        "48 ms",
+        "48 ms",
+        "47 ms",
+        "47 ms",
+        "48 ms",
+        "48 ms",
+        "48 ms",
+        "48 ms",
+        "48 ms",
+        "47 ms"
       ]
     },
     "[B1.9] Insert Array of N numbers (avgUpdateSize)": {
       "tree-fugue": [
+        "47678 bytes",
+        "47678 bytes",
+        "47678 bytes",
+        "47678 bytes",
+        "47678 bytes",
+        "47678 bytes",
+        "47678 bytes",
+        "47678 bytes",
+        "47678 bytes",
         "47678 bytes"
       ],
       "yjs": [
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
         "35657 bytes"
       ],
       "ywasm": [
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
         "35657 bytes"
       ],
       "automerge-wasm": [
         "31194 bytes"
       ],
       "tree-fugue-simple": [
+        "858656 bytes",
+        "858656 bytes",
+        "858656 bytes",
+        "858656 bytes",
+        "858656 bytes",
+        "858656 bytes",
+        "858656 bytes",
+        "858656 bytes",
+        "858656 bytes",
         "858656 bytes"
       ],
       "list-fugue-simple": [
+        "1056656 bytes",
+        "1056656 bytes",
+        "1056656 bytes",
+        "1056656 bytes",
+        "1056656 bytes",
+        "1056656 bytes",
+        "1056656 bytes",
+        "1056656 bytes",
+        "1056656 bytes",
         "1056656 bytes"
       ]
     },
     "[B1.9] Insert Array of N numbers (encodeTime)": {
       "tree-fugue": [
-        "10 ms"
+        "9 ms",
+        "9 ms",
+        "10 ms",
+        "9 ms",
+        "9 ms",
+        "9 ms",
+        "8 ms",
+        "9 ms",
+        "8 ms",
+        "9 ms"
       ],
       "yjs": [
-        "1 ms"
+        "1 ms",
+        "2 ms",
+        "2 ms",
+        "6 ms",
+        "2 ms",
+        "1 ms",
+        "2 ms",
+        "1 ms",
+        "2 ms",
+        "6 ms"
       ],
       "ywasm": [
-        "0 ms"
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms"
       ],
       "automerge-wasm": [
         "5 ms"
       ],
       "tree-fugue-simple": [
-        "6 ms"
+        "5 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "6 ms",
+        "5 ms"
       ],
       "list-fugue-simple": [
-        "8 ms"
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "8 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms"
       ]
     },
     "[B1.9] Insert Array of N numbers (docSize)": {
       "tree-fugue": [
+        "47772 bytes",
+        "47772 bytes",
+        "47772 bytes",
+        "47772 bytes",
+        "47772 bytes",
+        "47772 bytes",
+        "47772 bytes",
+        "47772 bytes",
+        "47772 bytes",
         "47772 bytes"
       ],
       "yjs": [
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
         "35657 bytes"
       ],
       "ywasm": [
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
         "35657 bytes"
       ],
       "automerge-wasm": [
         "26951 bytes"
       ],
       "tree-fugue-simple": [
+        "654969 bytes",
+        "654969 bytes",
+        "654969 bytes",
+        "654969 bytes",
+        "654969 bytes",
+        "654969 bytes",
+        "654969 bytes",
+        "654969 bytes",
+        "654969 bytes",
         "654969 bytes"
       ],
       "list-fugue-simple": [
+        "1044807 bytes",
+        "1044807 bytes",
+        "1044807 bytes",
+        "1044807 bytes",
+        "1044807 bytes",
+        "1044807 bytes",
+        "1044807 bytes",
+        "1044807 bytes",
+        "1044807 bytes",
         "1044807 bytes"
       ]
     },
     "[B1.9] Insert Array of N numbers (memUsed)": {
       "tree-fugue": [
-        "53336 bytes"
+        "6352 bytes",
+        "207480 bytes",
+        "14848 bytes",
+        "11080 bytes",
+        "17208 bytes",
+        "14608 bytes",
+        "70416 bytes",
+        "-109176 bytes",
+        "7536 bytes",
+        "207664 bytes"
       ],
       "yjs": [
-        "-29576 bytes"
+        "28552 bytes",
+        "80936 bytes",
+        "87056 bytes",
+        "21576 bytes",
+        "142800 bytes",
+        "22280 bytes",
+        "318584 bytes",
+        "28552 bytes",
+        "74648 bytes",
+        "28976 bytes"
       ],
       "ywasm": [
-        "3904 bytes"
+        "304 bytes",
+        "304 bytes",
+        "304 bytes",
+        "304 bytes",
+        "304 bytes",
+        "304 bytes",
+        "304 bytes",
+        "304 bytes",
+        "304 bytes",
+        "304 bytes"
       ],
       "automerge-wasm": [
         "640 bytes"
       ],
       "tree-fugue-simple": [
-        "2062744 bytes"
+        "1909888 bytes",
+        "2072208 bytes",
+        "1803824 bytes",
+        "2054784 bytes",
+        "2038872 bytes",
+        "2055176 bytes",
+        "1949096 bytes",
+        "2073336 bytes",
+        "1958920 bytes",
+        "1903232 bytes"
       ],
       "list-fugue-simple": [
-        "658464 bytes"
+        "678336 bytes",
+        "616192 bytes",
+        "643224 bytes",
+        "497840 bytes",
+        "746632 bytes",
+        "507136 bytes",
+        "750040 bytes",
+        "724432 bytes",
+        "489016 bytes",
+        "384256 bytes"
       ]
     },
     "[B1.9] Insert Array of N numbers (parseTime)": {
       "tree-fugue": [
-        "98 ms"
+        "95 ms",
+        "94 ms",
+        "95 ms",
+        "96 ms",
+        "93 ms",
+        "94 ms",
+        "94 ms",
+        "95 ms",
+        "93 ms",
+        "94 ms"
       ],
       "yjs": [
-        "81 ms"
+        "81 ms",
+        "81 ms",
+        "86 ms",
+        "78 ms",
+        "81 ms",
+        "80 ms",
+        "81 ms",
+        "81 ms",
+        "80 ms",
+        "80 ms"
       ],
       "ywasm": [
-        "82 ms"
+        "323 ms",
+        "322 ms",
+        "322 ms",
+        "328 ms",
+        "326 ms",
+        "327 ms",
+        "323 ms",
+        "322 ms",
+        "323 ms",
+        "324 ms"
       ],
       "automerge-wasm": [
         "152 ms"
       ],
       "tree-fugue-simple": [
-        "89 ms"
+        "118 ms",
+        "125 ms",
+        "134 ms",
+        "138 ms",
+        "145 ms",
+        "153 ms",
+        "160 ms",
+        "167 ms",
+        "176 ms",
+        "182 ms"
       ],
       "list-fugue-simple": [
-        "89 ms"
+        "99 ms",
+        "101 ms",
+        "104 ms",
+        "107 ms",
+        "110 ms",
+        "112 ms",
+        "115 ms",
+        "117 ms",
+        "124 ms",
+        "122 ms"
       ]
     },
     "[B1.10] Prepend N numbers (time)": {
       "tree-fugue": [
-        "566 ms"
+        "500 ms",
+        "502 ms",
+        "501 ms",
+        "511 ms",
+        "515 ms",
+        "484 ms",
+        "496 ms",
+        "503 ms",
+        "521 ms",
+        "510 ms"
       ],
       "yjs": [
-        "209 ms"
+        "200 ms",
+        "198 ms",
+        "204 ms",
+        "192 ms",
+        "201 ms",
+        "191 ms",
+        "194 ms",
+        "202 ms",
+        "200 ms",
+        "195 ms"
       ],
       "ywasm": [
-        "37 ms"
+        "47 ms",
+        "51 ms",
+        "49 ms",
+        "50 ms",
+        "49 ms",
+        "51 ms",
+        "49 ms",
+        "52 ms",
+        "50 ms",
+        "53 ms"
       ],
       "automerge-wasm": [
         "483 ms"
       ],
       "tree-fugue-simple": [
-        "481 ms"
+        "477 ms",
+        "487 ms",
+        "473 ms",
+        "490 ms",
+        "476 ms",
+        "473 ms",
+        "477 ms",
+        "480 ms",
+        "488 ms",
+        "480 ms"
       ],
       "list-fugue-simple": [
-        "97 ms"
+        "89 ms",
+        "94 ms",
+        "92 ms",
+        "90 ms",
+        "93 ms",
+        "92 ms",
+        "90 ms",
+        "93 ms",
+        "92 ms",
+        "90 ms"
       ]
     },
     "[B1.10] Prepend N numbers (avgUpdateSize)": {
       "tree-fugue": [
+        "52 bytes",
+        "52 bytes",
+        "52 bytes",
+        "52 bytes",
+        "52 bytes",
+        "52 bytes",
+        "52 bytes",
+        "52 bytes",
+        "52 bytes",
         "52 bytes"
       ],
       "yjs": [
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
         "32 bytes"
       ],
       "ywasm": [
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
         "32 bytes"
       ],
       "automerge-wasm": [
         "120 bytes"
       ],
       "tree-fugue-simple": [
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
         "171 bytes"
       ],
       "list-fugue-simple": [
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
+        "204 bytes",
         "204 bytes"
       ]
     },
     "[B1.10] Prepend N numbers (encodeTime)": {
       "tree-fugue": [
-        "15 ms"
+        "6 ms",
+        "15 ms",
+        "6 ms",
+        "15 ms",
+        "14 ms",
+        "7 ms",
+        "14 ms",
+        "7 ms",
+        "14 ms",
+        "7 ms"
       ],
       "yjs": [
+        "11 ms",
+        "18 ms",
+        "12 ms",
+        "18 ms",
+        "11 ms",
+        "12 ms",
+        "17 ms",
+        "12 ms",
+        "12 ms",
         "12 ms"
       ],
       "ywasm": [
-        "1 ms"
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "4 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms"
       ],
       "automerge-wasm": [
         "15 ms"
       ],
       "tree-fugue-simple": [
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
         "4 ms"
       ],
       "list-fugue-simple": [
-        "8 ms"
+        "7 ms",
+        "6 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "6 ms"
       ]
     },
     "[B1.10] Prepend N numbers (docSize)": {
       "tree-fugue": [
+        "107390 bytes",
+        "107390 bytes",
+        "107390 bytes",
+        "107390 bytes",
+        "107390 bytes",
+        "107390 bytes",
+        "107390 bytes",
+        "107390 bytes",
+        "107390 bytes",
         "107390 bytes"
       ],
       "yjs": [
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
         "35665 bytes"
       ],
       "ywasm": [
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
         "35665 bytes"
       ],
       "automerge-wasm": [
         "26985 bytes"
       ],
       "tree-fugue-simple": [
+        "654884 bytes",
+        "654884 bytes",
+        "654884 bytes",
+        "654884 bytes",
+        "654884 bytes",
+        "654884 bytes",
+        "654884 bytes",
+        "654884 bytes",
+        "654884 bytes",
         "654884 bytes"
       ],
       "list-fugue-simple": [
+        "1044722 bytes",
+        "1044722 bytes",
+        "1044722 bytes",
+        "1044722 bytes",
+        "1044722 bytes",
+        "1044722 bytes",
+        "1044722 bytes",
+        "1044722 bytes",
+        "1044722 bytes",
         "1044722 bytes"
       ]
     },
     "[B1.10] Prepend N numbers (memUsed)": {
       "tree-fugue": [
-        "1886768 bytes"
+        "1738040 bytes",
+        "2075984 bytes",
+        "1740904 bytes",
+        "1888288 bytes",
+        "1984712 bytes",
+        "1756224 bytes",
+        "2169520 bytes",
+        "1744584 bytes",
+        "2025264 bytes",
+        "1737704 bytes"
       ],
       "yjs": [
-        "1680088 bytes"
+        "1929864 bytes",
+        "2028560 bytes",
+        "1907064 bytes",
+        "1922768 bytes",
+        "1904296 bytes",
+        "1819032 bytes",
+        "2049496 bytes",
+        "1867664 bytes",
+        "1906760 bytes",
+        "1872168 bytes"
       ],
       "ywasm": [
-        "-145696 bytes"
+        "-34248 bytes",
+        "-60944 bytes",
+        "-33912 bytes",
+        "-64320 bytes",
+        "-33616 bytes",
+        "-60944 bytes",
+        "-34784 bytes",
+        "-66688 bytes",
+        "-33616 bytes",
+        "-67856 bytes"
       ],
       "automerge-wasm": [
         "-30368 bytes"
       ],
       "tree-fugue-simple": [
-        "1838552 bytes"
+        "2012728 bytes",
+        "2017328 bytes",
+        "2018776 bytes",
+        "2011872 bytes",
+        "2014152 bytes",
+        "2004856 bytes",
+        "2010344 bytes",
+        "2013600 bytes",
+        "2007112 bytes",
+        "2016560 bytes"
       ],
       "list-fugue-simple": [
-        "469320 bytes"
+        "660784 bytes",
+        "670792 bytes",
+        "670456 bytes",
+        "670848 bytes",
+        "664488 bytes",
+        "675536 bytes",
+        "671520 bytes",
+        "670032 bytes",
+        "668968 bytes",
+        "666672 bytes"
       ]
     },
     "[B1.10] Prepend N numbers (parseTime)": {
       "tree-fugue": [
-        "112 ms"
+        "163 ms",
+        "156 ms",
+        "178 ms",
+        "182 ms",
+        "183 ms",
+        "206 ms",
+        "203 ms",
+        "223 ms",
+        "224 ms",
+        "243 ms"
       ],
       "yjs": [
-        "110 ms"
+        "100 ms",
+        "102 ms",
+        "100 ms",
+        "102 ms",
+        "103 ms",
+        "104 ms",
+        "106 ms",
+        "113 ms",
+        "101 ms",
+        "103 ms"
       ],
       "ywasm": [
-        "88 ms"
+        "444 ms",
+        "450 ms",
+        "451 ms",
+        "454 ms",
+        "455 ms",
+        "459 ms",
+        "466 ms",
+        "469 ms",
+        "473 ms",
+        "471 ms"
       ],
       "automerge-wasm": [
         "190 ms"
       ],
       "tree-fugue-simple": [
-        "87 ms"
+        "127 ms",
+        "133 ms",
+        "142 ms",
+        "150 ms",
+        "160 ms",
+        "170 ms",
+        "178 ms",
+        "185 ms",
+        "195 ms",
+        "209 ms"
       ],
       "list-fugue-simple": [
-        "91 ms"
+        "110 ms",
+        "117 ms",
+        "119 ms",
+        "123 ms",
+        "131 ms",
+        "131 ms",
+        "135 ms",
+        "139 ms",
+        "143 ms",
+        "147 ms"
       ]
     },
     "[B1.11] Insert N numbers at random positions (time)": {
       "tree-fugue": [
-        "130 ms"
+        "119 ms",
+        "125 ms",
+        "117 ms",
+        "128 ms",
+        "106 ms",
+        "123 ms",
+        "111 ms",
+        "121 ms",
+        "109 ms",
+        "122 ms"
       ],
       "yjs": [
-        "241 ms"
+        "240 ms",
+        "229 ms",
+        "226 ms",
+        "231 ms",
+        "227 ms",
+        "235 ms",
+        "241 ms",
+        "234 ms",
+        "234 ms",
+        "225 ms"
       ],
       "ywasm": [
-        "183 ms"
+        "227 ms",
+        "230 ms",
+        "232 ms",
+        "228 ms",
+        "231 ms",
+        "231 ms",
+        "235 ms",
+        "229 ms",
+        "230 ms",
+        "231 ms"
       ],
       "automerge-wasm": [
         "499 ms"
       ],
       "tree-fugue-simple": [
-        "96 ms"
+        "99 ms",
+        "101 ms",
+        "101 ms",
+        "98 ms",
+        "101 ms",
+        "98 ms",
+        "100 ms",
+        "98 ms",
+        "101 ms",
+        "97 ms"
       ],
       "list-fugue-simple": [
-        "193 ms"
+        "178 ms",
+        "178 ms",
+        "181 ms",
+        "181 ms",
+        "178 ms",
+        "177 ms",
+        "181 ms",
+        "184 ms",
+        "178 ms",
+        "181 ms"
       ]
     },
     "[B1.11] Insert N numbers at random positions (avgUpdateSize)": {
       "tree-fugue": [
+        "48 bytes",
+        "48 bytes",
+        "48 bytes",
+        "48 bytes",
+        "48 bytes",
+        "48 bytes",
+        "48 bytes",
+        "48 bytes",
+        "48 bytes",
         "48 bytes"
       ],
       "yjs": [
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
         "34 bytes"
       ],
       "ywasm": [
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
         "34 bytes"
       ],
       "automerge-wasm": [
         "125 bytes"
       ],
       "tree-fugue-simple": [
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
+        "171 bytes",
         "171 bytes"
       ],
       "list-fugue-simple": [
+        "216 bytes",
+        "216 bytes",
+        "216 bytes",
+        "216 bytes",
+        "216 bytes",
+        "216 bytes",
+        "216 bytes",
+        "216 bytes",
+        "216 bytes",
         "216 bytes"
       ]
     },
     "[B1.11] Insert N numbers at random positions (encodeTime)": {
       "tree-fugue": [
-        "13 ms"
+        "6 ms",
+        "14 ms",
+        "6 ms",
+        "14 ms",
+        "6 ms",
+        "14 ms",
+        "6 ms",
+        "14 ms",
+        "6 ms",
+        "12 ms"
       ],
       "yjs": [
-        "15 ms"
+        "15 ms",
+        "15 ms",
+        "23 ms",
+        "14 ms",
+        "21 ms",
+        "16 ms",
+        "16 ms",
+        "16 ms",
+        "16 ms",
+        "22 ms"
       ],
       "ywasm": [
-        "1 ms"
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "7 ms",
+        "7 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "7 ms"
       ],
       "automerge-wasm": [
         "13 ms"
       ],
       "tree-fugue-simple": [
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
         "5 ms"
       ],
       "list-fugue-simple": [
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
         "7 ms"
       ]
     },
     "[B1.11] Insert N numbers at random positions (docSize)": {
       "tree-fugue": [
+        "77385 bytes",
+        "77385 bytes",
+        "77385 bytes",
+        "77385 bytes",
+        "77385 bytes",
+        "77385 bytes",
+        "77385 bytes",
+        "77385 bytes",
+        "77385 bytes",
         "77385 bytes"
       ],
       "yjs": [
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
         "59137 bytes"
       ],
       "ywasm": [
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
         "59137 bytes"
       ],
       "automerge-wasm": [
         "47744 bytes"
       ],
       "tree-fugue-simple": [
+        "638196 bytes",
+        "638196 bytes",
+        "638196 bytes",
+        "638196 bytes",
+        "638196 bytes",
+        "638196 bytes",
+        "638196 bytes",
+        "638196 bytes",
+        "638196 bytes",
         "638196 bytes"
       ],
       "list-fugue-simple": [
+        "1116861 bytes",
+        "1116861 bytes",
+        "1116861 bytes",
+        "1116861 bytes",
+        "1116861 bytes",
+        "1116861 bytes",
+        "1116861 bytes",
+        "1116861 bytes",
+        "1116861 bytes",
         "1116861 bytes"
       ]
     },
     "[B1.11] Insert N numbers at random positions (memUsed)": {
       "tree-fugue": [
-        "-877824 bytes"
+        "791008 bytes",
+        "1012280 bytes",
+        "794240 bytes",
+        "1048096 bytes",
+        "794840 bytes",
+        "1052024 bytes",
+        "795664 bytes",
+        "1107648 bytes",
+        "783000 bytes",
+        "1011976 bytes"
       ],
       "yjs": [
-        "1825792 bytes"
+        "1893648 bytes",
+        "1902784 bytes",
+        "1712824 bytes",
+        "1861336 bytes",
+        "1948024 bytes",
+        "1876312 bytes",
+        "1906008 bytes",
+        "1924928 bytes",
+        "1976240 bytes",
+        "2016496 bytes"
       ],
       "ywasm": [
-        "-32936 bytes"
+        "-63808 bytes",
+        "-33200 bytes",
+        "-68512 bytes",
+        "-33736 bytes",
+        "-66808 bytes",
+        "-34368 bytes",
+        "-61600 bytes",
+        "-46208 bytes",
+        "-62768 bytes",
+        "-33200 bytes"
       ],
       "automerge-wasm": [
         "-54592 bytes"
       ],
       "tree-fugue-simple": [
-        "2009056 bytes"
+        "2001728 bytes",
+        "2005544 bytes",
+        "2008160 bytes",
+        "2004624 bytes",
+        "2007608 bytes",
+        "2007928 bytes",
+        "2010544 bytes",
+        "2002304 bytes",
+        "2006184 bytes",
+        "2005096 bytes"
       ],
       "list-fugue-simple": [
-        "669696 bytes"
+        "670944 bytes",
+        "673688 bytes",
+        "671248 bytes",
+        "666696 bytes",
+        "675296 bytes",
+        "667344 bytes",
+        "673136 bytes",
+        "665512 bytes",
+        "670584 bytes",
+        "667424 bytes"
       ]
     },
     "[B1.11] Insert N numbers at random positions (parseTime)": {
       "tree-fugue": [
-        "122 ms"
+        "154 ms",
+        "161 ms",
+        "168 ms",
+        "180 ms",
+        "181 ms",
+        "188 ms",
+        "198 ms",
+        "206 ms",
+        "208 ms",
+        "217 ms"
       ],
       "yjs": [
-        "119 ms"
+        "124 ms",
+        "120 ms",
+        "124 ms",
+        "107 ms",
+        "124 ms",
+        "123 ms",
+        "126 ms",
+        "125 ms",
+        "124 ms",
+        "123 ms"
       ],
       "ywasm": [
-        "89 ms"
+        "450 ms",
+        "455 ms",
+        "459 ms",
+        "455 ms",
+        "457 ms",
+        "461 ms",
+        "467 ms",
+        "470 ms",
+        "474 ms",
+        "474 ms"
       ],
       "automerge-wasm": [
         "171 ms"
       ],
       "tree-fugue-simple": [
-        "93 ms"
+        "140 ms",
+        "150 ms",
+        "159 ms",
+        "172 ms",
+        "178 ms",
+        "188 ms",
+        "196 ms",
+        "204 ms",
+        "218 ms",
+        "223 ms"
       ],
       "list-fugue-simple": [
-        "90 ms"
+        "110 ms",
+        "111 ms",
+        "116 ms",
+        "119 ms",
+        "124 ms",
+        "128 ms",
+        "131 ms",
+        "134 ms",
+        "140 ms",
+        "144 ms"
       ]
     },
     "[B2.1] Concurrently insert string of length N at index 0 (time)": {
       "tree-fugue": [
-        "7 ms"
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "1 ms"
       ],
       "yjs": [
-        "4 ms"
+        "3 ms",
+        "1 ms",
+        "1 ms",
+        "3 ms",
+        "1 ms",
+        "4 ms",
+        "1 ms",
+        "10 ms",
+        "3 ms",
+        "1 ms"
       ],
       "ywasm": [
-        "1 ms"
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "12 ms",
+        "0 ms"
       ],
       "automerge-wasm": [
         "88 ms"
       ],
       "tree-fugue-simple": [
-        "1548 ms"
+        "1502 ms",
+        "1482 ms",
+        "1523 ms",
+        "1486 ms",
+        "1504 ms",
+        "1494 ms",
+        "1505 ms",
+        "1476 ms",
+        "1514 ms",
+        "1486 ms"
       ],
       "list-fugue-simple": [
-        "342 ms"
+        "321 ms",
+        "340 ms",
+        "322 ms",
+        "325 ms",
+        "318 ms",
+        "335 ms",
+        "345 ms",
+        "407 ms",
+        "319 ms",
+        "336 ms"
       ]
     },
     "[B2.1] Concurrently insert string of length N at index 0 (updateSize)": {
       "tree-fugue": [
+        "6136 bytes",
+        "6136 bytes",
+        "6136 bytes",
+        "6136 bytes",
+        "6136 bytes",
+        "6136 bytes",
+        "6136 bytes",
+        "6136 bytes",
+        "6136 bytes",
         "6136 bytes"
       ],
       "yjs": [
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
         "6094 bytes"
       ],
       "ywasm": [
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
         "6094 bytes"
       ],
       "automerge-wasm": [
         "9494 bytes"
       ],
       "tree-fugue-simple": [
+        "826516 bytes",
+        "826516 bytes",
+        "826516 bytes",
+        "826516 bytes",
+        "826516 bytes",
+        "826516 bytes",
+        "826516 bytes",
+        "826516 bytes",
+        "826516 bytes",
         "826516 bytes"
       ],
       "list-fugue-simple": [
+        "1092156 bytes",
+        "1092156 bytes",
+        "1092156 bytes",
+        "1092156 bytes",
+        "1092156 bytes",
+        "1092156 bytes",
+        "1092156 bytes",
+        "1092156 bytes",
+        "1092156 bytes",
         "1092156 bytes"
       ]
     },
     "[B2.1] Concurrently insert string of length N at index 0 (encodeTime)": {
       "tree-fugue": [
-        "1 ms"
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms"
       ],
       "yjs": [
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
         "0 ms"
       ],
       "ywasm": [
+        "0 ms",
+        "0 ms",
+        "12 ms",
+        "0 ms",
+        "12 ms",
+        "0 ms",
+        "12 ms",
+        "0 ms",
+        "0 ms",
         "0 ms"
       ],
       "automerge-wasm": [
         "4 ms"
       ],
       "tree-fugue-simple": [
-        "9 ms"
+        "9 ms",
+        "8 ms",
+        "9 ms",
+        "9 ms",
+        "8 ms",
+        "9 ms",
+        "8 ms",
+        "8 ms",
+        "8 ms",
+        "8 ms"
       ],
       "list-fugue-simple": [
-        "17 ms"
+        "12 ms",
+        "13 ms",
+        "13 ms",
+        "13 ms",
+        "13 ms",
+        "14 ms",
+        "12 ms",
+        "12 ms",
+        "12 ms",
+        "14 ms"
       ]
     },
     "[B2.1] Concurrently insert string of length N at index 0 (docSize)": {
       "tree-fugue": [
+        "12289 bytes",
+        "12289 bytes",
+        "12289 bytes",
+        "12289 bytes",
+        "12289 bytes",
+        "12289 bytes",
+        "12289 bytes",
+        "12289 bytes",
+        "12289 bytes",
         "12289 bytes"
       ],
       "yjs": [
-        "12151 bytes"
+        "12151 bytes",
+        "12151 bytes",
+        "12151 bytes",
+        "12151 bytes",
+        "12152 bytes",
+        "12151 bytes",
+        "12151 bytes",
+        "12151 bytes",
+        "12152 bytes",
+        "12152 bytes"
       ],
       "ywasm": [
-        "12151 bytes"
+        "12151 bytes",
+        "12151 bytes",
+        "12151 bytes",
+        "12151 bytes",
+        "12151 bytes",
+        "12151 bytes",
+        "12152 bytes",
+        "12152 bytes",
+        "12152 bytes",
+        "12152 bytes"
       ],
       "automerge-wasm": [
         "8009 bytes"
       ],
       "tree-fugue-simple": [
+        "1241904 bytes",
+        "1241904 bytes",
+        "1241904 bytes",
+        "1241904 bytes",
+        "1241904 bytes",
+        "1241904 bytes",
+        "1241904 bytes",
+        "1241904 bytes",
+        "1241904 bytes",
         "1241904 bytes"
       ],
       "list-fugue-simple": [
+        "2160409 bytes",
+        "2160409 bytes",
+        "2160409 bytes",
+        "2160409 bytes",
+        "2160409 bytes",
+        "2160409 bytes",
+        "2160409 bytes",
+        "2160409 bytes",
+        "2160409 bytes",
         "2160409 bytes"
       ]
     },
     "[B2.1] Concurrently insert string of length N at index 0 (memUsed)": {
       "tree-fugue": [
-        "-357224 bytes"
+        "16528 bytes",
+        "16064 bytes",
+        "16160 bytes",
+        "16528 bytes",
+        "16160 bytes",
+        "16160 bytes",
+        "16528 bytes",
+        "16160 bytes",
+        "452928 bytes",
+        "16528 bytes"
       ],
       "yjs": [
-        "-266528 bytes"
+        "21288 bytes",
+        "410896 bytes",
+        "10888 bytes",
+        "401976 bytes",
+        "11000 bytes",
+        "376184 bytes",
+        "10968 bytes",
+        "10888 bytes",
+        "210456 bytes",
+        "10888 bytes"
       ],
       "ywasm": [
+        "240 bytes",
+        "240 bytes",
+        "152 bytes",
+        "240 bytes",
+        "280 bytes",
+        "240 bytes",
+        "160 bytes",
+        "240 bytes",
+        "304 bytes",
         "240 bytes"
       ],
       "automerge-wasm": [
         "-904 bytes"
       ],
       "tree-fugue-simple": [
-        "4194320 bytes"
+        "4192304 bytes",
+        "4197544 bytes",
+        "4192696 bytes",
+        "4198136 bytes",
+        "4192992 bytes",
+        "4198136 bytes",
+        "4192304 bytes",
+        "4198136 bytes",
+        "4192896 bytes",
+        "4198528 bytes"
       ],
       "list-fugue-simple": [
-        "1492240 bytes"
+        "1491440 bytes",
+        "1497080 bytes",
+        "1491832 bytes",
+        "1497080 bytes",
+        "1491536 bytes",
+        "1497496 bytes",
+        "1491024 bytes",
+        "1497496 bytes",
+        "1491832 bytes",
+        "1497080 bytes"
       ]
     },
     "[B2.1] Concurrently insert string of length N at index 0 (parseTime)": {
       "tree-fugue": [
-        "80 ms"
+        "78 ms",
+        "77 ms",
+        "78 ms",
+        "77 ms",
+        "77 ms",
+        "77 ms",
+        "77 ms",
+        "77 ms",
+        "78 ms",
+        "77 ms"
       ],
       "yjs": [
-        "86 ms"
+        "73 ms",
+        "74 ms",
+        "73 ms",
+        "71 ms",
+        "72 ms",
+        "71 ms",
+        "72 ms",
+        "70 ms",
+        "73 ms",
+        "71 ms"
       ],
       "ywasm": [
-        "88 ms"
+        "277 ms",
+        "277 ms",
+        "406 ms",
+        "278 ms",
+        "409 ms",
+        "275 ms",
+        "407 ms",
+        "282 ms",
+        "402 ms",
+        "275 ms"
       ],
       "automerge-wasm": [
         "146 ms"
       ],
       "tree-fugue-simple": [
-        "103 ms"
+        "169 ms",
+        "184 ms",
+        "198 ms",
+        "212 ms",
+        "227 ms",
+        "240 ms",
+        "255 ms",
+        "273 ms",
+        "301 ms",
+        "297 ms"
       ],
       "list-fugue-simple": [
-        "101 ms"
+        "122 ms",
+        "128 ms",
+        "135 ms",
+        "141 ms",
+        "143 ms",
+        "151 ms",
+        "156 ms",
+        "160 ms",
+        "165 ms",
+        "175 ms"
       ]
     },
     "[B2.2] Concurrently insert N characters at random positions (time)": {
       "tree-fugue": [
-        "158 ms"
+        "166 ms",
+        "170 ms",
+        "165 ms",
+        "162 ms",
+        "167 ms",
+        "163 ms",
+        "161 ms",
+        "171 ms",
+        "160 ms",
+        "164 ms"
       ],
       "yjs": [
-        "152 ms"
+        "142 ms",
+        "135 ms",
+        "122 ms",
+        "123 ms",
+        "101 ms",
+        "94 ms",
+        "115 ms",
+        "103 ms",
+        "134 ms",
+        "136 ms"
       ],
       "ywasm": [
-        "436 ms"
+        "585 ms",
+        "590 ms",
+        "591 ms",
+        "603 ms",
+        "584 ms",
+        "589 ms",
+        "591 ms",
+        "589 ms",
+        "586 ms",
+        "576 ms"
       ],
       "automerge-wasm": [
         "1392 ms"
       ],
       "tree-fugue-simple": [
-        "191 ms"
+        "197 ms",
+        "197 ms",
+        "196 ms",
+        "202 ms",
+        "197 ms",
+        "203 ms",
+        "197 ms",
+        "199 ms",
+        "196 ms",
+        "198 ms"
       ],
       "list-fugue-simple": [
-        "755 ms"
+        "751 ms",
+        "779 ms",
+        "763 ms",
+        "773 ms",
+        "769 ms",
+        "755 ms",
+        "760 ms",
+        "747 ms",
+        "727 ms",
+        "777 ms"
       ]
     },
     "[B2.2] Concurrently insert N characters at random positions (updateSize)": {
       "tree-fugue": [
+        "104977 bytes",
+        "104977 bytes",
+        "104977 bytes",
+        "104977 bytes",
+        "104977 bytes",
+        "104977 bytes",
+        "104977 bytes",
+        "104977 bytes",
+        "104977 bytes",
         "104977 bytes"
       ],
       "yjs": [
+        "33444 bytes",
+        "33444 bytes",
+        "33444 bytes",
+        "33444 bytes",
+        "33444 bytes",
+        "33444 bytes",
+        "33444 bytes",
+        "33444 bytes",
+        "33444 bytes",
         "33444 bytes"
       ],
       "ywasm": [
+        "177007 bytes",
+        "177007 bytes",
+        "177007 bytes",
+        "177007 bytes",
+        "177007 bytes",
+        "177007 bytes",
+        "173852 bytes",
+        "177007 bytes",
+        "177007 bytes",
         "177007 bytes"
       ],
       "automerge-wasm": [
         "1093282 bytes"
       ],
       "tree-fugue-simple": [
+        "825600 bytes",
+        "825600 bytes",
+        "825600 bytes",
+        "825600 bytes",
+        "825600 bytes",
+        "825600 bytes",
+        "825600 bytes",
+        "825600 bytes",
+        "825600 bytes",
         "825600 bytes"
       ],
       "list-fugue-simple": [
+        "1099004 bytes",
+        "1099004 bytes",
+        "1099004 bytes",
+        "1099004 bytes",
+        "1099004 bytes",
+        "1099004 bytes",
+        "1099004 bytes",
+        "1099004 bytes",
+        "1099004 bytes",
         "1099004 bytes"
       ]
     },
     "[B2.2] Concurrently insert N characters at random positions (encodeTime)": {
       "tree-fugue": [
-        "14 ms"
+        "18 ms",
+        "16 ms",
+        "17 ms",
+        "15 ms",
+        "18 ms",
+        "16 ms",
+        "17 ms",
+        "16 ms",
+        "17 ms",
+        "16 ms"
       ],
       "yjs": [
-        "6 ms"
+        "3 ms",
+        "2 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "2 ms",
+        "3 ms",
+        "2 ms",
+        "2 ms",
+        "3 ms"
       ],
       "ywasm": [
-        "1 ms"
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "5 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms"
       ],
       "automerge-wasm": [
         "28 ms"
       ],
       "tree-fugue-simple": [
-        "9 ms"
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "10 ms",
+        "11 ms"
       ],
       "list-fugue-simple": [
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "12 ms",
+        "11 ms",
+        "12 ms",
+        "12 ms",
+        "12 ms",
+        "11 ms",
         "12 ms"
       ]
     },
     "[B2.2] Concurrently insert N characters at random positions (docSize)": {
       "tree-fugue": [
+        "72341 bytes",
+        "72341 bytes",
+        "72341 bytes",
+        "72341 bytes",
+        "72341 bytes",
+        "72341 bytes",
+        "72341 bytes",
+        "72341 bytes",
+        "72341 bytes",
         "72341 bytes"
       ],
       "yjs": [
-        "66852 bytes"
+        "66860 bytes",
+        "66852 bytes",
+        "66852 bytes",
+        "66860 bytes",
+        "66860 bytes",
+        "66852 bytes",
+        "66852 bytes",
+        "66860 bytes",
+        "66852 bytes",
+        "66860 bytes"
       ],
       "ywasm": [
+        "66852 bytes",
+        "66860 bytes",
+        "66852 bytes",
+        "66852 bytes",
+        "66860 bytes",
+        "66860 bytes",
+        "66224 bytes",
+        "66860 bytes",
+        "66852 bytes",
         "66852 bytes"
       ],
       "automerge-wasm": [
         "50699 bytes"
       ],
       "tree-fugue-simple": [
+        "1208756 bytes",
+        "1208756 bytes",
+        "1208756 bytes",
+        "1208756 bytes",
+        "1208756 bytes",
+        "1208756 bytes",
+        "1208756 bytes",
+        "1208756 bytes",
+        "1208756 bytes",
         "1208756 bytes"
       ],
       "list-fugue-simple": [
+        "2174106 bytes",
+        "2174106 bytes",
+        "2174106 bytes",
+        "2174106 bytes",
+        "2174106 bytes",
+        "2174106 bytes",
+        "2174106 bytes",
+        "2174106 bytes",
+        "2174106 bytes",
         "2174106 bytes"
       ]
     },
     "[B2.2] Concurrently insert N characters at random positions (memUsed)": {
       "tree-fugue": [
-        "1540520 bytes"
+        "1598592 bytes",
+        "1591888 bytes",
+        "1600136 bytes",
+        "1592224 bytes",
+        "1604368 bytes",
+        "1589792 bytes",
+        "1601816 bytes",
+        "1591856 bytes",
+        "1600720 bytes",
+        "1593432 bytes"
       ],
       "yjs": [
-        "2538368 bytes"
+        "2428256 bytes",
+        "2341504 bytes",
+        "2521448 bytes",
+        "2608360 bytes",
+        "2336600 bytes",
+        "2390248 bytes",
+        "2226536 bytes",
+        "2390792 bytes",
+        "2204752 bytes",
+        "2324824 bytes"
       ],
       "ywasm": [
-        "-56376 bytes"
+        "-55896 bytes",
+        "-44352 bytes",
+        "-71288 bytes",
+        "-55896 bytes",
+        "96 bytes",
+        "-13328 bytes",
+        "-57600 bytes",
+        "-43184 bytes",
+        "-72456 bytes",
+        "-55896 bytes"
       ],
       "automerge-wasm": [
         "-27504 bytes"
       ],
       "tree-fugue-simple": [
-        "4191728 bytes"
+        "4197928 bytes",
+        "4192608 bytes",
+        "4197264 bytes",
+        "4191624 bytes",
+        "4197928 bytes",
+        "4192024 bytes",
+        "4197264 bytes",
+        "4192288 bytes",
+        "4198248 bytes",
+        "4192608 bytes"
       ],
       "list-fugue-simple": [
-        "1485848 bytes"
+        "1496872 bytes",
+        "1491232 bytes",
+        "1496872 bytes",
+        "1491624 bytes",
+        "1495880 bytes",
+        "1491232 bytes",
+        "1496872 bytes",
+        "1491624 bytes",
+        "1497264 bytes",
+        "1491232 bytes"
       ]
     },
     "[B2.2] Concurrently insert N characters at random positions (parseTime)": {
       "tree-fugue": [
-        "94 ms"
+        "147 ms",
+        "155 ms",
+        "167 ms",
+        "176 ms",
+        "177 ms",
+        "184 ms",
+        "199 ms",
+        "203 ms",
+        "209 ms",
+        "214 ms"
       ],
       "yjs": [
-        "139 ms"
+        "151 ms",
+        "140 ms",
+        "141 ms",
+        "152 ms",
+        "142 ms",
+        "122 ms",
+        "121 ms",
+        "136 ms",
+        "135 ms",
+        "146 ms"
       ],
       "ywasm": [
-        "90 ms"
+        "523 ms",
+        "521 ms",
+        "528 ms",
+        "509 ms",
+        "517 ms",
+        "517 ms",
+        "519 ms",
+        "525 ms",
+        "522 ms",
+        "528 ms"
       ],
       "automerge-wasm": [
         "269 ms"
       ],
       "tree-fugue-simple": [
-        "107 ms"
+        "182 ms",
+        "196 ms",
+        "211 ms",
+        "229 ms",
+        "243 ms",
+        "257 ms",
+        "275 ms",
+        "289 ms",
+        "305 ms",
+        "322 ms"
       ],
       "list-fugue-simple": [
-        "93 ms"
+        "120 ms",
+        "123 ms",
+        "132 ms",
+        "133 ms",
+        "140 ms",
+        "146 ms",
+        "150 ms",
+        "154 ms",
+        "160 ms",
+        "166 ms"
       ]
     },
     "[B2.3] Concurrently insert N words at random positions (time)": {
       "tree-fugue": [
-        "181 ms"
+        "177 ms",
+        "188 ms",
+        "178 ms",
+        "181 ms",
+        "183 ms",
+        "181 ms",
+        "182 ms",
+        "190 ms",
+        "176 ms",
+        "185 ms"
       ],
       "yjs": [
-        "205 ms"
+        "205 ms",
+        "204 ms",
+        "207 ms",
+        "203 ms",
+        "227 ms",
+        "224 ms",
+        "204 ms",
+        "200 ms",
+        "192 ms",
+        "181 ms"
       ],
       "ywasm": [
-        "1233 ms"
+        "1474 ms",
+        "1481 ms",
+        "1474 ms",
+        "1478 ms",
+        "1483 ms",
+        "1468 ms",
+        "1489 ms",
+        "1480 ms",
+        "1476 ms",
+        "1478 ms"
       ],
       "automerge-wasm": [
         "2520 ms"
       ],
       "tree-fugue-simple": [
-        "907 ms"
+        "911 ms",
+        "915 ms",
+        "917 ms",
+        "918 ms",
+        "930 ms",
+        "925 ms",
+        "934 ms",
+        "932 ms",
+        "945 ms",
+        "935 ms"
       ],
       "list-fugue-simple": [
-        "21056 ms"
+        "15655 ms",
+        "17995 ms",
+        "17949 ms",
+        "16059 ms",
+        "16146 ms",
+        "25468 ms",
+        "17176 ms",
+        "16073 ms",
+        "15762 ms",
+        "16408 ms"
       ]
     },
     "[B2.3] Concurrently insert N words at random positions (updateSize)": {
       "tree-fugue": [
+        "149822 bytes",
+        "149822 bytes",
+        "149822 bytes",
+        "149822 bytes",
+        "149822 bytes",
+        "149822 bytes",
+        "149822 bytes",
+        "149822 bytes",
+        "149822 bytes",
         "149822 bytes"
       ],
       "yjs": [
+        "88994 bytes",
+        "88994 bytes",
+        "88994 bytes",
+        "88994 bytes",
+        "88994 bytes",
+        "88994 bytes",
+        "88994 bytes",
+        "88994 bytes",
+        "88994 bytes",
         "88994 bytes"
       ],
       "ywasm": [
-        "212195 bytes"
+        "215213 bytes",
+        "215213 bytes",
+        "215213 bytes",
+        "215213 bytes",
+        "215213 bytes",
+        "215213 bytes",
+        "215213 bytes",
+        "212153 bytes",
+        "215213 bytes",
+        "215213 bytes"
       ],
       "automerge-wasm": [
         "1185195 bytes"
       ],
       "tree-fugue-simple": [
+        "4980784 bytes",
+        "4980784 bytes",
+        "4980784 bytes",
+        "4980784 bytes",
+        "4980784 bytes",
+        "4980784 bytes",
+        "4980784 bytes",
+        "4980784 bytes",
+        "4980784 bytes",
         "4980784 bytes"
       ],
       "list-fugue-simple": [
+        "6638148 bytes",
+        "6638148 bytes",
+        "6638148 bytes",
+        "6638148 bytes",
+        "6638148 bytes",
+        "6638148 bytes",
+        "6638148 bytes",
+        "6638148 bytes",
+        "6638148 bytes",
         "6638148 bytes"
       ]
     },
     "[B2.3] Concurrently insert N words at random positions (encodeTime)": {
       "tree-fugue": [
-        "27 ms"
+        "67 ms",
+        "67 ms",
+        "67 ms",
+        "67 ms",
+        "67 ms",
+        "68 ms",
+        "68 ms",
+        "68 ms",
+        "67 ms",
+        "66 ms"
       ],
       "yjs": [
-        "7 ms"
+        "8 ms",
+        "7 ms",
+        "8 ms",
+        "7 ms",
+        "7 ms",
+        "7 ms",
+        "8 ms",
+        "8 ms",
+        "6 ms",
+        "6 ms"
       ],
       "ywasm": [
-        "5 ms"
+        "5 ms",
+        "5 ms",
+        "7 ms",
+        "7 ms",
+        "5 ms",
+        "5 ms",
+        "7 ms",
+        "5 ms",
+        "6 ms",
+        "7 ms"
       ],
       "automerge-wasm": [
         "73 ms"
       ],
       "tree-fugue-simple": [
-        "59 ms"
+        "52 ms",
+        "51 ms",
+        "51 ms",
+        "53 ms",
+        "51 ms",
+        "52 ms",
+        "52 ms",
+        "53 ms",
+        "53 ms",
+        "53 ms"
       ],
       "list-fugue-simple": [
-        "104 ms"
+        "95 ms",
+        "107 ms",
+        "90 ms",
+        "90 ms",
+        "90 ms",
+        "90 ms",
+        "178 ms",
+        "178 ms",
+        "179 ms",
+        "174 ms"
       ]
     },
     "[B2.3] Concurrently insert N words at random positions (docSize)": {
       "tree-fugue": [
+        "182584 bytes",
+        "182584 bytes",
+        "182584 bytes",
+        "182584 bytes",
+        "182584 bytes",
+        "182584 bytes",
+        "182584 bytes",
+        "182584 bytes",
+        "182584 bytes",
         "182584 bytes"
       ],
       "yjs": [
+        "178130 bytes",
+        "178130 bytes",
+        "178130 bytes",
+        "178130 bytes",
+        "178137 bytes",
+        "178137 bytes",
+        "178130 bytes",
+        "178130 bytes",
+        "178130 bytes",
         "178130 bytes"
       ],
       "ywasm": [
-        "177889 bytes"
+        "178130 bytes",
+        "178130 bytes",
+        "178130 bytes",
+        "178137 bytes",
+        "178137 bytes",
+        "178130 bytes",
+        "178130 bytes",
+        "177896 bytes",
+        "178137 bytes",
+        "178130 bytes"
       ],
       "automerge-wasm": [
         "191496 bytes"
       ],
       "tree-fugue-simple": [
+        "7248094 bytes",
+        "7248094 bytes",
+        "7248094 bytes",
+        "7248094 bytes",
+        "7248094 bytes",
+        "7248094 bytes",
+        "7248094 bytes",
+        "7248094 bytes",
+        "7248094 bytes",
         "7248094 bytes"
       ],
       "list-fugue-simple": [
+        "13094218 bytes",
+        "13094218 bytes",
+        "13094218 bytes",
+        "13094218 bytes",
+        "13094218 bytes",
+        "13094218 bytes",
+        "13094218 bytes",
+        "13094218 bytes",
+        "13094218 bytes",
         "13094218 bytes"
       ]
     },
     "[B2.3] Concurrently insert N words at random positions (memUsed)": {
       "tree-fugue": [
-        "3161344 bytes"
+        "3171432 bytes",
+        "3171928 bytes",
+        "3175048 bytes",
+        "3166856 bytes",
+        "3173520 bytes",
+        "3173960 bytes",
+        "3168624 bytes",
+        "3173128 bytes",
+        "3175176 bytes",
+        "3166560 bytes"
       ],
       "yjs": [
-        "5216016 bytes"
+        "5183504 bytes",
+        "5207832 bytes",
+        "5165632 bytes",
+        "5176576 bytes",
+        "5189328 bytes",
+        "5179528 bytes",
+        "5165432 bytes",
+        "5166776 bytes",
+        "5185680 bytes",
+        "5186896 bytes"
       ],
       "ywasm": [
-        "-71112 bytes"
+        "-44232 bytes",
+        "-56456 bytes",
+        "-57920 bytes",
+        "-57088 bytes",
+        "-43600 bytes",
+        "-70776 bytes",
+        "-56312 bytes",
+        "-44376 bytes",
+        "-71168 bytes",
+        "-43208 bytes"
       ],
       "automerge-wasm": [
         "-187384 bytes"
       ],
       "tree-fugue-simple": [
-        "25168416 bytes"
+        "25185200 bytes",
+        "25184792 bytes",
+        "25184784 bytes",
+        "25184616 bytes",
+        "25184192 bytes",
+        "25184200 bytes",
+        "25185200 bytes",
+        "25184200 bytes",
+        "25184192 bytes",
+        "25184616 bytes"
       ],
       "list-fugue-simple": [
-        "9424824 bytes"
+        "9425456 bytes",
+        "9425424 bytes",
+        "9425456 bytes",
+        "9425456 bytes",
+        "9425456 bytes",
+        "9425456 bytes",
+        "9425456 bytes",
+        "9425424 bytes",
+        "9425424 bytes",
+        "9425424 bytes"
       ]
     },
     "[B2.3] Concurrently insert N words at random positions (parseTime)": {
       "tree-fugue": [
-        "128 ms"
+        "204 ms",
+        "222 ms",
+        "235 ms",
+        "248 ms",
+        "259 ms",
+        "275 ms",
+        "292 ms",
+        "307 ms",
+        "316 ms",
+        "331 ms"
       ],
       "yjs": [
-        "180 ms"
+        "168 ms",
+        "169 ms",
+        "173 ms",
+        "166 ms",
+        "186 ms",
+        "189 ms",
+        "168 ms",
+        "167 ms",
+        "153 ms",
+        "145 ms"
       ],
       "ywasm": [
-        "162 ms"
+        "472 ms",
+        "467 ms",
+        "465 ms",
+        "470 ms",
+        "467 ms",
+        "470 ms",
+        "466 ms",
+        "466 ms",
+        "469 ms",
+        "470 ms"
       ],
       "automerge-wasm": [
         "519 ms"
       ],
       "tree-fugue-simple": [
-        "301 ms"
+        "754 ms",
+        "841 ms",
+        "929 ms",
+        "1028 ms",
+        "1104 ms",
+        "1195 ms",
+        "1290 ms",
+        "1374 ms",
+        "1474 ms",
+        "1550 ms"
       ],
       "list-fugue-simple": [
-        "294 ms"
+        "535 ms",
+        "592 ms",
+        "646 ms",
+        "701 ms",
+        "748 ms",
+        "808 ms",
+        "701 ms",
+        "730 ms",
+        "857 ms",
+        "916 ms"
       ]
     },
     "[B2.4] Concurrently insert & delete (time)": {
       "tree-fugue": [
-        "454 ms"
+        "490 ms",
+        "492 ms",
+        "488 ms",
+        "490 ms",
+        "490 ms",
+        "506 ms",
+        "490 ms",
+        "501 ms",
+        "500 ms",
+        "502 ms"
       ],
       "yjs": [
-        "456 ms"
+        "389 ms",
+        "370 ms",
+        "324 ms",
+        "322 ms",
+        "310 ms",
+        "351 ms",
+        "350 ms",
+        "325 ms",
+        "336 ms",
+        "379 ms"
       ],
       "ywasm": [
-        "3125 ms"
+        "3854 ms",
+        "3813 ms",
+        "3830 ms",
+        "3844 ms",
+        "3645 ms",
+        "3849 ms",
+        "3830 ms",
+        "3864 ms",
+        "3841 ms",
+        "3918 ms"
       ],
       "automerge-wasm": [
         "4780 ms"
       ],
       "tree-fugue-simple": [
-        "1568 ms"
+        "1571 ms",
+        "1563 ms",
+        "1575 ms",
+        "1583 ms",
+        "1578 ms",
+        "1583 ms",
+        "1594 ms",
+        "1603 ms",
+        "1626 ms",
+        "1614 ms"
       ],
       "list-fugue-simple": [
-        "68450 ms"
+        "77906 ms",
+        "74978 ms",
+        "95909 ms",
+        "106701 ms",
+        "104804 ms",
+        "79556 ms",
+        "61320 ms",
+        "72394 ms",
+        "73185 ms",
+        "67422 ms"
       ]
     },
     "[B2.4] Concurrently insert & delete (updateSize)": {
       "tree-fugue": [
+        "398559 bytes",
+        "398559 bytes",
+        "398559 bytes",
+        "398559 bytes",
+        "398559 bytes",
+        "398559 bytes",
+        "398559 bytes",
+        "398559 bytes",
+        "398559 bytes",
         "398559 bytes"
       ],
       "yjs": [
+        "139517 bytes",
+        "139517 bytes",
+        "139517 bytes",
+        "139517 bytes",
+        "139394 bytes",
+        "139517 bytes",
+        "139517 bytes",
+        "139516 bytes",
+        "139517 bytes",
         "139517 bytes"
       ],
       "ywasm": [
+        "398881 bytes",
+        "398881 bytes",
+        "398881 bytes",
+        "398881 bytes",
+        "398881 bytes",
+        "398881 bytes",
+        "398881 bytes",
+        "392795 bytes",
+        "395861 bytes",
         "398881 bytes"
       ],
       "automerge-wasm": [
         "2395867 bytes"
       ],
       "tree-fugue-simple": [
+        "8495206 bytes",
+        "8495206 bytes",
+        "8495206 bytes",
+        "8495206 bytes",
+        "8495206 bytes",
+        "8495206 bytes",
+        "8495206 bytes",
+        "8495206 bytes",
+        "8495206 bytes",
         "8495206 bytes"
       ],
       "list-fugue-simple": [
+        "10999960 bytes",
+        "10999960 bytes",
+        "10999960 bytes",
+        "10999960 bytes",
+        "10999960 bytes",
+        "10999960 bytes",
+        "10999960 bytes",
+        "10999960 bytes",
+        "10999960 bytes",
         "10999960 bytes"
       ]
     },
     "[B2.4] Concurrently insert & delete (encodeTime)": {
       "tree-fugue": [
-        "53 ms"
+        "71 ms",
+        "71 ms",
+        "71 ms",
+        "71 ms",
+        "73 ms",
+        "72 ms",
+        "71 ms",
+        "71 ms",
+        "71 ms",
+        "71 ms"
       ],
       "yjs": [
-        "55 ms"
+        "20 ms",
+        "21 ms",
+        "19 ms",
+        "15 ms",
+        "23 ms",
+        "22 ms",
+        "21 ms",
+        "19 ms",
+        "17 ms",
+        "21 ms"
       ],
       "ywasm": [
-        "6 ms"
+        "19 ms",
+        "8 ms",
+        "8 ms",
+        "19 ms",
+        "9 ms",
+        "19 ms",
+        "8 ms",
+        "17 ms",
+        "20 ms",
+        "14 ms"
       ],
       "automerge-wasm": [
         "132 ms"
       ],
       "tree-fugue-simple": [
-        "95 ms"
+        "89 ms",
+        "89 ms",
+        "91 ms",
+        "99 ms",
+        "95 ms",
+        "96 ms",
+        "93 ms",
+        "96 ms",
+        "94 ms",
+        "96 ms"
       ],
       "list-fugue-simple": [
-        "198 ms"
+        "196 ms",
+        "163 ms",
+        "159 ms",
+        "158 ms",
+        "142 ms",
+        "142 ms",
+        "138 ms",
+        "145 ms",
+        "144 ms",
+        "143 ms"
       ]
     },
     "[B2.4] Concurrently insert & delete (docSize)": {
       "tree-fugue": [
+        "252660 bytes",
+        "252660 bytes",
+        "252660 bytes",
+        "252660 bytes",
+        "252660 bytes",
+        "252660 bytes",
+        "252660 bytes",
+        "252660 bytes",
+        "252660 bytes",
         "252660 bytes"
       ],
       "yjs": [
+        "279172 bytes",
+        "279172 bytes",
+        "279166 bytes",
+        "279172 bytes",
+        "278921 bytes",
+        "279166 bytes",
+        "279172 bytes",
+        "279165 bytes",
+        "279166 bytes",
         "279166 bytes"
       ],
       "ywasm": [
+        "279172 bytes",
+        "279172 bytes",
+        "279172 bytes",
+        "279172 bytes",
+        "279172 bytes",
+        "279166 bytes",
+        "279172 bytes",
+        "278927 bytes",
+        "279164 bytes",
         "279166 bytes"
       ],
       "automerge-wasm": [
         "307359 bytes"
       ],
       "tree-fugue-simple": [
+        "10883165 bytes",
+        "10883165 bytes",
+        "10883165 bytes",
+        "10883165 bytes",
+        "10883165 bytes",
+        "10883165 bytes",
+        "10883165 bytes",
+        "10883165 bytes",
+        "10883165 bytes",
         "10883165 bytes"
       ],
       "list-fugue-simple": [
+        "19713932 bytes",
+        "19713932 bytes",
+        "19713932 bytes",
+        "19713932 bytes",
+        "19713932 bytes",
+        "19713932 bytes",
+        "19713932 bytes",
+        "19713932 bytes",
+        "19713932 bytes",
         "19713932 bytes"
       ]
     },
     "[B2.4] Concurrently insert & delete (memUsed)": {
       "tree-fugue": [
-        "4708024 bytes"
+        "4712696 bytes",
+        "4718168 bytes",
+        "4708432 bytes",
+        "4717128 bytes",
+        "4708328 bytes",
+        "4713552 bytes",
+        "4712160 bytes",
+        "4706256 bytes",
+        "4707416 bytes",
+        "4712496 bytes"
       ],
       "yjs": [
-        "9234040 bytes"
+        "9499888 bytes",
+        "8900624 bytes",
+        "8831816 bytes",
+        "9438328 bytes",
+        "9533576 bytes",
+        "9481168 bytes",
+        "8869440 bytes",
+        "8809624 bytes",
+        "9441192 bytes",
+        "9462920 bytes"
       ],
       "ywasm": [
-        "-11600 bytes"
+        "-6384 bytes",
+        "-45376 bytes",
+        "-72312 bytes",
+        "-456 bytes",
+        "-57432 bytes",
+        "-7256 bytes",
+        "-57456 bytes",
+        "-456 bytes",
+        "-13184 bytes",
+        "-7080 bytes"
       ],
       "automerge-wasm": [
         "-39352 bytes"
       ],
       "tree-fugue-simple": [
-        "37906736 bytes"
+        "37907056 bytes",
+        "37907024 bytes",
+        "37907552 bytes",
+        "37907056 bytes",
+        "37907024 bytes",
+        "37907024 bytes",
+        "37907056 bytes",
+        "37907024 bytes",
+        "37907056 bytes",
+        "37906664 bytes"
       ],
       "list-fugue-simple": [
-        "14147072 bytes"
+        "14145496 bytes",
+        "14145392 bytes",
+        "14145392 bytes",
+        "14145392 bytes",
+        "14145496 bytes",
+        "14145496 bytes",
+        "14145496 bytes",
+        "14145496 bytes",
+        "14145496 bytes",
+        "14145496 bytes"
       ]
     },
     "[B2.4] Concurrently insert & delete (parseTime)": {
       "tree-fugue": [
-        "150 ms"
+        "256 ms",
+        "279 ms",
+        "299 ms",
+        "322 ms",
+        "345 ms",
+        "364 ms",
+        "384 ms",
+        "407 ms",
+        "426 ms",
+        "448 ms"
       ],
       "yjs": [
-        "284 ms"
+        "274 ms",
+        "248 ms",
+        "217 ms",
+        "247 ms",
+        "257 ms",
+        "267 ms",
+        "249 ms",
+        "221 ms",
+        "282 ms",
+        "282 ms"
       ],
       "ywasm": [
-        "160 ms"
+        "576 ms",
+        "476 ms",
+        "473 ms",
+        "573 ms",
+        "509 ms",
+        "576 ms",
+        "475 ms",
+        "576 ms",
+        "573 ms",
+        "573 ms"
       ],
       "automerge-wasm": [
         "859 ms"
       ],
       "tree-fugue-simple": [
-        "547 ms"
+        "1586 ms",
+        "1785 ms",
+        "1997 ms",
+        "2213 ms",
+        "2405 ms",
+        "2625 ms",
+        "2818 ms",
+        "3014 ms",
+        "3233 ms",
+        "3434 ms"
       ],
       "list-fugue-simple": [
-        "398 ms"
+        "751 ms",
+        "863 ms",
+        "945 ms",
+        "1039 ms",
+        "1145 ms",
+        "1221 ms",
+        "1295 ms",
+        "1407 ms",
+        "1491 ms",
+        "1581 ms"
       ]
     },
     "[B3.4] 20√N clients concurrently insert text in Array (time)": {
       "tree-fugue": [
-        "36 ms"
+        "34 ms",
+        "34 ms",
+        "36 ms",
+        "33 ms",
+        "41 ms",
+        "34 ms",
+        "33 ms",
+        "35 ms",
+        "33 ms",
+        "39 ms"
       ],
       "yjs": [
-        "116 ms"
+        "108 ms",
+        "96 ms",
+        "92 ms",
+        "99 ms",
+        "110 ms",
+        "105 ms",
+        "106 ms",
+        "94 ms",
+        "96 ms",
+        "111 ms"
       ],
       "ywasm": [
-        "297 ms"
+        "371 ms",
+        "386 ms",
+        "384 ms",
+        "361 ms",
+        "386 ms",
+        "362 ms",
+        "371 ms",
+        "353 ms",
+        "381 ms",
+        "368 ms"
       ],
       "automerge-wasm": [
         "43 ms"
       ],
       "tree-fugue-simple": [
+        "33 ms",
+        "31 ms",
+        "32 ms",
+        "32 ms",
+        "37 ms",
+        "32 ms",
+        "31 ms",
+        "32 ms",
+        "31 ms",
         "38 ms"
       ],
       "list-fugue-simple": [
-        "38 ms"
+        "36 ms",
+        "36 ms",
+        "36 ms",
+        "37 ms",
+        "42 ms",
+        "37 ms",
+        "36 ms",
+        "37 ms",
+        "35 ms",
+        "44 ms"
       ]
     },
     "[B3.4] 20√N clients concurrently insert text in Array (updateSize)": {
       "tree-fugue": [
+        "77430 bytes",
+        "77430 bytes",
+        "77430 bytes",
+        "77430 bytes",
+        "77430 bytes",
+        "77430 bytes",
+        "77430 bytes",
+        "77430 bytes",
+        "77430 bytes",
         "77430 bytes"
       ],
       "yjs": [
-        "52738 bytes"
+        "52748 bytes",
+        "52743 bytes",
+        "52738 bytes",
+        "52747 bytes",
+        "52741 bytes",
+        "52747 bytes",
+        "52742 bytes",
+        "52752 bytes",
+        "52732 bytes",
+        "52742 bytes"
       ],
       "ywasm": [
-        "52749 bytes"
+        "52748 bytes",
+        "52732 bytes",
+        "52756 bytes",
+        "52751 bytes",
+        "52736 bytes",
+        "52755 bytes",
+        "52733 bytes",
+        "52735 bytes",
+        "52738 bytes",
+        "52738 bytes"
       ],
       "automerge-wasm": [
         "277630 bytes"
       ],
       "tree-fugue-simple": [
+        "229890 bytes",
+        "229890 bytes",
+        "229890 bytes",
+        "229890 bytes",
+        "229890 bytes",
+        "229890 bytes",
+        "229890 bytes",
+        "229890 bytes",
+        "229890 bytes",
         "229890 bytes"
       ],
       "list-fugue-simple": [
+        "282250 bytes",
+        "282250 bytes",
+        "282250 bytes",
+        "282250 bytes",
+        "282250 bytes",
+        "282250 bytes",
+        "282250 bytes",
+        "282250 bytes",
+        "282250 bytes",
         "282250 bytes"
       ]
     },
     "[B3.4] 20√N clients concurrently insert text in Array (encodeTime)": {
       "tree-fugue": [
-        "34 ms"
+        "16 ms",
+        "12 ms",
+        "18 ms",
+        "11 ms",
+        "16 ms",
+        "12 ms",
+        "17 ms",
+        "12 ms",
+        "16 ms",
+        "11 ms"
       ],
       "yjs": [
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms",
+        "4 ms",
+        "3 ms",
+        "5 ms",
+        "2 ms",
         "4 ms"
       ],
       "ywasm": [
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
         "1 ms"
       ],
       "automerge-wasm": [
         "13 ms"
       ],
       "tree-fugue-simple": [
+        "10 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "12 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "11 ms",
         "11 ms"
       ],
       "list-fugue-simple": [
-        "11 ms"
+        "11 ms",
+        "11 ms",
+        "11 ms",
+        "10 ms",
+        "12 ms",
+        "11 ms",
+        "10 ms",
+        "11 ms",
+        "11 ms",
+        "10 ms"
       ]
     },
     "[B3.4] 20√N clients concurrently insert text in Array (docSize)": {
       "tree-fugue": [
+        "86647 bytes",
+        "86647 bytes",
+        "86647 bytes",
+        "86647 bytes",
+        "86647 bytes",
+        "86647 bytes",
+        "86647 bytes",
+        "86647 bytes",
+        "86647 bytes",
         "86647 bytes"
       ],
       "yjs": [
-        "26583 bytes"
+        "26593 bytes",
+        "26588 bytes",
+        "26583 bytes",
+        "26592 bytes",
+        "26586 bytes",
+        "26592 bytes",
+        "26587 bytes",
+        "26597 bytes",
+        "26577 bytes",
+        "26587 bytes"
       ],
       "ywasm": [
-        "26594 bytes"
+        "26593 bytes",
+        "26577 bytes",
+        "26601 bytes",
+        "26596 bytes",
+        "26581 bytes",
+        "26600 bytes",
+        "26578 bytes",
+        "26580 bytes",
+        "26583 bytes",
+        "26583 bytes"
       ],
       "automerge-wasm": [
         "83559 bytes"
       ],
       "tree-fugue-simple": [
+        "203895 bytes",
+        "203895 bytes",
+        "203895 bytes",
+        "203895 bytes",
+        "203895 bytes",
+        "203895 bytes",
+        "203895 bytes",
+        "203895 bytes",
+        "203895 bytes",
         "203895 bytes"
       ],
       "list-fugue-simple": [
+        "280751 bytes",
+        "280751 bytes",
+        "280751 bytes",
+        "280751 bytes",
+        "280751 bytes",
+        "280751 bytes",
+        "280751 bytes",
+        "280751 bytes",
+        "280751 bytes",
         "280751 bytes"
       ]
     },
     "[B3.4] 20√N clients concurrently insert text in Array (memUsed)": {
       "tree-fugue": [
-        "892864 bytes"
+        "888208 bytes",
+        "937440 bytes",
+        "782744 bytes",
+        "1091992 bytes",
+        "796448 bytes",
+        "829744 bytes",
+        "819608 bytes",
+        "943544 bytes",
+        "794576 bytes",
+        "1032112 bytes",
+        "731584 bytes",
+        "984624 bytes",
+        "787152 bytes",
+        "1044560 bytes",
+        "760368 bytes"
       ],
       "yjs": [
-        "824744 bytes"
+        "896192 bytes",
+        "428368 bytes",
+        "772248 bytes",
+        "689736 bytes",
+        "612864 bytes",
+        "716136 bytes",
+        "730920 bytes",
+        "585808 bytes",
+        "843576 bytes",
+        "774336 bytes",
+        "661472 bytes",
+        "919344 bytes",
+        "791928 bytes",
+        "823384 bytes",
+        "725536 bytes"
       ],
       "ywasm": [
-        "-25752 bytes"
+        "-83136 bytes",
+        "-451488 bytes",
+        "-574296 bytes",
+        "-346440 bytes",
+        "-105032 bytes",
+        "-406624 bytes",
+        "-457984 bytes",
+        "-412856 bytes",
+        "-501184 bytes",
+        "-5792 bytes",
+        "-340168 bytes",
+        "-509320 bytes",
+        "-228888 bytes",
+        "-527312 bytes",
+        "-16856 bytes"
       ],
       "automerge-wasm": [
         "-3200 bytes"
       ],
       "tree-fugue-simple": [
-        "156240 bytes"
+        "205352 bytes",
+        "409272 bytes",
+        "267320 bytes",
+        "118224 bytes",
+        "49480 bytes",
+        "91904 bytes",
+        "21232 bytes",
+        "381680 bytes",
+        "359488 bytes",
+        "476632 bytes",
+        "463656 bytes",
+        "462992 bytes",
+        "476360 bytes",
+        "57424 bytes",
+        "108488 bytes"
       ],
       "list-fugue-simple": [
-        "491320 bytes"
+        "94792 bytes",
+        "366992 bytes",
+        "480328 bytes",
+        "543744 bytes",
+        "524984 bytes",
+        "461688 bytes",
+        "490960 bytes",
+        "483712 bytes",
+        "502376 bytes",
+        "527632 bytes",
+        "507624 bytes",
+        "479648 bytes",
+        "502672 bytes",
+        "220552 bytes",
+        "484816 bytes"
       ]
     },
     "[B3.4] 20√N clients concurrently insert text in Array (parseTime)": {
       "tree-fugue": [
-        "122 ms"
+        "243 ms",
+        "259 ms",
+        "288 ms",
+        "314 ms",
+        "335 ms",
+        "360 ms",
+        "380 ms",
+        "401 ms",
+        "424 ms",
+        "449 ms"
       ],
       "yjs": [
-        "116 ms"
+        "107 ms",
+        "94 ms",
+        "95 ms",
+        "108 ms",
+        "111 ms",
+        "105 ms",
+        "97 ms",
+        "94 ms",
+        "98 ms",
+        "106 ms"
       ],
       "ywasm": [
-        "132 ms"
+        "432 ms",
+        "437 ms",
+        "440 ms",
+        "439 ms",
+        "444 ms",
+        "445 ms",
+        "444 ms",
+        "454 ms",
+        "451 ms",
+        "457 ms"
       ],
       "automerge-wasm": [
         "160 ms"
       ],
       "tree-fugue-simple": [
-        "147 ms"
+        "228 ms",
+        "250 ms",
+        "273 ms",
+        "294 ms",
+        "316 ms",
+        "335 ms",
+        "357 ms",
+        "381 ms",
+        "401 ms",
+        "423 ms"
       ],
       "list-fugue-simple": [
-        "112 ms"
+        "214 ms",
+        "238 ms",
+        "260 ms",
+        "280 ms",
+        "300 ms",
+        "320 ms",
+        "342 ms",
+        "365 ms",
+        "386 ms",
+        "407 ms"
       ]
     },
     "[B4] Apply real-world editing dataset (time)": {
       "tree-fugue": [
-        "1611 ms"
+        "1785 ms",
+        "1764 ms",
+        "1873 ms",
+        "1774 ms",
+        "1777 ms",
+        "1744 ms",
+        "1787 ms",
+        "1748 ms",
+        "1899 ms",
+        "1864 ms"
       ],
       "yjs": [
-        "6247 ms"
+        "5605 ms",
+        "5732 ms",
+        "5649 ms",
+        "5536 ms",
+        "5711 ms",
+        "5613 ms",
+        "5787 ms",
+        "5668 ms",
+        "5704 ms",
+        "5674 ms"
       ],
       "ywasm": [
-        "53616 ms"
+        "54465 ms",
+        "52635 ms",
+        "53485 ms",
+        "54068 ms",
+        "54730 ms",
+        "53974 ms",
+        "54328 ms",
+        "54112 ms",
+        "54815 ms",
+        "54128 ms"
       ],
       "automerge-wasm": [
         "78646 ms"
       ],
       "tree-fugue-simple": [
-        "13683 ms"
+        "13016 ms",
+        "13164 ms",
+        "13164 ms",
+        "13246 ms",
+        "13236 ms",
+        "12767 ms",
+        "13123 ms",
+        "12967 ms",
+        "13056 ms",
+        "13196 ms"
       ],
       "list-fugue-simple": [
-        "87641 ms"
+        "93447 ms",
+        "86081 ms",
+        "88843 ms",
+        "93229 ms",
+        "89805 ms",
+        "89286 ms",
+        "89351 ms",
+        "89326 ms",
+        "93667 ms",
+        "92201 ms"
       ]
     },
     "[B4] Apply real-world editing dataset (updateSize)": {
       "tree-fugue": [
+        "10224234 bytes",
+        "10224234 bytes",
+        "10224234 bytes",
+        "10224234 bytes",
+        "10224234 bytes",
+        "10224234 bytes",
+        "10224234 bytes",
+        "10224234 bytes",
+        "10224234 bytes",
         "10224234 bytes"
       ],
       "yjs": [
+        "7565904 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
         "7565904 bytes"
       ],
       "ywasm": [
-        "7565904 bytes"
+        "7565904 bytes",
+        "7306126 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
+        "7488441 bytes",
+        "7565904 bytes",
+        "7488441 bytes"
       ],
       "automerge-wasm": [
         "58115146 bytes"
       ],
       "tree-fugue-simple": [
+        "37715931 bytes",
+        "37715931 bytes",
+        "37715931 bytes",
+        "37715931 bytes",
+        "37715931 bytes",
+        "37715931 bytes",
+        "37715931 bytes",
+        "37715931 bytes",
+        "37715931 bytes",
         "37715931 bytes"
       ],
       "list-fugue-simple": [
+        "46343814 bytes",
+        "46343814 bytes",
+        "46343814 bytes",
+        "46343814 bytes",
+        "46343814 bytes",
+        "46343814 bytes",
+        "46343814 bytes",
+        "46343814 bytes",
+        "46343814 bytes",
         "46343814 bytes"
       ]
     },
     "[B4] Apply real-world editing dataset (encodeTime)": {
       "tree-fugue": [
-        "12 ms"
+        "15 ms",
+        "13 ms",
+        "15 ms",
+        "14 ms",
+        "15 ms",
+        "13 ms",
+        "15 ms",
+        "14 ms",
+        "15 ms",
+        "14 ms"
       ],
       "yjs": [
-        "22 ms"
+        "21 ms",
+        "22 ms",
+        "20 ms",
+        "24 ms",
+        "22 ms",
+        "22 ms",
+        "22 ms",
+        "23 ms",
+        "24 ms",
+        "23 ms"
       ],
       "ywasm": [
-        "2 ms"
+        "2 ms",
+        "6 ms",
+        "8 ms",
+        "2 ms",
+        "2 ms",
+        "7 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "6 ms"
       ],
       "automerge-wasm": [
         "644 ms"
       ],
       "tree-fugue-simple": [
-        "138 ms"
+        "139 ms",
+        "139 ms",
+        "141 ms",
+        "145 ms",
+        "140 ms",
+        "142 ms",
+        "143 ms",
+        "143 ms",
+        "143 ms",
+        "145 ms"
       ],
       "list-fugue-simple": [
-        "247 ms"
+        "231 ms",
+        "226 ms",
+        "228 ms",
+        "230 ms",
+        "227 ms",
+        "229 ms",
+        "228 ms",
+        "229 ms",
+        "229 ms",
+        "230 ms"
       ]
     },
     "[B4] Apply real-world editing dataset (docSize)": {
       "tree-fugue": [
+        "167873 bytes",
+        "167873 bytes",
+        "167873 bytes",
+        "167873 bytes",
+        "167873 bytes",
+        "167873 bytes",
+        "167873 bytes",
+        "167873 bytes",
+        "167873 bytes",
         "167873 bytes"
       ],
       "yjs": [
+        "159929 bytes",
+        "159929 bytes",
+        "159929 bytes",
+        "159929 bytes",
+        "159929 bytes",
+        "159929 bytes",
+        "159929 bytes",
+        "159929 bytes",
+        "159929 bytes",
         "159929 bytes"
       ],
       "ywasm": [
-        "159929 bytes"
+        "159929 bytes",
+        "159927 bytes",
+        "159929 bytes",
+        "159929 bytes",
+        "159929 bytes",
+        "159929 bytes",
+        "159929 bytes",
+        "159928 bytes",
+        "159929 bytes",
+        "159928 bytes"
       ],
       "automerge-wasm": [
         "142473 bytes"
       ],
       "tree-fugue-simple": [
+        "18726204 bytes",
+        "18726204 bytes",
+        "18726204 bytes",
+        "18726204 bytes",
+        "18726204 bytes",
+        "18726204 bytes",
+        "18726204 bytes",
+        "18726204 bytes",
+        "18726204 bytes",
         "18726204 bytes"
       ],
       "list-fugue-simple": [
+        "33750684 bytes",
+        "33750684 bytes",
+        "33750684 bytes",
+        "33750684 bytes",
+        "33750684 bytes",
+        "33750684 bytes",
+        "33750684 bytes",
+        "33750684 bytes",
+        "33750684 bytes",
         "33750684 bytes"
       ]
     },
     "[B4] Apply real-world editing dataset (parseTime)": {
       "tree-fugue": [
-        "15 ms"
+        "16 ms",
+        "15 ms",
+        "16 ms",
+        "15 ms",
+        "16 ms",
+        "16 ms",
+        "17 ms",
+        "16 ms",
+        "18 ms",
+        "17 ms"
       ],
       "yjs": [
+        "79 ms",
+        "80 ms",
+        "69 ms",
+        "81 ms",
+        "76 ms",
+        "82 ms",
+        "78 ms",
+        "79 ms",
+        "80 ms",
         "80 ms"
       ],
       "ywasm": [
-        "8 ms"
+        "24 ms",
+        "22 ms",
+        "22 ms",
+        "21 ms",
+        "24 ms",
+        "22 ms",
+        "24 ms",
+        "23 ms",
+        "23 ms",
+        "22 ms"
       ],
       "automerge-wasm": [
         "80798 ms"
       ],
       "tree-fugue-simple": [
-        "214 ms"
+        "276 ms",
+        "277 ms",
+        "283 ms",
+        "290 ms",
+        "282 ms",
+        "286 ms",
+        "290 ms",
+        "294 ms",
+        "295 ms",
+        "293 ms"
       ],
       "list-fugue-simple": [
-        "439 ms"
+        "324 ms",
+        "325 ms",
+        "328 ms",
+        "326 ms",
+        "325 ms",
+        "329 ms",
+        "331 ms",
+        "336 ms",
+        "336 ms",
+        "336 ms"
       ]
     },
     "[B4] Apply real-world editing dataset (memUsed)": {
       "tree-fugue": [
-        "1536200 bytes"
+        "1588944 bytes",
+        "1569776 bytes",
+        "1572680 bytes",
+        "1597912 bytes",
+        "1581256 bytes",
+        "1589848 bytes",
+        "1581736 bytes",
+        "1565816 bytes",
+        "1577808 bytes",
+        "1573904 bytes"
       ],
       "yjs": [
-        "2992688 bytes"
+        "3293432 bytes",
+        "3193624 bytes",
+        "2921768 bytes",
+        "3192008 bytes",
+        "2924128 bytes",
+        "2936704 bytes",
+        "2682736 bytes",
+        "3207560 bytes",
+        "2921376 bytes",
+        "2813856 bytes"
       ],
       "ywasm": [
-        "216 bytes"
+        "848 bytes",
+        "-19096 bytes",
+        "-21776 bytes",
+        "-160 bytes",
+        "536 bytes",
+        "-20000 bytes",
+        "536 bytes",
+        "-160 bytes",
+        "536 bytes",
+        "-20000 bytes"
       ],
       "automerge-wasm": [
         "-183952 bytes"
       ],
       "tree-fugue-simple": [
-        "64192720 bytes"
+        "64180248 bytes",
+        "64179936 bytes",
+        "64179936 bytes",
+        "64180048 bytes",
+        "64180032 bytes",
+        "64179936 bytes",
+        "64179936 bytes",
+        "64179936 bytes",
+        "64179936 bytes",
+        "64179936 bytes"
       ],
       "list-fugue-simple": [
-        "23955848 bytes"
+        "23943296 bytes",
+        "23943016 bytes",
+        "23941336 bytes",
+        "23943096 bytes",
+        "23943112 bytes",
+        "23943016 bytes",
+        "23943016 bytes",
+        "23942984 bytes",
+        "23942984 bytes",
+        "23931192 bytes"
       ]
     },
     "[B4x100] Apply real-world editing dataset 100 times (time)": {
       "tree-fugue": [
-        "242676 ms"
+        "191640 ms",
+        "191840 ms",
+        "195823 ms",
+        "207130 ms",
+        "199206 ms",
+        "212054 ms",
+        "197642 ms",
+        "203124 ms",
+        "203715 ms",
+        "206185 ms"
       ],
       "yjs": [
-        "613111 ms"
+        "587537 ms",
+        "573872 ms",
+        "593819 ms",
+        "588532 ms",
+        "591146 ms",
+        "576052 ms",
+        "571997 ms",
+        "584995 ms",
+        "572738 ms",
+        "573785 ms"
       ]
     },
     "[B4x100] Apply real-world editing dataset 100 times (updateSize)": {
       "tree-fugue": [
+        "1074335646 bytes",
+        "1074335646 bytes",
+        "1074335646 bytes",
+        "1074335646 bytes",
+        "1074335646 bytes",
+        "1074335646 bytes",
+        "1074335646 bytes",
+        "1074335646 bytes",
+        "1074335646 bytes",
         "1074335646 bytes"
       ],
       "yjs": [
+        "819905758 bytes",
+        "819905758 bytes",
+        "819905758 bytes",
+        "819905758 bytes",
+        "819905758 bytes",
+        "819905758 bytes",
+        "819905758 bytes",
+        "819905758 bytes",
+        "819905758 bytes",
         "819905758 bytes"
       ]
     },
     "[B4x100] Apply real-world editing dataset 100 times (encodeTime)": {
       "tree-fugue": [
-        "1909 ms"
+        "1294 ms",
+        "944 ms",
+        "1442 ms",
+        "1373 ms",
+        "1284 ms",
+        "1456 ms",
+        "1370 ms",
+        "1477 ms",
+        "1342 ms",
+        "1380 ms"
       ],
       "yjs": [
-        "422 ms"
+        "383 ms",
+        "362 ms",
+        "414 ms",
+        "418 ms",
+        "444 ms",
+        "349 ms",
+        "351 ms",
+        "363 ms",
+        "348 ms",
+        "345 ms"
       ]
     },
     "[B4x100] Apply real-world editing dataset 100 times (docSize)": {
       "tree-fugue": [
+        "17844936 bytes",
+        "17844936 bytes",
+        "17844936 bytes",
+        "17844936 bytes",
+        "17844936 bytes",
+        "17844936 bytes",
+        "17844936 bytes",
+        "17844936 bytes",
+        "17844936 bytes",
         "17844936 bytes"
       ],
       "yjs": [
+        "15989245 bytes",
+        "15989245 bytes",
+        "15989245 bytes",
+        "15989245 bytes",
+        "15989245 bytes",
+        "15989245 bytes",
+        "15989245 bytes",
+        "15989245 bytes",
+        "15989245 bytes",
         "15989245 bytes"
       ]
     },
     "[B4x100] Apply real-world editing dataset 100 times (parseTime)": {
       "tree-fugue": [
-        "847 ms"
+        "626 ms",
+        "678 ms",
+        "720 ms",
+        "613 ms",
+        "682 ms",
+        "682 ms",
+        "706 ms",
+        "691 ms",
+        "691 ms",
+        "677 ms"
       ],
       "yjs": [
-        "3488 ms"
+        "1884 ms",
+        "3208 ms",
+        "3221 ms",
+        "3220 ms",
+        "1961 ms",
+        "1960 ms",
+        "1977 ms",
+        "2000 ms",
+        "1961 ms",
+        "1977 ms"
       ]
     },
     "[B4x100] Apply real-world editing dataset 100 times (memUsed)": {
       "tree-fugue": [
-        "175581752 bytes"
+        "175857256 bytes",
+        "175836248 bytes",
+        "175599176 bytes",
+        "175598688 bytes",
+        "175854960 bytes",
+        "175598688 bytes",
+        "175854568 bytes",
+        "175598592 bytes",
+        "175599688 bytes",
+        "175598256 bytes"
       ],
       "yjs": [
-        "343821320 bytes"
+        "257244056 bytes",
+        "343625112 bytes",
+        "343401688 bytes",
+        "343349616 bytes",
+        "257147280 bytes",
+        "257348616 bytes",
+        "257395192 bytes",
+        "257356824 bytes",
+        "257393352 bytes",
+        "257362472 bytes"
       ]
     }
   }

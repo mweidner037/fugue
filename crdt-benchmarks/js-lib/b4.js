@@ -59,9 +59,12 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
     )
   })
 
-  await runBenchmark('[B4x100] Apply real-world editing dataset 100 times', filter, benchmarkName => {
+  await runBenchmark('[B4x100] Apply real-world editing dataset 100 times', filter, async benchmarkName => {
     const multiplicator = 100
     for (let trial = -WARMUP_TRIALS; trial < MEASURED_TRIALS; trial++) {
+      // Pause a bit to encourage GC between trials (else may OOM after several trials).
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+
       let encodedState = /** @type {any} */ (null)
 
       ;(() => {
