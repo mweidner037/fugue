@@ -41,3 +41,5 @@ Info on microbenchmarks (measured but not described in the paper) is found in `c
 ## Misc
 
 `yjs-interleave/` verifies the paper's Yjs interleaving anomaly (Proposition C.4) with the actual Yjs library. See `yjs-interleave/index.js`.
+
+`charts.xlsx` is a spreadsheet used to calculate average throughputs and the over-time charts.
