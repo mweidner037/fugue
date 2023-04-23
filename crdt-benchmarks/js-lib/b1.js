@@ -46,10 +46,10 @@ export const runBenchmarksB1 = async (crdtFactory, filter) => {
         doc2.free();
       }
       benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
-        const startHeapUsed = getMemUsed()
+        const startMemUsed = getMemUsed()
         const doc = crdtFactory.create()
         doc.applyUpdate(encodedState)
-        logMemoryUsed(crdtFactory.getName(), id, startHeapUsed, trial)
+        logMemoryUsed(crdtFactory.getName(), id, startMemUsed, trial)
         doc.free();
       }, trial)
     }

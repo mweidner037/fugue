@@ -1,9 +1,9 @@
-import * as math from 'lib0/math'
-import { createMutex } from 'lib0/mutex'
-import * as prng from 'lib0/prng'
-import * as t from 'lib0/testing'
+import * as math from 'lib0/math';
+import { createMutex } from 'lib0/mutex';
+import * as prng from 'lib0/prng';
+import * as t from 'lib0/testing';
 import { AbstractCrdt, CrdtFactory } from './index.js'; // eslint-disable-line
-import { benchmarkTime, gen, getMemUsed, logMemoryUsed, MEASURED_TRIALS, N, runBenchmark, setBenchmarkResult, WARMUP_TRIALS } from './utils.js'
+import { benchmarkTime, gen, getMemUsed, logMemoryUsed, MEASURED_TRIALS, N, runBenchmark, setBenchmarkResult, WARMUP_TRIALS } from './utils.js';
 
 const initText = prng.word(gen, 100, 100)
 
@@ -48,10 +48,10 @@ export const runBenchmarkB2 = async (crdtFactory, filter) => {
         doc2.free();
       }
       benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
-        const startHeapUsed = getMemUsed()
+        const startMemUsed = getMemUsed()
         const doc = crdtFactory.create()
         doc.applyUpdate(encodedState)
-        logMemoryUsed(crdtFactory.getName(), id, startHeapUsed, trial)
+        logMemoryUsed(crdtFactory.getName(), id, startMemUsed, trial)
         doc.free();
       }, trial)
     }

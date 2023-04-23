@@ -35,14 +35,14 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
       const documentSize = encodedState.byteLength
       setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`, trial)
       ;(() => {
-        const startHeapUsed = getMemUsed()
+        const startMemUsed = getMemUsed()
         // @ts-ignore we only store doc so it is not garbage collected
         let doc = null // eslint-disable-line
         benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
           doc = crdtFactory.create()
           doc.applyUpdate(encodedState)
         }, trial)
-        logMemoryUsed(crdtFactory.getName(), id, startHeapUsed, trial)
+        logMemoryUsed(crdtFactory.getName(), id, startMemUsed, trial)
         doc.free();
       })()
     }
@@ -106,14 +106,11 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
       }
       await new Promise(resolve => setTimeout(resolve, 2000));
 
-      const startHeapUsed = getMemUsed()
+      const startMemUsed = getMemUsed()
       let doc = crdtFactory.create();
       for (let i = 0; i < edits.length; i++) {
         if (i % OVER_TIME_INTERVAL === 0) {
-          if (global.gc) {
-            global.gc()
-          }
-          const diff = process.memoryUsage().heapUsed - startHeapUsed
+          const diff = getMemUsed() - startMemUsed
           const idx = Math.floor(i / OVER_TIME_INTERVAL)
           memUseds[idx] = diff;
         }
@@ -182,14 +179,14 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
       })()
 
       ;(() => {
-        const startHeapUsed = getMemUsed()
+        const startMemUsed = getMemUsed()
         // @ts-ignore we only store doc so it is not garbage collected
         let doc = null // eslint-disable-line
         benchmarkTime(crdtFactory.getName(), `${benchmarkName} (parseTime)`, () => {
           doc = crdtFactory.create()
           doc.applyUpdate(encodedState)
         }, trial)
-        logMemoryUsed(crdtFactory.getName(), benchmarkName, startHeapUsed, trial)
+        logMemoryUsed(crdtFactory.getName(), benchmarkName, startMemUsed, trial)
         doc.free();
       })()
     }

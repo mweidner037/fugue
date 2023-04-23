@@ -93,7 +93,11 @@ export const getMemUsed = () => {
     if (global.gc) {
       global.gc()
     }
-    return process.memoryUsage().heapUsed
+    // Use the sum of heapUsed and RSS.
+    // RSS is where Wasm memory lives (suggestion from Alex Good -
+    // automerge-wasm dev).
+    const mem = process.memoryUsage();
+    return mem.heapUsed + mem.rss;
   }
   return 0
 }
@@ -102,17 +106,12 @@ export const getMemUsed = () => {
  * 
  * @param {*} libname 
  * @param {*} id 
- * @param {*} startHeapUsed 
+ * @param {*} startMemUsed 
  * @param {number} [trial] trial number, negative for warmups
  */
-export const logMemoryUsed = (libname, id, startHeapUsed, trial) => {
-  if (typeof global !== 'undefined' && typeof process !== 'undefined') {
-    if (global.gc) {
-      global.gc()
-    }
-    const diff = process.memoryUsage().heapUsed - startHeapUsed
-    setBenchmarkResult(libname, `${id} (memUsed)`, `${diff} bytes`, trial)
-  }
+export const logMemoryUsed = (libname, id, startMemUsed, trial) => {
+  const diff = getMemUsed() - startMemUsed;
+  setBenchmarkResult(libname, `${id} (memUsed)`, `${diff} bytes`, trial);
 }
 
 export const tryGc = () => {

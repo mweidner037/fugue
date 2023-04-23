@@ -60,10 +60,10 @@ export const runBenchmarkB3 = async (crdtFactory, filter) => {
         docs.forEach(doc => doc.free());
       }
       benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
-        const startHeapUsed = getMemUsed()
+        const startMemUsed = getMemUsed()
         const doc = crdtFactory.create()
         doc.applyUpdate(encodedState)
-        logMemoryUsed(crdtFactory.getName(), id, startHeapUsed)
+        logMemoryUsed(crdtFactory.getName(), id, startMemUsed)
         doc.free();
       }, trial)
     }
