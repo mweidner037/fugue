@@ -3,7 +3,7 @@ import {
   InitToken,
   Message,
   MessageMeta,
-  Optional,
+  Optional
 } from "@collabs/collabs";
 import pako from "pako";
 
@@ -176,57 +176,13 @@ class Tree<T> {
   }
 
   /**
-   * Returns the next node in the traversal after node, *including tombstones*.
-   *
-   * Also returns whether that next node is a descendant of node.
-   */
-  nextNode(node: Node<T>): [next: Node<T> | null, isDescendant: boolean] {
-    if (node.rightChildren.length !== 0) {
-      // Next is the leftmost descendant of the first right child.
-      return [this.leftmostDescendant(node.rightChildren[0]), true];
-    } else {
-      // Go up until we find a node after us: either a same-side sibling
-      // to our right, or a right parent.
-      let anc = node;
-      while (anc.parent !== null) {
-        const siblingAfter = this.siblingAfter(anc);
-        if (siblingAfter !== null) {
-          // The next node is the first one in siblingAfter's subtree,
-          // i.e., its leftmost descendant.
-          return [this.leftmostDescendant(siblingAfter), false];
-        } else if (anc.side === "L") {
-          // The next node is the parent.
-          return [anc.parent, false];
-        }
-        anc = anc.parent;
-      }
-      // node is last; no next node.
-      return [null, false];
-    }
-  }
-
-  /**
    * Returns the leftmost left-only descendant of node, i.e., the
    * first left child of the first left child ... of node.
    */
-  private leftmostDescendant(node: Node<T>): Node<T> {
+  leftmostDescendant(node: Node<T>): Node<T> {
     let desc = node;
     for (; desc.leftChildren.length !== 0; desc = desc.leftChildren[0]) {}
     return desc;
-  }
-
-  /**
-   * Returns the same-side sibling of node immediately after it, or null if
-   * it is the last same-side sibling.
-   */
-  private siblingAfter(node: Node<T>): Node<T> | null {
-    const parent = node.parent;
-    if (parent === null) return null;
-    const siblings =
-      node.side === "L" ? parent.leftChildren : parent.rightChildren;
-    const i = siblings.indexOf(node);
-    if (i + 1 < siblings.length) return siblings[i + 1];
-    else return null;
   }
 
   *traverse(node: Node<T>): IterableIterator<T> {
@@ -347,16 +303,21 @@ export class TreeFugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
       index === 0
         ? this.tree.root
         : this.tree.getByIndex(this.tree.root, index - 1);
-    const [rightOrigin, isDescendant] = this.tree.nextNode(leftOrigin);
 
     let msg: InsertMessage<T>;
-    if (rightOrigin === null || !isDescendant) {
-      // R child of leftOrigin.
+    if (leftOrigin.rightChildren.length === 0) {
+      // leftOrigin has no right children, so the new node becomes
+      // a right child of leftOrigin.
       msg = { type: "insert", id, value, parent: leftOrigin.id, side: "R" };
     } else {
-      // L child of rightOrigin.
+      // Otherwise, the new node is added as a left child of rightOrigin, which
+      // is the next node after leftOrigin *including tombstones*.
+      // In this case, rightOrigin is the leftmost descendant of leftOrigin's
+      // first right child.
+      const rightOrigin = this.tree.leftmostDescendant(leftOrigin.rightChildren[0]);
       msg = { type: "insert", id, value, parent: rightOrigin.id, side: "L" };
     }
+
     // Message is delivered to receivePrimitive (the effector).
     super.sendPrimitive(JSON.stringify(msg));
   }
