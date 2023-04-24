@@ -1,26 +1,20 @@
 // Run with `npm start` in this folder.
 
-const Y = require("yjs");
-const docA = new Y.Doc(),
-  docB = new Y.Doc(),
-  docC = new Y.Doc();
+// Set up three replicas
+const Y = require('yjs')
+let doc1 = new Y.Doc(), doc2 = new Y.Doc(), doc3 = new Y.Doc()
+doc1.clientID = 1; doc2.clientID = 2; doc3.clientID = 3
 
-// clientID is Yjs's name for replicaID.
-// We set them to have order docA < docB < docC.
-docA.clientID = 1;
-docB.clientID = 2;
-docC.clientID = 3;
+// Replica 3 inserts 'b'
+doc3.getArray().insert(0, ['b'])
 
-// Replica C inserts c.
-docC.getArray().insert(0, ["c"]);
-// After receiving this insert, replica A prepends a.
-Y.applyUpdateV2(docA, Y.encodeStateAsUpdateV2(docC, Y.encodeStateVector(docA)));
-docA.getArray().insert(0, ["a"]);
+// Replica 1 inserts 'a' before 'b'
+Y.applyUpdateV2(doc1, Y.encodeStateAsUpdateV2(doc3, Y.encodeStateVector(doc1)))
+doc1.getArray().insert(0, ['a'])
 
-// Concurrently to both operations, replica B inserts b into its (empty) list.
-docB.getArray().insert(0, ["b"]);
+// Replica 2 concurrently inserts 'x'
+doc2.getArray().insert(0, ['x'])
 
-// In the merged final state, the order is abc.
-Y.applyUpdateV2(docA, Y.encodeStateAsUpdateV2(docB, Y.encodeStateVector(docA)));
-console.log(JSON.stringify(docA.getArray().toArray()));
-// Prints: ["a","b","c"]
+// Prints the merged document: "axb"
+Y.applyUpdateV2(doc1, Y.encodeStateAsUpdateV2(doc2, Y.encodeStateVector(doc1)))
+console.log(doc1.getArray().toArray().join(''))
