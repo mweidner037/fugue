@@ -142,11 +142,17 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
       // Pause a bit to encourage GC between trials (else may OOM after several trials).
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
-      let encodedState = /** @type {any} */ (null)
+      let encodedState = /** @type {any} */ (null);
 
-      ;(() => {
+      await (async () => {
         let updateSize = 0;
-        const doc = crdtFactory.create(update => {updateSize += update.length})
+
+        // Extra effort to encourage GC before starting measurement.
+        await new Promise(resolve => setTimeout(resolve, 100));
+        const startMemUsed = getMemUsed();
+        await new Promise(resolve => setTimeout(resolve, 100));
+
+        let doc = crdtFactory.create(update => {updateSize += update.length})
 
         benchmarkTime(crdtFactory.getName(), `${benchmarkName} (time)`, () => {
           for (let iterations = 0; iterations < multiplicator; iterations++) {
@@ -164,6 +170,7 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
             }
           }
         }, trial)
+        logMemoryUsed(crdtFactory.getName(), benchmarkName, startMemUsed, trial)
         setBenchmarkResult(crdtFactory.getName(), `${benchmarkName} (updateSize)`, `${updateSize} bytes`, trial)
         /**
          * @type {any}
@@ -173,6 +180,7 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
         }, trial)
 
         doc.free();
+        doc = null;
       })()
 
       ;(() => {
@@ -182,15 +190,13 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
       })()
 
       ;(() => {
-        const startMemUsed = getMemUsed()
-        // @ts-ignore we only store doc so it is not garbage collected
         let doc = null // eslint-disable-line
         benchmarkTime(crdtFactory.getName(), `${benchmarkName} (parseTime)`, () => {
           doc = crdtFactory.create()
           doc.applyUpdate(encodedState)
         }, trial)
-        logMemoryUsed(crdtFactory.getName(), benchmarkName, startMemUsed, trial)
         doc.free();
+        doc = null;
       })()
     }
   })
