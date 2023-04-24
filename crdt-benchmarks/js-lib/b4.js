@@ -12,39 +12,44 @@ const OVER_TIME_INTERVAL = 1000;
  * @param {function(string):boolean} filter
  */
 export const runBenchmarkB4 = async (crdtFactory, filter) => {
-  const benchmarkTemplate = (id, inputData, changeFunction, check) => {
+  const benchmarkTemplate = async (id, inputData, changeFunction, check) => {
     for (let trial = -WARMUP_TRIALS; trial < MEASURED_TRIALS; trial++) {
-      let encodedState = /** @type {any} */ (null)
-      ;(() => {
+      let encodedState = /** @type {any} */ (null);
+      await (async () => {
         let updateSize = 0;
-        // We scope the creation of doc1 so we can gc it before we parse it again.
-        const doc1 = crdtFactory.create(update => {updateSize += update.length})
+
+        // Extra effort to encourage GC before starting measurement, since otherwise ending
+        // measurements don't match [B4.3] (memory over time)'s ending values.
+        await new Promise(resolve => setTimeout(resolve, 100));
+        const startMemUsed = getMemUsed();
+        await new Promise(resolve => setTimeout(resolve, 100));
+
+        let doc1 = crdtFactory.create(update => {updateSize += update.length})
         benchmarkTime(crdtFactory.getName(), `${id} (time)`, () => {
           for (let i = 0; i < inputData.length; i++) {
             changeFunction(doc1, inputData[i], i)
-            // we forcefully overwrite updates because we want to reduce potentially significant memory overhead
           }
         }, trial)
+        logMemoryUsed(crdtFactory.getName(), id, startMemUsed, trial)
         check(doc1)
         setBenchmarkResult(crdtFactory.getName(), `${id} (updateSize)`, `${updateSize} bytes`, trial)
         benchmarkTime(crdtFactory.getName(), `${id} (encodeTime)`, () => {
           encodedState = doc1.getEncodedState()
         }, trial)
         doc1.free();
-      })()
-      const documentSize = encodedState.byteLength
-      setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`, trial)
-      ;(() => {
-        const startMemUsed = getMemUsed()
-        // @ts-ignore we only store doc so it is not garbage collected
+        doc1 = null;
+      })();
+      const documentSize = encodedState.byteLength;
+      setBenchmarkResult(crdtFactory.getName(), `${id} (docSize)`, `${documentSize} bytes`, trial);
+      await (async () => {
         let doc = null // eslint-disable-line
         benchmarkTime(crdtFactory.getName(), `${id} (parseTime)`, () => {
           doc = crdtFactory.create()
           doc.applyUpdate(encodedState)
         }, trial)
-        logMemoryUsed(crdtFactory.getName(), id, startMemUsed, trial)
         doc.free();
-      })()
+        doc = null;
+      })();
     }
   }
 
@@ -101,12 +106,10 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
     for (let trial = -WARMUP_TRIALS; trial < MEASURED_TRIALS; trial++) {
       // Extra effort to encourage GC before starting measurement, since otherwise later
       // measurements go negative.
-      if (global.gc) {
-        global.gc()
-      }
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise(resolve => setTimeout(resolve, 100));
+      const startMemUsed = getMemUsed();
+      await new Promise(resolve => setTimeout(resolve, 100));
 
-      const startMemUsed = getMemUsed()
       let doc = crdtFactory.create();
       for (let i = 0; i < edits.length; i++) {
         if (i % OVER_TIME_INTERVAL === 0) {

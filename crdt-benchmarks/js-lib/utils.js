@@ -90,14 +90,19 @@ export const cpy = o => JSON.parse(JSON.stringify(o))
 
 export const getMemUsed = () => {
   if (typeof global !== 'undefined' && typeof process !== 'undefined') {
-    if (global.gc) {
-      global.gc()
+    let value = Number.MAX_SAFE_INTEGER;
+    // Often the initial baseline measurement is high, giving negative
+    // differences. To make this less likely, measure a few times and
+    // take the minimum.
+    for (let i = 0; i < 3; i++) {
+      if (global.gc) {
+        global.gc()
+      }
+      // Use RSS (resident set size). This seems to be the best way to account
+      // for WASM memory usage - suggested by Alex Good (automerge-wasm dev).
+      value = Math.min(value, process.memoryUsage.rss());
     }
-    // Use the sum of heapUsed and RSS.
-    // RSS is where Wasm memory lives (suggestion from Alex Good -
-    // automerge-wasm dev).
-    const mem = process.memoryUsage();
-    return mem.heapUsed + mem.rss;
+    return value;
   }
   return 0
 }

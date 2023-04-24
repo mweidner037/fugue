@@ -34,7 +34,7 @@ Statistics are written to `results_table.md`, while raw data is written to `crdt
 
 ## Benchmarks info
 
-The `crdt-benchmarks` folder is modified from [https://github.com/dmonad/crdt-benchmarks/](https://github.com/dmonad/crdt-benchmarks/) by Kevin Jahns. We added our Fugue implementations to the suite (in `crdt-benchmarks/benchmarks`), removed measurements that are not relevant to the paper, and made minor tweaks (e.g. recording network usage during \[B4\]).
+The `crdt-benchmarks` folder is modified from [https://github.com/dmonad/crdt-benchmarks/](https://github.com/dmonad/crdt-benchmarks/) by Kevin Jahns. We added our Fugue implementations to the suite (in `crdt-benchmarks/benchmarks`), removed measurements that are not relevant to the paper, and made minor tweaks (e.g. rewriting `getMemoryUsed()` to use resident set size and try harder to get good baselines).
 
 Info on microbenchmarks (measured but not described in the paper) is found in `crdt-benchmarks/README.md`.
 

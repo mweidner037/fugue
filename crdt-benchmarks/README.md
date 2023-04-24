@@ -44,7 +44,9 @@ Source: https://github.com/automerge/automerge-perf/tree/master/edit-by-index
 We simulate one client replaying all changes and storing each update. We measure the time to replay
 the changes and the size of all update messages (`updateSize`),
 the size of the encoded document after the task is performed (`docSize`), the time to encode the document (`encodeTime`),
-the time to parse the encoded document (`parseTime`), and the memory used to hold the decoded document in memory (`memUsed`).
+the time to parse the encoded document (`parseTime`), and the memory used by the replay client (`memUsed`).
+
+> Note: `memUsed` is the memory on the replay client (the one performing the operations), not a second client who just loads the document into memory. This matches our description in the paper ("live usage by a single user") but not the microbenchmarks described above.
 
 ** For now we replay all actions in a single transaction, otherwise Automerge is running out of memory.
 
