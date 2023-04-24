@@ -19,10 +19,10 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
         let updateSize = 0;
 
         // Extra effort to encourage GC before starting measurement, since otherwise ending
-        // measurements don't match [B4.3] (memory over time)'s ending values.
-        await new Promise(resolve => setTimeout(resolve, 100));
+        // measurements don't always match what a heap snapshot says.
+        await new Promise(resolve => setTimeout(resolve, 1000));
         const startMemUsed = getMemUsed();
-        await new Promise(resolve => setTimeout(resolve, 100));
+        await new Promise(resolve => setTimeout(resolve, 1000));
 
         let doc1 = crdtFactory.create(update => {updateSize += update.length})
         benchmarkTime(crdtFactory.getName(), `${id} (time)`, () => {
@@ -104,11 +104,11 @@ export const runBenchmarkB4 = async (crdtFactory, filter) => {
   await runBenchmark('[B4.3] Measure memUsed over time for real-world editing dataset', filter, async benchmarkName => {
     const memUseds = new Array(Math.floor(edits.length / OVER_TIME_INTERVAL));
     for (let trial = -WARMUP_TRIALS; trial < MEASURED_TRIALS; trial++) {
-      // Extra effort to encourage GC before starting measurement, since otherwise later
+      // Extra effort to encourage GC before starting measurement, since otherwise early
       // measurements go negative.
-      await new Promise(resolve => setTimeout(resolve, 100));
+      await new Promise(resolve => setTimeout(resolve, 1000));
       const startMemUsed = getMemUsed();
-      await new Promise(resolve => setTimeout(resolve, 100));
+      await new Promise(resolve => setTimeout(resolve, 1000));
 
       let doc = crdtFactory.create();
       for (let i = 0; i < edits.length; i++) {
