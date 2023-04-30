@@ -1,6 +1,9 @@
 {
   "name": "tree-fugue",
   "version": "1.0.0",
+  "author": "Collabs contributors",
+  "description": "Copy of Collabs v0.6.1 list CRDT implementations",
+  "license": "Apache-2.0",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "dependencies": {

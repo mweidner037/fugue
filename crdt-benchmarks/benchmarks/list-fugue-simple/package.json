@@ -10,7 +10,7 @@
     "table": "echo 'List-Fugue Simple results: \n\n' && node ../../bin/render-table.js ../results.json 6000 list-fugue-simple",
     "dist": "npm run clean && rollup -c && gzip --keep dist/*"
   },
-  "author": "Anonymous (TODO)",
+  "author": "Matthew Weidner, Seph Gentle, and Martin Kleppmann",
   "license": "MIT",
   "dependencies": {
     "@collabs/collabs": "0.6.1",

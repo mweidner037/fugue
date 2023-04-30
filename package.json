@@ -33,7 +33,7 @@
     "collaborative text editing",
     "benchmark"
   ],
-  "author": "Anonymous (TODO)",
+  "author": "Matthew Weidner, Seph Gentle, and Martin Kleppmann",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mweidner037/fugue/issues"

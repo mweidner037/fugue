@@ -1,6 +1,7 @@
 {
   "name": "list-fugue-simple",
   "version": "1.0.0",
+  "author": "Matthew Weidner, Seph Gentle, and Martin Kleppmann",
   "main": "dist/index.js",
   "type": "module",
   "types": "dist/index.d.ts",

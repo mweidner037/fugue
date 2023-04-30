@@ -1,6 +1,6 @@
 # Fugue code and benchmarks
 
-For the paper's Section 4.
+Code and benchmarks for the paper "The Art of the Fugue: Minimizing Interleaving in Collaborative Text Editing" by Matthew Weidner, Joseph Gentle, and Martin Kleppmann, 2023. See the paper's Section 4 for a description.
 
 ## Instructions
 
