@@ -1,5 +1,5 @@
 {
-  "name": "tree-fugue",
+  "name": "fugue",
   "version": "1.0.0",
   "author": "Collabs contributors",
   "description": "Copy of Collabs v0.6.1 list CRDT implementations",

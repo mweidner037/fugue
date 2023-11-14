@@ -8,14 +8,13 @@
     "benchmarks/yjs",
     "benchmarks/ywasm",
     "benchmarks/automerge-wasm",
-    "benchmarks/tree-fugue",
-    "benchmarks/tree-fugue-simple",
-    "benchmarks/list-fugue-simple"
+    "benchmarks/fugue",
+    "benchmarks/fugue-simple"
   ],
   "scripts": {
     "start": "npm run start -ws",
-    "table": "node bin/render-table.js benchmarks/results.json 6000 yjs ywasm automerge-wasm tree-fugue tree-fugue-simple list-fugue-simple",
-    "B4x100": "npm run B4x100 -w benchmarks/yjs && npm run B4x100 -w benchmarks/tree-fugue",
+    "table": "node bin/render-table.js benchmarks/results.json 6000 yjs ywasm automerge-wasm fugue fugue-simple",
+    "B4x100": "npm run B4x100 -w benchmarks/yjs && npm run B4x100 -w benchmarks/fugue",
     "lint": "standard && tsc",
     "clean": "npm run clean -ws"
   },

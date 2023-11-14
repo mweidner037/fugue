@@ -7,7 +7,7 @@ import {
 } from "@collabs/collabs";
 import pako from "pako";
 
-const GZIP = false;
+const GZIP = true;
 
 interface ID {
   sender: string;
@@ -276,7 +276,7 @@ class Tree<T> {
   }
 }
 
-export class TreeFugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
+export class FugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
   private counter = 0;
   private tree: Tree<T>;
 

@@ -1,17 +1,14 @@
 import * as collabs from "@collabs/collabs";
+import { FugueSimple } from "fugue-simple";
 import seedrandom from "seedrandom";
-import * as tree_fugue from "tree-fugue";
 import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
 
-// Workaround for rollup dislikes named CommonJS imports
-const { TreeFugueArray, TreeFugueText } = tree_fugue;
-
-export const name = "tree-fugue";
+export const name = "fugue-simple";
 
 /**
  * @implements {CrdtFactory}
  */
-export class TreeFugueFactory {
+export class TreeFugueSimpleFactory {
   constructor() {
     this.rng = seedrandom("42");
   }
@@ -20,7 +17,7 @@ export class TreeFugueFactory {
    * @param {function(Uint8Array):void} [updateHandler]
    */
   create(updateHandler) {
-    return new TreeFugueCRDT(this.rng, updateHandler);
+    return new TreeFugueSimpleCRDT(this.rng, updateHandler);
   }
 
   getName() {
@@ -31,7 +28,7 @@ export class TreeFugueFactory {
 /**
  * @implements {AbstractCrdt}
  */
-export class TreeFugueCRDT {
+export class TreeFugueSimpleCRDT {
   /**
    * @param {seedrandom.prng} rng
    * @param {function(Uint8Array):void} [updateHandler]
@@ -47,11 +44,13 @@ export class TreeFugueCRDT {
     }
     this.carray = this.app.registerCollab(
       "array",
-      collabs.Pre(TreeFugueArray)()
+      collabs.Pre(FugueSimple)()
     );
-    // Text has a dedicated type. Its items store strings instead of
-    // arrays of character strings - slightly more efficient.
-    this.ctext = this.app.registerCollab("text", collabs.Pre(TreeFugueText)());
+    // Text is represented as an array of character strings.
+    this.ctext = this.app.registerCollab(
+      "text",
+      collabs.Pre(FugueSimple)()
+    );
 
     this.loaded = false;
 
@@ -141,7 +140,7 @@ export class TreeFugueCRDT {
    * @return {Array<any>}
    */
   getArray() {
-    return this.carray.slice();
+    return [...this.carray.values()];
   }
 
   /**
@@ -151,7 +150,7 @@ export class TreeFugueCRDT {
    * @param {string} text
    */
   insertText(index, text) {
-    this.transact(() => this.ctext.insert(index, text));
+    this.transact(() => this.ctext.insert(index, ...text));
   }
 
   /**
@@ -168,7 +167,7 @@ export class TreeFugueCRDT {
    * @return {string}
    */
   getText() {
-    return this.ctext.toString();
+    return [...this.ctext.values()].join("");
   }
 
   /**

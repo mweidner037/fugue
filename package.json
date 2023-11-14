@@ -5,22 +5,20 @@
   "description": "Fugue list CRDT implementations and benchmarks",
   "type": "module",
   "workspaces": [
-    "tree-fugue",
-    "tree-fugue-simple",
-    "list-fugue-simple",
+    "fugue",
+    "fugue-simple",
     "crdt-benchmarks",
     "crdt-benchmarks/benchmarks/yjs",
     "crdt-benchmarks/benchmarks/ywasm",
     "crdt-benchmarks/benchmarks/automerge-wasm",
-    "crdt-benchmarks/benchmarks/tree-fugue",
-    "crdt-benchmarks/benchmarks/tree-fugue-simple",
-    "crdt-benchmarks/benchmarks/list-fugue-simple",
+    "crdt-benchmarks/benchmarks/fugue",
+    "crdt-benchmarks/benchmarks/fugue-simple",
     "yjs-interleave"
   ],
   "scripts": {
     "start": "npm run build && npm start -w crdt-benchmarks && npm run table -w crdt-benchmarks > results_table.md",
     "B4x100": "npm run B4x100 -w crdt-benchmarks && npm run table -w crdt-benchmarks > results_table.md",
-    "build": "npm run build -w tree-fugue && npm run build -w tree-fugue-simple && npm run build -w list-fugue-simple",
+    "build": "npm run build -w fugue && npm run build -w fugue-simple",
     "dataclean": "rm results_table.md crdt-benchmarks/benchmarks/results.json",
     "clean": "npm run clean -ws"
   },
@@ -33,7 +31,7 @@
     "collaborative text editing",
     "benchmark"
   ],
-  "author": "Matthew Weidner, Seph Gentle, and Martin Kleppmann",
+  "author": "Matthew Weidner and Martin Kleppmann",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mweidner037/fugue/issues"

@@ -1,8 +1,8 @@
-All files in this project, except b4-editing-trace.js and the tree-fugue/ directory, are licensed under the MIT license:
+All files in this project, except b4-editing-trace.js and the fugue/ directory, are licensed under the MIT license:
 
 The MIT License (MIT)
 
-Copyright (c) 2022 Matthew Weidner, Seph Gentle, and Martin Kleppmann.
+Copyright (c) 2023 Matthew Weidner and Martin Kleppmann.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
