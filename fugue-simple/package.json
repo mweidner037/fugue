@@ -6,9 +6,8 @@
   "type": "module",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@collabs/collabs": "0.6.1",
-    "pako": "^2.1.0",
-    "tslib": "^2.4.1"
+    "@collabs/collabs": "0.13.4",
+    "pako": "^2.1.0"
   },
   "devDependencies": {
     "@types/pako": "^2.0.0",

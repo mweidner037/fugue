@@ -6,7 +6,6 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "sourceMap": true,
-    "importHelpers": true,
     "declaration": true,
     "outDir": "dist",
     "rootDir": "."

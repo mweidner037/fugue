@@ -1,0 +1,19 @@
+message LocalListSave {
+  // Excludes root ("").
+  repeated string replicaIDs = 1;
+  // Fields 2-6 are aligned by waypoint.
+  // 0 for root; else 1 + index in replicaIDs.
+  repeated uint32 replicaIDIndices = 2 [packed=true];
+  // OPT: diff and run-length encode or similar?
+  repeated uint32 counters = 3 [packed=true];
+  repeated uint32 totals = 4 [packed=true];
+  repeated uint32 seens = 5 [packed=true];
+  repeated uint32 itemsLengths = 6 [packed=true];
+  // This field gives the sizes of items elements,
+  // in a single array for all waypoints.
+  // Positive = present, negative = deleted item.
+  repeated sint32 itemSizes = 7 [packed=true];
+  // The values for present items, in the same order as
+  // itemSizes (not list order).
+  required bytes values = 8;
+}
