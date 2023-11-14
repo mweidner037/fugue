@@ -5,11 +5,9 @@
   "main": "./run.js",
   "type": "module",
   "scripts": {
-    "clean": "rm -rf dist",
-    "start": "([ -f \"./dist/bundle.js\" ] || npm run dist) && node --expose-gc run.js && npm run table",
-    "table": "echo 'Fugue results: \n\n' && node ../../bin/render-table.js ../results.json 6000 fugue",
-    "B4x100": "([ -f \"./dist/bundle.js\" ] || npm run dist) && node --expose-gc run.js B4x100 && npm run table",
-    "dist": "npm run clean && rollup -c && gzip --keep dist/*"
+    "start": "npm run exp && npm run table",
+    "exp": "node --expose-gc run.js",
+    "B4x100": "node --expose-gc run.js B4x100 && npm run table"
   },
   "author": "Matthew Weidner and Martin Kleppmann",
   "license": "MIT",

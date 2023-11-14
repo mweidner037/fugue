@@ -2,10 +2,9 @@
   "name": "automerge-wasm",
   "type": "module",
   "scripts": {
-    "clean": "rm -rf dist",
-    "start": "([ -f \"./dist/bundle.js\" ] || npm run dist) && node --expose-gc --experimental-specifier-resolution=node run.js && npm run table",
-    "table": "echo 'Automerge results: \n\n' && node ../../bin/render-table.js ../results.json 6000 automerge-wasm",
-    "dist": "npm run clean && rollup -c && gzip --keep dist/*"
+    "start": "npm run exp && npm run table",
+    "exp": "node --expose-gc run.js",
+    "table": "echo 'Automerge results: \n\n' && node ../../bin/render-table.js ../results.json 6000 automerge-wasm"
   },
   "dependencies": {
     "@automerge/automerge-wasm": "0.5.0"

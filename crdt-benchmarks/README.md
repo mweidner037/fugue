@@ -54,14 +54,7 @@ Replay the [B4] dataset one hundred times. The final document has a size of over
 
 ## Development
 
-Modify the `N` variable in `benchmarks/utils.js` to increase the difficulty.
-
-```sh
-npm run watch
-node dist/benchmark.js
-```
-
-Now you can also open `benchmark.html` to run the benchmarks in the browser.
+Modify the `N` variable in `benchmarks/utils.js` to increase the difficulty of microbenchmarks (not B4).
 
 ## License
 
