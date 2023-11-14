@@ -52,9 +52,7 @@ export class Waypoint {
   ) {}
 
   /**
-   * This waypoint's child waypoints in sort order: left children
-   * by valueIndex, then right children by reverse valueIndex,
-   * with ties broken by senderID.
+   * This waypoint's child waypoints in sort order.
    *
    * Only [[CTotalOrder]] may mutate this array.
    */
@@ -64,9 +62,6 @@ export class Waypoint {
 /**
  * A collaborative abstract total order on [[Position]]s.
  *
- * This is a low-level API intended for internal use by list CRDT implementations.
- * In most apps, you are better off using [[CValueList]] or [[CList]].
- *
  * A CTotalOrder represents the core of a list CRDT: a collaborative
  * list of Positions
  * that can be expanded over time, but without any associated values.
@@ -74,6 +69,7 @@ export class Waypoint {
  * values, in list order with indexed access.
  * Note that LocalList is a local (non-collaborative) data structure, i.e.,
  * its value assignments are not automatically replicated.
+ * [[Fugue]] builds a traditional list CRDT on top of it.
  *
  * ### Waypoints
  *
@@ -98,16 +94,17 @@ export class Waypoint {
  * The position order is then an in-order traversal of this tree:
  * we traverse a position's left children, then visit
  * the position, then traverse its right children.
- * Same-side siblings are ordered by the tiebreakers:
- * - A position belonging to the same waypoint as the parent
- * (just with valueIndex + 1) is to the left of any other siblings.
- * - Other siblings (each belonging to different waypoints and with
- * valueIndex 0) are sorted lexicographically by their waypoints'
- * [[Waypoint.senderID]]s. We call these *waypoint children*.
+ * Same-side siblings are ordered by their waypoints'
+ * [[Waypoint.senderID]]s. This rule is applied to both the child position
+ * (same waypoint, valueIndex + 1) and the "waypoint children"
+ * (child nodes corresponding to other waypoints).
+ * 
+ * > The original Collabs implementation instead distinguishes
+ * between the child position (same waypoint, valueIndex + 1) and waypoint children:
+ * it sorts the former before any other right-side children, instead of by senderID.
  *
  * Note that positions belonging to the same waypoint are contiguous
- * when first created. Later, (left-side) waypoint children may
- * appear between them.
+ * when first created. Later, new waypoint children may appear between them.
  */
 export class CTotalOrder extends CPrimitive {
   /**
@@ -164,6 +161,8 @@ export class CTotalOrder extends CPrimitive {
    * Internally, they use the same waypoint with contiguously
    * increasing valueIndex.
    * @throws If count <= 0.
+   * 
+   * TODO: go back to using tombstone style (infer nextPosition; check existence of child instead of is-descendant)
    */
   createPositions(
     prevPosition: Position | null,

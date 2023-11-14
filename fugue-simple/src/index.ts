@@ -24,7 +24,7 @@ interface Node<T> {
    */
   parent: Node<T> | null;
   side: "L" | "R";
-  // For traversals, also store the children in sorted order.
+  // For traversals, store the children in sorted order.
   leftChildren: Node<T>[];
   rightChildren: Node<T>[];
   /**
@@ -284,13 +284,10 @@ export class FugueSimple<T> extends CPrimitive {
     this.tree = new Tree();
   }
 
-  insert(index: number, ...values: T[]): T | undefined {
+  insert(index: number, ...values: T[]): void {
     for (let i = 0; i < values.length; i++) {
       this.insertOne(index + i, values[i]);
     }
-
-    // The return value is just an interface requirement; not relevant here.
-    return undefined;
   }
 
   private insertOne(index: number, value: T) {
@@ -391,9 +388,5 @@ export class FugueSimple<T> extends CPrimitive {
       savedState = pako.ungzip(savedState);
     }
     this.tree.load(savedState);
-  }
-
-  canGC(): boolean {
-    return false;
   }
 }
