@@ -1,7 +1,7 @@
-import * as Automerge from 'automerge-wasm'
+import { create, load } from '@automerge/automerge-wasm'
 import { AbstractCrdt, CrdtFactory } from '../../js-lib/index.js'; // eslint-disable-line
 
-const INITIAL_DOC = Automerge.default.create()
+const INITIAL_DOC = create()
 const ARRAY_ID = INITIAL_DOC.putObject('/', 'array', [])
 const TEXT_ID = INITIAL_DOC.putObject('/', 'text', '')
 const INITIAL_DOC_BINARY = INITIAL_DOC.save()
@@ -33,7 +33,7 @@ export class AutomergeCRDT {
    */
   constructor (updateHandler) {
     this.updateHandler = updateHandler
-    this.doc = Automerge.default.load(INITIAL_DOC_BINARY)
+    this.doc = load(INITIAL_DOC_BINARY)
   }
 
   update () {

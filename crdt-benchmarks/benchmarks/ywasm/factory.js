@@ -60,7 +60,7 @@ export class YwasmCRDT {
    * @param {Array<any>} elems
    */
   insertArray (index, elems) {
-    this.transact(() => this.yarray.insert(this.txn, index, elems))
+    this.transact(() => this.yarray.insert(index, elems, this.txn))
   }
 
   /**
@@ -70,7 +70,7 @@ export class YwasmCRDT {
    * @param {number} len
    */
   deleteArray (index, len) {
-    this.transact(() => this.yarray.delete(this.txn, index, len))
+    this.transact(() => this.yarray.delete(index, len, this.txn))
   }
 
   /**
@@ -87,7 +87,7 @@ export class YwasmCRDT {
    * @param {string} text
    */
   insertText (index, text) {
-    this.transact(() => this.ytext.insert(this.txn, index, text, null))
+    this.transact(() => this.ytext.insert(index, text, null, this.txn))
   }
 
   /**
@@ -97,7 +97,7 @@ export class YwasmCRDT {
    * @param {number} len
    */
   deleteText (index, len) {
-    this.transact(() => this.ytext.delete(this.txn, index, len))
+    this.transact(() => this.ytext.delete(index, len, this.txn))
   }
 
   /**
@@ -111,7 +111,7 @@ export class YwasmCRDT {
    * @param {function (AbstractCrdt): void} f
    */
   transact (f) {
-    this.txn = this.txn || this.ydoc.beginTransaction()
+    this.txn = this.txn || this.ydoc.writeTransaction()
     try {
       f(this)
     } finally {

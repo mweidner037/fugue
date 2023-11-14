@@ -1,14 +1,6 @@
+# CRDT Benchmarks
 
-# CRDT benchmarks
-
-> A collection of reproducible benchmarks. *PRs are welcome.*
-
-```sh
-# Install Node.js https://nodejs.org
-npm i && npm start
-```
-
-You can find the benchmark results of Automerge's current [`performance`](https://github.com/automerge/automerge/pull/253) branch [here](https://github.com/dmonad/crdt-benchmarks/pull/4).
+CRDT benchmarks, forked from Kevin Jahns's [https://github.com/dmonad/crdt-benchmarks](https://github.com/dmonad/crdt-benchmarks).
 
 ## Benchmarks
 

@@ -14,6 +14,6 @@
   "author": "Kevin Jahns",
   "license": "MIT",
   "dependencies": {
-    "yjs": "13.5.44"
+    "yjs": "13.6.8"
   }
 }
