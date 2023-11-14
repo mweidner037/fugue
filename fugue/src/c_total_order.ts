@@ -11,7 +11,7 @@ import {
   ITotalOrderCreateMessage,
   TotalOrderCreateMessage,
   TotalOrderSave,
-} from "../../generated/proto_compiled";
+} from "../generated/proto_compiled";
 
 const RADIX = 36;
 

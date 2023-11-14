@@ -1,5 +1,5 @@
 import { ICursorList, Position, Serializer, nonNull } from "@collabs/core";
-import { LocalListSave } from "../../generated/proto_compiled";
+import { LocalListSave } from "../generated/proto_compiled";
 import { CTotalOrder, Waypoint } from "./c_total_order";
 
 /**

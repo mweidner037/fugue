@@ -1,4 +1,4 @@
-import * as collabs from "@collabs/collabs";
+import { CRuntime, ReplicaIDs } from "@collabs/collabs";
 import { FugueSimple } from "fugue-simple";
 import seedrandom from "seedrandom";
 import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
@@ -34,27 +34,29 @@ export class TreeFugueSimpleCRDT {
    * @param {function(Uint8Array):void} [updateHandler]
    */
   constructor(rng, updateHandler) {
-    this.app = new collabs.CRDTApp({
-      debugReplicaID: collabs.pseudoRandomReplicaID(rng),
+    this.doc = new CRuntime({
+      debugReplicaID: ReplicaIDs.pseudoRandom(rng),
     });
     if (updateHandler) {
-      this.app.on("Send", (e) => {
+      this.doc.on("Send", (e) => {
         updateHandler(this._encodeUpdate(e.message, false));
       });
     }
-    this.carray = this.app.registerCollab(
+    /**
+     * @type {FugueSimple<any>}
+     */
+    this.carray = this.doc.registerCollab(
       "array",
-      collabs.Pre(FugueSimple)()
+      (init) => new FugueSimple(init)
     );
     // Text is represented as an array of character strings.
-    this.ctext = this.app.registerCollab(
+    /**
+     * @type {FugueSimple<string>}
+     */
+    this.ctext = this.doc.registerCollab(
       "text",
-      collabs.Pre(FugueSimple)()
+      (init) => new FugueSimple(init)
     );
-
-    this.loaded = false;
-
-    this.inTransact = false;
   }
 
   /**
@@ -85,21 +87,11 @@ export class TreeFugueSimpleCRDT {
     return [messageOrSave, isSave];
   }
 
-  _checkInitialLoad() {
-    if (!this.loaded) {
-      // Collabs expects us to notify it if loading is skipped
-      // before sending/receiving the first message.
-      this.app.load(collabs.Optional.empty());
-      this.loaded = true;
-    }
-  }
-
   /**
    * @return {Uint8Array|string}
    */
   getEncodedState() {
-    this._checkInitialLoad();
-    return this._encodeUpdate(this.app.save(), true);
+    return this._encodeUpdate(this.doc.save(), true);
   }
 
   /**
@@ -108,11 +100,9 @@ export class TreeFugueSimpleCRDT {
   applyUpdate(update) {
     const [messageOrSave, isSave] = this._decodeUpdate(update);
     if (isSave) {
-      this.app.load(collabs.Optional.of(messageOrSave));
-      this.loaded = true;
+      this.doc.load(messageOrSave);
     } else {
-      this._checkInitialLoad();
-      this.app.receive(messageOrSave);
+      this.doc.receive(messageOrSave);
     }
   }
 
@@ -174,14 +164,7 @@ export class TreeFugueSimpleCRDT {
    * @param {function (AbstractCrdt): void} f
    */
   transact(f) {
-    const oldInTransact = this.inTransact;
-    this.inTransact = true;
-
-    if (!oldInTransact) this._checkInitialLoad();
-    f(this);
-    if (!oldInTransact) this.app.commitBatch();
-
-    this.inTransact = oldInTransact;
+    this.doc.transact(() => f(this));
   }
 
   free() {}

@@ -14,7 +14,7 @@
   "author": "Matthew Weidner and Martin Kleppmann",
   "license": "MIT",
   "dependencies": {
-    "@collabs/collabs": "0.6.1",
+    "@collabs/collabs": "0.13.4",
     "seedrandom": "^3.0.5",
     "fugue": "1.0.0"
   }

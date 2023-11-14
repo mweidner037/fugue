@@ -1,9 +1,7 @@
 import {
-  AbstractCListCPrimitive,
+  CPrimitive,
   InitToken,
-  Message,
-  MessageMeta,
-  Optional
+  MessageMeta
 } from "@collabs/collabs";
 import pako from "pako";
 
@@ -276,7 +274,7 @@ class Tree<T> {
   }
 }
 
-export class FugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
+export class FugueSimple<T> extends CPrimitive {
   private counter = 0;
   private tree: Tree<T>;
 
@@ -334,7 +332,7 @@ export class FugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
     super.sendPrimitive(JSON.stringify(msg));
   }
 
-  protected receivePrimitive(message: Message, meta: MessageMeta): void {
+  protected receivePrimitive(message: Uint8Array | string, meta: MessageMeta): void {
     const msg: InsertMessage<T> | DeleteMessage = JSON.parse(<string>message);
     switch (msg.type) {
       case "insert":
@@ -378,7 +376,7 @@ export class FugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
     return this.tree.root.size;
   }
 
-  save(): Uint8Array {
+  savePrimitive(): Uint8Array {
     // No need to save this.counter because we will have a different
     // replicaID next time.
     let bytes = this.tree.save();
@@ -387,15 +385,12 @@ export class FugueSimple<T> extends AbstractCListCPrimitive<T, [T]> {
     }
     return bytes;
   }
-
-  load(saveData: Optional<Uint8Array>): void {
-    if (!saveData.isPresent) return;
-
-    let bytes = saveData.get();
+ 
+  loadPrimitive(savedState: Uint8Array): void {
     if (GZIP) {
-      bytes = pako.ungzip(bytes);
+      savedState = pako.ungzip(savedState);
     }
-    this.tree.load(bytes);
+    this.tree.load(savedState);
   }
 
   canGC(): boolean {
