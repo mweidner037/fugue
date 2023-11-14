@@ -1,12 +1,12 @@
 import {
-  runBenchmarks,
-  writeBenchmarkResultsToFile
+    runBenchmarks,
+    writeBenchmarkResultsToFile
 } from "../../js-lib/index.js";
-import { TreeFugueSimpleFactory } from "./factory.js";
+import { FugueSimpleFactory } from "./factory.js";
 
 (async () => {
   await runBenchmarks(
-    new TreeFugueSimpleFactory(),
+    new FugueSimpleFactory(),
     (testName) => !(testName.startsWith("[B4x100") || testName.startsWith("[B4."))
   );
   writeBenchmarkResultsToFile("../results.json", (testName) => true);

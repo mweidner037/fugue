@@ -8,7 +8,7 @@ export const name = "fugue";
 /**
  * @implements {CrdtFactory}
  */
-export class TreeFugueFactory {
+export class FugueFactory {
   constructor() {
     this.rng = seedrandom("42");
   }
@@ -17,7 +17,7 @@ export class TreeFugueFactory {
    * @param {function(Uint8Array):void} [updateHandler]
    */
   create(updateHandler) {
-    return new TreeFugueCRDT(this.rng, updateHandler);
+    return new FugueCRDT(this.rng, updateHandler);
   }
 
   getName() {
@@ -28,7 +28,7 @@ export class TreeFugueFactory {
 /**
  * @implements {AbstractCrdt}
  */
-export class TreeFugueCRDT {
+export class FugueCRDT {
   /**
    * @param {seedrandom.prng} rng
    * @param {function(Uint8Array):void} [updateHandler]
