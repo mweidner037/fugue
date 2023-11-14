@@ -139,7 +139,7 @@ export class FugueCRDT {
    * @param {string} text
    */
   insertText(index, text) {
-    this.transact(() => this.ctext.insert(index, text));
+    this.transact(() => this.ctext.insert(index, ...text));
   }
 
   /**
@@ -156,7 +156,7 @@ export class FugueCRDT {
    * @return {string}
    */
   getText() {
-    return this.ctext.toString();
+    return this.ctext.slice().join("");
   }
 
   /**
