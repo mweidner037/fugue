@@ -380,6 +380,11 @@ class Tree<T> {
     // First create all nodes without pointers to other nodes (parent, children,
     // rightOrigin).
     for (const [sender, bySenderSave] of Object.entries(save)) {
+      if (sender === "") {
+        // Root node. Just set its size.
+        this.root.size = bySenderSave[0].size;
+        continue;
+      }
       this.nodesByID.set(
         sender,
         bySenderSave.map((nodeSave, counter) => ({
@@ -396,6 +401,7 @@ class Tree<T> {
     }
     // Next, fill in the parent and rightOrigin pointers.
     for (const [sender, bySender] of this.nodesByID) {
+      if (sender === "") continue;
       const bySenderSave = save[sender]!;
       for (let i = 0; i < bySender.length; i++) {
         const node = bySender[i];
@@ -423,7 +429,8 @@ class Tree<T> {
     // readyNodes is a stack; pendingNodes maps from a node to its dependencies.
     const readyNodes: Node<T>[] = [];
     const pendingNodes = new Map<Node<T>, Node<T>[]>();
-    for (const bySender of this.nodesByID.values()) {
+    for (const [sender, bySender] of this.nodesByID) {
+      if (sender === "") continue;
       for (let i = 0; i < bySender.length; i++) {
         const node = bySender[i];
         if (node.rightOrigin === undefined || node.rightOrigin === null) {

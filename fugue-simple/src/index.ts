@@ -242,6 +242,11 @@ class Tree<T> {
     );
     // First create all nodes without pointers to other nodes (parent & children).
     for (const [sender, bySenderSave] of Object.entries(save)) {
+      if (sender === "") {
+        // Root node. Just set its size.
+        this.root.size = bySenderSave[0].size;
+        continue;
+      }
       this.nodesByID.set(
         sender,
         bySenderSave.map((nodeSave, counter) => ({
@@ -258,6 +263,7 @@ class Tree<T> {
     }
     // Now fill in the pointers (parent & children).
     for (const [sender, bySender] of this.nodesByID) {
+      if (sender === "") continue;
       const bySenderSave = save[sender]!;
       for (let i = 0; i < bySender.length; i++) {
         const node = bySender[i];
