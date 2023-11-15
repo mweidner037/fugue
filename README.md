@@ -40,6 +40,4 @@ Info on microbenchmarks (measured but not described in the paper) is found in `c
 
 ## Misc
 
-`yjs-interleave/` runs the Yjs backward interleaving (multi-replica) code from the paper's Appendix A.1.9. Run with `npm start` in that folder; the code is in `yjs-interleave/index.js`.
-
 `charts.xlsx` is a spreadsheet used to calculate average throughputs and the over-time charts.

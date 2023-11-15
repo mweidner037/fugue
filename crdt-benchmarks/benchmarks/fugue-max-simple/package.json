@@ -7,7 +7,7 @@
   "scripts": {
     "start": "npm run exp && npm run table",
     "exp": "node --expose-gc run.js",
-    "table": "echo 'FugueMax Simple results: \n\n' && node ../../bin/render-table.js ../results.json 6000 fugue-simple"
+    "table": "echo 'FugueMax Simple results: \n\n' && node ../../bin/render-table.js ../results.json 6000 fugue-max-simple"
   },
   "author": "Matthew Weidner and Martin Kleppmann",
   "license": "MIT",
