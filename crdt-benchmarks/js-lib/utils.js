@@ -91,10 +91,8 @@ export const cpy = o => JSON.parse(JSON.stringify(o))
 export const getMemUsed = () => {
   if (typeof global !== 'undefined' && typeof process !== 'undefined') {
     if (global.gc) {
-      // Calling gc twice gives more reasonable answers for memory usage
-      // over time (less likely to give negative results indicating a
-      // too-high baseline).
-      // Perhaps because gc is only a request and 2 calls make it more likely.
+      // Experimentally, calling gc() twice makes memory msmts more reliable -
+      // otherwise may get negative diffs (last trial getting GC'd in the middle?).
       global.gc();
       global.gc();
     }
