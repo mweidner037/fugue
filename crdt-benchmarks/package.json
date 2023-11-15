@@ -13,8 +13,8 @@
     "benchmarks/fugue-max-simple"
   ],
   "scripts": {
-    "start": "npm start -w benchmarks/yjs && npm start -w benchmarks/ywasm && npm start -w benchmarks/automerge-wasm && npm start -w benchmarks/fugue && npm start -w benchmarks/fugue-simple && npm start -w benchmarks/fugue-max-simple",
-    "table": "node bin/render-table.js benchmarks/results.json 6000 yjs ywasm automerge-wasm fugue fugue-simple fugue-max-simple",
+    "start": "npm start -w benchmarks/yjs && npm start -w benchmarks/automerge-wasm && npm start -w benchmarks/fugue && npm start -w benchmarks/fugue-simple && npm start -w benchmarks/fugue-max-simple",
+    "table": "node bin/render-table.js benchmarks/results.json 6000 yjs automerge-wasm fugue fugue-simple fugue-max-simple",
     "B4x100": "npm run B4x100 -w benchmarks/yjs && npm run B4x100 -w benchmarks/fugue"
   },
   "engines": {
