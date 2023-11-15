@@ -9,11 +9,12 @@
     "benchmarks/ywasm",
     "benchmarks/automerge-wasm",
     "benchmarks/fugue",
-    "benchmarks/fugue-simple"
+    "benchmarks/fugue-simple",
+    "benchmarks/fugue-max-simple"
   ],
   "scripts": {
     "start": "npm run start -ws",
-    "table": "node bin/render-table.js benchmarks/results.json 6000 yjs ywasm automerge-wasm fugue fugue-simple",
+    "table": "node bin/render-table.js benchmarks/results.json 6000 yjs ywasm automerge-wasm fugue fugue-simple fugue-max-simple",
     "B4x100": "npm run B4x100 -w benchmarks/yjs && npm run B4x100 -w benchmarks/fugue",
     "lint": "standard && tsc",
     "clean": "npm run clean -ws"

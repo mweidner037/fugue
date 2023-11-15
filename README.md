@@ -30,6 +30,7 @@ Statistics are written to `results_table.md`, while raw data is written to `crdt
 
 - `fugue/`: Fugue
 - `fugue-simple/`: Fugue Simple
+- `fugue-max-simple/`: FugueMax Simple
 
 ## Benchmarks info
 

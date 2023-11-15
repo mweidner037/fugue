@@ -411,17 +411,19 @@ class Tree<T> {
         }
       }
     }
+
     // Finally, call insertIntoSiblings on each node to fill in the children
     // arrays.
     // We must be careful to wait until after doing so for node.rightOrigin
     // and its ancestors, since insertIntoSiblings references the existing list order
     // on node.rightOrigin.
 
-    // Nodes go from "pending" -> "ready" (rightOrigin valid) -> "valid".
+    // Nodes go from "pending" -> "ready" (rightOrigin valid) ->
+    // "valid" (insertIntoSiblings called).
     // readyNodes is a stack; pendingNodes maps from a node to its dependencies.
     const readyNodes: Node<T>[] = [];
     const pendingNodes = new Map<Node<T>, Node<T>[]>();
-    for (const [sender, bySender] of this.nodesByID) {
+    for (const bySender of this.nodesByID.values()) {
       for (let i = 0; i < bySender.length; i++) {
         const node = bySender[i];
         if (node.rightOrigin === undefined || node.rightOrigin === null) {
@@ -452,7 +454,7 @@ class Tree<T> {
   }
 }
 
-export class FugueSimple<T> extends CPrimitive {
+export class FugueMaxSimple<T> extends CPrimitive {
   private counter = 0;
   private tree: Tree<T>;
 

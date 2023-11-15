@@ -7,6 +7,7 @@
   "workspaces": [
     "fugue",
     "fugue-simple",
+    "fugue-max-simple",
     "crdt-benchmarks",
     "crdt-benchmarks/benchmarks/yjs",
     "crdt-benchmarks/benchmarks/ywasm",
@@ -19,7 +20,7 @@
   "scripts": {
     "start": "npm run build && npm start -w crdt-benchmarks && npm run table -w crdt-benchmarks > results_table.md",
     "B4x100": "npm run B4x100 -w crdt-benchmarks && npm run table -w crdt-benchmarks > results_table.md",
-    "build": "npm run build -w fugue && npm run build -w fugue-simple",
+    "build": "npm run build -w fugue && npm run build -w fugue-simple && npm run build fugue-max-simple",
     "dataclean": "rm results_table.md crdt-benchmarks/benchmarks/results.json",
     "clean": "npm run clean -ws"
   },
