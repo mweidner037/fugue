@@ -29,6 +29,12 @@ interface Node<T> {
    * This is technically an optimization, but an easy & impactful one.
    */
   size: number;
+  /**
+   * Our rightOrigin, if we're a right-side child.
+   * null = our rightOrigin is the end of the list;
+   * unset = we're not a right-side child.
+   */
+  rightOrigin?: Node<T> | null;
 }
 
 interface InsertMessage<T> {
@@ -37,6 +43,7 @@ interface InsertMessage<T> {
   value: T;
   parent: ID;
   side: "L" | "R";
+  rightOrigin?: ID | null;
 }
 
 interface DeleteMessage {
@@ -50,6 +57,7 @@ interface NodeSave<T> {
   parent: ID | null;
   side: "L" | "R";
   size: number;
+  rightOrigin?: ID | null;
 }
 
 class Tree<T> {
@@ -75,7 +83,13 @@ class Tree<T> {
     this.nodesByID.set("", [this.root]);
   }
 
-  addNode(id: ID, value: T, parent: Node<T>, side: "L" | "R") {
+  addNode(
+    id: ID,
+    value: T,
+    parent: Node<T>,
+    side: "L" | "R",
+    rightOrigin?: Node<T> | null
+  ) {
     const node: Node<T> = {
       id,
       value,
@@ -86,6 +100,7 @@ class Tree<T> {
       rightChildren: [],
       size: 0,
     };
+    if (rightOrigin !== undefined) node.rightOrigin = rightOrigin;
 
     // Add to nodesByID.
     let bySender = this.nodesByID.get(id.sender);
@@ -102,17 +117,105 @@ class Tree<T> {
   }
 
   private insertIntoSiblings(node: Node<T>) {
-    // Insert node among its same-side siblings, in lexicographic order by id.sender.
-    // (The insertion logic guarantees we will never have same-side siblings
-    // with the same sender, so there is no need to sub-order by id.counter.)
+    // Insert node among its same-side siblings.
     const parent = node.parent!;
-    const siblings =
-      node.side === "L" ? parent.leftChildren : parent.rightChildren;
-    let i = 0;
-    for (; i < siblings.length; i++) {
-      if (!(node.id.sender > siblings[i].id.sender)) break;
+    if (node.side === "R") {
+      const rightSibs = parent.rightChildren;
+      // Siblings are in order: *reverse* order of their rightOrigins,
+      // breaking ties using the lexicographic order on id.sender.
+      let i = 0;
+      for (; i < rightSibs.length; i++) {
+        if (
+          !(
+            this.isLess(node.rightOrigin!, rightSibs[i].rightOrigin!) ||
+            (node.rightOrigin === rightSibs[i].rightOrigin &&
+              node.id.sender > rightSibs[i].id.sender)
+          )
+        )
+          break;
+      }
+      rightSibs.splice(i, 0, node);
+    } else {
+      const leftSibs = parent.leftChildren;
+      // Siblings are in lexicographic order by id.sender.
+      let i = 0;
+      for (; i < leftSibs.length; i++) {
+        if (!(node.id.sender > leftSibs[i].id.sender)) break;
+      }
+      leftSibs.splice(i, 0, node);
     }
-    siblings.splice(i, 0, node);
+  }
+
+  /**
+   * Returns whether a < b in the existing list order.
+   *
+   * null values are treated as the end of the list.
+   */
+  private isLess(a: Node<T> | null, b: Node<T> | null): boolean {
+    if (a === b) return false;
+    if (a === null) return false;
+    if (b === null) return true;
+
+    // Walk one node up the tree until they are both the same depth.
+    const aDepth = this.depth(a);
+    const bDepth = this.depth(b);
+    let aAnc = a;
+    let bAnc = b;
+    if (aDepth > bDepth) {
+      let lastSide: "L" | "R";
+      for (let i = aDepth; i > bDepth; i--) {
+        lastSide = aAnc.side;
+        aAnc = aAnc.parent!;
+      }
+      if (aAnc === b) {
+        // a is a descendant of b on lastSide.
+        return lastSide! === "L";
+      }
+    }
+    if (bDepth > aDepth) {
+      let lastSide: "L" | "R";
+      for (let i = bDepth; i > aDepth; i--) {
+        lastSide = bAnc.side;
+        bAnc = bAnc.parent!;
+      }
+      if (bAnc === a) {
+        // b is a descendant of a on lastSide.
+        return lastSide! === "R";
+      }
+    }
+
+    // Walk both nodes up the tree until we find a common ancestor.
+    while (aAnc.parent !== bAnc.parent) {
+      // If we reach the root, the loop will terminate, so both parents
+      // are non-null here.
+      aAnc = aAnc.parent!;
+      bAnc = bAnc.parent!;
+    }
+    // Now aAnc and bAnc are distinct siblings. See how they are sorted
+    // in their parent's child arrays.
+    if (aAnc.side !== bAnc.side) return aAnc.side === "L";
+    else {
+      const siblings =
+        aAnc.side === "L"
+          ? aAnc.parent!.leftChildren
+          : aAnc.parent!.rightChildren;
+      return siblings.indexOf(aAnc) < siblings.indexOf(bAnc);
+    }
+  }
+
+  /**
+   * Returns node's depth in the tree. Root = depth 0.
+   */
+  private depth(node: Node<T>): number {
+    let depth = 0;
+    for (
+      let current = node;
+      current.parent !== null;
+      current = current.parent
+    ) {
+      depth++;
+    }
+    return depth;
   }
 
   /**
@@ -179,6 +282,33 @@ class Tree<T> {
     return desc;
   }
 
+  /**
+   * Returns the next node in the traversal that is *not* a
+   * descendant of node, or null if that is the end. Includes tombstones.
+   */
+  nextNonDescendant(node: Node<T>): Node<T> | null {
+    let current = node;
+    while (current.parent !== null) {
+      const siblings =
+        current.side === "L"
+          ? current.parent.leftChildren
+          : current.parent.rightChildren;
+      const index = siblings.indexOf(current);
+      if (index < siblings.length - 1) {
+        // The next sibling's subtree immediately follows current's subtree.
+        // Find its leftmost element.
+        const nextSibling = siblings[index + 1];
+        return this.leftmostDescendant(nextSibling);
+      } else if (current.side === "L") {
+        // The parent immediately follows current's subtree.
+        return current.parent;
+      }
+      current = current.parent;
+    }
+    // We've reached the root without finding any further-right subtrees.
+    return null;
+  }
+
   *traverse(node: Node<T>): IterableIterator<T> {
     // A recursive approach (like in the paper) would be simpler,
     // but overflows the stack at modest
@@ -225,13 +355,20 @@ class Tree<T> {
     // Convert nodesByID into JSON format, also converting each Node into a NodeSave.
     const save: { [sender: string]: NodeSave<T>[] } = {};
     for (const [sender, bySender] of this.nodesByID) {
-      save[sender] = bySender.map((node) => ({
-        value: node.value,
-        isDeleted: node.isDeleted,
-        parent: node.parent === null ? null : node.parent.id,
-        side: node.side,
-        size: node.size,
-      }));
+      save[sender] = bySender.map((node) => {
+        const nodeSave: NodeSave<T> = {
+          value: node.value,
+          isDeleted: node.isDeleted,
+          parent: node.parent === null ? null : node.parent.id,
+          side: node.side,
+          size: node.size,
+        };
+        if (node.rightOrigin !== undefined) {
+          nodeSave.rightOrigin =
+            node.rightOrigin === null ? null : node.rightOrigin.id;
+        }
+        return nodeSave;
+      });
     }
     return new Uint8Array(Buffer.from(JSON.stringify(save)));
   }
@@ -240,7 +377,8 @@ class Tree<T> {
     const save: { [sender: string]: NodeSave<T>[] } = JSON.parse(
       Buffer.from(saveData).toString()
     );
-    // First create all nodes without pointers to other nodes (parent & children).
+    // First create all nodes without pointers to other nodes (parent, children,
+    // rightOrigin).
     for (const [sender, bySenderSave] of Object.entries(save)) {
       this.nodesByID.set(
         sender,
@@ -256,7 +394,7 @@ class Tree<T> {
         }))
       );
     }
-    // Now fill in the pointers (parent & children).
+    // Next, fill in the parent and rightOrigin pointers.
     for (const [sender, bySender] of this.nodesByID) {
       const bySenderSave = save[sender]!;
       for (let i = 0; i < bySender.length; i++) {
@@ -264,9 +402,52 @@ class Tree<T> {
         const nodeSave = bySenderSave[i];
         if (nodeSave.parent !== null) {
           node.parent = this.getByID(nodeSave.parent);
-          this.insertIntoSiblings(node);
+        }
+        if (nodeSave.rightOrigin !== undefined) {
+          node.rightOrigin =
+            nodeSave.rightOrigin === null
+              ? null
+              : this.getByID(nodeSave.rightOrigin);
         }
       }
+    }
+    // Finally, call insertIntoSiblings on each node to fill in the children
+    // arrays.
+    // We must be careful to wait until after doing so for node.rightOrigin
+    // and its ancestors, since insertIntoSiblings references the existing list order
+    // on node.rightOrigin.
+
+    // Nodes go from "pending" -> "ready" (rightOrigin valid) -> "valid".
+    // readyNodes is a stack; pendingNodes maps from a node to its dependencies.
+    const readyNodes: Node<T>[] = [];
+    const pendingNodes = new Map<Node<T>, Node<T>[]>();
+    for (const [sender, bySender] of this.nodesByID) {
+      for (let i = 0; i < bySender.length; i++) {
+        const node = bySender[i];
+        if (node.rightOrigin === undefined || node.rightOrigin === null) {
+          // rightOrigin not used or is the root; node is ready.
+          readyNodes.push(node);
+        } else {
+          let pendingArr = pendingNodes.get(node.rightOrigin);
+          if (pendingArr === undefined) {
+            pendingArr = [];
+            pendingNodes.set(node.rightOrigin, pendingArr);
+          }
+          pendingArr.push(node);
+        }
+      }
+    }
+
+    while (readyNodes.length !== 0) {
+      const node = readyNodes.pop()!;
+      this.insertIntoSiblings(node);
+      // node's dependencies are now ready.
+      const deps = pendingNodes.get(node);
+      if (deps !== undefined) readyNodes.push(...deps);
+      pendingNodes.delete(node);
+    }
+    if (pendingNodes.size !== 0) {
+      throw new Error("Internal error: failed to validate all nodes");
     }
   }
 }
@@ -301,6 +482,10 @@ export class FugueSimple<T> extends CPrimitive {
       // leftOrigin has no right children, so the new node becomes
       // a right child of leftOrigin.
       msg = { type: "insert", id, value, parent: leftOrigin.id, side: "R" };
+      // rightOrigin is the node after leftOrigin in the tree traversal,
+      // given that leftOrigin has no right descendants.
+      const rightOrigin = this.tree.nextNonDescendant(leftOrigin);
+      msg.rightOrigin = rightOrigin === null ? null : rightOrigin.id;
     } else {
       // Otherwise, the new node is added as a left child of rightOrigin, which
       // is the next node after leftOrigin *including tombstones*.

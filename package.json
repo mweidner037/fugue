@@ -13,6 +13,7 @@
     "crdt-benchmarks/benchmarks/automerge-wasm",
     "crdt-benchmarks/benchmarks/fugue",
     "crdt-benchmarks/benchmarks/fugue-simple",
+    "crdt-benchmarks/benchmarks/fugue-max-simple",
     "yjs-interleave"
   ],
   "scripts": {
