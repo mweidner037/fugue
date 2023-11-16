@@ -2,7 +2,7 @@ import * as math from 'lib0/math';
 import { createMutex } from 'lib0/mutex';
 import * as t from 'lib0/testing';
 import { AbstractCrdt, CrdtFactory } from './index.js'; // eslint-disable-line
-import { benchmarkTime, getMemUsed, logMemoryUsed, MEASURED_TRIALS, N, runBenchmark, setBenchmarkResult, WARMUP_TRIALS } from './utils.js';
+import { MEASURED_TRIALS, N, WARMUP_TRIALS, benchmarkTime, getMemUsed, logMemoryUsed, runBenchmark, setBenchmarkResult } from './utils.js';
 
 const sqrtN = math.floor(math.sqrt(N)) * 20
 console.log('sqrtN =', sqrtN)
@@ -34,19 +34,18 @@ export const runBenchmarkB3 = async (crdtFactory, filter) => {
         t.assert(updates.length >= sqrtN)
         // sync client 0 for reference
         mux(() => {
-          docs[0].transact(() => {
-            for (let i = 0; i < updates.length; i++) {
-              docs[0].applyUpdate(updates[i])
-            }
-          })
+          // Unlike Yjs, Collabs expects "transact" to wrap local CRDT operations
+          // only, not applyUpdate calls. So we modify crdt-benchmarks to not
+          // call transact here or below.
+          for (let i = 0; i < updates.length; i++) {
+            docs[0].applyUpdate(updates[i])
+          }
         })
         benchmarkTime(crdtFactory.getName(), `${id} (time)`, () => {
           mux(() => {
-            docs[1].transact(() => {
-              for (let i = 0; i < updates.length; i++) {
-                docs[1].applyUpdate(updates[i])
-              }
-            })
+            for (let i = 0; i < updates.length; i++) {
+              docs[1].applyUpdate(updates[i])
+            }
           })
         }, trial)
         check(docs.slice(0, 2))
