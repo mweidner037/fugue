@@ -1,5 +1,5 @@
 import { CRuntime, ReplicaIDs } from "@collabs/collabs";
-import { Fugue, charArraySerializer } from "fugue";
+import { FugueArray, FugueText } from "fugue";
 import seedrandom from "seedrandom";
 import { AbstractCrdt, CrdtFactory } from "../../js-lib/index.js"; // eslint-disable-line
 
@@ -43,18 +43,18 @@ export class FugueCRDT {
       });
     }
     /**
-     * @type {Fugue<any>}
+     * @type {FugueArray<any>}
      */
-    this.carray = this.doc.registerCollab("array", (init) => new Fugue(init));
+    this.carray = this.doc.registerCollab("array", (init) => new FugueArray(init));
     // Text is represented as an array of character strings.
     // However, we use charArraySerializer to represent the whole text as a
     // single string when saving.
     /**
-     * @type {Fugue<string>}
+     * @type {FugueText}
      */
     this.ctext = this.doc.registerCollab(
       "text",
-      (init) => new Fugue(init, { valueArraySerializer: charArraySerializer })
+      (init) => new FugueText(init)
     );
   }
 
@@ -139,7 +139,7 @@ export class FugueCRDT {
    * @param {string} text
    */
   insertText(index, text) {
-    this.transact(() => this.ctext.insert(index, ...text));
+    this.transact(() => this.ctext.insert(index, text));
   }
 
   /**
@@ -156,7 +156,7 @@ export class FugueCRDT {
    * @return {string}
    */
   getText() {
-    return this.ctext.slice().join("");
+    return this.ctext.toString();
   }
 
   /**

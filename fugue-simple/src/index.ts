@@ -391,7 +391,9 @@ export class FugueSimple<T> extends CPrimitive {
     return bytes;
   }
 
-  loadPrimitive(savedState: Uint8Array): void {
+  loadPrimitive(savedState: Uint8Array | null): void {
+    if (savedState === null) return;
+
     if (GZIP) {
       savedState = pako.ungzip(savedState);
     }

@@ -1,2 +1,3 @@
-export * from "./fugue";
-export * from "./char_array_serializer";
+export * from "./fugue_array";
+export * from "./fugue_text";
+
