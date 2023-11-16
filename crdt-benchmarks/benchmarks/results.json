@@ -60,6 +60,18 @@
         "712 ms",
         "715 ms",
         "745 ms"
+      ],
+      "ywasm": [
+        "94 ms",
+        "96 ms",
+        "96 ms",
+        "97 ms",
+        "93 ms",
+        "96 ms",
+        "94 ms",
+        "95 ms",
+        "97 ms",
+        "94 ms"
       ]
     },
     "[B1.1] Append N characters (avgUpdateSize)": {
@@ -122,6 +134,18 @@
         "189 bytes",
         "189 bytes",
         "189 bytes"
+      ],
+      "ywasm": [
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes"
       ]
     },
     "[B1.1] Append N characters (encodeTime)": {
@@ -184,6 +208,18 @@
         "59 ms",
         "59 ms",
         "59 ms"
+      ],
+      "ywasm": [
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms"
       ]
     },
     "[B1.1] Append N characters (docSize)": {
@@ -246,6 +282,18 @@
         "42756 bytes",
         "42758 bytes",
         "42751 bytes"
+      ],
+      "ywasm": [
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes"
       ]
     },
     "[B1.1] Append N characters (memUsed)": {
@@ -308,6 +356,18 @@
         "2108360 bytes",
         "2135408 bytes",
         "2102840 bytes"
+      ],
+      "ywasm": [
+        "856 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "336 bytes",
+        "240 bytes",
+        "-266840 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes"
       ]
     },
     "[B1.1] Append N characters (parseTime)": {
@@ -370,6 +430,18 @@
         "101 ms",
         "110 ms",
         "102 ms"
+      ],
+      "ywasm": [
+        "88 ms",
+        "91 ms",
+        "92 ms",
+        "95 ms",
+        "91 ms",
+        "93 ms",
+        "95 ms",
+        "91 ms",
+        "99 ms",
+        "101 ms"
       ]
     },
     "[B1.2] Insert string of length N (time)": {
@@ -432,6 +504,18 @@
         "734 ms",
         "713 ms",
         "728 ms"
+      ],
+      "ywasm": [
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms"
       ]
     },
     "[B1.2] Insert string of length N (avgUpdateSize)": {
@@ -494,6 +578,18 @@
         "933679 bytes",
         "933679 bytes",
         "933679 bytes"
+      ],
+      "ywasm": [
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6030 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes"
       ]
     },
     "[B1.2] Insert string of length N (encodeTime)": {
@@ -556,6 +652,18 @@
         "64 ms",
         "63 ms",
         "63 ms"
+      ],
+      "ywasm": [
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms"
       ]
     },
     "[B1.2] Insert string of length N (docSize)": {
@@ -618,6 +726,18 @@
         "42763 bytes",
         "42770 bytes",
         "42769 bytes"
+      ],
+      "ywasm": [
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6030 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes",
+        "6031 bytes"
       ]
     },
     "[B1.2] Insert string of length N (memUsed)": {
@@ -680,6 +800,18 @@
         "2141992 bytes",
         "2105456 bytes",
         "2154880 bytes"
+      ],
+      "ywasm": [
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes"
       ]
     },
     "[B1.2] Insert string of length N (parseTime)": {
@@ -742,6 +874,18 @@
         "94 ms",
         "98 ms",
         "102 ms"
+      ],
+      "ywasm": [
+        "96 ms",
+        "102 ms",
+        "99 ms",
+        "102 ms",
+        "99 ms",
+        "102 ms",
+        "99 ms",
+        "98 ms",
+        "98 ms",
+        "99 ms"
       ]
     },
     "[B1.3] Prepend N characters (time)": {
@@ -804,6 +948,18 @@
         "503 ms",
         "524 ms",
         "504 ms"
+      ],
+      "ywasm": [
+        "37 ms",
+        "39 ms",
+        "39 ms",
+        "38 ms",
+        "36 ms",
+        "35 ms",
+        "36 ms",
+        "36 ms",
+        "37 ms",
+        "38 ms"
       ]
     },
     "[B1.3] Prepend N characters (avgUpdateSize)": {
@@ -866,6 +1022,18 @@
         "170 bytes",
         "170 bytes",
         "170 bytes"
+      ],
+      "ywasm": [
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes",
+        "27 bytes"
       ]
     },
     "[B1.3] Prepend N characters (encodeTime)": {
@@ -928,6 +1096,18 @@
         "60 ms",
         "60 ms",
         "58 ms"
+      ],
+      "ywasm": [
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "2 ms",
+        "1 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms"
       ]
     },
     "[B1.3] Prepend N characters (docSize)": {
@@ -990,6 +1170,18 @@
         "42715 bytes",
         "42709 bytes",
         "42716 bytes"
+      ],
+      "ywasm": [
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes",
+        "6041 bytes"
       ]
     },
     "[B1.3] Prepend N characters (memUsed)": {
@@ -1052,6 +1244,18 @@
         "2124576 bytes",
         "2125784 bytes",
         "2099152 bytes"
+      ],
+      "ywasm": [
+        "360 bytes",
+        "240 bytes",
+        "240 bytes",
+        "360 bytes",
+        "240 bytes",
+        "240 bytes",
+        "360 bytes",
+        "240 bytes",
+        "240 bytes",
+        "360 bytes"
       ]
     },
     "[B1.3] Prepend N characters (parseTime)": {
@@ -1114,6 +1318,18 @@
         "104 ms",
         "103 ms",
         "96 ms"
+      ],
+      "ywasm": [
+        "108 ms",
+        "110 ms",
+        "107 ms",
+        "109 ms",
+        "107 ms",
+        "111 ms",
+        "111 ms",
+        "111 ms",
+        "121 ms",
+        "117 ms"
       ]
     },
     "[B1.4] Insert N characters at random positions (time)": {
@@ -1176,6 +1392,18 @@
         "122 ms",
         "121 ms",
         "118 ms"
+      ],
+      "ywasm": [
+        "155 ms",
+        "177 ms",
+        "183 ms",
+        "180 ms",
+        "173 ms",
+        "178 ms",
+        "169 ms",
+        "184 ms",
+        "174 ms",
+        "176 ms"
       ]
     },
     "[B1.4] Insert N characters at random positions (avgUpdateSize)": {
@@ -1238,6 +1466,18 @@
         "196 bytes",
         "196 bytes",
         "196 bytes"
+      ],
+      "ywasm": [
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes",
+        "29 bytes"
       ]
     },
     "[B1.4] Insert N characters at random positions (encodeTime)": {
@@ -1300,6 +1540,18 @@
         "60 ms",
         "62 ms",
         "62 ms"
+      ],
+      "ywasm": [
+        "4 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "1 ms"
       ]
     },
     "[B1.4] Insert N characters at random positions (docSize)": {
@@ -1362,6 +1614,18 @@
         "36776 bytes",
         "36782 bytes",
         "36802 bytes"
+      ],
+      "ywasm": [
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes",
+        "29554 bytes"
       ]
     },
     "[B1.4] Insert N characters at random positions (memUsed)": {
@@ -1424,6 +1688,18 @@
         "2103432 bytes",
         "2109776 bytes",
         "2092976 bytes"
+      ],
+      "ywasm": [
+        "240 bytes",
+        "-389024 bytes",
+        "88 bytes",
+        "240 bytes",
+        "-97888 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "88 bytes",
+        "240 bytes"
       ]
     },
     "[B1.4] Insert N characters at random positions (parseTime)": {
@@ -1486,6 +1762,18 @@
         "99 ms",
         "105 ms",
         "103 ms"
+      ],
+      "ywasm": [
+        "160 ms",
+        "173 ms",
+        "185 ms",
+        "176 ms",
+        "172 ms",
+        "182 ms",
+        "176 ms",
+        "192 ms",
+        "205 ms",
+        "194 ms"
       ]
     },
     "[B1.5] Insert N words at random positions (time)": {
@@ -1548,6 +1836,18 @@
         "319 ms",
         "317 ms",
         "316 ms"
+      ],
+      "ywasm": [
+        "518 ms",
+        "518 ms",
+        "511 ms",
+        "504 ms",
+        "526 ms",
+        "524 ms",
+        "524 ms",
+        "517 ms",
+        "517 ms",
+        "506 ms"
       ]
     },
     "[B1.5] Insert N words at random positions (avgUpdateSize)": {
@@ -1610,6 +1910,18 @@
         "1137 bytes",
         "1137 bytes",
         "1137 bytes"
+      ],
+      "ywasm": [
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes",
+        "36 bytes"
       ]
     },
     "[B1.5] Insert N words at random positions (encodeTime)": {
@@ -1672,6 +1984,18 @@
         "148 ms",
         "150 ms",
         "147 ms"
+      ],
+      "ywasm": [
+        "4 ms",
+        "3 ms",
+        "3 ms",
+        "7 ms",
+        "4 ms",
+        "3 ms",
+        "13 ms",
+        "3 ms",
+        "3 ms",
+        "3 ms"
       ]
     },
     "[B1.5] Insert N words at random positions (docSize)": {
@@ -1734,6 +2058,18 @@
         "226983 bytes",
         "226980 bytes",
         "226984 bytes"
+      ],
+      "ywasm": [
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes",
+        "87924 bytes"
       ]
     },
     "[B1.5] Insert N words at random positions (memUsed)": {
@@ -1796,6 +2132,18 @@
         "12735776 bytes",
         "12727400 bytes",
         "12735200 bytes"
+      ],
+      "ywasm": [
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "88 bytes",
+        "240 bytes",
+        "240 bytes",
+        "88 bytes",
+        "-288120 bytes",
+        "240 bytes",
+        "240 bytes"
       ]
     },
     "[B1.5] Insert N words at random positions (parseTime)": {
@@ -1858,6 +2206,18 @@
         "172 ms",
         "169 ms",
         "178 ms"
+      ],
+      "ywasm": [
+        "193 ms",
+        "199 ms",
+        "196 ms",
+        "235 ms",
+        "200 ms",
+        "198 ms",
+        "240 ms",
+        "211 ms",
+        "208 ms",
+        "208 ms"
       ]
     },
     "[B1.6] Insert string, then delete it (time)": {
@@ -1920,6 +2280,18 @@
         "1193 ms",
         "1143 ms",
         "1106 ms"
+      ],
+      "ywasm": [
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms"
       ]
     },
     "[B1.6] Insert string, then delete it (avgUpdateSize)": {
@@ -1982,6 +2354,18 @@
         "1322481 bytes",
         "1322481 bytes",
         "1322481 bytes"
+      ],
+      "ywasm": [
+        "6052 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6053 bytes",
+        "6051 bytes",
+        "6053 bytes",
+        "6053 bytes"
       ]
     },
     "[B1.6] Insert string, then delete it (encodeTime)": {
@@ -2044,6 +2428,18 @@
         "42 ms",
         "42 ms",
         "42 ms"
+      ],
+      "ywasm": [
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms",
+        "0 ms"
       ]
     },
     "[B1.6] Insert string, then delete it (docSize)": {
@@ -2106,6 +2502,18 @@
         "17780 bytes",
         "17780 bytes",
         "17775 bytes"
+      ],
+      "ywasm": [
+        "37 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "38 bytes",
+        "36 bytes",
+        "38 bytes",
+        "38 bytes"
       ]
     },
     "[B1.6] Insert string, then delete it (memUsed)": {
@@ -2168,6 +2576,18 @@
         "2118304 bytes",
         "2118112 bytes",
         "2141992 bytes"
+      ],
+      "ywasm": [
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes"
       ]
     },
     "[B1.6] Insert string, then delete it (parseTime)": {
@@ -2230,6 +2650,18 @@
         "96 ms",
         "95 ms",
         "100 ms"
+      ],
+      "ywasm": [
+        "168 ms",
+        "167 ms",
+        "166 ms",
+        "165 ms",
+        "167 ms",
+        "167 ms",
+        "172 ms",
+        "165 ms",
+        "170 ms",
+        "166 ms"
       ]
     },
     "[B1.7] Insert/Delete strings at random positions (time)": {
@@ -2292,6 +2724,18 @@
         "309 ms",
         "309 ms",
         "301 ms"
+      ],
+      "ywasm": [
+        "204 ms",
+        "164 ms",
+        "164 ms",
+        "162 ms",
+        "161 ms",
+        "174 ms",
+        "175 ms",
+        "178 ms",
+        "160 ms",
+        "176 ms"
       ]
     },
     "[B1.7] Insert/Delete strings at random positions (avgUpdateSize)": {
@@ -2354,6 +2798,18 @@
         "737 bytes",
         "737 bytes",
         "737 bytes"
+      ],
+      "ywasm": [
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes",
+        "31 bytes"
       ]
     },
     "[B1.7] Insert/Delete strings at random positions (encodeTime)": {
@@ -2416,6 +2872,18 @@
         "85 ms",
         "87 ms",
         "86 ms"
+      ],
+      "ywasm": [
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms"
       ]
     },
     "[B1.7] Insert/Delete strings at random positions (docSize)": {
@@ -2478,6 +2946,18 @@
         "74693 bytes",
         "74687 bytes",
         "74786 bytes"
+      ],
+      "ywasm": [
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes",
+        "28377 bytes"
       ]
     },
     "[B1.7] Insert/Delete strings at random positions (memUsed)": {
@@ -2540,6 +3020,18 @@
         "6236816 bytes",
         "6242448 bytes",
         "6234688 bytes"
+      ],
+      "ywasm": [
+        "-173080 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "-218432 bytes",
+        "-64920 bytes",
+        "240 bytes",
+        "240 bytes",
+        "-233264 bytes",
+        "240 bytes"
       ]
     },
     "[B1.7] Insert/Delete strings at random positions (parseTime)": {
@@ -2602,6 +3094,18 @@
         "124 ms",
         "120 ms",
         "119 ms"
+      ],
+      "ywasm": [
+        "233 ms",
+        "248 ms",
+        "243 ms",
+        "252 ms",
+        "257 ms",
+        "250 ms",
+        "251 ms",
+        "267 ms",
+        "276 ms",
+        "262 ms"
       ]
     },
     "[B1.8] Append N numbers (time)": {
@@ -2664,6 +3168,18 @@
         "701 ms",
         "709 ms",
         "686 ms"
+      ],
+      "ywasm": [
+        "43 ms",
+        "43 ms",
+        "44 ms",
+        "41 ms",
+        "43 ms",
+        "41 ms",
+        "42 ms",
+        "44 ms",
+        "40 ms",
+        "42 ms"
       ]
     },
     "[B1.8] Append N numbers (avgUpdateSize)": {
@@ -2726,6 +3242,18 @@
         "196 bytes",
         "196 bytes",
         "196 bytes"
+      ],
+      "ywasm": [
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes"
       ]
     },
     "[B1.8] Append N numbers (encodeTime)": {
@@ -2788,6 +3316,18 @@
         "64 ms",
         "63 ms",
         "64 ms"
+      ],
+      "ywasm": [
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "5 ms",
+        "4 ms",
+        "0 ms",
+        "2 ms",
+        "2 ms",
+        "3 ms"
       ]
     },
     "[B1.8] Append N numbers (docSize)": {
@@ -2850,6 +3390,18 @@
         "74621 bytes",
         "74623 bytes",
         "74626 bytes"
+      ],
+      "ywasm": [
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes",
+        "35634 bytes"
       ]
     },
     "[B1.8] Append N numbers (memUsed)": {
@@ -2912,6 +3464,18 @@
         "2061552 bytes",
         "2101056 bytes",
         "2111944 bytes"
+      ],
+      "ywasm": [
+        "-69168 bytes",
+        "-33896 bytes",
+        "-115528 bytes",
+        "-126656 bytes",
+        "240 bytes",
+        "-100392 bytes",
+        "-31720 bytes",
+        "-97112 bytes",
+        "-101408 bytes",
+        "-69928 bytes"
       ]
     },
     "[B1.8] Append N numbers (parseTime)": {
@@ -2974,6 +3538,18 @@
         "112 ms",
         "108 ms",
         "113 ms"
+      ],
+      "ywasm": [
+        "204 ms",
+        "208 ms",
+        "209 ms",
+        "212 ms",
+        "209 ms",
+        "220 ms",
+        "206 ms",
+        "219 ms",
+        "222 ms",
+        "225 ms"
       ]
     },
     "[B1.9] Insert Array of N numbers (time)": {
@@ -3036,6 +3612,18 @@
         "832 ms",
         "831 ms",
         "827 ms"
+      ],
+      "ywasm": [
+        "11 ms",
+        "13 ms",
+        "13 ms",
+        "13 ms",
+        "13 ms",
+        "13 ms",
+        "13 ms",
+        "13 ms",
+        "13 ms",
+        "11 ms"
       ]
     },
     "[B1.9] Insert Array of N numbers (avgUpdateSize)": {
@@ -3098,6 +3686,18 @@
         "972653 bytes",
         "972653 bytes",
         "972653 bytes"
+      ],
+      "ywasm": [
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes"
       ]
     },
     "[B1.9] Insert Array of N numbers (encodeTime)": {
@@ -3160,6 +3760,18 @@
         "73 ms",
         "67 ms",
         "74 ms"
+      ],
+      "ywasm": [
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms"
       ]
     },
     "[B1.9] Insert Array of N numbers (docSize)": {
@@ -3222,6 +3834,18 @@
         "74726 bytes",
         "74736 bytes",
         "74720 bytes"
+      ],
+      "ywasm": [
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes",
+        "35657 bytes"
       ]
     },
     "[B1.9] Insert Array of N numbers (memUsed)": {
@@ -3284,6 +3908,18 @@
         "2118248 bytes",
         "2118248 bytes",
         "2118248 bytes"
+      ],
+      "ywasm": [
+        "-65848 bytes",
+        "-65848 bytes",
+        "-65848 bytes",
+        "-65848 bytes",
+        "-137456 bytes",
+        "-65848 bytes",
+        "-65848 bytes",
+        "-65848 bytes",
+        "-66992 bytes",
+        "-65848 bytes"
       ]
     },
     "[B1.9] Insert Array of N numbers (parseTime)": {
@@ -3346,6 +3982,18 @@
         "106 ms",
         "107 ms",
         "109 ms"
+      ],
+      "ywasm": [
+        "258 ms",
+        "243 ms",
+        "244 ms",
+        "249 ms",
+        "251 ms",
+        "251 ms",
+        "246 ms",
+        "249 ms",
+        "246 ms",
+        "257 ms"
       ]
     },
     "[B1.10] Prepend N numbers (time)": {
@@ -3408,6 +4056,18 @@
         "539 ms",
         "498 ms",
         "544 ms"
+      ],
+      "ywasm": [
+        "87 ms",
+        "96 ms",
+        "58 ms",
+        "57 ms",
+        "47 ms",
+        "60 ms",
+        "48 ms",
+        "56 ms",
+        "52 ms",
+        "95 ms"
       ]
     },
     "[B1.10] Prepend N numbers (avgUpdateSize)": {
@@ -3470,6 +4130,18 @@
         "177 bytes",
         "177 bytes",
         "177 bytes"
+      ],
+      "ywasm": [
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "31 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes",
+        "32 bytes"
       ]
     },
     "[B1.10] Prepend N numbers (encodeTime)": {
@@ -3532,6 +4204,18 @@
         "71 ms",
         "71 ms",
         "72 ms"
+      ],
+      "ywasm": [
+        "1 ms",
+        "4 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "3 ms",
+        "2 ms",
+        "2 ms",
+        "2 ms",
+        "1 ms"
       ]
     },
     "[B1.10] Prepend N numbers (docSize)": {
@@ -3594,6 +4278,18 @@
         "74596 bytes",
         "74593 bytes",
         "74594 bytes"
+      ],
+      "ywasm": [
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35664 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes",
+        "35665 bytes"
       ]
     },
     "[B1.10] Prepend N numbers (memUsed)": {
@@ -3656,6 +4352,18 @@
         "2104520 bytes",
         "2109912 bytes",
         "2101272 bytes"
+      ],
+      "ywasm": [
+        "-210160 bytes",
+        "-67088 bytes",
+        "-175888 bytes",
+        "-76240 bytes",
+        "-88224 bytes",
+        "-84680 bytes",
+        "-123264 bytes",
+        "-70848 bytes",
+        "-100832 bytes",
+        "360 bytes"
       ]
     },
     "[B1.10] Prepend N numbers (parseTime)": {
@@ -3718,6 +4426,18 @@
         "109 ms",
         "106 ms",
         "109 ms"
+      ],
+      "ywasm": [
+        "278 ms",
+        "320 ms",
+        "327 ms",
+        "335 ms",
+        "324 ms",
+        "323 ms",
+        "349 ms",
+        "336 ms",
+        "348 ms",
+        "292 ms"
       ]
     },
     "[B1.11] Insert N numbers at random positions (time)": {
@@ -3780,6 +4500,18 @@
         "121 ms",
         "120 ms",
         "118 ms"
+      ],
+      "ywasm": [
+        "269 ms",
+        "258 ms",
+        "412 ms",
+        "411 ms",
+        "420 ms",
+        "420 ms",
+        "435 ms",
+        "459 ms",
+        "410 ms",
+        "415 ms"
       ]
     },
     "[B1.11] Insert N numbers at random positions (avgUpdateSize)": {
@@ -3842,6 +4574,18 @@
         "203 bytes",
         "203 bytes",
         "203 bytes"
+      ],
+      "ywasm": [
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes",
+        "34 bytes"
       ]
     },
     "[B1.11] Insert N numbers at random positions (encodeTime)": {
@@ -3904,6 +4648,18 @@
         "65 ms",
         "66 ms",
         "64 ms"
+      ],
+      "ywasm": [
+        "12 ms",
+        "2 ms",
+        "3 ms",
+        "12 ms",
+        "13 ms",
+        "13 ms",
+        "12 ms",
+        "3 ms",
+        "4 ms",
+        "10 ms"
       ]
     },
     "[B1.11] Insert N numbers at random positions (docSize)": {
@@ -3966,6 +4722,18 @@
         "68018 bytes",
         "68018 bytes",
         "68016 bytes"
+      ],
+      "ywasm": [
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes",
+        "59137 bytes"
       ]
     },
     "[B1.11] Insert N numbers at random positions (memUsed)": {
@@ -4028,6 +4796,18 @@
         "2108920 bytes",
         "2102824 bytes",
         "2108832 bytes"
+      ],
+      "ywasm": [
+        "360 bytes",
+        "-95936 bytes",
+        "-66680 bytes",
+        "360 bytes",
+        "360 bytes",
+        "360 bytes",
+        "360 bytes",
+        "-87016 bytes",
+        "-252872 bytes",
+        "360 bytes"
       ]
     },
     "[B1.11] Insert N numbers at random positions (parseTime)": {
@@ -4090,6 +4870,18 @@
         "108 ms",
         "108 ms",
         "108 ms"
+      ],
+      "ywasm": [
+        "358 ms",
+        "341 ms",
+        "361 ms",
+        "366 ms",
+        "368 ms",
+        "377 ms",
+        "370 ms",
+        "358 ms",
+        "340 ms",
+        "332 ms"
       ]
     },
     "[B2.1] Concurrently insert string of length N at index 0 (time)": {
@@ -4152,6 +4944,18 @@
         "1544 ms",
         "1611 ms",
         "1598 ms"
+      ],
+      "ywasm": [
+        "0 ms",
+        "14 ms",
+        "0 ms",
+        "16 ms",
+        "0 ms",
+        "0 ms",
+        "14 ms",
+        "0 ms",
+        "0 ms",
+        "15 ms"
       ]
     },
     "[B2.1] Concurrently insert string of length N at index 0 (updateSize)": {
@@ -4214,6 +5018,18 @@
         "1133409 bytes",
         "1133409 bytes",
         "1133409 bytes"
+      ],
+      "ywasm": [
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6093 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes",
+        "6094 bytes"
       ]
     },
     "[B2.1] Concurrently insert string of length N at index 0 (encodeTime)": {
@@ -4276,6 +5092,18 @@
         "77 ms",
         "77 ms",
         "76 ms"
+      ],
+      "ywasm": [
+        "0 ms",
+        "1 ms",
+        "0 ms",
+        "0 ms",
+        "13 ms",
+        "0 ms",
+        "1 ms",
+        "15 ms",
+        "0 ms",
+        "1 ms"
       ]
     },
     "[B2.1] Concurrently insert string of length N at index 0 (docSize)": {
@@ -4338,6 +5166,18 @@
         "86399 bytes",
         "86399 bytes",
         "86394 bytes"
+      ],
+      "ywasm": [
+        "12152 bytes",
+        "12151 bytes",
+        "12152 bytes",
+        "12150 bytes",
+        "12152 bytes",
+        "12152 bytes",
+        "12151 bytes",
+        "12151 bytes",
+        "12152 bytes",
+        "12151 bytes"
       ]
     },
     "[B2.1] Concurrently insert string of length N at index 0 (memUsed)": {
@@ -4400,6 +5240,18 @@
         "4265656 bytes",
         "4265656 bytes",
         "4265656 bytes"
+      ],
+      "ywasm": [
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "336 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes"
       ]
     },
     "[B2.1] Concurrently insert string of length N at index 0 (parseTime)": {
@@ -4462,6 +5314,18 @@
         "107 ms",
         "113 ms",
         "111 ms"
+      ],
+      "ywasm": [
+        "260 ms",
+        "317 ms",
+        "263 ms",
+        "310 ms",
+        "317 ms",
+        "259 ms",
+        "311 ms",
+        "323 ms",
+        "261 ms",
+        "311 ms"
       ]
     },
     "[B2.2] Concurrently insert N characters at random positions (time)": {
@@ -4524,6 +5388,18 @@
         "172 ms",
         "172 ms",
         "170 ms"
+      ],
+      "ywasm": [
+        "560 ms",
+        "543 ms",
+        "565 ms",
+        "551 ms",
+        "552 ms",
+        "554 ms",
+        "581 ms",
+        "548 ms",
+        "537 ms",
+        "550 ms"
       ]
     },
     "[B2.2] Concurrently insert N characters at random positions (updateSize)": {
@@ -4586,6 +5462,18 @@
         "982466 bytes",
         "982466 bytes",
         "982466 bytes"
+      ],
+      "ywasm": [
+        "177007 bytes",
+        "177007 bytes",
+        "177007 bytes",
+        "177007 bytes",
+        "177007 bytes",
+        "177007 bytes",
+        "177007 bytes",
+        "177007 bytes",
+        "177007 bytes",
+        "177007 bytes"
       ]
     },
     "[B2.2] Concurrently insert N characters at random positions (encodeTime)": {
@@ -4648,6 +5536,18 @@
         "79 ms",
         "78 ms",
         "79 ms"
+      ],
+      "ywasm": [
+        "3 ms",
+        "3 ms",
+        "17 ms",
+        "19 ms",
+        "2 ms",
+        "3 ms",
+        "3 ms",
+        "4 ms",
+        "3 ms",
+        "3 ms"
       ]
     },
     "[B2.2] Concurrently insert N characters at random positions (docSize)": {
@@ -4710,6 +5610,18 @@
         "74381 bytes",
         "74375 bytes",
         "74372 bytes"
+      ],
+      "ywasm": [
+        "66860 bytes",
+        "66860 bytes",
+        "66860 bytes",
+        "66852 bytes",
+        "66860 bytes",
+        "66860 bytes",
+        "66860 bytes",
+        "66860 bytes",
+        "66852 bytes",
+        "66852 bytes"
       ]
     },
     "[B2.2] Concurrently insert N characters at random positions (memUsed)": {
@@ -4772,6 +5684,18 @@
         "4265656 bytes",
         "4265656 bytes",
         "4265656 bytes"
+      ],
+      "ywasm": [
+        "360 bytes",
+        "360 bytes",
+        "200 bytes",
+        "200 bytes",
+        "360 bytes",
+        "360 bytes",
+        "360 bytes",
+        "240 bytes",
+        "360 bytes",
+        "360 bytes"
       ]
     },
     "[B2.2] Concurrently insert N characters at random positions (parseTime)": {
@@ -4834,6 +5758,18 @@
         "112 ms",
         "111 ms",
         "105 ms"
+      ],
+      "ywasm": [
+        "340 ms",
+        "341 ms",
+        "373 ms",
+        "386 ms",
+        "354 ms",
+        "349 ms",
+        "378 ms",
+        "347 ms",
+        "348 ms",
+        "355 ms"
       ]
     },
     "[B2.3] Concurrently insert N words at random positions (time)": {
@@ -4896,6 +5832,18 @@
         "802 ms",
         "800 ms",
         "800 ms"
+      ],
+      "ywasm": [
+        "1348 ms",
+        "1346 ms",
+        "1313 ms",
+        "1326 ms",
+        "1332 ms",
+        "1330 ms",
+        "1321 ms",
+        "1318 ms",
+        "1737 ms",
+        "1469 ms"
       ]
     },
     "[B2.3] Concurrently insert N words at random positions (updateSize)": {
@@ -4958,6 +5906,18 @@
         "6613084 bytes",
         "6613084 bytes",
         "6613084 bytes"
+      ],
+      "ywasm": [
+        "215213 bytes",
+        "215213 bytes",
+        "215213 bytes",
+        "212195 bytes",
+        "215213 bytes",
+        "215213 bytes",
+        "215213 bytes",
+        "215213 bytes",
+        "215213 bytes",
+        "215213 bytes"
       ]
     },
     "[B2.3] Concurrently insert N words at random positions (encodeTime)": {
@@ -5020,6 +5980,18 @@
         "249 ms",
         "251 ms",
         "250 ms"
+      ],
+      "ywasm": [
+        "20 ms",
+        "5 ms",
+        "6 ms",
+        "5 ms",
+        "5 ms",
+        "6 ms",
+        "6 ms",
+        "6 ms",
+        "16 ms",
+        "6 ms"
       ]
     },
     "[B2.3] Concurrently insert N words at random positions (docSize)": {
@@ -5082,6 +6054,18 @@
         "449116 bytes",
         "449113 bytes",
         "449124 bytes"
+      ],
+      "ywasm": [
+        "178130 bytes",
+        "178137 bytes",
+        "178130 bytes",
+        "177889 bytes",
+        "178130 bytes",
+        "178137 bytes",
+        "178130 bytes",
+        "178137 bytes",
+        "178137 bytes",
+        "178137 bytes"
       ]
     },
     "[B2.3] Concurrently insert N words at random positions (memUsed)": {
@@ -5144,6 +6128,18 @@
         "25259360 bytes",
         "25259360 bytes",
         "25198808 bytes"
+      ],
+      "ywasm": [
+        "240 bytes",
+        "80 bytes",
+        "240 bytes",
+        "80 bytes",
+        "80 bytes",
+        "240 bytes",
+        "80 bytes",
+        "80 bytes",
+        "240 bytes",
+        "80 bytes"
       ]
     },
     "[B2.3] Concurrently insert N words at random positions (parseTime)": {
@@ -5206,6 +6202,18 @@
         "252 ms",
         "249 ms",
         "252 ms"
+      ],
+      "ywasm": [
+        "381 ms",
+        "357 ms",
+        "377 ms",
+        "367 ms",
+        "359 ms",
+        "374 ms",
+        "377 ms",
+        "375 ms",
+        "391 ms",
+        "375 ms"
       ]
     },
     "[B2.4] Concurrently insert & delete (time)": {
@@ -5268,6 +6276,18 @@
         "1368 ms",
         "1372 ms",
         "1356 ms"
+      ],
+      "ywasm": [
+        "3455 ms",
+        "3389 ms",
+        "3436 ms",
+        "3404 ms",
+        "3407 ms",
+        "3456 ms",
+        "3433 ms",
+        "3430 ms",
+        "3362 ms",
+        "3418 ms"
       ]
     },
     "[B2.4] Concurrently insert & delete (updateSize)": {
@@ -5330,6 +6350,18 @@
         "10947346 bytes",
         "10947346 bytes",
         "10947346 bytes"
+      ],
+      "ywasm": [
+        "398881 bytes",
+        "398881 bytes",
+        "397372 bytes",
+        "398881 bytes",
+        "398881 bytes",
+        "398881 bytes",
+        "397370 bytes",
+        "386813 bytes",
+        "398881 bytes",
+        "398881 bytes"
       ]
     },
     "[B2.4] Concurrently insert & delete (encodeTime)": {
@@ -5392,6 +6424,18 @@
         "421 ms",
         "387 ms",
         "398 ms"
+      ],
+      "ywasm": [
+        "8 ms",
+        "7 ms",
+        "8 ms",
+        "8 ms",
+        "8 ms",
+        "8 ms",
+        "7 ms",
+        "8 ms",
+        "8 ms",
+        "7 ms"
       ]
     },
     "[B2.4] Concurrently insert & delete (docSize)": {
@@ -5454,6 +6498,18 @@
         "639826 bytes",
         "639852 bytes",
         "639861 bytes"
+      ],
+      "ywasm": [
+        "279172 bytes",
+        "279166 bytes",
+        "279171 bytes",
+        "279172 bytes",
+        "279166 bytes",
+        "279166 bytes",
+        "279165 bytes",
+        "278676 bytes",
+        "279166 bytes",
+        "279166 bytes"
       ]
     },
     "[B2.4] Concurrently insert & delete (memUsed)": {
@@ -5516,6 +6572,18 @@
         "37851952 bytes",
         "37910688 bytes",
         "37849048 bytes"
+      ],
+      "ywasm": [
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes",
+        "240 bytes"
       ]
     },
     "[B2.4] Concurrently insert & delete (parseTime)": {
@@ -5578,6 +6646,18 @@
         "323 ms",
         "321 ms",
         "323 ms"
+      ],
+      "ywasm": [
+        "383 ms",
+        "377 ms",
+        "385 ms",
+        "344 ms",
+        "361 ms",
+        "357 ms",
+        "370 ms",
+        "390 ms",
+        "383 ms",
+        "395 ms"
       ]
     },
     "[B3.4] 20√N clients concurrently insert text in Array (memUsed)": {
@@ -5665,6 +6745,23 @@
         "622520 bytes",
         "612432 bytes",
         "621496 bytes"
+      ],
+      "ywasm": [
+        "-256240 bytes",
+        "0 bytes",
+        "-62448 bytes",
+        "360 bytes",
+        "0 bytes",
+        "0 bytes",
+        "0 bytes",
+        "-64448 bytes",
+        "-224344 bytes",
+        "360 bytes",
+        "224 bytes",
+        "224 bytes",
+        "224 bytes",
+        "224 bytes",
+        "224 bytes"
       ]
     },
     "[B3.4] 20√N clients concurrently insert text in Array (time)": {
@@ -5727,6 +6824,18 @@
         "43 ms",
         "41 ms",
         "47 ms"
+      ],
+      "ywasm": [
+        "321 ms",
+        "314 ms",
+        "327 ms",
+        "312 ms",
+        "307 ms",
+        "311 ms",
+        "314 ms",
+        "322 ms",
+        "312 ms",
+        "321 ms"
       ]
     },
     "[B3.4] 20√N clients concurrently insert text in Array (updateSize)": {
@@ -5789,6 +6898,18 @@
         "269930 bytes",
         "269930 bytes",
         "269930 bytes"
+      ],
+      "ywasm": [
+        "52743 bytes",
+        "52731 bytes",
+        "52744 bytes",
+        "52735 bytes",
+        "52733 bytes",
+        "52736 bytes",
+        "52752 bytes",
+        "52740 bytes",
+        "52745 bytes",
+        "52735 bytes"
       ]
     },
     "[B3.4] 20√N clients concurrently insert text in Array (encodeTime)": {
@@ -5851,6 +6972,18 @@
         "50 ms",
         "49 ms",
         "50 ms"
+      ],
+      "ywasm": [
+        "1 ms",
+        "1 ms",
+        "3 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms",
+        "1 ms"
       ]
     },
     "[B3.4] 20√N clients concurrently insert text in Array (docSize)": {
@@ -5913,6 +7046,18 @@
         "57377 bytes",
         "57415 bytes",
         "57418 bytes"
+      ],
+      "ywasm": [
+        "26588 bytes",
+        "26576 bytes",
+        "26589 bytes",
+        "26580 bytes",
+        "26578 bytes",
+        "26581 bytes",
+        "26597 bytes",
+        "26585 bytes",
+        "26590 bytes",
+        "26580 bytes"
       ]
     },
     "[B3.4] 20√N clients concurrently insert text in Array (parseTime)": {
@@ -5975,6 +7120,18 @@
         "126 ms",
         "125 ms",
         "124 ms"
+      ],
+      "ywasm": [
+        "339 ms",
+        "343 ms",
+        "381 ms",
+        "335 ms",
+        "342 ms",
+        "359 ms",
+        "359 ms",
+        "360 ms",
+        "343 ms",
+        "360 ms"
       ]
     },
     "[B4] Apply real-world editing dataset (time)": {
@@ -6037,6 +7194,18 @@
         "15903 ms",
         "16404 ms",
         "15785 ms"
+      ],
+      "ywasm": [
+        "34902 ms",
+        "35084 ms",
+        "34940 ms",
+        "34938 ms",
+        "34845 ms",
+        "35016 ms",
+        "34991 ms",
+        "34989 ms",
+        "34913 ms",
+        "34999 ms"
       ]
     },
     "[B4] Apply real-world editing dataset (memUsed)": {
@@ -6099,6 +7268,18 @@
         "64819304 bytes",
         "64821688 bytes",
         "64846544 bytes"
+      ],
+      "ywasm": [
+        "-9400 bytes",
+        "-10624 bytes",
+        "-15952 bytes",
+        "-15720 bytes",
+        "-10496 bytes",
+        "-9904 bytes",
+        "-1928 bytes",
+        "-17504 bytes",
+        "-13000 bytes",
+        "-10984 bytes"
       ]
     },
     "[B4] Apply real-world editing dataset (updateSize)": {
@@ -6161,6 +7342,18 @@
         "48962944 bytes",
         "48962944 bytes",
         "48962944 bytes"
+      ],
+      "ywasm": [
+        "7565904 bytes",
+        "7565904 bytes",
+        "7488441 bytes",
+        "7306126 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
+        "7306126 bytes",
+        "7565904 bytes",
+        "7565904 bytes",
+        "7565904 bytes"
       ]
     },
     "[B4] Apply real-world editing dataset (encodeTime)": {
@@ -6223,6 +7416,18 @@
         "580 ms",
         "585 ms",
         "587 ms"
+      ],
+      "ywasm": [
+        "5 ms",
+        "5 ms",
+        "4 ms",
+        "5 ms",
+        "5 ms",
+        "5 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms",
+        "4 ms"
       ]
     },
     "[B4] Apply real-world editing dataset (docSize)": {
@@ -6285,6 +7490,18 @@
         "1020961 bytes",
         "1021021 bytes",
         "1021062 bytes"
+      ],
+      "ywasm": [
+        "159929 bytes",
+        "159929 bytes",
+        "159928 bytes",
+        "159927 bytes",
+        "159929 bytes",
+        "159929 bytes",
+        "159927 bytes",
+        "159929 bytes",
+        "159929 bytes",
+        "159929 bytes"
       ]
     },
     "[B4] Apply real-world editing dataset (parseTime)": {
@@ -6347,6 +7564,18 @@
         "349 ms",
         "361 ms",
         "348 ms"
+      ],
+      "ywasm": [
+        "15 ms",
+        "15 ms",
+        "15 ms",
+        "15 ms",
+        "15 ms",
+        "15 ms",
+        "15 ms",
+        "15 ms",
+        "15 ms",
+        "15 ms"
       ]
     },
     "[B4.2] Measure docSize over time for real-world editing dataset (textSizeOverTime)": {
