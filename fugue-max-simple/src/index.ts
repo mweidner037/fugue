@@ -88,7 +88,7 @@ class Tree<T> {
     value: T,
     parent: Node<T>,
     side: "L" | "R",
-    rightOrigin?: Node<T> | null
+    rightOriginID?: ID | null
   ) {
     const node: Node<T> = {
       id,
@@ -100,7 +100,9 @@ class Tree<T> {
       rightChildren: [],
       size: 0,
     };
-    if (rightOrigin !== undefined) node.rightOrigin = rightOrigin;
+    if (rightOriginID !== undefined) {
+      node.rightOrigin = rightOriginID === null? null: this.getByID(rightOriginID);
+    }
 
     // Add to nodesByID.
     let bySender = this.nodesByID.get(id.sender);
@@ -534,7 +536,8 @@ export class FugueMaxSimple<T> extends CPrimitive {
           msg.id,
           msg.value,
           this.tree.getByID(msg.parent),
-          msg.side
+          msg.side,
+          msg.rightOrigin
         );
         // In a production implementation, we would emit an Insert event here.
         break;
