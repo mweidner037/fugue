@@ -50,16 +50,16 @@
         "530 ms"
       ],
       "fugue-max-simple": [
-        "714 ms",
+        "739 ms",
         "699 ms",
-        "776 ms",
-        "713 ms",
-        "723 ms",
-        "717 ms",
-        "706 ms",
+        "711 ms",
+        "708 ms",
+        "729 ms",
+        "743 ms",
+        "732 ms",
         "712 ms",
-        "715 ms",
-        "745 ms"
+        "702 ms",
+        "737 ms"
       ],
       "ywasm": [
         "94 ms",
@@ -198,16 +198,16 @@
         "59 ms"
       ],
       "fugue-max-simple": [
+        "60 ms",
+        "58 ms",
+        "60 ms",
+        "64 ms",
+        "59 ms",
+        "59 ms",
         "61 ms",
-        "59 ms",
+        "60 ms",
         "61 ms",
-        "60 ms",
-        "60 ms",
-        "62 ms",
-        "60 ms",
-        "59 ms",
-        "59 ms",
-        "59 ms"
+        "60 ms"
       ],
       "ywasm": [
         "0 ms",
@@ -272,16 +272,16 @@
         "42751 bytes"
       ],
       "fugue-max-simple": [
-        "42750 bytes",
-        "42754 bytes",
-        "42757 bytes",
-        "42754 bytes",
-        "42752 bytes",
-        "42759 bytes",
-        "42756 bytes",
-        "42756 bytes",
-        "42758 bytes",
-        "42751 bytes"
+        "45115 bytes",
+        "45119 bytes",
+        "45123 bytes",
+        "45119 bytes",
+        "45117 bytes",
+        "45122 bytes",
+        "45120 bytes",
+        "45118 bytes",
+        "45121 bytes",
+        "45117 bytes"
       ],
       "ywasm": [
         "6031 bytes",
@@ -346,16 +346,16 @@
         "2115120 bytes"
       ],
       "fugue-max-simple": [
-        "2117632 bytes",
-        "2108752 bytes",
-        "2117352 bytes",
-        "2104976 bytes",
-        "2142120 bytes",
-        "2102696 bytes",
-        "2133160 bytes",
-        "2108360 bytes",
-        "2135408 bytes",
-        "2102840 bytes"
+        "2364952 bytes",
+        "2575408 bytes",
+        "2366328 bytes",
+        "2335200 bytes",
+        "2369776 bytes",
+        "2347400 bytes",
+        "2539488 bytes",
+        "2507784 bytes",
+        "2544464 bytes",
+        "2342552 bytes"
       ],
       "ywasm": [
         "856 bytes",
@@ -420,16 +420,16 @@
         "108 ms"
       ],
       "fugue-max-simple": [
+        "109 ms",
+        "107 ms",
         "111 ms",
+        "112 ms",
+        "108 ms",
         "110 ms",
-        "103 ms",
         "107 ms",
         "110 ms",
-        "108 ms",
-        "111 ms",
-        "101 ms",
-        "110 ms",
-        "102 ms"
+        "107 ms",
+        "111 ms"
       ],
       "ywasm": [
         "88 ms",
@@ -494,16 +494,16 @@
         "569 ms"
       ],
       "fugue-max-simple": [
-        "721 ms",
-        "643 ms",
-        "720 ms",
-        "708 ms",
-        "722 ms",
-        "704 ms",
-        "719 ms",
-        "734 ms",
-        "713 ms",
-        "728 ms"
+        "796 ms",
+        "729 ms",
+        "796 ms",
+        "815 ms",
+        "822 ms",
+        "745 ms",
+        "786 ms",
+        "793 ms",
+        "798 ms",
+        "802 ms"
       ],
       "ywasm": [
         "0 ms",
@@ -642,16 +642,16 @@
         "64 ms"
       ],
       "fugue-max-simple": [
-        "61 ms",
         "62 ms",
         "62 ms",
         "62 ms",
-        "61 ms",
         "62 ms",
         "63 ms",
-        "64 ms",
+        "62 ms",
         "63 ms",
-        "63 ms"
+        "62 ms",
+        "62 ms",
+        "64 ms"
       ],
       "ywasm": [
         "0 ms",
@@ -716,16 +716,16 @@
         "42769 bytes"
       ],
       "fugue-max-simple": [
-        "42767 bytes",
-        "42769 bytes",
-        "42771 bytes",
-        "42774 bytes",
-        "42770 bytes",
-        "42768 bytes",
-        "42771 bytes",
-        "42763 bytes",
-        "42770 bytes",
-        "42769 bytes"
+        "45082 bytes",
+        "45084 bytes",
+        "45084 bytes",
+        "45086 bytes",
+        "45084 bytes",
+        "45083 bytes",
+        "45085 bytes",
+        "45078 bytes",
+        "45085 bytes",
+        "45083 bytes"
       ],
       "ywasm": [
         "6031 bytes",
@@ -790,16 +790,16 @@
         "2356952 bytes"
       ],
       "fugue-max-simple": [
-        "2154880 bytes",
-        "2105456 bytes",
-        "2154880 bytes",
-        "2105456 bytes",
-        "2154880 bytes",
-        "2105456 bytes",
-        "2131192 bytes",
-        "2141992 bytes",
-        "2105456 bytes",
-        "2154880 bytes"
+        "2346936 bytes",
+        "2369728 bytes",
+        "2520864 bytes",
+        "2504736 bytes",
+        "2346936 bytes",
+        "2369728 bytes",
+        "2346936 bytes",
+        "2369728 bytes",
+        "2346936 bytes",
+        "2543736 bytes"
       ],
       "ywasm": [
         "240 bytes",
@@ -864,16 +864,16 @@
         "104 ms"
       ],
       "fugue-max-simple": [
-        "94 ms",
-        "97 ms",
-        "97 ms",
-        "93 ms",
-        "93 ms",
-        "97 ms",
-        "100 ms",
-        "94 ms",
-        "98 ms",
-        "102 ms"
+        "103 ms",
+        "102 ms",
+        "104 ms",
+        "105 ms",
+        "103 ms",
+        "105 ms",
+        "102 ms",
+        "106 ms",
+        "108 ms",
+        "107 ms"
       ],
       "ywasm": [
         "96 ms",
@@ -938,16 +938,16 @@
         "514 ms"
       ],
       "fugue-max-simple": [
-        "493 ms",
-        "492 ms",
-        "568 ms",
-        "591 ms",
-        "558 ms",
-        "550 ms",
-        "508 ms",
-        "503 ms",
-        "524 ms",
-        "504 ms"
+        "545 ms",
+        "569 ms",
+        "544 ms",
+        "564 ms",
+        "539 ms",
+        "560 ms",
+        "556 ms",
+        "549 ms",
+        "565 ms",
+        "568 ms"
       ],
       "ywasm": [
         "37 ms",
@@ -1086,16 +1086,16 @@
         "60 ms"
       ],
       "fugue-max-simple": [
+        "61 ms",
+        "59 ms",
+        "59 ms",
+        "58 ms",
         "60 ms",
         "59 ms",
         "60 ms",
         "60 ms",
         "60 ms",
-        "59 ms",
-        "60 ms",
-        "60 ms",
-        "60 ms",
-        "58 ms"
+        "60 ms"
       ],
       "ywasm": [
         "0 ms",
@@ -1160,16 +1160,16 @@
         "42716 bytes"
       ],
       "fugue-max-simple": [
-        "42713 bytes",
-        "42715 bytes",
-        "42707 bytes",
-        "42709 bytes",
-        "42712 bytes",
-        "42711 bytes",
-        "42706 bytes",
-        "42715 bytes",
-        "42709 bytes",
-        "42716 bytes"
+        "42741 bytes",
+        "42742 bytes",
+        "42736 bytes",
+        "42737 bytes",
+        "42740 bytes",
+        "42739 bytes",
+        "42734 bytes",
+        "42742 bytes",
+        "42737 bytes",
+        "42743 bytes"
       ],
       "ywasm": [
         "6041 bytes",
@@ -1234,16 +1234,16 @@
         "2360000 bytes"
       ],
       "fugue-max-simple": [
-        "2103192 bytes",
-        "2111688 bytes",
-        "2124704 bytes",
-        "2098024 bytes",
-        "2115768 bytes",
-        "2135376 bytes",
-        "2088480 bytes",
-        "2124576 bytes",
-        "2125784 bytes",
-        "2099152 bytes"
+        "2113824 bytes",
+        "2131672 bytes",
+        "2129336 bytes",
+        "2306864 bytes",
+        "2173104 bytes",
+        "2304296 bytes",
+        "2288688 bytes",
+        "2156096 bytes",
+        "2120344 bytes",
+        "2127632 bytes"
       ],
       "ywasm": [
         "360 bytes",
@@ -1308,16 +1308,16 @@
         "109 ms"
       ],
       "fugue-max-simple": [
-        "100 ms",
-        "99 ms",
-        "99 ms",
-        "97 ms",
-        "95 ms",
-        "100 ms",
-        "101 ms",
+        "105 ms",
+        "103 ms",
+        "102 ms",
+        "103 ms",
         "104 ms",
         "103 ms",
-        "96 ms"
+        "105 ms",
+        "103 ms",
+        "98 ms",
+        "104 ms"
       ],
       "ywasm": [
         "108 ms",
@@ -1382,16 +1382,16 @@
         "126 ms"
       ],
       "fugue-max-simple": [
-        "120 ms",
-        "120 ms",
+        "126 ms",
+        "137 ms",
+        "128 ms",
+        "129 ms",
+        "135 ms",
+        "129 ms",
+        "132 ms",
         "131 ms",
-        "121 ms",
-        "122 ms",
-        "121 ms",
-        "123 ms",
-        "122 ms",
-        "121 ms",
-        "118 ms"
+        "129 ms",
+        "134 ms"
       ],
       "ywasm": [
         "155 ms",
@@ -1530,16 +1530,16 @@
         "61 ms"
       ],
       "fugue-max-simple": [
+        "66 ms",
+        "66 ms",
+        "66 ms",
+        "65 ms",
+        "66 ms",
         "64 ms",
-        "62 ms",
-        "61 ms",
-        "63 ms",
-        "61 ms",
-        "62 ms",
-        "62 ms",
-        "60 ms",
-        "62 ms",
-        "62 ms"
+        "65 ms",
+        "65 ms",
+        "67 ms",
+        "66 ms"
       ],
       "ywasm": [
         "4 ms",
@@ -1604,16 +1604,16 @@
         "36802 bytes"
       ],
       "fugue-max-simple": [
-        "36776 bytes",
-        "36773 bytes",
-        "36777 bytes",
-        "36780 bytes",
-        "36782 bytes",
-        "36778 bytes",
-        "36780 bytes",
-        "36776 bytes",
-        "36782 bytes",
-        "36802 bytes"
+        "48267 bytes",
+        "48266 bytes",
+        "48274 bytes",
+        "48268 bytes",
+        "48271 bytes",
+        "48262 bytes",
+        "48275 bytes",
+        "48260 bytes",
+        "48272 bytes",
+        "48293 bytes"
       ],
       "ywasm": [
         "29554 bytes",
@@ -1678,16 +1678,16 @@
         "2095304 bytes"
       ],
       "fugue-max-simple": [
-        "2098024 bytes",
-        "2115768 bytes",
-        "2124016 bytes",
-        "2079528 bytes",
-        "2125536 bytes",
-        "2099432 bytes",
-        "2103544 bytes",
-        "2103432 bytes",
-        "2109776 bytes",
-        "2092976 bytes"
+        "2216568 bytes",
+        "2540288 bytes",
+        "2230936 bytes",
+        "2222056 bytes",
+        "2268784 bytes",
+        "2297968 bytes",
+        "2265888 bytes",
+        "2211376 bytes",
+        "2231248 bytes",
+        "2225176 bytes"
       ],
       "ywasm": [
         "240 bytes",
@@ -1752,16 +1752,16 @@
         "106 ms"
       ],
       "fugue-max-simple": [
-        "100 ms",
-        "100 ms",
-        "100 ms",
-        "102 ms",
-        "101 ms",
-        "103 ms",
-        "101 ms",
-        "99 ms",
-        "105 ms",
-        "103 ms"
+        "108 ms",
+        "109 ms",
+        "109 ms",
+        "109 ms",
+        "108 ms",
+        "110 ms",
+        "110 ms",
+        "106 ms",
+        "109 ms",
+        "107 ms"
       ],
       "ywasm": [
         "160 ms",
@@ -1826,16 +1826,16 @@
         "285 ms"
       ],
       "fugue-max-simple": [
-        "316 ms",
-        "319 ms",
-        "316 ms",
         "330 ms",
-        "316 ms",
-        "316 ms",
-        "317 ms",
-        "319 ms",
-        "317 ms",
-        "316 ms"
+        "331 ms",
+        "330 ms",
+        "333 ms",
+        "328 ms",
+        "333 ms",
+        "331 ms",
+        "334 ms",
+        "332 ms",
+        "332 ms"
       ],
       "ywasm": [
         "518 ms",
@@ -1974,16 +1974,16 @@
         "147 ms"
       ],
       "fugue-max-simple": [
-        "145 ms",
-        "145 ms",
-        "146 ms",
-        "148 ms",
-        "150 ms",
-        "146 ms",
-        "148 ms",
-        "148 ms",
-        "150 ms",
-        "147 ms"
+        "181 ms",
+        "182 ms",
+        "182 ms",
+        "189 ms",
+        "183 ms",
+        "183 ms",
+        "189 ms",
+        "183 ms",
+        "182 ms",
+        "182 ms"
       ],
       "ywasm": [
         "4 ms",
@@ -2048,16 +2048,16 @@
         "226984 bytes"
       ],
       "fugue-max-simple": [
-        "226987 bytes",
-        "226975 bytes",
-        "226976 bytes",
-        "226989 bytes",
-        "226990 bytes",
-        "226980 bytes",
-        "227360 bytes",
-        "226983 bytes",
-        "226980 bytes",
-        "226984 bytes"
+        "325011 bytes",
+        "325015 bytes",
+        "325020 bytes",
+        "325059 bytes",
+        "325044 bytes",
+        "325047 bytes",
+        "325215 bytes",
+        "325036 bytes",
+        "325023 bytes",
+        "325028 bytes"
       ],
       "ywasm": [
         "87924 bytes",
@@ -2122,16 +2122,16 @@
         "12734928 bytes"
       ],
       "fugue-max-simple": [
-        "12729216 bytes",
-        "12734968 bytes",
-        "12729512 bytes",
-        "12735200 bytes",
-        "12728248 bytes",
-        "12735776 bytes",
-        "12730104 bytes",
-        "12735776 bytes",
-        "12727400 bytes",
-        "12735200 bytes"
+        "13942976 bytes",
+        "13949384 bytes",
+        "13667472 bytes",
+        "13893712 bytes",
+        "13718216 bytes",
+        "13873712 bytes",
+        "13854736 bytes",
+        "13695768 bytes",
+        "13894992 bytes",
+        "13704472 bytes"
       ],
       "ywasm": [
         "240 bytes",
@@ -2196,16 +2196,16 @@
         "179 ms"
       ],
       "fugue-max-simple": [
-        "170 ms",
-        "169 ms",
-        "171 ms",
-        "170 ms",
-        "171 ms",
-        "170 ms",
-        "170 ms",
-        "172 ms",
-        "169 ms",
-        "178 ms"
+        "213 ms",
+        "207 ms",
+        "209 ms",
+        "209 ms",
+        "208 ms",
+        "209 ms",
+        "204 ms",
+        "205 ms",
+        "207 ms",
+        "203 ms"
       ],
       "ywasm": [
         "193 ms",
@@ -2270,16 +2270,16 @@
         "943 ms"
       ],
       "fugue-max-simple": [
-        "1114 ms",
-        "1047 ms",
-        "1141 ms",
-        "1090 ms",
-        "1134 ms",
-        "1185 ms",
-        "1110 ms",
-        "1193 ms",
-        "1143 ms",
-        "1106 ms"
+        "1209 ms",
+        "1115 ms",
+        "1218 ms",
+        "1137 ms",
+        "1165 ms",
+        "1127 ms",
+        "1175 ms",
+        "1106 ms",
+        "1158 ms",
+        "1117 ms"
       ],
       "ywasm": [
         "0 ms",
@@ -2418,16 +2418,16 @@
         "41 ms"
       ],
       "fugue-max-simple": [
-        "41 ms",
-        "42 ms",
-        "40 ms",
-        "41 ms",
         "43 ms",
-        "41 ms",
-        "41 ms",
-        "42 ms",
-        "42 ms",
-        "42 ms"
+        "45 ms",
+        "44 ms",
+        "44 ms",
+        "44 ms",
+        "44 ms",
+        "44 ms",
+        "43 ms",
+        "44 ms",
+        "44 ms"
       ],
       "ywasm": [
         "0 ms",
@@ -2492,16 +2492,16 @@
         "17775 bytes"
       ],
       "fugue-max-simple": [
-        "17776 bytes",
-        "17774 bytes",
-        "17775 bytes",
-        "17777 bytes",
-        "17779 bytes",
-        "17771 bytes",
-        "17780 bytes",
-        "17780 bytes",
-        "17780 bytes",
-        "17775 bytes"
+        "17220 bytes",
+        "17218 bytes",
+        "17220 bytes",
+        "17220 bytes",
+        "17222 bytes",
+        "17217 bytes",
+        "17222 bytes",
+        "17222 bytes",
+        "17222 bytes",
+        "17218 bytes"
       ],
       "ywasm": [
         "37 bytes",
@@ -2566,16 +2566,16 @@
         "2118304 bytes"
       ],
       "fugue-max-simple": [
-        "2118304 bytes",
-        "2141992 bytes",
-        "2105456 bytes",
-        "2131192 bytes",
-        "2118304 bytes",
-        "2118112 bytes",
-        "2118304 bytes",
-        "2118304 bytes",
-        "2118112 bytes",
-        "2141992 bytes"
+        "2371360 bytes",
+        "2345504 bytes",
+        "2502600 bytes",
+        "2345504 bytes",
+        "2626400 bytes",
+        "2367168 bytes",
+        "2401560 bytes",
+        "2489672 bytes",
+        "2378104 bytes",
+        "2368992 bytes"
       ],
       "ywasm": [
         "240 bytes",
@@ -2640,16 +2640,16 @@
         "100 ms"
       ],
       "fugue-max-simple": [
-        "97 ms",
-        "98 ms",
+        "104 ms",
+        "101 ms",
+        "105 ms",
         "106 ms",
-        "98 ms",
-        "100 ms",
-        "93 ms",
-        "99 ms",
-        "96 ms",
-        "95 ms",
-        "100 ms"
+        "108 ms",
+        "107 ms",
+        "103 ms",
+        "105 ms",
+        "107 ms",
+        "107 ms"
       ],
       "ywasm": [
         "168 ms",
@@ -2714,16 +2714,16 @@
         "290 ms"
       ],
       "fugue-max-simple": [
-        "308 ms",
-        "302 ms",
-        "306 ms",
-        "306 ms",
-        "308 ms",
-        "306 ms",
-        "306 ms",
-        "309 ms",
-        "309 ms",
-        "301 ms"
+        "318 ms",
+        "318 ms",
+        "318 ms",
+        "320 ms",
+        "321 ms",
+        "319 ms",
+        "321 ms",
+        "322 ms",
+        "319 ms",
+        "319 ms"
       ],
       "ywasm": [
         "204 ms",
@@ -2862,16 +2862,16 @@
         "87 ms"
       ],
       "fugue-max-simple": [
-        "87 ms",
-        "85 ms",
-        "86 ms",
-        "86 ms",
-        "87 ms",
-        "86 ms",
-        "86 ms",
-        "85 ms",
-        "87 ms",
-        "86 ms"
+        "108 ms",
+        "108 ms",
+        "107 ms",
+        "107 ms",
+        "106 ms",
+        "108 ms",
+        "107 ms",
+        "108 ms",
+        "108 ms",
+        "117 ms"
       ],
       "ywasm": [
         "2 ms",
@@ -2936,16 +2936,16 @@
         "74786 bytes"
       ],
       "fugue-max-simple": [
-        "74690 bytes",
-        "74692 bytes",
-        "74787 bytes",
-        "74693 bytes",
-        "74686 bytes",
-        "74690 bytes",
-        "74693 bytes",
-        "74693 bytes",
-        "74687 bytes",
-        "74786 bytes"
+        "102805 bytes",
+        "102803 bytes",
+        "102956 bytes",
+        "102803 bytes",
+        "102797 bytes",
+        "102803 bytes",
+        "102802 bytes",
+        "102807 bytes",
+        "102811 bytes",
+        "102945 bytes"
       ],
       "ywasm": [
         "28377 bytes",
@@ -3010,16 +3010,16 @@
         "6233584 bytes"
       ],
       "fugue-max-simple": [
-        "6242560 bytes",
-        "6237280 bytes",
-        "6244264 bytes",
-        "6234048 bytes",
-        "6244024 bytes",
-        "6235264 bytes",
-        "6240792 bytes",
-        "6236816 bytes",
-        "6242448 bytes",
-        "6234688 bytes"
+        "6805496 bytes",
+        "6849400 bytes",
+        "6802568 bytes",
+        "6848648 bytes",
+        "6625672 bytes",
+        "6848952 bytes",
+        "6758552 bytes",
+        "6849064 bytes",
+        "6633088 bytes",
+        "6849288 bytes"
       ],
       "ywasm": [
         "-173080 bytes",
@@ -3084,16 +3084,16 @@
         "125 ms"
       ],
       "fugue-max-simple": [
-        "122 ms",
-        "124 ms",
-        "119 ms",
-        "118 ms",
-        "125 ms",
-        "117 ms",
-        "120 ms",
-        "124 ms",
-        "120 ms",
-        "119 ms"
+        "139 ms",
+        "142 ms",
+        "143 ms",
+        "137 ms",
+        "142 ms",
+        "139 ms",
+        "143 ms",
+        "140 ms",
+        "141 ms",
+        "138 ms"
       ],
       "ywasm": [
         "233 ms",
@@ -3158,16 +3158,16 @@
         "531 ms"
       ],
       "fugue-max-simple": [
+        "744 ms",
+        "710 ms",
+        "707 ms",
         "692 ms",
-        "688 ms",
-        "742 ms",
-        "717 ms",
-        "690 ms",
-        "666 ms",
-        "694 ms",
+        "705 ms",
+        "722 ms",
         "701 ms",
-        "709 ms",
-        "686 ms"
+        "695 ms",
+        "754 ms",
+        "702 ms"
       ],
       "ywasm": [
         "43 ms",
@@ -3306,16 +3306,16 @@
         "64 ms"
       ],
       "fugue-max-simple": [
-        "63 ms",
+        "65 ms",
+        "66 ms",
+        "64 ms",
+        "64 ms",
+        "72 ms",
+        "65 ms",
         "65 ms",
         "63 ms",
-        "64 ms",
-        "64 ms",
-        "63 ms",
-        "63 ms",
-        "64 ms",
-        "63 ms",
-        "64 ms"
+        "70 ms",
+        "65 ms"
       ],
       "ywasm": [
         "2 ms",
@@ -3380,16 +3380,16 @@
         "74626 bytes"
       ],
       "fugue-max-simple": [
-        "74622 bytes",
-        "74623 bytes",
-        "74622 bytes",
-        "74624 bytes",
-        "74622 bytes",
-        "74624 bytes",
-        "74624 bytes",
-        "74621 bytes",
-        "74623 bytes",
-        "74626 bytes"
+        "75721 bytes",
+        "75723 bytes",
+        "75721 bytes",
+        "75722 bytes",
+        "75725 bytes",
+        "75722 bytes",
+        "75723 bytes",
+        "75720 bytes",
+        "75723 bytes",
+        "75725 bytes"
       ],
       "ywasm": [
         "35634 bytes",
@@ -3454,16 +3454,16 @@
         "2098272 bytes"
       ],
       "fugue-max-simple": [
-        "2104264 bytes",
-        "2110504 bytes",
-        "2103952 bytes",
-        "2110128 bytes",
-        "2102848 bytes",
-        "2110504 bytes",
-        "2104264 bytes",
-        "2061552 bytes",
-        "2101056 bytes",
-        "2111944 bytes"
+        "2325304 bytes",
+        "2361328 bytes",
+        "2513840 bytes",
+        "2349888 bytes",
+        "2325968 bytes",
+        "2531816 bytes",
+        "2518464 bytes",
+        "2350576 bytes",
+        "2483280 bytes",
+        "2362064 bytes"
       ],
       "ywasm": [
         "-69168 bytes",
@@ -3528,16 +3528,16 @@
         "114 ms"
       ],
       "fugue-max-simple": [
-        "108 ms",
-        "111 ms",
-        "103 ms",
-        "107 ms",
-        "106 ms",
-        "109 ms",
-        "112 ms",
-        "112 ms",
-        "108 ms",
-        "113 ms"
+        "115 ms",
+        "123 ms",
+        "120 ms",
+        "114 ms",
+        "118 ms",
+        "124 ms",
+        "119 ms",
+        "115 ms",
+        "115 ms",
+        "123 ms"
       ],
       "ywasm": [
         "204 ms",
@@ -3602,16 +3602,16 @@
         "567 ms"
       ],
       "fugue-max-simple": [
-        "828 ms",
-        "737 ms",
-        "819 ms",
-        "832 ms",
-        "828 ms",
-        "832 ms",
-        "827 ms",
-        "832 ms",
-        "831 ms",
-        "827 ms"
+        "915 ms",
+        "910 ms",
+        "909 ms",
+        "908 ms",
+        "912 ms",
+        "786 ms",
+        "912 ms",
+        "922 ms",
+        "913 ms",
+        "912 ms"
       ],
       "ywasm": [
         "11 ms",
@@ -3750,16 +3750,16 @@
         "77 ms"
       ],
       "fugue-max-simple": [
-        "73 ms",
-        "75 ms",
-        "73 ms",
-        "65 ms",
-        "75 ms",
-        "64 ms",
-        "74 ms",
-        "73 ms",
         "67 ms",
-        "74 ms"
+        "66 ms",
+        "67 ms",
+        "74 ms",
+        "68 ms",
+        "74 ms",
+        "67 ms",
+        "66 ms",
+        "67 ms",
+        "67 ms"
       ],
       "ywasm": [
         "2 ms",
@@ -3824,16 +3824,16 @@
         "74720 bytes"
       ],
       "fugue-max-simple": [
-        "74723 bytes",
-        "74723 bytes",
-        "74724 bytes",
-        "74725 bytes",
-        "74727 bytes",
-        "74718 bytes",
-        "74722 bytes",
-        "74726 bytes",
-        "74736 bytes",
-        "74720 bytes"
+        "75837 bytes",
+        "75832 bytes",
+        "75840 bytes",
+        "75841 bytes",
+        "75841 bytes",
+        "75830 bytes",
+        "75833 bytes",
+        "75840 bytes",
+        "75840 bytes",
+        "75834 bytes"
       ],
       "ywasm": [
         "35657 bytes",
@@ -3898,16 +3898,16 @@
         "2129712 bytes"
       ],
       "fugue-max-simple": [
-        "2118248 bytes",
-        "2118248 bytes",
-        "2118248 bytes",
-        "2118248 bytes",
-        "2118248 bytes",
-        "2118248 bytes",
-        "2118248 bytes",
-        "2118248 bytes",
-        "2118248 bytes",
-        "2118248 bytes"
+        "2358320 bytes",
+        "2593176 bytes",
+        "2358320 bytes",
+        "2340824 bytes",
+        "2368272 bytes",
+        "2353016 bytes",
+        "2367376 bytes",
+        "2364440 bytes",
+        "2606176 bytes",
+        "2340824 bytes"
       ],
       "ywasm": [
         "-65848 bytes",
@@ -3972,16 +3972,16 @@
         "113 ms"
       ],
       "fugue-max-simple": [
-        "106 ms",
-        "103 ms",
-        "109 ms",
-        "105 ms",
-        "107 ms",
-        "105 ms",
-        "106 ms",
-        "106 ms",
-        "107 ms",
-        "109 ms"
+        "116 ms",
+        "115 ms",
+        "115 ms",
+        "110 ms",
+        "117 ms",
+        "118 ms",
+        "117 ms",
+        "117 ms",
+        "119 ms",
+        "115 ms"
       ],
       "ywasm": [
         "258 ms",
@@ -4046,16 +4046,16 @@
         "510 ms"
       ],
       "fugue-max-simple": [
-        "532 ms",
-        "550 ms",
-        "504 ms",
-        "518 ms",
-        "504 ms",
-        "535 ms",
+        "526 ms",
+        "554 ms",
+        "556 ms",
+        "547 ms",
+        "553 ms",
+        "563 ms",
+        "537 ms",
         "541 ms",
-        "539 ms",
-        "498 ms",
-        "544 ms"
+        "547 ms",
+        "514 ms"
       ],
       "ywasm": [
         "87 ms",
@@ -4194,16 +4194,16 @@
         "72 ms"
       ],
       "fugue-max-simple": [
-        "71 ms",
-        "71 ms",
+        "64 ms",
+        "64 ms",
+        "63 ms",
+        "63 ms",
+        "63 ms",
         "65 ms",
-        "71 ms",
+        "63 ms",
         "72 ms",
-        "71 ms",
-        "69 ms",
-        "71 ms",
-        "71 ms",
-        "72 ms"
+        "63 ms",
+        "65 ms"
       ],
       "ywasm": [
         "1 ms",
@@ -4268,16 +4268,16 @@
         "74594 bytes"
       ],
       "fugue-max-simple": [
-        "74598 bytes",
-        "74602 bytes",
-        "74601 bytes",
-        "74597 bytes",
-        "74596 bytes",
-        "74600 bytes",
-        "74596 bytes",
-        "74596 bytes",
-        "74593 bytes",
-        "74594 bytes"
+        "74622 bytes",
+        "74623 bytes",
+        "74625 bytes",
+        "74622 bytes",
+        "74621 bytes",
+        "74625 bytes",
+        "74621 bytes",
+        "74622 bytes",
+        "74618 bytes",
+        "74618 bytes"
       ],
       "ywasm": [
         "35665 bytes",
@@ -4342,16 +4342,16 @@
         "2090520 bytes"
       ],
       "fugue-max-simple": [
-        "2112040 bytes",
-        "2103392 bytes",
-        "2110600 bytes",
-        "2101272 bytes",
-        "2110600 bytes",
-        "2102728 bytes",
-        "2110912 bytes",
-        "2104520 bytes",
-        "2109912 bytes",
-        "2101272 bytes"
+        "2226904 bytes",
+        "2103504 bytes",
+        "2223992 bytes",
+        "2103592 bytes",
+        "2208264 bytes",
+        "2103152 bytes",
+        "2247784 bytes",
+        "2103944 bytes",
+        "2320448 bytes",
+        "2103728 bytes"
       ],
       "ywasm": [
         "-210160 bytes",
@@ -4416,16 +4416,16 @@
         "112 ms"
       ],
       "fugue-max-simple": [
+        "112 ms",
+        "115 ms",
+        "116 ms",
+        "116 ms",
+        "113 ms",
+        "112 ms",
+        "115 ms",
         "114 ms",
-        "110 ms",
-        "104 ms",
-        "110 ms",
-        "101 ms",
         "114 ms",
-        "114 ms",
-        "109 ms",
-        "106 ms",
-        "109 ms"
+        "117 ms"
       ],
       "ywasm": [
         "278 ms",
@@ -4490,16 +4490,16 @@
         "114 ms"
       ],
       "fugue-max-simple": [
-        "120 ms",
-        "120 ms",
-        "120 ms",
-        "138 ms",
-        "135 ms",
-        "131 ms",
-        "120 ms",
-        "121 ms",
-        "120 ms",
-        "118 ms"
+        "127 ms",
+        "127 ms",
+        "130 ms",
+        "128 ms",
+        "124 ms",
+        "125 ms",
+        "129 ms",
+        "127 ms",
+        "127 ms",
+        "126 ms"
       ],
       "ywasm": [
         "269 ms",
@@ -4638,16 +4638,16 @@
         "65 ms"
       ],
       "fugue-max-simple": [
-        "66 ms",
-        "66 ms",
-        "66 ms",
-        "65 ms",
-        "66 ms",
-        "64 ms",
-        "66 ms",
-        "65 ms",
-        "66 ms",
-        "64 ms"
+        "68 ms",
+        "76 ms",
+        "75 ms",
+        "76 ms",
+        "76 ms",
+        "75 ms",
+        "69 ms",
+        "75 ms",
+        "76 ms",
+        "76 ms"
       ],
       "ywasm": [
         "12 ms",
@@ -4712,16 +4712,16 @@
         "68016 bytes"
       ],
       "fugue-max-simple": [
-        "68043 bytes",
-        "68018 bytes",
-        "68019 bytes",
-        "68018 bytes",
-        "68017 bytes",
-        "68016 bytes",
-        "68018 bytes",
-        "68018 bytes",
-        "68018 bytes",
-        "68016 bytes"
+        "79878 bytes",
+        "79839 bytes",
+        "79838 bytes",
+        "79837 bytes",
+        "79832 bytes",
+        "79837 bytes",
+        "79837 bytes",
+        "79837 bytes",
+        "79838 bytes",
+        "79832 bytes"
       ],
       "ywasm": [
         "59137 bytes",
@@ -4786,16 +4786,16 @@
         "2096288 bytes"
       ],
       "fugue-max-simple": [
-        "2101056 bytes",
-        "2110600 bytes",
-        "2103136 bytes",
-        "2109912 bytes",
-        "2104616 bytes",
-        "2110912 bytes",
-        "2104280 bytes",
-        "2108920 bytes",
-        "2102824 bytes",
-        "2108832 bytes"
+        "2213576 bytes",
+        "2227120 bytes",
+        "2223240 bytes",
+        "2221800 bytes",
+        "2199920 bytes",
+        "2212192 bytes",
+        "2205232 bytes",
+        "2204768 bytes",
+        "2201336 bytes",
+        "2522832 bytes"
       ],
       "ywasm": [
         "360 bytes",
@@ -4860,16 +4860,16 @@
         "118 ms"
       ],
       "fugue-max-simple": [
-        "107 ms",
-        "110 ms",
-        "114 ms",
-        "114 ms",
-        "107 ms",
-        "109 ms",
-        "105 ms",
-        "108 ms",
-        "108 ms",
-        "108 ms"
+        "125 ms",
+        "116 ms",
+        "120 ms",
+        "118 ms",
+        "122 ms",
+        "120 ms",
+        "119 ms",
+        "119 ms",
+        "122 ms",
+        "120 ms"
       ],
       "ywasm": [
         "358 ms",
@@ -4934,16 +4934,16 @@
         "1207 ms"
       ],
       "fugue-max-simple": [
-        "1598 ms",
-        "1565 ms",
-        "1604 ms",
-        "1586 ms",
-        "1606 ms",
-        "1548 ms",
-        "1613 ms",
-        "1544 ms",
-        "1611 ms",
-        "1598 ms"
+        "1601 ms",
+        "1639 ms",
+        "1607 ms",
+        "1687 ms",
+        "1625 ms",
+        "1651 ms",
+        "1608 ms",
+        "1671 ms",
+        "1594 ms",
+        "1640 ms"
       ],
       "ywasm": [
         "0 ms",
@@ -5082,16 +5082,16 @@
         "80 ms"
       ],
       "fugue-max-simple": [
-        "77 ms",
-        "77 ms",
-        "78 ms",
-        "76 ms",
-        "78 ms",
-        "77 ms",
-        "76 ms",
-        "77 ms",
-        "77 ms",
-        "76 ms"
+        "95 ms",
+        "87 ms",
+        "89 ms",
+        "88 ms",
+        "95 ms",
+        "86 ms",
+        "96 ms",
+        "96 ms",
+        "88 ms",
+        "89 ms"
       ],
       "ywasm": [
         "0 ms",
@@ -5156,16 +5156,16 @@
         "86394 bytes"
       ],
       "fugue-max-simple": [
-        "86397 bytes",
-        "86400 bytes",
-        "86403 bytes",
-        "86396 bytes",
-        "86404 bytes",
-        "86402 bytes",
-        "86399 bytes",
-        "86399 bytes",
-        "86399 bytes",
-        "86394 bytes"
+        "91019 bytes",
+        "91016 bytes",
+        "91017 bytes",
+        "91011 bytes",
+        "91025 bytes",
+        "91024 bytes",
+        "91034 bytes",
+        "91020 bytes",
+        "91011 bytes",
+        "91012 bytes"
       ],
       "ywasm": [
         "12152 bytes",
@@ -5230,16 +5230,16 @@
         "4265656 bytes"
       ],
       "fugue-max-simple": [
-        "4265656 bytes",
-        "4265656 bytes",
-        "4265656 bytes",
-        "4265656 bytes",
-        "4265752 bytes",
-        "4265656 bytes",
-        "4265656 bytes",
-        "4265656 bytes",
-        "4265656 bytes",
-        "4265656 bytes"
+        "4752352 bytes",
+        "4752160 bytes",
+        "4752352 bytes",
+        "4752160 bytes",
+        "4752448 bytes",
+        "4752160 bytes",
+        "4752160 bytes",
+        "4752352 bytes",
+        "4752352 bytes",
+        "4752160 bytes"
       ],
       "ywasm": [
         "240 bytes",
@@ -5304,16 +5304,16 @@
         "113 ms"
       ],
       "fugue-max-simple": [
-        "111 ms",
-        "111 ms",
-        "108 ms",
-        "105 ms",
-        "109 ms",
-        "109 ms",
-        "108 ms",
-        "107 ms",
-        "113 ms",
-        "111 ms"
+        "122 ms",
+        "123 ms",
+        "129 ms",
+        "119 ms",
+        "124 ms",
+        "125 ms",
+        "123 ms",
+        "125 ms",
+        "127 ms",
+        "129 ms"
       ],
       "ywasm": [
         "260 ms",
@@ -5378,15 +5378,15 @@
         "168 ms"
       ],
       "fugue-max-simple": [
+        "167 ms",
+        "171 ms",
+        "175 ms",
+        "167 ms",
+        "169 ms",
         "172 ms",
-        "171 ms",
-        "171 ms",
-        "171 ms",
-        "171 ms",
-        "174 ms",
-        "170 ms",
-        "172 ms",
-        "172 ms",
+        "166 ms",
+        "168 ms",
+        "175 ms",
         "170 ms"
       ],
       "ywasm": [
@@ -5526,16 +5526,16 @@
         "78 ms"
       ],
       "fugue-max-simple": [
-        "78 ms",
-        "78 ms",
-        "78 ms",
-        "79 ms",
-        "78 ms",
-        "78 ms",
-        "78 ms",
-        "79 ms",
-        "78 ms",
-        "79 ms"
+        "95 ms",
+        "95 ms",
+        "86 ms",
+        "85 ms",
+        "85 ms",
+        "86 ms",
+        "86 ms",
+        "87 ms",
+        "85 ms",
+        "87 ms"
       ],
       "ywasm": [
         "3 ms",
@@ -5600,16 +5600,16 @@
         "74372 bytes"
       ],
       "fugue-max-simple": [
-        "74378 bytes",
-        "74374 bytes",
-        "74378 bytes",
-        "74382 bytes",
-        "74373 bytes",
-        "74382 bytes",
-        "74380 bytes",
-        "74381 bytes",
-        "74375 bytes",
-        "74372 bytes"
+        "97894 bytes",
+        "97907 bytes",
+        "97908 bytes",
+        "97896 bytes",
+        "97896 bytes",
+        "97907 bytes",
+        "97912 bytes",
+        "97918 bytes",
+        "97905 bytes",
+        "97901 bytes"
       ],
       "ywasm": [
         "66860 bytes",
@@ -5674,16 +5674,16 @@
         "4265656 bytes"
       ],
       "fugue-max-simple": [
-        "4265656 bytes",
-        "4265656 bytes",
-        "4266576 bytes",
-        "4264736 bytes",
-        "4265656 bytes",
-        "4265656 bytes",
-        "4265656 bytes",
-        "4265656 bytes",
-        "4265656 bytes",
-        "4265656 bytes"
+        "4510992 bytes",
+        "4510992 bytes",
+        "4510992 bytes",
+        "4456728 bytes",
+        "4510992 bytes",
+        "4510992 bytes",
+        "4510992 bytes",
+        "4510992 bytes",
+        "4510992 bytes",
+        "4510992 bytes"
       ],
       "ywasm": [
         "360 bytes",
@@ -5748,16 +5748,16 @@
         "117 ms"
       ],
       "fugue-max-simple": [
-        "108 ms",
-        "115 ms",
-        "111 ms",
-        "116 ms",
-        "109 ms",
-        "109 ms",
-        "113 ms",
-        "112 ms",
-        "111 ms",
-        "105 ms"
+        "125 ms",
+        "125 ms",
+        "122 ms",
+        "123 ms",
+        "124 ms",
+        "124 ms",
+        "128 ms",
+        "123 ms",
+        "122 ms",
+        "122 ms"
       ],
       "ywasm": [
         "340 ms",
@@ -5822,16 +5822,16 @@
         "698 ms"
       ],
       "fugue-max-simple": [
-        "802 ms",
-        "801 ms",
-        "803 ms",
-        "798 ms",
-        "802 ms",
-        "806 ms",
-        "794 ms",
-        "802 ms",
-        "800 ms",
-        "800 ms"
+        "832 ms",
+        "833 ms",
+        "834 ms",
+        "849 ms",
+        "848 ms",
+        "840 ms",
+        "826 ms",
+        "830 ms",
+        "833 ms",
+        "830 ms"
       ],
       "ywasm": [
         "1348 ms",
@@ -5970,16 +5970,16 @@
         "250 ms"
       ],
       "fugue-max-simple": [
-        "248 ms",
-        "249 ms",
-        "259 ms",
-        "247 ms",
-        "251 ms",
-        "251 ms",
-        "247 ms",
-        "249 ms",
-        "251 ms",
-        "250 ms"
+        "323 ms",
+        "326 ms",
+        "324 ms",
+        "325 ms",
+        "324 ms",
+        "324 ms",
+        "336 ms",
+        "326 ms",
+        "324 ms",
+        "331 ms"
       ],
       "ywasm": [
         "20 ms",
@@ -6044,16 +6044,16 @@
         "449124 bytes"
       ],
       "fugue-max-simple": [
-        "449105 bytes",
-        "449468 bytes",
-        "449141 bytes",
-        "449130 bytes",
-        "449150 bytes",
-        "449112 bytes",
-        "449099 bytes",
-        "449116 bytes",
-        "449113 bytes",
-        "449124 bytes"
+        "644816 bytes",
+        "645041 bytes",
+        "644808 bytes",
+        "644862 bytes",
+        "644914 bytes",
+        "644775 bytes",
+        "644839 bytes",
+        "644840 bytes",
+        "644803 bytes",
+        "644859 bytes"
       ],
       "ywasm": [
         "178130 bytes",
@@ -6118,16 +6118,16 @@
         "24959416 bytes"
       ],
       "fugue-max-simple": [
-        "25259432 bytes",
-        "25259360 bytes",
-        "25259360 bytes",
-        "25259360 bytes",
-        "25211232 bytes",
-        "25187528 bytes",
-        "25259360 bytes",
-        "25259360 bytes",
-        "25259360 bytes",
-        "25198808 bytes"
+        "27621472 bytes",
+        "27469432 bytes",
+        "27431072 bytes",
+        "27719432 bytes",
+        "27413168 bytes",
+        "27661776 bytes",
+        "27474856 bytes",
+        "27637168 bytes",
+        "27562544 bytes",
+        "27653088 bytes"
       ],
       "ywasm": [
         "240 bytes",
@@ -6192,16 +6192,16 @@
         "255 ms"
       ],
       "fugue-max-simple": [
-        "249 ms",
-        "252 ms",
-        "255 ms",
-        "249 ms",
-        "252 ms",
-        "253 ms",
-        "250 ms",
-        "252 ms",
-        "249 ms",
-        "252 ms"
+        "344 ms",
+        "338 ms",
+        "345 ms",
+        "343 ms",
+        "342 ms",
+        "345 ms",
+        "347 ms",
+        "342 ms",
+        "346 ms",
+        "341 ms"
       ],
       "ywasm": [
         "381 ms",
@@ -6266,16 +6266,16 @@
         "1189 ms"
       ],
       "fugue-max-simple": [
-        "1366 ms",
-        "1366 ms",
-        "1378 ms",
-        "1397 ms",
-        "1378 ms",
-        "1372 ms",
-        "1390 ms",
-        "1368 ms",
-        "1372 ms",
-        "1356 ms"
+        "1424 ms",
+        "1416 ms",
+        "1412 ms",
+        "1424 ms",
+        "1415 ms",
+        "1438 ms",
+        "1441 ms",
+        "1415 ms",
+        "1420 ms",
+        "1424 ms"
       ],
       "ywasm": [
         "3455 ms",
@@ -6414,16 +6414,16 @@
         "370 ms"
       ],
       "fugue-max-simple": [
-        "399 ms",
-        "428 ms",
-        "392 ms",
-        "407 ms",
-        "384 ms",
-        "384 ms",
-        "422 ms",
-        "421 ms",
-        "387 ms",
-        "398 ms"
+        "504 ms",
+        "502 ms",
+        "531 ms",
+        "518 ms",
+        "502 ms",
+        "495 ms",
+        "508 ms",
+        "517 ms",
+        "513 ms",
+        "508 ms"
       ],
       "ywasm": [
         "8 ms",
@@ -6488,16 +6488,16 @@
         "639861 bytes"
       ],
       "fugue-max-simple": [
-        "639876 bytes",
-        "639854 bytes",
-        "639862 bytes",
-        "639796 bytes",
-        "639856 bytes",
-        "639869 bytes",
-        "639813 bytes",
-        "639826 bytes",
-        "639852 bytes",
-        "639861 bytes"
+        "894776 bytes",
+        "894769 bytes",
+        "894740 bytes",
+        "894664 bytes",
+        "894739 bytes",
+        "894801 bytes",
+        "894724 bytes",
+        "894767 bytes",
+        "894707 bytes",
+        "894791 bytes"
       ],
       "ywasm": [
         "279172 bytes",
@@ -6562,16 +6562,16 @@
         "37651320 bytes"
       ],
       "fugue-max-simple": [
-        "37847256 bytes",
-        "37831480 bytes",
-        "37910688 bytes",
-        "37847160 bytes",
-        "37855760 bytes",
-        "37850048 bytes",
-        "37847616 bytes",
-        "37851952 bytes",
-        "37910688 bytes",
-        "37849048 bytes"
+        "41578192 bytes",
+        "41579200 bytes",
+        "41580120 bytes",
+        "41578280 bytes",
+        "41579200 bytes",
+        "41579200 bytes",
+        "41579200 bytes",
+        "41579200 bytes",
+        "41579200 bytes",
+        "41579200 bytes"
       ],
       "ywasm": [
         "240 bytes",
@@ -6636,16 +6636,16 @@
         "321 ms"
       ],
       "fugue-max-simple": [
-        "321 ms",
-        "321 ms",
-        "317 ms",
-        "324 ms",
-        "323 ms",
-        "322 ms",
-        "325 ms",
-        "323 ms",
-        "321 ms",
-        "323 ms"
+        "421 ms",
+        "426 ms",
+        "430 ms",
+        "424 ms",
+        "422 ms",
+        "428 ms",
+        "428 ms",
+        "426 ms",
+        "430 ms",
+        "422 ms"
       ],
       "ywasm": [
         "383 ms",
@@ -6730,21 +6730,21 @@
         "657592 bytes"
       ],
       "fugue-max-simple": [
-        "577264 bytes",
-        "628704 bytes",
-        "615360 bytes",
-        "596096 bytes",
-        "618472 bytes",
-        "622656 bytes",
-        "624016 bytes",
-        "618168 bytes",
-        "608872 bytes",
-        "615392 bytes",
-        "629536 bytes",
-        "608496 bytes",
-        "622520 bytes",
-        "612432 bytes",
-        "621496 bytes"
+        "625976 bytes",
+        "674464 bytes",
+        "664592 bytes",
+        "644904 bytes",
+        "657976 bytes",
+        "676536 bytes",
+        "669840 bytes",
+        "667040 bytes",
+        "653024 bytes",
+        "677760 bytes",
+        "667216 bytes",
+        "664856 bytes",
+        "671736 bytes",
+        "664488 bytes",
+        "751008 bytes"
       ],
       "ywasm": [
         "-256240 bytes",
@@ -6814,16 +6814,16 @@
         "45 ms"
       ],
       "fugue-max-simple": [
-        "42 ms",
-        "41 ms",
-        "43 ms",
-        "40 ms",
+        "45 ms",
+        "45 ms",
+        "46 ms",
+        "44 ms",
         "49 ms",
-        "42 ms",
-        "40 ms",
+        "45 ms",
         "43 ms",
-        "41 ms",
-        "47 ms"
+        "44 ms",
+        "45 ms",
+        "48 ms"
       ],
       "ywasm": [
         "321 ms",
@@ -6962,15 +6962,15 @@
         "49 ms"
       ],
       "fugue-max-simple": [
-        "49 ms",
+        "51 ms",
+        "52 ms",
+        "51 ms",
+        "51 ms",
         "48 ms",
-        "49 ms",
-        "48 ms",
         "50 ms",
+        "51 ms",
+        "51 ms",
         "50 ms",
-        "50 ms",
-        "50 ms",
-        "49 ms",
         "50 ms"
       ],
       "ywasm": [
@@ -7036,16 +7036,16 @@
         "57418 bytes"
       ],
       "fugue-max-simple": [
-        "57414 bytes",
-        "57390 bytes",
-        "57418 bytes",
-        "57394 bytes",
-        "57388 bytes",
-        "57374 bytes",
-        "57412 bytes",
-        "57377 bytes",
-        "57415 bytes",
-        "57418 bytes"
+        "57657 bytes",
+        "57629 bytes",
+        "57657 bytes",
+        "57641 bytes",
+        "57628 bytes",
+        "57624 bytes",
+        "57651 bytes",
+        "57624 bytes",
+        "57650 bytes",
+        "57668 bytes"
       ],
       "ywasm": [
         "26588 bytes",
@@ -7110,16 +7110,16 @@
         "122 ms"
       ],
       "fugue-max-simple": [
-        "119 ms",
-        "122 ms",
-        "120 ms",
-        "121 ms",
-        "118 ms",
-        "119 ms",
-        "123 ms",
-        "126 ms",
-        "125 ms",
-        "124 ms"
+        "154 ms",
+        "137 ms",
+        "160 ms",
+        "134 ms",
+        "156 ms",
+        "138 ms",
+        "155 ms",
+        "135 ms",
+        "145 ms",
+        "129 ms"
       ],
       "ywasm": [
         "339 ms",
@@ -7184,16 +7184,16 @@
         "15799 ms"
       ],
       "fugue-max-simple": [
-        "14884 ms",
-        "15883 ms",
-        "15753 ms",
-        "16702 ms",
-        "15909 ms",
-        "16037 ms",
-        "17148 ms",
-        "15903 ms",
-        "16404 ms",
-        "15785 ms"
+        "15994 ms",
+        "16974 ms",
+        "16734 ms",
+        "16424 ms",
+        "16950 ms",
+        "16574 ms",
+        "16773 ms",
+        "16106 ms",
+        "16668 ms",
+        "16912 ms"
       ],
       "ywasm": [
         "34902 ms",
@@ -7258,16 +7258,16 @@
         "64861912 bytes"
       ],
       "fugue-max-simple": [
-        "64848632 bytes",
-        "64806040 bytes",
-        "64832880 bytes",
-        "64829704 bytes",
-        "64820848 bytes",
-        "64847688 bytes",
-        "64809680 bytes",
-        "64819304 bytes",
-        "64821688 bytes",
-        "64846544 bytes"
+        "71894712 bytes",
+        "71911824 bytes",
+        "71917784 bytes",
+        "71911728 bytes",
+        "71908768 bytes",
+        "71916472 bytes",
+        "71916832 bytes",
+        "71903096 bytes",
+        "71906792 bytes",
+        "71907512 bytes"
       ],
       "ywasm": [
         "-9400 bytes",
@@ -7406,16 +7406,16 @@
         "578 ms"
       ],
       "fugue-max-simple": [
-        "567 ms",
-        "587 ms",
-        "577 ms",
-        "575 ms",
-        "565 ms",
-        "573 ms",
-        "578 ms",
-        "580 ms",
-        "585 ms",
-        "587 ms"
+        "788 ms",
+        "779 ms",
+        "774 ms",
+        "792 ms",
+        "783 ms",
+        "799 ms",
+        "778 ms",
+        "807 ms",
+        "796 ms",
+        "779 ms"
       ],
       "ywasm": [
         "5 ms",
@@ -7480,16 +7480,16 @@
         "1021062 bytes"
       ],
       "fugue-max-simple": [
-        "1020941 bytes",
-        "1021032 bytes",
-        "1020958 bytes",
-        "1020961 bytes",
-        "1020943 bytes",
-        "1021063 bytes",
-        "1021066 bytes",
-        "1020961 bytes",
-        "1021021 bytes",
-        "1021062 bytes"
+        "1236662 bytes",
+        "1237152 bytes",
+        "1237097 bytes",
+        "1237093 bytes",
+        "1236821 bytes",
+        "1237092 bytes",
+        "1237097 bytes",
+        "1237094 bytes",
+        "1237187 bytes",
+        "1237093 bytes"
       ],
       "ywasm": [
         "159929 bytes",
@@ -7554,16 +7554,16 @@
         "333 ms"
       ],
       "fugue-max-simple": [
-        "350 ms",
-        "349 ms",
-        "347 ms",
-        "348 ms",
-        "348 ms",
-        "349 ms",
-        "360 ms",
-        "349 ms",
-        "361 ms",
-        "348 ms"
+        "512 ms",
+        "517 ms",
+        "514 ms",
+        "514 ms",
+        "524 ms",
+        "523 ms",
+        "533 ms",
+        "525 ms",
+        "527 ms",
+        "529 ms"
       ],
       "ywasm": [
         "15 ms",
