@@ -1,0 +1,20 @@
+{
+  "name": "fugue-bench",
+  "version": "1.0.0",
+  "description": "Fugue benchmarks",
+  "main": "./run.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run exp && npm run table",
+    "exp": "node --expose-gc run.js",
+    "table": "echo 'Fugue results: \n\n' && node ../../bin/render-table.js ../results.json 6000 fugue",
+    "B4x100": "node --expose-gc run.js B4x100 && npm run table"
+  },
+  "author": "Matthew Weidner and Martin Kleppmann",
+  "license": "MIT",
+  "dependencies": {
+    "@collabs/collabs": "0.13.4",
+    "seedrandom": "^3.0.5",
+    "fugue": "1.0.0"
+  }
+}

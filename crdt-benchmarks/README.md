@@ -1,14 +1,6 @@
+# CRDT Benchmarks
 
-# CRDT benchmarks
-
-> A collection of reproducible benchmarks. *PRs are welcome.*
-
-```sh
-# Install Node.js https://nodejs.org
-npm i && npm start
-```
-
-You can find the benchmark results of Automerge's current [`performance`](https://github.com/automerge/automerge/pull/253) branch [here](https://github.com/dmonad/crdt-benchmarks/pull/4).
+CRDT benchmarks, forked from Kevin Jahns's [https://github.com/dmonad/crdt-benchmarks](https://github.com/dmonad/crdt-benchmarks).
 
 ## Benchmarks
 
@@ -62,14 +54,7 @@ Replay the [B4] dataset one hundred times. The final document has a size of over
 
 ## Development
 
-Modify the `N` variable in `benchmarks/utils.js` to increase the difficulty.
-
-```sh
-npm run watch
-node dist/benchmark.js
-```
-
-Now you can also open `benchmark.html` to run the benchmarks in the browser.
+Modify the `N` variable in `benchmarks/utils.js` to increase the difficulty of microbenchmarks (not B4).
 
 ## License
 

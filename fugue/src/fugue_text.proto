@@ -1,0 +1,25 @@
+message FugueTextInsertMessage {
+  required uint64 counter = 1;
+  required uint32 startValueIndex = 2;
+  optional bytes metadata = 3;
+  required string values = 4;
+}
+
+message FugueTextDeleteMessage {
+  // Not set if same as message sender.
+  optional string sender = 1;
+  required uint64 counter = 2;
+  required uint32 valueIndex = 3;
+}
+
+message FugueTextMessage {
+  oneof op {
+    FugueTextInsertMessage insert = 1;
+    FugueTextDeleteMessage delete = 3;
+  }
+}
+
+message FugueTextSave {
+  required bytes positionSourceSave = 1;
+  required string valuesSave = 3;
+}

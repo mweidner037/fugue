@@ -1,0 +1,19 @@
+{
+  "name": "fugue-simple-bench",
+  "version": "1.0.0",
+  "description": "Fugue Simple benchmarks",
+  "main": "./run.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run exp && npm run table",
+    "exp": "node --expose-gc run.js",
+    "table": "echo 'Fugue Simple results: \n\n' && node ../../bin/render-table.js ../results.json 6000 fugue-simple"
+  },
+  "author": "Matthew Weidner and Martin Kleppmann",
+  "license": "MIT",
+  "dependencies": {
+    "@collabs/collabs": "0.13.4",
+    "seedrandom": "^3.0.5",
+    "fugue-simple": "1.0.0"
+  }
+}

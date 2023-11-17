@@ -1,12 +1,12 @@
 # Fugue code and benchmarks
 
-Code and benchmarks for the paper ["The Art of the Fugue: Minimizing Interleaving in Collaborative Text Editing"](https://arxiv.org/abs/2305.00583) by Matthew Weidner, Joseph Gentle, and Martin Kleppmann, 2023. See the paper's Section 4 for a description.
+Code and benchmarks for the paper ["The Art of the Fugue: Minimizing Interleaving in Collaborative Text Editing"](https://arxiv.org/abs/2305.00583) by Matthew Weidner and Martin Kleppmann, 2023. See the paper's Section 5 for a description.
 
 ## Instructions
 
 To reproduce the paper benchmarks:
 
-1. Install Node.js (we used version 16.13.1, but newer should also work).
+1. Install Node.js (we used v18.15.0, but newer should also work).
 2. In this folder:
 
 ```bash
@@ -28,9 +28,9 @@ Statistics are written to `results_table.md`, while raw data is written to `crdt
 
 ## Implementations
 
-- `tree-fugue/`: Tree-Fugue
-- `tree-fugue-simple/`: Tree-Fugue Simple
-- `list-fugue-simple/`: List-Fugue Simple
+- `fugue/`: Fugue
+- `fugue-simple/`: Fugue Simple
+- `fugue-max-simple/`: FugueMax Simple
 
 ## Benchmarks info
 

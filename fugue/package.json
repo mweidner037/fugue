@@ -1,0 +1,25 @@
+{
+  "name": "fugue",
+  "version": "1.0.0",
+  "author": "Collabs contributors",
+  "description": "Copy of Collabs v0.6.1 list CRDT implementations",
+  "license": "Apache-2.0",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "dependencies": {
+    "@collabs/collabs": "0.13.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "protobufjs": "~6.9.0"
+  },
+  "scripts": {
+    "build": "npm run build:protobuf && npm run build:ts",
+    "build:protobuf": "npm run build:protobuf:prepare && npm run build:protobuf:js && npm run build:protobuf:ts",
+    "build:protobuf:prepare": "rm -rf generated && mkdir generated",
+    "build:protobuf:js": "pbjs -t static-module -w commonjs -o generated/proto_compiled.js `find src -name '*.proto'`",
+    "build:protobuf:ts": "pbts -o generated/proto_compiled.d.ts generated/proto_compiled.js",
+    "build:ts": "tsc && cp -r generated dist/generated",
+    "clean": "rm -rf dist generated"
+  }
+}

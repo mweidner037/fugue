@@ -8,21 +8,14 @@
     "benchmarks/yjs",
     "benchmarks/ywasm",
     "benchmarks/automerge-wasm",
-    "benchmarks/tree-fugue",
-    "benchmarks/tree-fugue-simple",
-    "benchmarks/list-fugue-simple"
+    "benchmarks/fugue",
+    "benchmarks/fugue-simple",
+    "benchmarks/fugue-max-simple"
   ],
   "scripts": {
-    "start": "npm run start -ws",
-    "table": "node bin/render-table.js benchmarks/results.json 6000 yjs ywasm automerge-wasm tree-fugue tree-fugue-simple list-fugue-simple",
-    "B4x100": "npm run B4x100 -w benchmarks/yjs && npm run B4x100 -w benchmarks/tree-fugue",
-    "lint": "standard && tsc",
-    "clean": "npm run clean -ws"
-  },
-  "standard": {
-    "ignore": [
-      "**/dist/"
-    ]
+    "start": "npm start -w benchmarks/yjs && npm start -w benchmarks/ywasm && npm start -w benchmarks/automerge-wasm && npm start -w benchmarks/fugue && npm start -w benchmarks/fugue-simple && npm start -w benchmarks/fugue-max-simple",
+    "table": "node bin/render-table.js benchmarks/results.json 6000 yjs ywasm automerge-wasm fugue fugue-simple fugue-max-simple",
+    "B4x100": "npm run B4x100 -w benchmarks/yjs && npm run B4x100 -w benchmarks/fugue"
   },
   "engines": {
     "node": "^18.0.0"
@@ -32,13 +25,6 @@
     "mathjs": "^11.5.0"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^20.0.0",
-    "@rollup/plugin-node-resolve": "^13.0.5",
-    "rollup": "^2.77.0",
-    "rollup-plugin-node-builtins": "^2.1.2",
-    "rollup-plugin-node-globals": "^1.4.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "standard": "^16.0.3",
     "typescript": "^3.9.6"
   }
 }
