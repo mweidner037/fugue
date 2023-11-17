@@ -14,7 +14,8 @@
     "crdt-benchmarks/benchmarks/automerge-wasm",
     "crdt-benchmarks/benchmarks/fugue",
     "crdt-benchmarks/benchmarks/fugue-simple",
-    "crdt-benchmarks/benchmarks/fugue-max-simple"
+    "crdt-benchmarks/benchmarks/fugue-max-simple",
+    "yjs-interleave"
   ],
   "scripts": {
     "start": "npm run build && npm start -w crdt-benchmarks && npm run table -w crdt-benchmarks > results_table.md",
